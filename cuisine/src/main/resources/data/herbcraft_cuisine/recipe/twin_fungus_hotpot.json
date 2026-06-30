@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:crimson_fungus",
+    "minecraft:warped_fungus",
+    "minecraft:resin_clump"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:twin_fungus_hotpot",
+    "count": 1
+  }
+}

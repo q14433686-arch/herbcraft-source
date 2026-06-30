@@ -1,0 +1,844 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "item": "farmersdelight:apple_cider",
+      "values": {
+        "vege": 4,
+        "fruit": 18
+      }
+    },
+    {
+      "item": "farmersdelight:apple_pie_slice",
+      "values": {
+        "grain": 24,
+        "oil": 8,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:bacon",
+      "values": {
+        "flesh": 18,
+        "oil": 6
+      }
+    },
+    {
+      "item": "farmersdelight:bacon_and_eggs",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "farmersdelight:bacon_sandwich",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:baked_cod_stew",
+      "values": {
+        "grain": 6,
+        "flesh": 22,
+        "oil": 6,
+        "vege": 6,
+        "fruit": 8
+      }
+    },
+    {
+      "item": "farmersdelight:barbecue_stick",
+      "values": {
+        "grain": 8,
+        "oil": 2,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:beef_patty",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "farmersdelight:beef_stew",
+      "values": {
+        "grain": 6,
+        "flesh": 22,
+        "oil": 6,
+        "vege": 6,
+        "fruit": 8
+      }
+    },
+    {
+      "item": "farmersdelight:bone_broth",
+      "values": {
+        "grain": 6,
+        "vege": 10,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:cabbage",
+      "values": {
+        "vege": 14,
+        "fruit": 4
+      }
+    },
+    {
+      "item": "farmersdelight:cabbage_leaf",
+      "values": {
+        "vege": 14,
+        "fruit": 4
+      }
+    },
+    {
+      "item": "farmersdelight:cabbage_rolls",
+      "values": {
+        "grain": 20,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:cake_slice",
+      "values": {
+        "grain": 24,
+        "oil": 8,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:chicken_cuts",
+      "values": {
+        "flesh": 18,
+        "oil": 6
+      }
+    },
+    {
+      "item": "farmersdelight:chicken_sandwich",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:chicken_soup",
+      "values": {
+        "grain": 6,
+        "flesh": 22,
+        "oil": 6,
+        "vege": 6,
+        "fruit": 8
+      }
+    },
+    {
+      "item": "farmersdelight:chocolate_pie_slice",
+      "values": {
+        "grain": 24,
+        "oil": 8,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:cod_roll",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:cod_slice",
+      "values": {
+        "flesh": 24,
+        "oil": 8
+      }
+    },
+    {
+      "item": "farmersdelight:cooked_bacon",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "farmersdelight:cooked_chicken_cuts",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "farmersdelight:cooked_cod_slice",
+      "values": {
+        "flesh": 24,
+        "oil": 8
+      }
+    },
+    {
+      "item": "farmersdelight:cooked_mutton_chops",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "farmersdelight:cooked_rice",
+      "values": {
+        "grain": 24
+      }
+    },
+    {
+      "item": "farmersdelight:cooked_salmon_slice",
+      "values": {
+        "flesh": 24,
+        "oil": 8
+      }
+    },
+    {
+      "item": "farmersdelight:dumplings",
+      "values": {
+        "grain": 20,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:egg_sandwich",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:fish_stew",
+      "values": {
+        "grain": 6,
+        "flesh": 22,
+        "oil": 6,
+        "vege": 6,
+        "fruit": 8
+      }
+    },
+    {
+      "item": "farmersdelight:fried_egg",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "farmersdelight:fried_rice",
+      "values": {
+        "grain": 24,
+        "oil": 6
+      }
+    },
+    {
+      "item": "farmersdelight:fruit_salad",
+      "values": {
+        "oil": 2,
+        "vege": 24,
+        "fruit": 8
+      }
+    },
+    {
+      "item": "farmersdelight:gleaming_salad",
+      "values": {
+        "oil": 2,
+        "vege": 24,
+        "fruit": 8
+      }
+    },
+    {
+      "item": "farmersdelight:glow_berry_custard",
+      "values": {
+        "vege": 4,
+        "fruit": 18
+      }
+    },
+    {
+      "item": "farmersdelight:grilled_salmon",
+      "values": {
+        "flesh": 24,
+        "oil": 8
+      }
+    },
+    {
+      "item": "farmersdelight:ham",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "farmersdelight:hamburger",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:honey_cookie",
+      "values": {
+        "grain": 24,
+        "oil": 8,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:honey_glazed_ham",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "farmersdelight:hot_cocoa",
+      "values": {
+        "grain": 6,
+        "flesh": 8,
+        "oil": 6,
+        "vege": 10,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:kelp_roll",
+      "values": {
+        "grain": 20,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:kelp_roll_slice",
+      "values": {
+        "grain": 20,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:melon_juice",
+      "values": {
+        "grain": 6,
+        "vege": 10,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:melon_popsicle",
+      "values": {
+        "vege": 4,
+        "fruit": 18
+      }
+    },
+    {
+      "item": "farmersdelight:milk_bottle",
+      "values": {
+        "grain": 6,
+        "flesh": 8,
+        "oil": 6,
+        "vege": 10,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:minced_beef",
+      "values": {
+        "flesh": 18,
+        "oil": 6
+      }
+    },
+    {
+      "item": "farmersdelight:mixed_salad",
+      "values": {
+        "oil": 2,
+        "vege": 24,
+        "fruit": 8
+      }
+    },
+    {
+      "item": "farmersdelight:mushroom_rice",
+      "values": {
+        "grain": 24,
+        "oil": 6
+      }
+    },
+    {
+      "item": "farmersdelight:mutton_chops",
+      "values": {
+        "flesh": 18,
+        "oil": 6
+      }
+    },
+    {
+      "item": "farmersdelight:mutton_wrap",
+      "values": {
+        "grain": 20,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:noodle_soup",
+      "values": {
+        "grain": 6,
+        "vege": 10,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:onion",
+      "values": {
+        "vege": 14,
+        "fruit": 4
+      }
+    },
+    {
+      "item": "farmersdelight:onion_soup",
+      "values": {
+        "grain": 6,
+        "vege": 10,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:pasta_with_meatballs",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "farmersdelight:pasta_with_mutton_chop",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "farmersdelight:pie_crust",
+      "values": {
+        "grain": 12,
+        "oil": 2
+      }
+    },
+    {
+      "item": "farmersdelight:pumpkin_pie_slice",
+      "values": {
+        "grain": 24,
+        "oil": 8,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:pumpkin_slice",
+      "values": {
+        "vege": 14,
+        "fruit": 4
+      }
+    },
+    {
+      "item": "farmersdelight:pumpkin_soup",
+      "values": {
+        "grain": 6,
+        "vege": 10,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:ratatouille",
+      "values": {
+        "grain": 8,
+        "oil": 2,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:raw_pasta",
+      "values": {
+        "grain": 12,
+        "oil": 2
+      }
+    },
+    {
+      "item": "farmersdelight:roast_chicken",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "farmersdelight:roasted_mutton_chops",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "farmersdelight:rotten_tomato",
+      "values": {
+        "vege": 8,
+        "fruit": 2
+      }
+    },
+    {
+      "item": "farmersdelight:salmon_roll",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:salmon_slice",
+      "values": {
+        "flesh": 24,
+        "oil": 8
+      }
+    },
+    {
+      "item": "farmersdelight:shepherds_pie",
+      "values": {
+        "grain": 24,
+        "oil": 8,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:smoked_ham",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "farmersdelight:squid_ink_pasta",
+      "values": {
+        "flesh": 24,
+        "oil": 8
+      }
+    },
+    {
+      "item": "farmersdelight:steak_and_potatoes",
+      "values": {
+        "grain": 6,
+        "vege": 10,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:stuffed_potato",
+      "values": {
+        "grain": 8,
+        "oil": 2,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:stuffed_pumpkin",
+      "values": {
+        "grain": 6,
+        "vege": 10,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:sweet_berry_cheesecake_slice",
+      "values": {
+        "grain": 24,
+        "oil": 8,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:sweet_berry_cookie",
+      "values": {
+        "grain": 24,
+        "oil": 8,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:tomato",
+      "values": {
+        "vege": 14,
+        "fruit": 4
+      }
+    },
+    {
+      "item": "farmersdelight:tomato_sauce",
+      "values": {
+        "grain": 8,
+        "oil": 2,
+        "vege": 8
+      }
+    },
+    {
+      "item": "farmersdelight:vegetable_noodles",
+      "values": {
+        "grain": 24,
+        "oil": 6
+      }
+    },
+    {
+      "item": "farmersdelight:vegetable_soup",
+      "values": {
+        "grain": 6,
+        "vege": 10,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "farmersdelight:wheat_dough",
+      "values": {
+        "grain": 12,
+        "oil": 2
+      }
+    },
+    {
+      "item": "moredelight:bread_slice",
+      "values": {
+        "grain": 24,
+        "oil": 6
+      }
+    },
+    {
+      "item": "moredelight:carrot_soup",
+      "values": {
+        "grain": 6,
+        "vege": 10,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "moredelight:chicken_salad",
+      "values": {
+        "flesh": 16,
+        "oil": 8,
+        "vege": 24,
+        "fruit": 8
+      }
+    },
+    {
+      "item": "moredelight:chicken_sandwich_with_egg_and_tomato",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "moredelight:chocolate_popsicle",
+      "values": {
+        "grain": 24,
+        "oil": 8,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "moredelight:cooked_rice_with_beef",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "moredelight:cooked_rice_with_chicken_cuts",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "moredelight:cooked_rice_with_porkchop",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "moredelight:creamy_pasta_with_chicken_cuts",
+      "values": {
+        "flesh": 18,
+        "oil": 6
+      }
+    },
+    {
+      "item": "moredelight:creamy_pasta_with_ham",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "moredelight:egg_with_bacon_sandwich",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "moredelight:hamburger_with_cheese",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "moredelight:hamburger_with_egg",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "moredelight:loaded_hamburger",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "moredelight:omelette",
+      "values": {
+        "grain": 8,
+        "oil": 2,
+        "vege": 8
+      }
+    },
+    {
+      "item": "moredelight:porkchop_sandwich",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "moredelight:simple_hamburger",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "moredelight:steak_sandwich",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "moredelight:steak_with_egg_sandwich",
+      "values": {
+        "grain": 20,
+        "flesh": 18,
+        "oil": 8,
+        "vege": 8
+      }
+    },
+    {
+      "item": "moredelight:toast",
+      "values": {
+        "grain": 24,
+        "oil": 6
+      }
+    },
+    {
+      "item": "moredelight:toast_with_blueberries",
+      "values": {
+        "vege": 4,
+        "fruit": 18
+      }
+    },
+    {
+      "item": "moredelight:toast_with_cheese",
+      "values": {
+        "grain": 24,
+        "oil": 6
+      }
+    },
+    {
+      "item": "moredelight:toast_with_chocolate",
+      "values": {
+        "grain": 24,
+        "oil": 8,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "moredelight:toast_with_egg",
+      "values": {
+        "flesh": 30,
+        "oil": 12
+      }
+    },
+    {
+      "item": "moredelight:toast_with_glow_berries",
+      "values": {
+        "vege": 4,
+        "fruit": 18
+      }
+    },
+    {
+      "item": "moredelight:toast_with_honey",
+      "values": {
+        "grain": 24,
+        "oil": 8,
+        "fruit": 12
+      }
+    },
+    {
+      "item": "moredelight:toast_with_peanut_butter",
+      "values": {
+        "grain": 24,
+        "oil": 6
+      }
+    },
+    {
+      "item": "moredelight:toast_with_sweet_berries",
+      "values": {
+        "vege": 4,
+        "fruit": 18
+      }
+    },
+    {
+      "item": "moredelight:tomato_sandwich",
+      "values": {
+        "grain": 20,
+        "oil": 8,
+        "vege": 8
+      }
+    }
+  ]
+}

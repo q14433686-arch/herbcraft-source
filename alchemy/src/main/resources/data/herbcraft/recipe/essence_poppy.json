@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:poppy",
+    "minecraft:poppy",
+    "minecraft:poppy",
+    "minecraft:poppy",
+    "minecraft:poppy",
+    "minecraft:poppy",
+    "minecraft:poppy",
+    "minecraft:poppy",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_poppy",
+    "count": 1
+  }
+}

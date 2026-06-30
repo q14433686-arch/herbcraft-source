@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "rules": [
+    {
+      "kind": "harmful",
+      "when_any": ["minecraft:poison", "minecraft:wither"],
+      "pool": [
+        { "effect": "minecraft:slowness", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:weakness", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:darkness", "duration_seconds": 10, "amplifier": 0 }
+      ]
+    },
+    {
+      "kind": "harmful",
+      "when_any": ["minecraft:blindness", "minecraft:darkness", "minecraft:nausea"],
+      "pool": [
+        { "effect": "minecraft:nausea", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:glowing", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:slowness", "duration_seconds": 10, "amplifier": 0 }
+      ]
+    },
+    {
+      "kind": "harmful",
+      "when_any": ["minecraft:hunger"],
+      "pool": [
+        { "effect": "minecraft:slowness", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:weakness", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:nausea", "duration_seconds": 10, "amplifier": 0 }
+      ]
+    },
+    {
+      "kind": "harmful",
+      "when_any": ["minecraft:weakness", "minecraft:slowness", "minecraft:mining_fatigue"],
+      "pool": [
+        { "effect": "minecraft:mining_fatigue", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:slowness", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:weakness", "duration_seconds": 10, "amplifier": 0 }
+      ]
+    },
+    {
+      "kind": "harmful",
+      "fallback": true,
+      "pool": [
+        { "effect": "minecraft:nausea", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:slowness", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:weakness", "duration_seconds": 10, "amplifier": 0 }
+      ]
+    },
+    {
+      "kind": "beneficial",
+      "when_any": ["minecraft:regeneration", "minecraft:instant_health"],
+      "pool": [
+        { "effect": "minecraft:saturation", "duration_seconds": 5, "amplifier": 0 },
+        { "effect": "minecraft:absorption", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:resistance", "duration_seconds": 10, "amplifier": 0 }
+      ]
+    },
+    {
+      "kind": "beneficial",
+      "when_any": ["minecraft:speed", "minecraft:jump_boost", "minecraft:haste"],
+      "pool": [
+        { "effect": "minecraft:jump_boost", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:speed", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:haste", "duration_seconds": 10, "amplifier": 0 }
+      ]
+    },
+    {
+      "kind": "beneficial",
+      "when_any": ["minecraft:night_vision", "minecraft:fire_resistance", "minecraft:water_breathing", "minecraft:slow_falling"],
+      "pool": [
+        { "effect": "minecraft:night_vision", "duration_seconds": 20, "amplifier": 0 },
+        { "effect": "minecraft:slow_falling", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:water_breathing", "duration_seconds": 15, "amplifier": 0 }
+      ]
+    },
+    {
+      "kind": "beneficial",
+      "when_any": ["minecraft:strength", "minecraft:resistance", "minecraft:absorption"],
+      "pool": [
+        { "effect": "minecraft:strength", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:resistance", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:absorption", "duration_seconds": 10, "amplifier": 0 }
+      ]
+    },
+    {
+      "kind": "beneficial",
+      "fallback": true,
+      "pool": [
+        { "effect": "minecraft:saturation", "duration_seconds": 5, "amplifier": 0 },
+        { "effect": "minecraft:speed", "duration_seconds": 10, "amplifier": 0 },
+        { "effect": "minecraft:resistance", "duration_seconds": 10, "amplifier": 0 }
+      ]
+    }
+  ]
+}

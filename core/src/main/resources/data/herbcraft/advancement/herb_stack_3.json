@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft:first_bite",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft.herb_stack_3.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft.herb_stack_3.description"
+    },
+    "icon": {
+      "id": "minecraft:fern"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:blue_ice",
+    "minecraft:snowball",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_blue_ice_brew",
+    "count": 1
+  }
+}

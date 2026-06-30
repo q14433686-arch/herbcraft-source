@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:golden_dandelion",
+    "minecraft:dandelion",
+    "minecraft:honeycomb"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_golden_dandelion_stew",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "p4_runtime_test:honey_bottle_counter",
+  "items": ["minecraft:honey_bottle"],
+  "window_ticks": 1200,
+  "threshold_effects": [
+    { "min_count": 2, "chance": 1.0, "effect": "minecraft:glowing", "duration_ticks": 100, "amplifier": 0 }
+  ]
+}

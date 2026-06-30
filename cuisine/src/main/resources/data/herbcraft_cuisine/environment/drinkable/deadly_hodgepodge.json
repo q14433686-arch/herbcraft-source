@@ -1,0 +1,8 @@
+{
+  "type": "herbcraft_cuisine:deadly_hodgepodge",
+  "amount": 0,
+  "saturation": 0.0,
+  "effect_potency": 45,
+  "effect_duration": 400,
+  "effect_chance": 0.75
+}

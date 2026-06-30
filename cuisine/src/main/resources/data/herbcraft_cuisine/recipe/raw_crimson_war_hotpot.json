@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:crimson_fungus",
+    "minecraft:resin_clump",
+    "minecraft:blaze_powder"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_crimson_war_hotpot",
+    "count": 1
+  }
+}

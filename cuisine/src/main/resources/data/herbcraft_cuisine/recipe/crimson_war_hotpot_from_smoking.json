@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": "herbcraft_cuisine:raw_crimson_war_hotpot",
+  "result": {
+    "id": "herbcraft_cuisine:crimson_war_hotpot"
+  }
+}

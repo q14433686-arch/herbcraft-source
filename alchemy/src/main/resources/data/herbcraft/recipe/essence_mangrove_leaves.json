@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:mangrove_leaves",
+    "minecraft:mangrove_leaves",
+    "minecraft:mangrove_leaves",
+    "minecraft:mangrove_leaves",
+    "minecraft:mangrove_leaves",
+    "minecraft:mangrove_leaves",
+    "minecraft:mangrove_leaves",
+    "minecraft:mangrove_leaves",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_mangrove_leaves",
+    "count": 1
+  }
+}

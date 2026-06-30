@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "item": "minecraft:honey_bottle",
+  "values": {
+    "fruit": 8,
+    "vege": 2
+  }
+}

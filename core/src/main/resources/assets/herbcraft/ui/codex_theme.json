@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "_comment": "Codex UI theme. Resource packs can override this file to restyle the Herb Codex.",
+  "overlay": {
+    "color": "0x80000000"
+  },
+  "book": {
+    "min_width": 320,
+    "max_width": 520,
+    "min_height": 210,
+    "max_height": 330,
+    "screen_margin": 32,
+    "background_color": "0x90181818",
+    "header_color": "0xA0183018",
+    "header_height": 20,
+    "use_background_texture": true,
+    "background_texture": "herbcraft:textures/gui/codex_background.png",
+    "use_header_texture": true,
+    "header_texture": "herbcraft:textures/gui/codex_header.png",
+    "use_corner_textures": true,
+    "corner_texture_tl": "herbcraft:textures/gui/codex_corner_tl.png",
+    "corner_texture_tr": "herbcraft:textures/gui/codex_corner_tr.png",
+    "corner_texture_bl": "herbcraft:textures/gui/codex_corner_bl.png",
+    "corner_texture_br": "herbcraft:textures/gui/codex_corner_br.png",
+    "corner_size": 8
+  },
+  "title": {
+    "color": "0xFF2D5A1E",
+    "bold": true,
+    "offset_x": 8,
+    "offset_y": 5
+  },
+  "completion_badge": {
+    "enabled": true,
+    "position": "header_right",
+    "format": "%d / %d",
+    "color": "0xFF6B4E2A",
+    "margin_right": 8
+  },
+  "left_panel": {
+    "width_ratio": 0.34,
+    "min_width": 130,
+    "max_width": 190,
+    "min_right_space": 150,
+    "fallback_min_width": 96,
+    "background_color": "0xA0101010",
+    "use_background_texture": true,
+    "background_texture": "herbcraft:textures/gui/codex_left_panel.png",
+    "row_height": 12,
+    "indent_px": 9,
+    "padding": 8,
+    "text_padding_left": 8,
+    "text_color": "0xFF3B2A1A",
+    "selected_color": "0x60A08050",
+    "hover_color": "0x40D0C0A0",
+    "expand_arrow": "▶",
+    "collapse_arrow": "▼",
+    "arrow_style": "DARK_GREEN",
+    "show_entry_icons": true,
+    "entry_icon_size": 8,
+    "chapter_style": "GOLD",
+    "section_style": "YELLOW",
+    "section_count_style": "DARK_GRAY",
+    "entry_unknown_style": "DARK_GRAY",
+    "entry_tasted_style": "GRAY",
+    "entry_practiced_style": "WHITE",
+    "entry_mastered_style": "GREEN",
+    "chapter_color": "0xFF7A4A1A",
+    "section_color": "0xFF6B5A2A",
+    "section_count_color": "0xFF8B7B5B",
+    "entry_unknown_color": "0xFF9B8B6B",
+    "entry_tasted_color": "0xFF5A4A3A",
+    "entry_practiced_color": "0xFF4A3A2A",
+    "entry_mastered_color": "0xFF2B6B1B",
+    "arrow_color": "0xFF3B6B2B"
+  },
+  "divider": {
+    "color": "0xD0D0D0D0",
+    "width": 4,
+    "use_texture": true,
+    "texture": "herbcraft:textures/gui/codex_divider.png"
+  },
+  "right_panel": {
+    "padding": 8,
+    "line_height": 10,
+    "title_max_lines": 2,
+    "title_bold": true,
+    "title_color": "0xFF2A1A0A",
+    "state_mastered_color": "0xFF1B5B0B",
+    "state_other_color": "0xFF7A5A1A",
+    "separator_color": "0xFF8B6914",
+    "separator_height": 1,
+    "separator_margin_top": 3,
+    "separator_margin_bottom": 6,
+    "hint_color": "0xFF6B5A3A",
+    "unrecorded_color": "0xFF8B7B5B",
+    "show_entry_item_icon": true,
+    "entry_item_icon_size": 16,
+    "entry_item_icon_offset_x": 0,
+    "entry_item_icon_offset_y": -4,
+    "text_color": "0xFF3B2A1A"
+  },
+  "nature_tags": {
+    "enabled": true,
+    "tag_height": 10,
+    "tag_padding_h": 3,
+    "tag_padding_v": 1,
+    "tag_spacing": 2,
+    "tag_corner_radius": 0,
+    "tag_colors": {
+      "sweet": "0xFFFFB6C1",
+      "bitter": "0xFF8B6914",
+      "pungent": "0xFFFF6347",
+      "sour": "0xFFCCCC00",
+      "salty": "0xFF6BA3BE",
+      "astringent": "0xFFA0A0A0",
+      "bland": "0xFF707070"
+    },
+    "temperature_colors": {
+      "cold": "0xFF4488CC",
+      "cool": "0xFF88BBDD",
+      "neutral": "0xFFAAAAAA",
+      "warm": "0xFFDD9944",
+      "hot": "0xFFCC4422"
+    }
+  },
+  "claim_hitbox": {
+    "extend_to_full_width": true,
+    "min_height": 12,
+    "verified_prefix": "✓",
+    "suspicious_prefix": "✕",
+    "neutral_prefix": "○",
+    "verified_color": "0xFF55FF55",
+    "suspicious_color": "0xFFFF5555",
+    "neutral_color": "0xFFAAAAAA"
+  },
+  "scrollbar": {
+    "enabled": true,
+    "width": 4,
+    "track_color": "0x30705030",
+    "thumb_color": "0xB08A764C",
+    "thumb_min_height": 12,
+    "margin_right": 1,
+    "use_texture": true,
+    "track_texture": "herbcraft:textures/gui/codex_scrollbar_track.png",
+    "thumb_texture": "herbcraft:textures/gui/codex_scrollbar_thumb.png"
+  },
+  "breadcrumb": {
+    "enabled": false,
+    "height": 12,
+    "separator": " › ",
+    "color": "0xFF888888",
+    "active_color": "0xFF55FF55",
+    "padding_left": 8
+  },
+  "back_button": {
+    "enabled": false,
+    "text_key": "book.herbcraft.codex.back",
+    "color": "0xFF55FF55",
+    "hover_color": "0xFF88FF88",
+    "padding_left": 4,
+    "padding_top": 4,
+    "width": 40,
+    "height": 12
+  },
+  "search": {
+    "enabled": false,
+    "height": 14,
+    "background_color": "0xC0000000",
+    "border_color": "0xFF555555",
+    "text_color": "0xFFFFFFFF",
+    "placeholder_key": "book.herbcraft.codex.search",
+    "placeholder_color": "0xFF666666"
+  },
+  "text": {
+    "shadow": false
+  }
+}

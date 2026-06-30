@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:spruce_leaves",
+    "minecraft:spruce_leaves",
+    "minecraft:spruce_leaves",
+    "minecraft:spruce_leaves",
+    "minecraft:spruce_leaves",
+    "minecraft:spruce_leaves",
+    "minecraft:spruce_leaves",
+    "minecraft:spruce_leaves",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_spruce_leaves",
+    "count": 1
+  }
+}

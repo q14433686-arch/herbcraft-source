@@ -1,0 +1,18 @@
+{
+  "wants": {
+    "id": "minecraft:potion",
+    "count": 1,
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "herbcraft:wither_rose_murky"
+      }
+    }
+  },
+  "gives": {
+    "id": "minecraft:emerald",
+    "count": 24
+  },
+  "max_uses": 4.0,
+  "reputation_discount": 0.05,
+  "xp": 30.0
+}

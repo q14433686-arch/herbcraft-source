@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "herbcraft_cuisine:item/pine_needle_soup"
+  }
+}

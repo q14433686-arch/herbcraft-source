@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:spore_blossom",
+    "minecraft:spore_blossom",
+    "minecraft:spore_blossom",
+    "minecraft:spore_blossom",
+    "minecraft:spore_blossom",
+    "minecraft:spore_blossom",
+    "minecraft:spore_blossom",
+    "minecraft:spore_blossom",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_spore_blossom",
+    "count": 1
+  }
+}

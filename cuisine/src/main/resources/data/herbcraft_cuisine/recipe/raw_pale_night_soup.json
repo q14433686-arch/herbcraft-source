@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:pale_oak_leaves",
+    "minecraft:open_eyeblossom",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_pale_night_soup",
+    "count": 1
+  }
+}

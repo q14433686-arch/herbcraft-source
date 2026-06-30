@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:azalea_leaves",
+    "minecraft:azalea_leaves",
+    "minecraft:azalea_leaves",
+    "minecraft:azalea_leaves",
+    "minecraft:azalea_leaves",
+    "minecraft:azalea_leaves",
+    "minecraft:azalea_leaves",
+    "minecraft:azalea_leaves",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_azalea_leaves",
+    "count": 1
+  }
+}

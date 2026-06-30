@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:honeycomb",
+    "minecraft:pink_petals",
+    "minecraft:oxeye_daisy"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_honeycomb_soothing_stew",
+    "count": 1
+  }
+}

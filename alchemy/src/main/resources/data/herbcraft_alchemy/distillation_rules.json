@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "orientations": [
+    {
+      "id": "purified",
+      "implemented": true,
+      "catalyst": "minecraft:honeycomb",
+      "processing_style_hint": "purified",
+      "lang_key": "tooltip.herbcraft.distilled_essence.orientation.purified",
+      "description_key": "tooltip.herbcraft.distilled_essence.orientation.purified.hint",
+      "color": "9FE6D8"
+    },
+    {
+      "id": "sustained",
+      "implemented": true,
+      "catalyst": "minecraft:redstone",
+      "processing_style_hint": "sustained",
+      "lang_key": "tooltip.herbcraft.distilled_essence.orientation.sustained",
+      "description_key": "tooltip.herbcraft.distilled_essence.orientation.sustained.hint",
+      "color": "D88C30"
+    },
+    {
+      "id": "intense",
+      "implemented": true,
+      "catalyst": "minecraft:glowstone_dust",
+      "processing_style_hint": "intense",
+      "lang_key": "tooltip.herbcraft.distilled_essence.orientation.intense",
+      "description_key": "tooltip.herbcraft.distilled_essence.orientation.intense.hint",
+      "color": "F2C94C"
+    },
+    {
+      "id": "harmonized",
+      "implemented": false,
+      "catalyst": "minecraft:amethyst_shard",
+      "processing_style_hint": "harmonized",
+      "lang_key": "tooltip.herbcraft.distilled_essence.orientation.harmonized",
+      "description_key": "tooltip.herbcraft.distilled_essence.orientation.harmonized.hint",
+      "color": "B69CFF"
+    }
+  ]
+}

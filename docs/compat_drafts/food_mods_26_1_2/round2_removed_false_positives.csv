@@ -1,0 +1,80 @@
+source_mod,item,english_name,reason
+farmersdelight,farmersdelight:apple_pie,,placeable feast/block form; use slice/serving entries where available
+farmersdelight,farmersdelight:chocolate_pie,,placeable feast/block form; use slice/serving entries where available
+farmersdelight,farmersdelight:debug_pumpkin_pie,,debug/admin item
+farmersdelight,farmersdelight:dog_food,Dog Food,animal food; keep out of player Ingredient Codex draft
+farmersdelight,farmersdelight:gleaming_salad_block,,placeable feast/block form; use slice/serving entries where available
+farmersdelight,farmersdelight:honey_glazed_ham_block,,placeable feast/block form; use slice/serving entries where available
+farmersdelight,farmersdelight:rice_bag,,placeable feast/block form; use slice/serving entries where available
+farmersdelight,farmersdelight:rice_roll_medley_block,,placeable feast/block form; use slice/serving entries where available
+farmersdelight,farmersdelight:roast_chicken_block,,placeable feast/block form; use slice/serving entries where available
+farmersdelight,farmersdelight:shepherds_pie_block,,placeable feast/block form; use slice/serving entries where available
+farmersdelight,farmersdelight:stuffed_pumpkin_block,,placeable feast/block form; use slice/serving entries where available
+farmersdelight,farmersdelight:sweet_berry_cheesecake,,placeable feast/block form; use slice/serving entries where available
+farmersdelight,farmersdelight:wild_cabbages,,"wild crop block, not player food item"
+farmersdelight,farmersdelight:wild_carrots,,"wild crop block, not player food item"
+farmersdelight,farmersdelight:wild_onions,,"wild crop block, not player food item"
+farmersdelight,farmersdelight:wild_rice,,"wild crop block, not player food item"
+farmersdelight,farmersdelight:wild_tomatoes,,"wild crop block, not player food item"
+rmf,rmf:cake.five_bites,Bites: 5 / 7,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:cake.four_bites,Bites: 4 / 7,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:cake.one_bite,Bites: 1 / 7,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:cake.six_bites,Bites: 6 / 7,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:cake.three_bites,Bites: 3 / 7,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:cake.two_bites,Bites: 2 / 7,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:cake_five_bites,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:cake_four_bites,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:cake_one_bite,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:cake_six_bites,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:cake_three_bites,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:cake_two_bites,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:cat_food,Bowl of Cat Food,animal food; keep out of player Ingredient Codex draft
+rmf,rmf:cooked_ham_eating,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:dog_food,Bowl of Dog Food,animal food; keep out of player Ingredient Codex draft
+rmf,rmf:double_glazed_fritter.desc,These are NOT safe for human consumption.,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:dough_shapeless,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:enchanted_golden_apple_juice.desc,You have to admit this is a bit overkill.,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:glow_glass_item_frame,Glowing Glass Item Frame,decorative/non-food item
+rmf,rmf:half_marshmallow_sandwich,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:honeycomb_candy,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:honeyed_apple,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:juicer_open,,"model/UI/container state item, not directly edible"
+rmf,rmf:marshmallow_sandwich.help,This Marshmallow Sandwich is missing a Wheat Cracker.,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:milk_bottle,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:mixing_bowl,Mixing Bowl,tool/container/decor/storage item
+rmf,rmf:mixing_bowl.contents_banana_mash,Banana Mash,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_berries,Berries,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_bread,Bread,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_dough,Dough,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_dragon_fruit,Dragon Fruit,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_egg,Egg,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_flour,Flour,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_glow_berry_jam,Glow Berry Jam,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_glow_berry_mash,Glow Berry Mash,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_lemon_juice,Lemon Juice,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_milk,Milk,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_orange,Orange,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_pale_apple,Pale Apple,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_peach,Peach,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_peanut,Peanuts,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_salt,Salt,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_seasoning,Seasoning,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_sweet_berry_jam,Sweet Berry Jam,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_sweet_berry_mash,Sweet Berry Mash,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:mixing_bowl.contents_taiga_beans,Taiga Beans,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:monster_mash.desc1,This looks AND smells awful.,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:monster_mash.desc2,Nothing good can come from eating this.,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:monster_puree.desc1,This blend of monster bits and pieces,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:oblivian_stew.desc1,A stew created by the love of a community.,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:oblivian_stew.desc2,Tastes like... sugar?,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:ominous_cookie.desc1,This cookie comes from a Darker Plane...,"pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:ominous_cookie.desc2,"...Suddenly, you don't feel hungry anymore.","pseudo/localization subkey, not a stable item id for compat data"
+rmf,rmf:smoothie_banana,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:smoothie_blackberry,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:smoothie_blueberry,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:smoothie_dragon_fruit,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:smoothie_mango,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:smoothie_melon,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:smoothie_peach,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:smoothie_raspberry,,model-only/blank English name in audit; needs manual confirmation before inclusion
+rmf,rmf:smoothie_strawberry,,model-only/blank English name in audit; needs manual confirmation before inclusion

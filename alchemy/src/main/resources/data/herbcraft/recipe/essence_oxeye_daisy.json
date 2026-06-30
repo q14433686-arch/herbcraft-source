@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:oxeye_daisy",
+    "minecraft:oxeye_daisy",
+    "minecraft:oxeye_daisy",
+    "minecraft:oxeye_daisy",
+    "minecraft:oxeye_daisy",
+    "minecraft:oxeye_daisy",
+    "minecraft:oxeye_daisy",
+    "minecraft:oxeye_daisy",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_oxeye_daisy",
+    "count": 1
+  }
+}

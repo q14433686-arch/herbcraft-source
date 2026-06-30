@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "herbcraft:weaponsmith/5/wither_rose_essence_blank_adhesive_emerald",
+    "herbcraft:weaponsmith/5/wither_rose_murky_emerald",
+    "herbcraft:weaponsmith/5/emerald_wither_rose_coated_diamond_sword",
+    "herbcraft:weaponsmith/5/emerald_wither_rose_coated_diamond_axe"
+  ]
+}

@@ -1,0 +1,776 @@
+mod,item,english_name,source_key,food_candidate
+farmersdelight,farmersdelight:acacia_cabinet,,model,False
+farmersdelight,farmersdelight:apple_cider,Apple Cider,item.farmersdelight.apple_cider,True
+farmersdelight,farmersdelight:apple_pie,,model,True
+farmersdelight,farmersdelight:apple_pie_slice,Slice of Apple Pie,item.farmersdelight.apple_pie_slice,True
+farmersdelight,farmersdelight:bacon,Raw Bacon,item.farmersdelight.bacon,True
+farmersdelight,farmersdelight:bacon_and_eggs,Bacon and Eggs,item.farmersdelight.bacon_and_eggs,True
+farmersdelight,farmersdelight:bacon_sandwich,Bacon Sandwich,item.farmersdelight.bacon_sandwich,True
+farmersdelight,farmersdelight:baked_cod_stew,Baked Cod Stew,item.farmersdelight.baked_cod_stew,True
+farmersdelight,farmersdelight:bamboo_basket,,model,False
+farmersdelight,farmersdelight:bamboo_cabinet,,model,False
+farmersdelight,farmersdelight:barbecue_stick,Barbecue on a Stick,item.farmersdelight.barbecue_stick,True
+farmersdelight,farmersdelight:beef_patty,Beef Patty,item.farmersdelight.beef_patty,True
+farmersdelight,farmersdelight:beef_stew,Beef Stew,item.farmersdelight.beef_stew,True
+farmersdelight,farmersdelight:beetroot_crate,,model,False
+farmersdelight,farmersdelight:birch_cabinet,,model,False
+farmersdelight,farmersdelight:black_canvas_sign,,model,False
+farmersdelight,farmersdelight:black_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:blue_canvas_sign,,model,False
+farmersdelight,farmersdelight:blue_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:bone_broth,Bone Broth,item.farmersdelight.bone_broth,True
+farmersdelight,farmersdelight:brown_canvas_sign,,model,False
+farmersdelight,farmersdelight:brown_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:brown_mushroom_colony,,model,False
+farmersdelight,farmersdelight:cabbage,Cabbage,item.farmersdelight.cabbage,True
+farmersdelight,farmersdelight:cabbage_crate,,model,False
+farmersdelight,farmersdelight:cabbage_leaf,Cabbage Leaf,item.farmersdelight.cabbage_leaf,True
+farmersdelight,farmersdelight:cabbage_rolls,Cabbage Rolls,item.farmersdelight.cabbage_rolls,True
+farmersdelight,farmersdelight:cabbage_seeds,Cabbage Seeds,item.farmersdelight.cabbage_seeds,True
+farmersdelight,farmersdelight:cake_slice,Slice of Cake,item.farmersdelight.cake_slice,True
+farmersdelight,farmersdelight:canvas,Canvas,item.farmersdelight.canvas,False
+farmersdelight,farmersdelight:canvas_rug,,model,False
+farmersdelight,farmersdelight:canvas_sign,,model,False
+farmersdelight,farmersdelight:carrot_crate,,model,False
+farmersdelight,farmersdelight:cherry_cabinet,,model,False
+farmersdelight,farmersdelight:chicken_cuts,Raw Chicken Cuts,item.farmersdelight.chicken_cuts,True
+farmersdelight,farmersdelight:chicken_sandwich,Chicken Sandwich,item.farmersdelight.chicken_sandwich,True
+farmersdelight,farmersdelight:chicken_soup,Chicken Soup,item.farmersdelight.chicken_soup,True
+farmersdelight,farmersdelight:chocolate_pie,,model,True
+farmersdelight,farmersdelight:chocolate_pie_slice,Slice of Chocolate Pie,item.farmersdelight.chocolate_pie_slice,True
+farmersdelight,farmersdelight:cod_roll,Cod Roll,item.farmersdelight.cod_roll,True
+farmersdelight,farmersdelight:cod_slice,Raw Cod Slice,item.farmersdelight.cod_slice,True
+farmersdelight,farmersdelight:cooked_bacon,Cooked Bacon,item.farmersdelight.cooked_bacon,True
+farmersdelight,farmersdelight:cooked_chicken_cuts,Cooked Chicken Cuts,item.farmersdelight.cooked_chicken_cuts,True
+farmersdelight,farmersdelight:cooked_cod_slice,Cooked Cod Slice,item.farmersdelight.cooked_cod_slice,True
+farmersdelight,farmersdelight:cooked_mutton_chops,Cooked Mutton Chops,item.farmersdelight.cooked_mutton_chops,True
+farmersdelight,farmersdelight:cooked_rice,Cooked Rice,item.farmersdelight.cooked_rice,True
+farmersdelight,farmersdelight:cooked_salmon_slice,Cooked Salmon Slice,item.farmersdelight.cooked_salmon_slice,True
+farmersdelight,farmersdelight:cooking_pot,,model,False
+farmersdelight,farmersdelight:copper_knife,Copper Knife,item.farmersdelight.copper_knife,False
+farmersdelight,farmersdelight:crimson_cabinet,,model,False
+farmersdelight,farmersdelight:cutting_board,,model,False
+farmersdelight,farmersdelight:cyan_canvas_sign,,model,False
+farmersdelight,farmersdelight:cyan_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:dark_oak_cabinet,,model,False
+farmersdelight,farmersdelight:debug_pumpkin_pie,,model,True
+farmersdelight,farmersdelight:diamond_knife,Diamond Knife,item.farmersdelight.diamond_knife,False
+farmersdelight,farmersdelight:dog_food,Dog Food,item.farmersdelight.dog_food,True
+farmersdelight,farmersdelight:dumplings,Dumplings,item.farmersdelight.dumplings,True
+farmersdelight,farmersdelight:earthworm,Earthworm,item.farmersdelight.earthworm,False
+farmersdelight,farmersdelight:egg_sandwich,Egg Sandwich,item.farmersdelight.egg_sandwich,True
+farmersdelight,farmersdelight:fish_stew,Fish Stew,item.farmersdelight.fish_stew,True
+farmersdelight,farmersdelight:flint_knife,Flint Knife,item.farmersdelight.flint_knife,False
+farmersdelight,farmersdelight:fried_egg,Fried Egg,item.farmersdelight.fried_egg,True
+farmersdelight,farmersdelight:fried_rice,Fried Rice,item.farmersdelight.fried_rice,True
+farmersdelight,farmersdelight:fruit_salad,Fruit Salad,item.farmersdelight.fruit_salad,True
+farmersdelight,farmersdelight:full_tatami_mat,,model,False
+farmersdelight,farmersdelight:gleaming_salad,Bowl of Gleaming Salad,item.farmersdelight.gleaming_salad,True
+farmersdelight,farmersdelight:gleaming_salad_block,,model,True
+farmersdelight,farmersdelight:glow_berry_custard,Glow Berry Custard,item.farmersdelight.glow_berry_custard,True
+farmersdelight,farmersdelight:golden_knife,Golden Knife,item.farmersdelight.golden_knife,False
+farmersdelight,farmersdelight:gray_canvas_sign,,model,False
+farmersdelight,farmersdelight:gray_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:green_canvas_sign,,model,False
+farmersdelight,farmersdelight:green_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:grilled_salmon,Grilled Salmon,item.farmersdelight.grilled_salmon,True
+farmersdelight,farmersdelight:half_tatami_mat,,model,False
+farmersdelight,farmersdelight:ham,Ham,item.farmersdelight.ham,True
+farmersdelight,farmersdelight:hamburger,Hamburger,item.farmersdelight.hamburger,True
+farmersdelight,farmersdelight:hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:honey_cookie,Honey Cookie,item.farmersdelight.honey_cookie,True
+farmersdelight,farmersdelight:honey_glazed_ham,Plate of Honey Glazed Ham,item.farmersdelight.honey_glazed_ham,True
+farmersdelight,farmersdelight:honey_glazed_ham_block,,model,True
+farmersdelight,farmersdelight:horse_feed,Horse Feed,item.farmersdelight.horse_feed,False
+farmersdelight,farmersdelight:hot_cocoa,Hot Cocoa,item.farmersdelight.hot_cocoa,True
+farmersdelight,farmersdelight:iron_knife,Iron Knife,item.farmersdelight.iron_knife,False
+farmersdelight,farmersdelight:jungle_cabinet,,model,False
+farmersdelight,farmersdelight:kelp_roll,Kelp Roll,item.farmersdelight.kelp_roll,True
+farmersdelight,farmersdelight:kelp_roll_slice,Kelp Roll Slice,item.farmersdelight.kelp_roll_slice,True
+farmersdelight,farmersdelight:light_blue_canvas_sign,,model,False
+farmersdelight,farmersdelight:light_blue_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:light_gray_canvas_sign,,model,False
+farmersdelight,farmersdelight:light_gray_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:lime_canvas_sign,,model,False
+farmersdelight,farmersdelight:lime_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:magenta_canvas_sign,,model,False
+farmersdelight,farmersdelight:magenta_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:mangrove_cabinet,,model,False
+farmersdelight,farmersdelight:melon_juice,Melon Juice,item.farmersdelight.melon_juice,True
+farmersdelight,farmersdelight:melon_popsicle,Melon Popsicle,item.farmersdelight.melon_popsicle,True
+farmersdelight,farmersdelight:milk_bottle,Milk Bottle,item.farmersdelight.milk_bottle,True
+farmersdelight,farmersdelight:minced_beef,Minced Beef,item.farmersdelight.minced_beef,True
+farmersdelight,farmersdelight:mixed_salad,Mixed Salad,item.farmersdelight.mixed_salad,True
+farmersdelight,farmersdelight:mug,,model,False
+farmersdelight,farmersdelight:mushroom_rice,Mushroom Rice,item.farmersdelight.mushroom_rice,True
+farmersdelight,farmersdelight:mutton_chops,Raw Mutton Chops,item.farmersdelight.mutton_chops,True
+farmersdelight,farmersdelight:mutton_wrap,Mutton Wrap,item.farmersdelight.mutton_wrap,True
+farmersdelight,farmersdelight:nether_salad,Nether Salad,item.farmersdelight.nether_salad,False
+farmersdelight,farmersdelight:netherite_knife,Netherite Knife,item.farmersdelight.netherite_knife,False
+farmersdelight,farmersdelight:noodle_soup,Noodle Soup,item.farmersdelight.noodle_soup,True
+farmersdelight,farmersdelight:oak_cabinet,,model,False
+farmersdelight,farmersdelight:onion,Onion,item.farmersdelight.onion,True
+farmersdelight,farmersdelight:onion_crate,,model,False
+farmersdelight,farmersdelight:onion_soup,Onion Soup,item.farmersdelight.onion_soup,True
+farmersdelight,farmersdelight:orange_canvas_sign,,model,False
+farmersdelight,farmersdelight:orange_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:organic_compost,,model,False
+farmersdelight,farmersdelight:pasta_with_meatballs,Pasta with Meatballs,item.farmersdelight.pasta_with_meatballs,True
+farmersdelight,farmersdelight:pasta_with_mutton_chop,Pasta with Mutton Chop,item.farmersdelight.pasta_with_mutton_chop,True
+farmersdelight,farmersdelight:pie_crust,Pie Crust,item.farmersdelight.pie_crust,True
+farmersdelight,farmersdelight:pink_canvas_sign,,model,False
+farmersdelight,farmersdelight:pink_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:potato_crate,,model,False
+farmersdelight,farmersdelight:pumpkin_pie_slice,Slice of Pumpkin Pie,item.farmersdelight.pumpkin_pie_slice,True
+farmersdelight,farmersdelight:pumpkin_slice,Pumpkin Slice,item.farmersdelight.pumpkin_slice,True
+farmersdelight,farmersdelight:pumpkin_soup,Pumpkin Soup,item.farmersdelight.pumpkin_soup,True
+farmersdelight,farmersdelight:purple_canvas_sign,,model,False
+farmersdelight,farmersdelight:purple_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:ratatouille,Ratatouille,item.farmersdelight.ratatouille,True
+farmersdelight,farmersdelight:raw_pasta,Raw Pasta,item.farmersdelight.raw_pasta,True
+farmersdelight,farmersdelight:red_canvas_sign,,model,False
+farmersdelight,farmersdelight:red_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:red_mushroom_colony,,model,False
+farmersdelight,farmersdelight:rice,Rice,item.farmersdelight.rice,True
+farmersdelight,farmersdelight:rice_bag,,model,True
+farmersdelight,farmersdelight:rice_bale,,model,False
+farmersdelight,farmersdelight:rice_panicle,Rice Panicle,item.farmersdelight.rice_panicle,False
+farmersdelight,farmersdelight:rice_roll_medley_block,,model,True
+farmersdelight,farmersdelight:rich_soil,,model,False
+farmersdelight,farmersdelight:rich_soil_farmland,,model,False
+farmersdelight,farmersdelight:roast_chicken,Plate of Roast Chicken,item.farmersdelight.roast_chicken,True
+farmersdelight,farmersdelight:roast_chicken_block,,model,True
+farmersdelight,farmersdelight:roasted_mutton_chops,Roasted Mutton Chops,item.farmersdelight.roasted_mutton_chops,True
+farmersdelight,farmersdelight:rope,,model,False
+farmersdelight,farmersdelight:rope_fence,,model,False
+farmersdelight,farmersdelight:rope_fence_gate,,model,False
+farmersdelight,farmersdelight:rotten_tomato,Rotten Tomato,item.farmersdelight.rotten_tomato,True
+farmersdelight,farmersdelight:safety_net,,model,False
+farmersdelight,farmersdelight:salmon_roll,Salmon Roll,item.farmersdelight.salmon_roll,True
+farmersdelight,farmersdelight:salmon_slice,Raw Salmon Slice,item.farmersdelight.salmon_slice,True
+farmersdelight,farmersdelight:sandy_shrub,,model,False
+farmersdelight,farmersdelight:shepherds_pie,Plate of Shepherd's Pie,item.farmersdelight.shepherds_pie,True
+farmersdelight,farmersdelight:shepherds_pie_block,,model,True
+farmersdelight,farmersdelight:skillet,,model,False
+farmersdelight,farmersdelight:skillet.how_to_cook,Use your other hand to hold ingredients!,item.farmersdelight.skillet.how_to_cook,False
+farmersdelight,farmersdelight:skillet.underwater,Can't cook underwater...,item.farmersdelight.skillet.underwater,False
+farmersdelight,farmersdelight:skillet_cooking,,model,False
+farmersdelight,farmersdelight:smoked_ham,Smoked Ham,item.farmersdelight.smoked_ham,True
+farmersdelight,farmersdelight:spruce_cabinet,,model,False
+farmersdelight,farmersdelight:squid_ink_pasta,Squid Ink Pasta,item.farmersdelight.squid_ink_pasta,True
+farmersdelight,farmersdelight:steak_and_potatoes,Steak and Potatoes,item.farmersdelight.steak_and_potatoes,True
+farmersdelight,farmersdelight:stove,,model,False
+farmersdelight,farmersdelight:straw,Straw,item.farmersdelight.straw,False
+farmersdelight,farmersdelight:straw_bale,,model,False
+farmersdelight,farmersdelight:stuffed_potato,Stuffed Potato,item.farmersdelight.stuffed_potato,True
+farmersdelight,farmersdelight:stuffed_pumpkin,Bowl of Stuffed Pumpkin,item.farmersdelight.stuffed_pumpkin,True
+farmersdelight,farmersdelight:stuffed_pumpkin_block,,model,True
+farmersdelight,farmersdelight:sweet_berry_cheesecake,,model,True
+farmersdelight,farmersdelight:sweet_berry_cheesecake_slice,Slice of Sweet Berry Cheesecake,item.farmersdelight.sweet_berry_cheesecake_slice,True
+farmersdelight,farmersdelight:sweet_berry_cookie,Sweet Berry Cookie,item.farmersdelight.sweet_berry_cookie,True
+farmersdelight,farmersdelight:tatami,,model,False
+farmersdelight,farmersdelight:tomato,Tomato,item.farmersdelight.tomato,True
+farmersdelight,farmersdelight:tomato_crate,,model,False
+farmersdelight,farmersdelight:tomato_sauce,Tomato Sauce,item.farmersdelight.tomato_sauce,True
+farmersdelight,farmersdelight:tomato_seeds,Tomato Seeds,item.farmersdelight.tomato_seeds,True
+farmersdelight,farmersdelight:tree_bark,Tree Bark,item.farmersdelight.tree_bark,False
+farmersdelight,farmersdelight:vegetable_noodles,Vegetable Noodles,item.farmersdelight.vegetable_noodles,True
+farmersdelight,farmersdelight:vegetable_soup,Vegetable Soup,item.farmersdelight.vegetable_soup,True
+farmersdelight,farmersdelight:warped_cabinet,,model,False
+farmersdelight,farmersdelight:wheat_dough,Wheat Dough,item.farmersdelight.wheat_dough,True
+farmersdelight,farmersdelight:white_canvas_sign,,model,False
+farmersdelight,farmersdelight:white_hanging_canvas_sign,,model,False
+farmersdelight,farmersdelight:wild_beetroots,,model,False
+farmersdelight,farmersdelight:wild_cabbages,,model,True
+farmersdelight,farmersdelight:wild_carrots,,model,True
+farmersdelight,farmersdelight:wild_onions,,model,True
+farmersdelight,farmersdelight:wild_potatoes,,model,False
+farmersdelight,farmersdelight:wild_rice,,model,True
+farmersdelight,farmersdelight:wild_tomatoes,,model,True
+farmersdelight,farmersdelight:wooden_basket,,model,False
+farmersdelight,farmersdelight:yellow_canvas_sign,,model,False
+farmersdelight,farmersdelight:yellow_hanging_canvas_sign,,model,False
+moredelight,moredelight:bread_slice,Bread Slice,item.moredelight.bread_slice,True
+moredelight,moredelight:carrot_soup,Carrot Soup,item.moredelight.carrot_soup,True
+moredelight,moredelight:chicken_salad,Chicken Salad,item.moredelight.chicken_salad,True
+moredelight,moredelight:chicken_sandwich_with_egg_and_tomato,Chicken Sandwich with Egg and Tomato,item.moredelight.chicken_sandwich_with_egg_and_tomato,True
+moredelight,moredelight:chocolate_popsicle,Chocolate Popsicle,item.moredelight.chocolate_popsicle,True
+moredelight,moredelight:cooked_rice_with_beef,Cooked Rice with Beef,item.moredelight.cooked_rice_with_beef,True
+moredelight,moredelight:cooked_rice_with_chicken_cuts,Cooked Rice with Chicken Cuts,item.moredelight.cooked_rice_with_chicken_cuts,True
+moredelight,moredelight:cooked_rice_with_porkchop,Cooked Rice with Porkchop,item.moredelight.cooked_rice_with_porkchop,True
+moredelight,moredelight:creamy_pasta_with_chicken_cuts,Creamy Pasta with Chicken Cuts,item.moredelight.creamy_pasta_with_chicken_cuts,True
+moredelight,moredelight:creamy_pasta_with_ham,Creamy Pasta with Ham,item.moredelight.creamy_pasta_with_ham,True
+moredelight,moredelight:diced_potatoes,Diced Potatoes,item.moredelight.diced_potatoes,False
+moredelight,moredelight:diced_potatoes_with_beef,Diced Potatoes with Beef,item.moredelight.diced_potatoes_with_beef,False
+moredelight,moredelight:diced_potatoes_with_chicken_cuts,Diced Potatoes with Chicken Cuts,item.moredelight.diced_potatoes_with_chicken_cuts,False
+moredelight,moredelight:diced_potatoes_with_egg_and_tomato,Diced Potatoes with Egg and Tomato,item.moredelight.diced_potatoes_with_egg_and_tomato,False
+moredelight,moredelight:diced_potatoes_with_porkchop,Diced Potatoes with Porkchop,item.moredelight.diced_potatoes_with_porkchop,False
+moredelight,moredelight:egg_with_bacon_sandwich,Egg with Bacon Sandwich,item.moredelight.egg_with_bacon_sandwich,True
+moredelight,moredelight:hamburger_with_cheese,Hamburger with Cheese,item.moredelight.hamburger_with_cheese,True
+moredelight,moredelight:hamburger_with_egg,Hamburger with Egg,item.moredelight.hamburger_with_egg,True
+moredelight,moredelight:loaded_hamburger,Loaded Hamburger,item.moredelight.loaded_hamburger,True
+moredelight,moredelight:mashed_potatoes,Mashed Potatoes,item.moredelight.mashed_potatoes,False
+moredelight,moredelight:omelette,Omelet,item.moredelight.omelette,True
+moredelight,moredelight:porkchop_sandwich,Porkchop Sandwich,item.moredelight.porkchop_sandwich,True
+moredelight,moredelight:potato_salad,Potato Salad,item.moredelight.potato_salad,False
+moredelight,moredelight:simple_hamburger,Simple Hamburger,item.moredelight.simple_hamburger,True
+moredelight,moredelight:steak_sandwich,Steak Sandwich,item.moredelight.steak_sandwich,True
+moredelight,moredelight:steak_with_egg_sandwich,Steak with Egg Sandwich,item.moredelight.steak_with_egg_sandwich,True
+moredelight,moredelight:stone_knife,Stone Knife,item.moredelight.stone_knife,False
+moredelight,moredelight:toast,Toast,item.moredelight.toast,True
+moredelight,moredelight:toast_with_blueberries,Toast with Blueberries,item.moredelight.toast_with_blueberries,True
+moredelight,moredelight:toast_with_cheese,Toast with Cheese,item.moredelight.toast_with_cheese,True
+moredelight,moredelight:toast_with_chocolate,Toast with Chocolate,item.moredelight.toast_with_chocolate,True
+moredelight,moredelight:toast_with_egg,Toast with Egg,item.moredelight.toast_with_egg,True
+moredelight,moredelight:toast_with_glow_berries,Toast with Glow Berries,item.moredelight.toast_with_glow_berries,True
+moredelight,moredelight:toast_with_honey,Toast with Honey,item.moredelight.toast_with_honey,True
+moredelight,moredelight:toast_with_peanut_butter,Toast with Peanut Butter,item.moredelight.toast_with_peanut_butter,True
+moredelight,moredelight:toast_with_sweet_berries,Toast with Sweet Berries,item.moredelight.toast_with_sweet_berries,True
+moredelight,moredelight:tomato_sandwich,Tomato Sandwich,item.moredelight.tomato_sandwich,True
+moredelight,moredelight:wooden_knife,Wooden Knife,item.moredelight.wooden_knife,False
+rmf,rmf:admin_tooltip,(Admin Item),item.rmf.admin_tooltip,False
+rmf,rmf:angler_pottery_sherd,Angler Pottery Sherd,item.rmf.angler_pottery_sherd,False
+rmf,rmf:apple_juice,Apple Juice,item.rmf.apple_juice,True
+rmf,rmf:apple_mash,Apple Mash,item.rmf.apple_mash,True
+rmf,rmf:apple_pie,Apple Pie,item.rmf.apple_pie,True
+rmf,rmf:apple_pie_slice,Apple Pie Slice,item.rmf.apple_pie_slice,True
+rmf,rmf:archer_pottery_sherd,Archer Pottery Sherd,item.rmf.archer_pottery_sherd,False
+rmf,rmf:arms_up_pottery_sherd,Arms Up Pottery Sherd,item.rmf.arms_up_pottery_sherd,False
+rmf,rmf:bacon,Raw Bacon,item.rmf.bacon,True
+rmf,rmf:baguette,Baguette,item.rmf.baguette,False
+rmf,rmf:baked_beans,Bowl of Baked Beans,item.rmf.baked_beans,True
+rmf,rmf:baking_pan,Baking Pan,item.rmf.baking_pan,False
+rmf,rmf:baking_pan_cooking,,model,False
+rmf,rmf:baking_pan_inventory,,model,False
+rmf,rmf:baking_pan_model,,model,False
+rmf,rmf:banana,Banana,item.rmf.banana,True
+rmf,rmf:banana_bread,Banana Bread,item.rmf.banana_bread,True
+rmf,rmf:banana_dough,Banana Dough,item.rmf.banana_dough,True
+rmf,rmf:banana_juice,Banana Juice,item.rmf.banana_juice,True
+rmf,rmf:banana_mash,Banana Mash,item.rmf.banana_mash,True
+rmf,rmf:banana_smoothie,Banana Smoothie,item.rmf.banana_smoothie,True
+rmf,rmf:beef_burger,Beef Burger,item.rmf.beef_burger,True
+rmf,rmf:berry_bowl,Berry Medley,item.rmf.berry_bowl,True
+rmf,rmf:berry_cookie,Berry Cookie,item.rmf.berry_cookie,True
+rmf,rmf:biomash,Biomash,item.rmf.biomash,True
+rmf,rmf:biomass,Biomass,item.rmf.biomass,False
+rmf,rmf:blackberry,Blackberry,item.rmf.blackberry,True
+rmf,rmf:blackberry_mash,Blackberry Mash,item.rmf.blackberry_mash,True
+rmf,rmf:blackberry_smoothie,Blackberry Smoothie,item.rmf.blackberry_smoothie,True
+rmf,rmf:blazing_stew,Blazing Stew,item.rmf.blazing_stew,True
+rmf,rmf:blueberry,Blueberry,item.rmf.blueberry,True
+rmf,rmf:blueberry_mash,Blueberry Mash,item.rmf.blueberry_mash,True
+rmf,rmf:blueberry_smoothie,Blueberry Smoothie,item.rmf.blueberry_smoothie,True
+rmf,rmf:bordure_indented_banner_pattern,Bordure Indented Banner Pattern,item.rmf.bordure_indented_banner_pattern,False
+rmf,rmf:brewer_pottery_sherd,Brewer Pottery Sherd,item.rmf.brewer_pottery_sherd,False
+rmf,rmf:brownie,Brownie,item.rmf.brownie,False
+rmf,rmf:burn_pottery_sherd,Burn Pottery Sherd,item.rmf.burn_pottery_sherd,False
+rmf,rmf:burned_marshmallow_stick,Burned Marshmallow on a Stick,item.rmf.burned_marshmallow_stick,False
+rmf,rmf:burrito,Burrito,item.rmf.burrito,False
+rmf,rmf:cactus_fruit,Prickly Pear,item.rmf.cactus_fruit,False
+rmf,rmf:cactus_juice,Cactus Fruit Juice,item.rmf.cactus_juice,True
+rmf,rmf:cake.five_bites,Bites: 5 / 7,item.rmf.cake.five_bites,True
+rmf,rmf:cake.four_bites,Bites: 4 / 7,item.rmf.cake.four_bites,True
+rmf,rmf:cake.one_bite,Bites: 1 / 7,item.rmf.cake.one_bite,True
+rmf,rmf:cake.six_bites,Bites: 6 / 7,item.rmf.cake.six_bites,True
+rmf,rmf:cake.three_bites,Bites: 3 / 7,item.rmf.cake.three_bites,True
+rmf,rmf:cake.two_bites,Bites: 2 / 7,item.rmf.cake.two_bites,True
+rmf,rmf:cake_five_bites,,model,True
+rmf,rmf:cake_four_bites,,model,True
+rmf,rmf:cake_one_bite,,model,True
+rmf,rmf:cake_six_bites,,model,True
+rmf,rmf:cake_slice,Slice of Cake,item.rmf.cake_slice,True
+rmf,rmf:cake_three_bites,,model,True
+rmf,rmf:cake_two_bites,,model,True
+rmf,rmf:carrot_cake,Carrot Cake,item.rmf.carrot_cake,True
+rmf,rmf:carrot_cake_model,,model,False
+rmf,rmf:cat_food,Bowl of Cat Food,item.rmf.cat_food,True
+rmf,rmf:cereal,Bowl of Cereal,item.rmf.cereal,True
+rmf,rmf:charged_lemonade,Charged Lemonade,item.rmf.charged_lemonade,False
+rmf,rmf:charged_lemonade.desc,Now with 400mg of Caffeine!,item.rmf.charged_lemonade.desc,False
+rmf,rmf:cheese,Cheese,item.rmf.cheese,True
+rmf,rmf:cheese_pizza_slice,Cheese Pizza Slice,item.rmf.cheese_pizza_slice,True
+rmf,rmf:cheese_sandwich,Grilled(?) Cheese Sandwich,item.rmf.cheese_sandwich,True
+rmf,rmf:cheeseburger,Cheeseburger,item.rmf.cheeseburger,True
+rmf,rmf:cheesecake,Cheesecake,item.rmf.cheesecake,True
+rmf,rmf:cheesecake_model,,model,False
+rmf,rmf:chef_apron,Chef's Apron,item.rmf.chef_apron,False
+rmf,rmf:chef_hat,Chef's Hat,item.rmf.chef_hat,False
+rmf,rmf:chicken_burger,Chicken Burger,item.rmf.chicken_burger,True
+rmf,rmf:chicken_parmesan,Bowl of Chicken Parmesan,item.rmf.chicken_parmesan,True
+rmf,rmf:chicken_soup,Chicken Noodle Soup,item.rmf.chicken_soup,True
+rmf,rmf:chicken_wing,Raw Chicken Wing,item.rmf.chicken_wing,True
+rmf,rmf:chocolate_bar_dark,Bar of Dark Chocolate,item.rmf.chocolate_bar_dark,True
+rmf,rmf:chocolate_bar_milk,Bar of Milk Chocolate,item.rmf.chocolate_bar_milk,True
+rmf,rmf:chocolate_bar_white,Bar of White Chocolate,item.rmf.chocolate_bar_white,True
+rmf,rmf:chocolate_cake,Chocolate Cake,item.rmf.chocolate_cake,True
+rmf,rmf:chocolate_cake_model,,model,False
+rmf,rmf:chocolate_cake_slice,Slice of Chocolate Cake,item.rmf.chocolate_cake_slice,True
+rmf,rmf:chocolate_cupcake,Chocolate Cupcake,item.rmf.chocolate_cupcake,False
+rmf,rmf:chocolate_ice_cream,Chocolate Ice Cream,item.rmf.chocolate_ice_cream,True
+rmf,rmf:chocolate_milk,Chocolate Milk,item.rmf.chocolate_milk,True
+rmf,rmf:churro,Churro,item.rmf.churro,False
+rmf,rmf:churro_one_bite,,model,False
+rmf,rmf:churro_two_bites,,model,False
+rmf,rmf:cinnamon_bun,,model,False
+rmf,rmf:cleaver,Cleaver,item.rmf.cleaver,False
+rmf,rmf:cleaver_inv,,model,False
+rmf,rmf:cocoa_cookie,Cocoa Cookie,item.rmf.cocoa_cookie,True
+rmf,rmf:coconut,Coconut,item.rmf.coconut,False
+rmf,rmf:coconut_half,Coconut Half,item.rmf.coconut_half,False
+rmf,rmf:coconut_mash,Coconut Mash,item.rmf.coconut_mash,True
+rmf,rmf:coconut_milk,Coconut Milk Bucket,item.rmf.coconut_milk,True
+rmf,rmf:coffee,Bottle of Coffee,item.rmf.coffee,True
+rmf,rmf:coffee_beans,Coffee Beans,item.rmf.coffee_beans,True
+rmf,rmf:coffee_grounds,Coffee Grounds,item.rmf.coffee_grounds,True
+rmf,rmf:cookbook,Gourmand's Digest,item.rmf.cookbook,False
+rmf,rmf:cookbook_alt_milk,Other Milk Types,item.rmf.cookbook_alt_milk,False
+rmf,rmf:cookbook_changes,Vanilla Changes,item.rmf.cookbook_changes,False
+rmf,rmf:cookbook_edition,Edition,item.rmf.cookbook_edition,False
+rmf,rmf:cookbook_mashes,Mashed Items,item.rmf.cookbook_mashes,False
+rmf,rmf:cookbook_model,,model,False
+rmf,rmf:cookbook_snow_cones,Snow Cones,item.rmf.cookbook_snow_cones,False
+rmf,rmf:cookbook_stonecutter,Stonecutter Recipes,item.rmf.cookbook_stonecutter,False
+rmf,rmf:cooked_bacon,Cooked Bacon,item.rmf.cooked_bacon,True
+rmf,rmf:cooked_chicken_wing,Cooked Chicken Wing,item.rmf.cooked_chicken_wing,True
+rmf,rmf:cooked_corn,Corn on the Cob,item.rmf.cooked_corn,False
+rmf,rmf:cooked_corn_eating,,model,False
+rmf,rmf:cooked_ham,Cooked Ham,item.rmf.cooked_ham,True
+rmf,rmf:cooked_ham_eating,,model,True
+rmf,rmf:cooked_honeycomb,Honeycomb Candy,item.rmf.cooked_honeycomb,True
+rmf,rmf:cooked_pufferfish_tail,Cooked Pufferfish Tail,item.rmf.cooked_pufferfish_tail,True
+rmf,rmf:cooked_rice,Cooked Rice,item.rmf.cooked_rice,True
+rmf,rmf:cooking_pot,Cooking Pot,item.rmf.cooking_pot,False
+rmf,rmf:cooking_pot_water,Pot of Water,item.rmf.cooking_pot_water,False
+rmf,rmf:cooled_charcoal,,model,False
+rmf,rmf:corn,Maize,item.rmf.corn,False
+rmf,rmf:corn_dog,Corn Dog,item.rmf.corn_dog,False
+rmf,rmf:cottage_cheese,Cottage Cheese,item.rmf.cottage_cheese,True
+rmf,rmf:cracker,Wheat Cracker,item.rmf.cracker,False
+rmf,rmf:croissant,Croissant,item.rmf.croissant,False
+rmf,rmf:crowbar,Crowbar,item.rmf.crowbar,False
+rmf,rmf:cupcake,Cupcake,item.rmf.cupcake,False
+rmf,rmf:curry,Bowl of Curry,item.rmf.curry,True
+rmf,rmf:cut_potatoes,Potato Fries,item.rmf.cut_potatoes,False
+rmf,rmf:cutting_board,Cutting Board,item.rmf.cutting_board,False
+rmf,rmf:cutting_board_model,,model,False
+rmf,rmf:danger_pottery_sherd,Danger Pottery Sherd,item.rmf.danger_pottery_sherd,False
+rmf,rmf:decor_tooltip,(Decorative Item),item.rmf.decor_tooltip,False
+rmf,rmf:diamond_apple,Diamond Apple,item.rmf.diamond_apple,True
+rmf,rmf:diamond_shears,Diamond Shears,item.rmf.diamond_shears,False
+rmf,rmf:display_glass_bottle,Glass Bottle Display,item.rmf.display_glass_bottle,False
+rmf,rmf:display_glass_bottle_model,,model,False
+rmf,rmf:dog_food,Bowl of Dog Food,item.rmf.dog_food,True
+rmf,rmf:double_glazed_fritter,Double Glazed Apple Fritter,item.rmf.double_glazed_fritter,True
+rmf,rmf:double_glazed_fritter.desc,These are NOT safe for human consumption.,item.rmf.double_glazed_fritter.desc,True
+rmf,rmf:dough,Dough,item.rmf.dough,True
+rmf,rmf:dough_baguette,Baguette-Shaped Dough,item.rmf.dough_baguette,True
+rmf,rmf:dough_berry_cookie,Berry Cookie Dough,item.rmf.dough_berry_cookie,True
+rmf,rmf:dough_cocoa_cookie,Cocoa Cookie Dough,item.rmf.dough_cocoa_cookie,True
+rmf,rmf:dough_cookie,Cookie Dough,item.rmf.dough_cookie,True
+rmf,rmf:dough_croissant,Croissant-Shaped Dough,item.rmf.dough_croissant,True
+rmf,rmf:dough_glow_berry_cookie,Glow Berry Cookie Dough,item.rmf.dough_glow_berry_cookie,True
+rmf,rmf:dough_honey_cookie,Honey Cookie Dough,item.rmf.dough_honey_cookie,True
+rmf,rmf:dough_muffin,Muffin-Shaped Dough,item.rmf.dough_muffin,True
+rmf,rmf:dough_nut,Donut-Shaped Dough,item.rmf.dough_nut,True
+rmf,rmf:dough_pretzel,Pretzel-Shaped Dough,item.rmf.dough_pretzel,True
+rmf,rmf:dough_shapeless,,model,True
+rmf,rmf:dragon_breath,,model,False
+rmf,rmf:dragon_fruit,Dragon Fruit,item.rmf.dragon_fruit,False
+rmf,rmf:dragon_fruit_juice,Dragon Fruit Juice,item.rmf.dragon_fruit_juice,True
+rmf,rmf:dragon_fruit_mash,Dragon Fruit Mash,item.rmf.dragon_fruit_mash,True
+rmf,rmf:dragon_fruit_pie,Dragon Fruit Pie,item.rmf.dragon_fruit_pie,True
+rmf,rmf:dragon_fruit_smoothie,Dragon Fruit Smoothie,item.rmf.dragon_fruit_smoothie,True
+rmf,rmf:dragon_pie_mix,Unbaked Dragon Fruit Pie,item.rmf.dragon_pie_mix,True
+rmf,rmf:dumpling,Dumpling,item.rmf.dumpling,True
+rmf,rmf:egg_roll,Egg Roll,item.rmf.egg_roll,True
+rmf,rmf:emerald_apple,Emerald Apple,item.rmf.emerald_apple,True
+rmf,rmf:enchanted_diamond_apple,Enchanted Diamond Apple,item.rmf.enchanted_diamond_apple,True
+rmf,rmf:enchanted_emerald_apple,Enchanted Emerald Apple,item.rmf.enchanted_emerald_apple,True
+rmf,rmf:enchanted_golden_apple_juice,Enchanted Golden Apple Juice,item.rmf.enchanted_golden_apple_juice,True
+rmf,rmf:enchanted_golden_apple_juice.desc,You have to admit this is a bit overkill.,item.rmf.enchanted_golden_apple_juice.desc,True
+rmf,rmf:farmer_burger,Farmer's Delight Burger,item.rmf.farmer_burger,True
+rmf,rmf:field_masoned_banner_pattern,Field Masoned Banner Pattern,item.rmf.field_masoned_banner_pattern,False
+rmf,rmf:filled_donut,Filled Donut,item.rmf.filled_donut,False
+rmf,rmf:fillet_burger,Fillet Burger,item.rmf.fillet_burger,True
+rmf,rmf:fire_extinguisher,Fire Extinguisher,item.rmf.fire_extinguisher,False
+rmf,rmf:fish_and_chips,Fish & Chips,item.rmf.fish_and_chips,True
+rmf,rmf:flower_banner_pattern,Flower Charge Banner Pattern,item.rmf.flower_banner_pattern,False
+rmf,rmf:french_toast,French Toast,item.rmf.french_toast,True
+rmf,rmf:fried_dragon_egg,Fried Dragon Egg,item.rmf.fried_dragon_egg,True
+rmf,rmf:fried_egg,Fried Egg,item.rmf.fried_egg,True
+rmf,rmf:fried_rice,Bowl of Fried Rice,item.rmf.fried_rice,True
+rmf,rmf:fried_sniffer_egg,Fried Sniffer Egg,item.rmf.fried_sniffer_egg,True
+rmf,rmf:fried_tofu,Fried Tofu,item.rmf.fried_tofu,False
+rmf,rmf:frosted_pumpkin_pie,Frosted Pumpkin Pie,item.rmf.frosted_pumpkin_pie,True
+rmf,rmf:fruit_punch,Bottle of Fruit Punch,item.rmf.fruit_punch,False
+rmf,rmf:fruitcake,Fruitcake,item.rmf.fruitcake,True
+rmf,rmf:frying_pan,Frying Pan,item.rmf.frying_pan,False
+rmf,rmf:frying_pan_cooking,,model,False
+rmf,rmf:frying_pan_inventory,,model,False
+rmf,rmf:frying_pan_model,,model,False
+rmf,rmf:garlic_bread,Garlic Bread,item.rmf.garlic_bread,True
+rmf,rmf:glass_item_frame,Glass Item Frame,item.rmf.glass_item_frame,False
+rmf,rmf:glazed_donut,Glazed Donut,item.rmf.glazed_donut,False
+rmf,rmf:glow_berry_cookie,Glow Berry Cookie,item.rmf.glow_berry_cookie,True
+rmf,rmf:glow_berry_jam,Bowl of Glow Berry Jam,item.rmf.glow_berry_jam,True
+rmf,rmf:glow_berry_mash,Glow Berry Mash,item.rmf.glow_berry_mash,True
+rmf,rmf:glow_berry_muffin,Glow Berry Muffin,item.rmf.glow_berry_muffin,True
+rmf,rmf:glow_berry_pie,Glow Berry Pie,item.rmf.glow_berry_pie,True
+rmf,rmf:glow_filled_donut,Glow Filled Donut,item.rmf.glow_filled_donut,True
+rmf,rmf:glow_glass_item_frame,Glowing Glass Item Frame,item.rmf.glow_glass_item_frame,True
+rmf,rmf:glow_pbj_sandwich,Glowing PB&J Sandwich,item.rmf.glow_pbj_sandwich,True
+rmf,rmf:golden_apple_juice,Golden Apple Juice,item.rmf.golden_apple_juice,True
+rmf,rmf:golden_frying_pan,Golden Frying Pan,item.rmf.golden_frying_pan,False
+rmf,rmf:golden_frying_pan_cooking,,model,False
+rmf,rmf:golden_frying_pan_inventory,,model,False
+rmf,rmf:golden_frying_pan_model,,model,False
+rmf,rmf:granola,Bar of Granola,item.rmf.granola,False
+rmf,rmf:grape_juice,Grape Juice,item.rmf.grape_juice,True
+rmf,rmf:guster_banner_pattern,Guster Banner Pattern,item.rmf.guster_banner_pattern,False
+rmf,rmf:half_marshmallow_sandwich,,model,True
+rmf,rmf:ham,Bone-In Ham,item.rmf.ham,True
+rmf,rmf:hard_boiled_egg,Hard Boiled Egg,item.rmf.hard_boiled_egg,True
+rmf,rmf:herbs,Mixed Herbs,item.rmf.herbs,False
+rmf,rmf:honey_apple,Honeyed Apple,item.rmf.honey_apple,True
+rmf,rmf:honey_ball,Honeyball,item.rmf.honey_ball,True
+rmf,rmf:honey_chicken,Honey Garlic Chicken,item.rmf.honey_chicken,True
+rmf,rmf:honey_cookie,Honey Cookie,item.rmf.honey_cookie,True
+rmf,rmf:honeybun,Honeybun,item.rmf.honeybun,True
+rmf,rmf:honeycomb_candy,,model,True
+rmf,rmf:honeyed_apple,,model,True
+rmf,rmf:hot_cocoa,Bottle of Hot Cocoa,item.rmf.hot_cocoa,True
+rmf,rmf:hot_dog,Hot Dog,item.rmf.hot_dog,False
+rmf,rmf:ice_cream,Plain Ice Cream,item.rmf.ice_cream,False
+rmf,rmf:iced_tea,Bottle of Iced Tea,item.rmf.iced_tea,True
+rmf,rmf:icon,,model,False
+rmf,rmf:ignited_charcoal,,model,False
+rmf,rmf:impossible_burger,Impossible Burger,item.rmf.impossible_burger,True
+rmf,rmf:incinerated_marshmallow_stick,Charcoal on a Stick,item.rmf.incinerated_marshmallow_stick,False
+rmf,rmf:item_crate,Empty Item Crate,item.rmf.item_crate,False
+rmf,rmf:item_crate_apple,Crate of Apples,item.rmf.item_crate_apple,False
+rmf,rmf:item_crate_banana,Crate of Bananas,item.rmf.item_crate_banana,False
+rmf,rmf:item_crate_beef,Crate of Raw Beef,item.rmf.item_crate_beef,False
+rmf,rmf:item_crate_blackberry,Crate of Blackberries,item.rmf.item_crate_blackberry,False
+rmf,rmf:item_crate_blue_egg,Crate of Blue Eggs,item.rmf.item_crate_blue_egg,False
+rmf,rmf:item_crate_blueberry,Crate of Blueberries,item.rmf.item_crate_blueberry,False
+rmf,rmf:item_crate_brown_egg,Crate of Brown Eggs,item.rmf.item_crate_brown_egg,False
+rmf,rmf:item_crate_brown_mushroom,Crate of Brown Mushrooms,item.rmf.item_crate_brown_mushroom,False
+rmf,rmf:item_crate_carrot,Crate of Carrots,item.rmf.item_crate_carrot,False
+rmf,rmf:item_crate_charcoal,Crate of Charcoal,item.rmf.item_crate_charcoal,False
+rmf,rmf:item_crate_chicken,Crate of Raw Chicken,item.rmf.item_crate_chicken,False
+rmf,rmf:item_crate_cocoa_beans,Crate of Cocoa Beans,item.rmf.item_crate_cocoa_beans,False
+rmf,rmf:item_crate_coconut,Crate of Coconuts,item.rmf.item_crate_coconut,False
+rmf,rmf:item_crate_cod,Crate of Raw Cod,item.rmf.item_crate_cod,False
+rmf,rmf:item_crate_coffee_beans,Crate of Coffee Beans,item.rmf.item_crate_coffee_beans,False
+rmf,rmf:item_crate_corn,Crate of Maize,item.rmf.item_crate_corn,False
+rmf,rmf:item_crate_crate,Crate of Item Crates,item.rmf.item_crate_crate,False
+rmf,rmf:item_crate_dragon_fruit,Crate of Dragon Fruit,item.rmf.item_crate_dragon_fruit,False
+rmf,rmf:item_crate_egg,Crate of Eggs,item.rmf.item_crate_egg,False
+rmf,rmf:item_crate_glow_berries,Crate of Glow Berries,item.rmf.item_crate_glow_berries,False
+rmf,rmf:item_crate_ham,Crate of Bone-In Ham,item.rmf.item_crate_ham,False
+rmf,rmf:item_crate_lemon,Crate of Lemons,item.rmf.item_crate_lemon,False
+rmf,rmf:item_crate_mango,Crate of Mangoes,item.rmf.item_crate_mango,False
+rmf,rmf:item_crate_melon_seeds,Crate of Melon Seeds,item.rmf.item_crate_melon_seeds,False
+rmf,rmf:item_crate_milk_barrel,Crate of Milk Barrels,item.rmf.item_crate_milk_barrel,False
+rmf,rmf:item_crate_mutton,Crate of Raw Mutton,item.rmf.item_crate_mutton,False
+rmf,rmf:item_crate_nether_wart,Crate of Nether Wart,item.rmf.item_crate_nether_wart,False
+rmf,rmf:item_crate_orange,Crate of Oranges,item.rmf.item_crate_orange,False
+rmf,rmf:item_crate_pale_apple,Crate of Pale Apples,item.rmf.item_crate_pale_apple,False
+rmf,rmf:item_crate_pasta,Crate of Pasta,item.rmf.item_crate_pasta,False
+rmf,rmf:item_crate_peach,Crate of Peaches,item.rmf.item_crate_peach,False
+rmf,rmf:item_crate_popcorn_bag,Crate of Popcorn Bags,item.rmf.item_crate_popcorn_bag,False
+rmf,rmf:item_crate_popcorn_seeds,Crate of Popcorn Seeds,item.rmf.item_crate_popcorn_seeds,False
+rmf,rmf:item_crate_porkchop,Crate of Raw Porkchop,item.rmf.item_crate_porkchop,False
+rmf,rmf:item_crate_potato,Crate of Potatoes,item.rmf.item_crate_potato,False
+rmf,rmf:item_crate_pufferfish,Crate of Pufferfish,item.rmf.item_crate_pufferfish,False
+rmf,rmf:item_crate_pumpkin,Crate of Pumpkins,item.rmf.item_crate_pumpkin,False
+rmf,rmf:item_crate_pumpkin_seeds,Crate of Pumpkin Seeds,item.rmf.item_crate_pumpkin_seeds,False
+rmf,rmf:item_crate_rabbit,Crate of Raw Rabbit,item.rmf.item_crate_rabbit,False
+rmf,rmf:item_crate_raspberry,Crate of Raspberries,item.rmf.item_crate_raspberry,False
+rmf,rmf:item_crate_red_mushroom,Crate of Red Mushrooms,item.rmf.item_crate_red_mushroom,False
+rmf,rmf:item_crate_rice,Crate of Rice Grains,item.rmf.item_crate_rice,False
+rmf,rmf:item_crate_salmon,Crate of Raw Salmon,item.rmf.item_crate_salmon,False
+rmf,rmf:item_crate_salt,Crate of Salt,item.rmf.item_crate_salt,False
+rmf,rmf:item_crate_seasoning,Crate of Assorted Seasoning,item.rmf.item_crate_seasoning,False
+rmf,rmf:item_crate_strawberry,Crate of Strawberries,item.rmf.item_crate_strawberry,False
+rmf,rmf:item_crate_sugar_cane,Crate of Sugar Cane,item.rmf.item_crate_sugar_cane,False
+rmf,rmf:item_crate_sweet_berries,Crate of Sweet Berries,item.rmf.item_crate_sweet_berries,False
+rmf,rmf:item_crate_taiga_beans,Crate of Taiga Beans,item.rmf.item_crate_taiga_beans,False
+rmf,rmf:item_crate_tomato,Crate of Tomatoes,item.rmf.item_crate_tomato,False
+rmf,rmf:item_crate_tomato_seeds,Crate of Tomato Seeds,item.rmf.item_crate_tomato_seeds,False
+rmf,rmf:item_crate_vegetable_oil,Crate of Vegetable Oil,item.rmf.item_crate_vegetable_oil,False
+rmf,rmf:item_crate_vibrant_apple,Crate of Vibrant Apples,item.rmf.item_crate_vibrant_apple,False
+rmf,rmf:item_crate_vinegar,Crate of Apple Cider Vinegar,item.rmf.item_crate_vinegar,False
+rmf,rmf:item_crate_water_barrel,Crate of Water Barrels,item.rmf.item_crate_water_barrel,False
+rmf,rmf:item_crate_wheat_seeds,Crate of Wheat Seeds,item.rmf.item_crate_wheat_seeds,False
+rmf,rmf:juicer,Juicer,item.rmf.juicer,True
+rmf,rmf:juicer_open,,model,True
+rmf,rmf:kabob,Kabob,item.rmf.kabob,False
+rmf,rmf:kabob_one_bite,,model,False
+rmf,rmf:kabob_two_bites,,model,False
+rmf,rmf:lasagna,Bowl of Lasagna,item.rmf.lasagna,True
+rmf,rmf:lemon,Lemon,item.rmf.lemon,False
+rmf,rmf:lemon_juice,Bottle of Lemon Juice,item.rmf.lemon_juice,True
+rmf,rmf:lemon_pie,Lemon Pie,item.rmf.lemon_pie,True
+rmf,rmf:lemon_pie_mix,Unbaked Lemon Pie,item.rmf.lemon_pie_mix,True
+rmf,rmf:lemonade,Glass of Lemonade,item.rmf.lemonade,False
+rmf,rmf:lettuce,Lettuce Leaf,item.rmf.lettuce,False
+rmf,rmf:lousy_shirt,Lousy T-Shirt,item.rmf.lousy_shirt,False
+rmf,rmf:mac_and_cheese,Bowl of Mac & Cheese,item.rmf.mac_and_cheese,True
+rmf,rmf:mango,Mango,item.rmf.mango,False
+rmf,rmf:mango_juice,Mango Juice,item.rmf.mango_juice,True
+rmf,rmf:mango_mash,Mango Mash,item.rmf.mango_mash,True
+rmf,rmf:mango_smoothie,Mango Smoothie,item.rmf.mango_smoothie,True
+rmf,rmf:marshmallow_sandwich,Marshmallow Sandwich,item.rmf.marshmallow_sandwich,True
+rmf,rmf:marshmallow_sandwich.help,This Marshmallow Sandwich is missing a Wheat Cracker.,item.rmf.marshmallow_sandwich.help,True
+rmf,rmf:marshmallow_stick,Marshmallow on a Stick,item.rmf.marshmallow_stick,False
+rmf,rmf:marshmallow_stick_roast,,model,False
+rmf,rmf:marshmallows,Marshmallows,item.rmf.marshmallows,False
+rmf,rmf:mashed_potatoes,Bowl of Mashed Potatoes,item.rmf.mashed_potatoes,False
+rmf,rmf:mct_sandwich,MCT Sandwich,item.rmf.mct_sandwich,True
+rmf,rmf:meaty_pizza_slice,Meaty Pizza Slice,item.rmf.meaty_pizza_slice,True
+rmf,rmf:melon_juice,Melon Juice,item.rmf.melon_juice,True
+rmf,rmf:melon_mash,Melon Mash,item.rmf.melon_mash,True
+rmf,rmf:melon_smoothie,Melon Smoothie,item.rmf.melon_smoothie,True
+rmf,rmf:menu,Writable Menu,item.rmf.menu,False
+rmf,rmf:menu_model,,model,False
+rmf,rmf:milk_barrel,Barrel of Milk,item.rmf.milk_barrel,True
+rmf,rmf:milk_bottle,,model,True
+rmf,rmf:miso_soup,Bowl of Miso Soup,item.rmf.miso_soup,True
+rmf,rmf:mixing_bowl,Mixing Bowl,item.rmf.mixing_bowl,True
+rmf,rmf:mixing_bowl.contents_banana_mash,Banana Mash,item.rmf.mixing_bowl.contents_banana_mash,True
+rmf,rmf:mixing_bowl.contents_berries,Berries,item.rmf.mixing_bowl.contents_berries,True
+rmf,rmf:mixing_bowl.contents_bread,Bread,item.rmf.mixing_bowl.contents_bread,True
+rmf,rmf:mixing_bowl.contents_dough,Dough,item.rmf.mixing_bowl.contents_dough,True
+rmf,rmf:mixing_bowl.contents_dragon_fruit,Dragon Fruit,item.rmf.mixing_bowl.contents_dragon_fruit,True
+rmf,rmf:mixing_bowl.contents_egg,Egg,item.rmf.mixing_bowl.contents_egg,True
+rmf,rmf:mixing_bowl.contents_flour,Flour,item.rmf.mixing_bowl.contents_flour,True
+rmf,rmf:mixing_bowl.contents_glow_berry_jam,Glow Berry Jam,item.rmf.mixing_bowl.contents_glow_berry_jam,True
+rmf,rmf:mixing_bowl.contents_glow_berry_mash,Glow Berry Mash,item.rmf.mixing_bowl.contents_glow_berry_mash,True
+rmf,rmf:mixing_bowl.contents_lemon_juice,Lemon Juice,item.rmf.mixing_bowl.contents_lemon_juice,True
+rmf,rmf:mixing_bowl.contents_milk,Milk,item.rmf.mixing_bowl.contents_milk,True
+rmf,rmf:mixing_bowl.contents_orange,Orange,item.rmf.mixing_bowl.contents_orange,True
+rmf,rmf:mixing_bowl.contents_pale_apple,Pale Apple,item.rmf.mixing_bowl.contents_pale_apple,True
+rmf,rmf:mixing_bowl.contents_peach,Peach,item.rmf.mixing_bowl.contents_peach,True
+rmf,rmf:mixing_bowl.contents_peanut,Peanuts,item.rmf.mixing_bowl.contents_peanut,True
+rmf,rmf:mixing_bowl.contents_salt,Salt,item.rmf.mixing_bowl.contents_salt,True
+rmf,rmf:mixing_bowl.contents_seasoning,Seasoning,item.rmf.mixing_bowl.contents_seasoning,True
+rmf,rmf:mixing_bowl.contents_sweet_berry_jam,Sweet Berry Jam,item.rmf.mixing_bowl.contents_sweet_berry_jam,True
+rmf,rmf:mixing_bowl.contents_sweet_berry_mash,Sweet Berry Mash,item.rmf.mixing_bowl.contents_sweet_berry_mash,True
+rmf,rmf:mixing_bowl.contents_taiga_beans,Taiga Beans,item.rmf.mixing_bowl.contents_taiga_beans,True
+rmf,rmf:mixing_bowl_inventory,,model,False
+rmf,rmf:mixing_bowl_model,,model,False
+rmf,rmf:monster_jerky,Monster Jerky,item.rmf.monster_jerky,False
+rmf,rmf:monster_mash,Monster Mash,item.rmf.monster_mash,True
+rmf,rmf:monster_mash.desc1,This looks AND smells awful.,item.rmf.monster_mash.desc1,True
+rmf,rmf:monster_mash.desc2,Nothing good can come from eating this.,item.rmf.monster_mash.desc2,True
+rmf,rmf:monster_puree,Monster Purée,item.rmf.monster_puree,False
+rmf,rmf:monster_puree.desc1,This blend of monster bits and pieces,item.rmf.monster_puree.desc1,True
+rmf,rmf:monster_puree.desc2,has been genetically engineered to hurt you.,item.rmf.monster_puree.desc2,False
+rmf,rmf:mortar_and_pestle,Mortar & Pestle,item.rmf.mortar_and_pestle,False
+rmf,rmf:mortar_and_pestle/acacia_inventory,,model,False
+rmf,rmf:mortar_and_pestle/bamboo_inventory,,model,False
+rmf,rmf:mortar_and_pestle/birch_inventory,,model,False
+rmf,rmf:mortar_and_pestle/brick_inventory,,model,False
+rmf,rmf:mortar_and_pestle/cherry_inventory,,model,False
+rmf,rmf:mortar_and_pestle/crimson_inventory,,model,False
+rmf,rmf:mortar_and_pestle/dark_oak_inventory,,model,False
+rmf,rmf:mortar_and_pestle/jungle_inventory,,model,False
+rmf,rmf:mortar_and_pestle/mangrove_inventory,,model,False
+rmf,rmf:mortar_and_pestle/oak_inventory,,model,False
+rmf,rmf:mortar_and_pestle/pale_oak_inventory,,model,False
+rmf,rmf:mortar_and_pestle/spruce_inventory,,model,False
+rmf,rmf:mortar_and_pestle/stone_inventory,,model,False
+rmf,rmf:mortar_and_pestle/warped_inventory,,model,False
+rmf,rmf:nacho,Nacho Chip,item.rmf.nacho,False
+rmf,rmf:nether_wart_soup,Bowl of Nether Wart Soup,item.rmf.nether_wart_soup,False
+rmf,rmf:newspaper,,model,False
+rmf,rmf:oat_milk,Oat Milk Bucket,item.rmf.oat_milk,True
+rmf,rmf:oatmeal,Bowl of Oatmeal,item.rmf.oatmeal,True
+rmf,rmf:oblivian_stew,Bowl of Oblivian Stew,item.rmf.oblivian_stew,True
+rmf,rmf:oblivian_stew.desc1,A stew created by the love of a community.,item.rmf.oblivian_stew.desc1,True
+rmf,rmf:oblivian_stew.desc2,Tastes like... sugar?,item.rmf.oblivian_stew.desc2,True
+rmf,rmf:omelette,Omelette,item.rmf.omelette,True
+rmf,rmf:ominous_cookie,Ominous Cookie,item.rmf.ominous_cookie,True
+rmf,rmf:ominous_cookie.desc1,This cookie comes from a Darker Plane...,item.rmf.ominous_cookie.desc1,True
+rmf,rmf:ominous_cookie.desc2,"...Suddenly, you don't feel hungry anymore.",item.rmf.ominous_cookie.desc2,True
+rmf,rmf:orange,Orange,item.rmf.orange,False
+rmf,rmf:orange_juice,Orange Juice,item.rmf.orange_juice,True
+rmf,rmf:pale_apple,Pale Apple,item.rmf.pale_apple,True
+rmf,rmf:pale_berries,Pale Berries,item.rmf.pale_berries,True
+rmf,rmf:pancake,Pancake,item.rmf.pancake,False
+rmf,rmf:pancake_mix,Bowl of Pancake Mix,item.rmf.pancake_mix,False
+rmf,rmf:pasta,Pasta,item.rmf.pasta,True
+rmf,rmf:pbj_sandwich,PB&J Sandwich,item.rmf.pbj_sandwich,True
+rmf,rmf:peach,Peach,item.rmf.peach,False
+rmf,rmf:peach_juice,Peach Juice,item.rmf.peach_juice,True
+rmf,rmf:peach_mash,Peach Mash,item.rmf.peach_mash,True
+rmf,rmf:peach_princess,,model,False
+rmf,rmf:peach_smoothie,Peach Smoothie,item.rmf.peach_smoothie,True
+rmf,rmf:peanut,Peanut,item.rmf.peanut,False
+rmf,rmf:peanut_butter,Bottle of Peanut Butter,item.rmf.peanut_butter,False
+rmf,rmf:phantom_membrane,Phantom Membrane,item.rmf.phantom_membrane,False
+rmf,rmf:pie_crust,Pie Crust,item.rmf.pie_crust,True
+rmf,rmf:pierogi,Pierogi,item.rmf.pierogi,True
+rmf,rmf:pineapple_juice,Pineapple Juice,item.rmf.pineapple_juice,True
+rmf,rmf:pizza_pouch,Pizza Pouch,item.rmf.pizza_pouch,True
+rmf,rmf:plain_donut,Plain Donut,item.rmf.plain_donut,False
+rmf,rmf:plain_muffin,Plain Muffin,item.rmf.plain_muffin,False
+rmf,rmf:poisonous_potato,Poisonous Potato,item.rmf.poisonous_potato,False
+rmf,rmf:popcorn_bag,Empty Popcorn Bag,item.rmf.popcorn_bag,False
+rmf,rmf:popcorn_bag_large,Large Bag of Popcorn,item.rmf.popcorn_bag_large,False
+rmf,rmf:popcorn_bag_medium,Medium Bag of Popcorn,item.rmf.popcorn_bag_medium,False
+rmf,rmf:popcorn_bag_small,Small Bag of Popcorn,item.rmf.popcorn_bag_small,False
+rmf,rmf:popcorn_bucket,Bucket of Popcorn,item.rmf.popcorn_bucket,False
+rmf,rmf:popcorn_seeds,Popcorn Seeds,item.rmf.popcorn_seeds,True
+rmf,rmf:popped_corn,Popped Corn,item.rmf.popped_corn,False
+rmf,rmf:poutine,Bowl of Poutine,item.rmf.poutine,True
+rmf,rmf:powder_snow_slab,Powder Snow Slab,item.rmf.powder_snow_slab,False
+rmf,rmf:pretzel,Pretzel,item.rmf.pretzel,False
+rmf,rmf:pretzel_chocolate,Chocolate-Covered Pretzel,item.rmf.pretzel_chocolate,True
+rmf,rmf:prickly_pear,,model,False
+rmf,rmf:pufferfish_tail,Raw Pufferfish Tail,item.rmf.pufferfish_tail,True
+rmf,rmf:pumpkin_pie_slice,Slice of Pumpkin Pie,item.rmf.pumpkin_pie_slice,True
+rmf,rmf:pumpkin_slice,Sliced Pumpkin,item.rmf.pumpkin_slice,True
+rmf,rmf:pumpkin_soup,Bowl of Pumpkin Soup,item.rmf.pumpkin_soup,True
+rmf,rmf:punnet,Punnet,item.rmf.punnet,False
+rmf,rmf:punnet.desc1,A basket for foraging! Place in the offhand and,item.rmf.punnet.desc1,False
+rmf,rmf:punnet.desc2,break grass with an empty hand to find ingredients.,item.rmf.punnet.desc2,False
+rmf,rmf:punnet_inventory,,model,False
+rmf,rmf:punnet_model,,model,False
+rmf,rmf:quesadilla,Quesadilla,item.rmf.quesadilla,False
+rmf,rmf:rabbit_foot,Rabbit's Foot,item.rmf.rabbit_foot,False
+rmf,rmf:rabbit_stew,Bowl of Hearty Stew,item.rmf.rabbit_stew,True
+rmf,rmf:radioactive_waste,Barrel of Radioactive Waste,item.rmf.radioactive_waste,False
+rmf,rmf:radioactive_waste.desc,"""Shipped from Mekanism with love 💘""",item.rmf.radioactive_waste.desc,False
+rmf,rmf:radioactive_waste_model,,model,False
+rmf,rmf:ramen,Bowl of Ramen,item.rmf.ramen,True
+rmf,rmf:raspberry,Raspberry,item.rmf.raspberry,True
+rmf,rmf:raspberry_mash,Raspberry Mash,item.rmf.raspberry_mash,True
+rmf,rmf:raspberry_smoothie,Raspberry Smoothie,item.rmf.raspberry_smoothie,True
+rmf,rmf:raw_eggs,Bowl of Raw Eggs,item.rmf.raw_eggs,True
+rmf,rmf:raw_omelette,Bowl of Raw Omelette,item.rmf.raw_omelette,True
+rmf,rmf:rice,Rice Grain,item.rmf.rice,True
+rmf,rmf:rice_bowl,Bowl of Cooked Rice,item.rmf.rice_bowl,True
+rmf,rmf:rice_cake,Rice Cake,item.rmf.rice_cake,True
+rmf,rmf:roasted_carrot,Roasted Carrot,item.rmf.roasted_carrot,True
+rmf,rmf:roasted_marshmallow_stick,Roasted Marshmallow on a Stick,item.rmf.roasted_marshmallow_stick,False
+rmf,rmf:rotten_tomato,Rotten Tomato,item.rmf.rotten_tomato,True
+rmf,rmf:salad,Bowl of Salad,item.rmf.salad,True
+rmf,rmf:salt,Salt,item.rmf.salt,False
+rmf,rmf:salt_and_seasoning,Salt & Seasoning,item.rmf.salt_and_seasoning,False
+rmf,rmf:salt_and_seasoning_model,,model,False
+rmf,rmf:salt_model,,model,False
+rmf,rmf:scrambled_eggs,Bowl of Scrambled Eggs,item.rmf.scrambled_eggs,True
+rmf,rmf:seasoning,Assorted Seasoning,item.rmf.seasoning,False
+rmf,rmf:seasoning_model,,model,False
+rmf,rmf:shaker_cup,Shaker Cup,item.rmf.shaker_cup,False
+rmf,rmf:shaker_cup.contents,Contents:,item.rmf.shaker_cup.contents,False
+rmf,rmf:shaker_cup.contents_banana_smoothie,Banana Smoothie,item.rmf.shaker_cup.contents_banana_smoothie,False
+rmf,rmf:shaker_cup.contents_blackberry_smoothie,Blackberry Smoothie,item.rmf.shaker_cup.contents_blackberry_smoothie,False
+rmf,rmf:shaker_cup.contents_blueberry_smoothie,Blueberry Smoothie,item.rmf.shaker_cup.contents_blueberry_smoothie,False
+rmf,rmf:shaker_cup.contents_coconut_milk,Coconut Milk,item.rmf.shaker_cup.contents_coconut_milk,False
+rmf,rmf:shaker_cup.contents_coffee,Coffee,item.rmf.shaker_cup.contents_coffee,False
+rmf,rmf:shaker_cup.contents_dragon_fruit_smoothie,Dragon Fruit Smoothie,item.rmf.shaker_cup.contents_dragon_fruit_smoothie,False
+rmf,rmf:shaker_cup.contents_honey,Honey,item.rmf.shaker_cup.contents_honey,False
+rmf,rmf:shaker_cup.contents_lemonade,Lemonade,item.rmf.shaker_cup.contents_lemonade,False
+rmf,rmf:shaker_cup.contents_mango_smoothie,Mango Smoothie,item.rmf.shaker_cup.contents_mango_smoothie,False
+rmf,rmf:shaker_cup.contents_melon_smoothie,Melon Smoothie,item.rmf.shaker_cup.contents_melon_smoothie,False
+rmf,rmf:shaker_cup.contents_peach_smoothie,Peach Smoothie,item.rmf.shaker_cup.contents_peach_smoothie,False
+rmf,rmf:shaker_cup.contents_raspberry_smoothie,Raspberry Smoothie,item.rmf.shaker_cup.contents_raspberry_smoothie,False
+rmf,rmf:shaker_cup.contents_snowball,Snowball,item.rmf.shaker_cup.contents_snowball,False
+rmf,rmf:shaker_cup.contents_strawberry_smoothie,Strawberry Smoothie,item.rmf.shaker_cup.contents_strawberry_smoothie,False
+rmf,rmf:shaker_cup.contents_sugar,Sugar,item.rmf.shaker_cup.contents_sugar,False
+rmf,rmf:shaker_cup.contents_vinegar,Apple Cider Vinegar,item.rmf.shaker_cup.contents_vinegar,False
+rmf,rmf:shaker_cup.contents_water,Water,item.rmf.shaker_cup.contents_water,False
+rmf,rmf:shaker_cup.crafting,Crafting:,item.rmf.shaker_cup.crafting,False
+rmf,rmf:shaker_cup.needs_shaking,Shake the cup to finish crafting!,item.rmf.shaker_cup.needs_shaking,False
+rmf,rmf:shaker_cup_model_empty,,model,False
+rmf,rmf:shaker_cup_model_shake,,model,False
+rmf,rmf:shaker_cup_model_used,,model,False
+rmf,rmf:shepard_pie,Slice of Shepard's Pie,item.rmf.shepard_pie,True
+rmf,rmf:skull_banner_pattern,Skull Charge Banner Pattern,item.rmf.skull_banner_pattern,False
+rmf,rmf:smoothie_banana,,model,True
+rmf,rmf:smoothie_blackberry,,model,True
+rmf,rmf:smoothie_blueberry,,model,True
+rmf,rmf:smoothie_dragon_fruit,,model,True
+rmf,rmf:smoothie_mango,,model,True
+rmf,rmf:smoothie_melon,,model,True
+rmf,rmf:smoothie_peach,,model,True
+rmf,rmf:smoothie_raspberry,,model,True
+rmf,rmf:smoothie_strawberry,,model,True
+rmf,rmf:snow_cone_black,Black Snow Cone,item.rmf.snow_cone_black,False
+rmf,rmf:snow_cone_blue,Blue Snow Cone,item.rmf.snow_cone_blue,False
+rmf,rmf:snow_cone_green,Green Snow Cone,item.rmf.snow_cone_green,False
+rmf,rmf:snow_cone_light_blue,Light Blue Snow Cone,item.rmf.snow_cone_light_blue,False
+rmf,rmf:snow_cone_lime,Lime Snow Cone,item.rmf.snow_cone_lime,False
+rmf,rmf:snow_cone_orange,Orange Snow Cone,item.rmf.snow_cone_orange,False
+rmf,rmf:snow_cone_pink,Pink Snow Cone,item.rmf.snow_cone_pink,False
+rmf,rmf:snow_cone_purple,Purple Snow Cone,item.rmf.snow_cone_purple,False
+rmf,rmf:snow_cone_red,Red Snow Cone,item.rmf.snow_cone_red,False
+rmf,rmf:snow_cone_white,White Snow Cone,item.rmf.snow_cone_white,False
+rmf,rmf:snow_cone_yellow,Yellow Snow Cone,item.rmf.snow_cone_yellow,False
+rmf,rmf:soft_boiled_egg,Soft Boiled Egg,item.rmf.soft_boiled_egg,True
+rmf,rmf:soy_milk,Soy Milk Bucket,item.rmf.soy_milk,True
+rmf,rmf:spaghetti,Bowl of Spaghetti,item.rmf.spaghetti,True
+rmf,rmf:spicy_mushroom_stew,Spicy Mushroom Stew,item.rmf.spicy_mushroom_stew,True
+rmf,rmf:stock,Bone Stock,item.rmf.stock,False
+rmf,rmf:stonecutter.desc,This recipe is used in a Stonecutter!,item.rmf.stonecutter.desc,False
+rmf,rmf:straw_hat,Straw Hat,item.rmf.straw_hat,False
+rmf,rmf:straw_hat_model,,model,False
+rmf,rmf:strawberry,Strawberry,item.rmf.strawberry,True
+rmf,rmf:strawberry_mash,Strawberry Mash,item.rmf.strawberry_mash,True
+rmf,rmf:strawberry_smoothie,Strawberry Smoothie,item.rmf.strawberry_smoothie,True
+rmf,rmf:stuffed_potato,Stuffed Potato,item.rmf.stuffed_potato,False
+rmf,rmf:stuffed_pumpkin,Stuffed Pumpkin,item.rmf.stuffed_pumpkin,True
+rmf,rmf:sushi,Sushi Roll,item.rmf.sushi,True
+rmf,rmf:sushi_log,Sushi Log,item.rmf.sushi_log,False
+rmf,rmf:sweet_berry_jam,Bowl of Sweet Berry Jam,item.rmf.sweet_berry_jam,True
+rmf,rmf:sweet_berry_mash,Sweet Berry Mash,item.rmf.sweet_berry_mash,True
+rmf,rmf:sweet_berry_muffin,Sweet Berry Muffin,item.rmf.sweet_berry_muffin,True
+rmf,rmf:sweet_berry_pie,Sweet Berry Pie,item.rmf.sweet_berry_pie,True
+rmf,rmf:taco,Taco,item.rmf.taco,True
+rmf,rmf:taiga_beans,Taiga Beans,item.rmf.taiga_beans,True
+rmf,rmf:taiga_flour,Taiga Bean Flour,item.rmf.taiga_flour,False
+rmf,rmf:tea,Bottle of Tea,item.rmf.tea,True
+rmf,rmf:test_item,Placeholder,item.rmf.test_item,False
+rmf,rmf:test_item.description,"Hi, I'm a Placeholder! If you can see me, something went wrong. 
+Send regfunkid a message about this!",item.rmf.test_item.description,False
+rmf,rmf:toast,Toast,item.rmf.toast,True
+rmf,rmf:tofu,Tofu,item.rmf.tofu,False
+rmf,rmf:tomato,Tomato,item.rmf.tomato,True
+rmf,rmf:tomato_sauce,Tomato Sauce,item.rmf.tomato_sauce,True
+rmf,rmf:tomato_seeds,Tomato Seeds,item.rmf.tomato_seeds,True
+rmf,rmf:tomato_soup,Bowl of Tomato Soup,item.rmf.tomato_soup,True
+rmf,rmf:triple_display_glass_bottle,Triple Glass Bottle Display,item.rmf.triple_display_glass_bottle,False
+rmf,rmf:triple_display_glass_bottle_model,,model,False
+rmf,rmf:unbaked_beans,Bowl of Unbaked Beans,item.rmf.unbaked_beans,True
+rmf,rmf:unbaked_fruitcake,Unbaked Fruitcake,item.rmf.unbaked_fruitcake,True
+rmf,rmf:uncooked_egg_roll,Uncooked Egg Roll,item.rmf.uncooked_egg_roll,True
+rmf,rmf:uncooked_glow_berry_jam,Bowl of Uncooked Glow Berry Jam,item.rmf.uncooked_glow_berry_jam,True
+rmf,rmf:uncooked_sweet_berry_jam,Bowl of Uncooked Sweet Berry Jam,item.rmf.uncooked_sweet_berry_jam,True
+rmf,rmf:unknown_item,???,item.rmf.unknown_item,False
+rmf,rmf:unlimited_bacon,Unlimited Bacon,item.rmf.unlimited_bacon,True
+rmf,rmf:veg_burrito,Veggie Burrito,item.rmf.veg_burrito,True
+rmf,rmf:veg_corn_dog,Veggie Corn Dog,item.rmf.veg_corn_dog,True
+rmf,rmf:veg_kabob,Veggie Kabob,item.rmf.veg_kabob,True
+rmf,rmf:veg_kabob_one_bite,,model,False
+rmf,rmf:veg_kabob_two_bites,,model,False
+rmf,rmf:veg_pizza_slice,Veggie Pizza Slice,item.rmf.veg_pizza_slice,True
+rmf,rmf:veg_quesadilla,Veggie Quesadilla,item.rmf.veg_quesadilla,True
+rmf,rmf:veg_taco,Veggie Taco,item.rmf.veg_taco,True
+rmf,rmf:vegetable_oil,Vegetable Oil,item.rmf.vegetable_oil,False
+rmf,rmf:veggie_dog,Veggie Dog,item.rmf.veggie_dog,True
+rmf,rmf:vibrant_apple,Vibrant Apple,item.rmf.vibrant_apple,True
+rmf,rmf:vinegar,Apple Cider Vinegar,item.rmf.vinegar,True
+rmf,rmf:waffle,Waffle,item.rmf.waffle,False
+rmf,rmf:waffle_batter,Bowl of Waffle Batter,item.rmf.waffle_batter,True
+rmf,rmf:water_barrel,Barrel of Water,item.rmf.water_barrel,False
+rmf,rmf:water_bottle,,model,False
+rmf,rmf:wheat_flour,Wheat Flour,item.rmf.wheat_flour,False
+rmf,rmf:wild_carrot,Wild Carrot,item.rmf.wild_carrot,True
+rmf,rmf:wild_potato,Wild Potato,item.rmf.wild_potato,False
+rmf,rmf:wooden_shears,Wooden Shears,item.rmf.wooden_shears,False
+rmf,rmf:yogurt,Bottle Of Yogurt,item.rmf.yogurt,False
+rmf,rmf:zombie_jerky,Zombie Jerky,item.rmf.zombie_jerky,False

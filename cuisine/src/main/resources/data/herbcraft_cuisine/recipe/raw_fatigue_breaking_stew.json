@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:poppy",
+    "minecraft:dandelion",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_fatigue_breaking_stew",
+    "count": 1
+  }
+}

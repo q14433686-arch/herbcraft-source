@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "item": "farmersdelight:cabbage",
+      "temperature": "neutral",
+      "flavors": [
+        "sweet",
+        "bland"
+      ],
+      "traits": [
+        "leafy",
+        "nourishing"
+      ],
+      "taste_flavors": [
+        "sweet",
+        "bland"
+      ]
+    },
+    {
+      "item": "farmersdelight:cabbage_leaf",
+      "temperature": "neutral",
+      "flavors": [
+        "sweet",
+        "bland"
+      ],
+      "traits": [
+        "leafy",
+        "nourishing"
+      ],
+      "taste_flavors": [
+        "sweet",
+        "bland"
+      ]
+    },
+    {
+      "item": "farmersdelight:onion",
+      "temperature": "warm",
+      "flavors": [
+        "pungent",
+        "sweet"
+      ],
+      "traits": [
+        "stirring",
+        "earthy"
+      ],
+      "taste_flavors": [
+        "pungent",
+        "sweet"
+      ]
+    },
+    {
+      "item": "farmersdelight:pumpkin_slice",
+      "temperature": "neutral",
+      "flavors": [
+        "sweet",
+        "bland"
+      ],
+      "traits": [
+        "curio"
+      ],
+      "taste_flavors": [
+        "sweet",
+        "bland"
+      ]
+    },
+    {
+      "item": "farmersdelight:tomato",
+      "temperature": "cool",
+      "flavors": [
+        "sweet",
+        "sour"
+      ],
+      "traits": [
+        "nourishing",
+        "clearing"
+      ],
+      "taste_flavors": [
+        "sour",
+        "sweet"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 24
+  },
+  "gives": {
+    "id": "minecraft:iron_chestplate"
+  },
+  "max_uses": 3.0,
+  "reputation_discount": 0.05,
+  "xp": 25.0,
+  "given_item_modifiers": [
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "herbcraft_alchemy:armor_support": {
+          "support_id": "steady_bearing",
+          "source_essence": "dandelion",
+          "orientation": "sustained",
+          "buffer_amount": 8,
+          "mode": "attached"
+        }
+      }
+    }
+  ]
+}

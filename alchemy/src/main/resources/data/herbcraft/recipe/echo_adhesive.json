@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft:blank_adhesive",
+    "minecraft:echo_shard"
+  ],
+  "result": {
+    "id": "herbcraft:echo_adhesive",
+    "count": 1
+  }
+}

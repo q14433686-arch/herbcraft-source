@@ -1,0 +1,18 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 36
+  },
+  "gives": {
+    "id": "minecraft:splash_potion"
+  },
+  "max_uses": 4.0,
+  "reputation_discount": 0.05,
+  "xp": 30.0,
+  "given_item_modifiers": [
+    {
+      "function": "minecraft:set_potion",
+      "id": "herbcraft:undead_venom"
+    }
+  ]
+}

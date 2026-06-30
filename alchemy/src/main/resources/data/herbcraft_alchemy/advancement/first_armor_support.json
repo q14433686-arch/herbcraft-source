@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft_alchemy:first_distilled_essence",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft_alchemy.first_armor_support.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft_alchemy.first_armor_support.description"
+    },
+    "icon": {
+      "id": "minecraft:iron_chestplate"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

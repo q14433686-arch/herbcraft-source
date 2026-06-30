@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:dandelion",
+    "minecraft:dandelion",
+    "minecraft:dandelion",
+    "minecraft:dandelion",
+    "minecraft:dandelion",
+    "minecraft:dandelion",
+    "minecraft:dandelion",
+    "minecraft:dandelion",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_dandelion",
+    "count": 1
+  }
+}

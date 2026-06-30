@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:dandelion",
+    "minecraft:dandelion"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:dandelion_salad",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "herbcraft:cleric/5/undead_venom_emerald",
+    "herbcraft:cleric/5/cardiac_toxin_emerald",
+    "herbcraft:cleric/5/wither_venom_iii_emerald",
+    "herbcraft:cleric/5/golden_dandelion_potion_emerald",
+    "herbcraft:cleric/5/emerald_crimson_fungus_clarified",
+    "herbcraft:cleric/5/emerald_flowering_azalea_splash",
+    "herbcraft:cleric/5/emerald_undead_venom_splash",
+    "herbcraft:cleric/5/emerald_wither_venom_iii"
+  ]
+}

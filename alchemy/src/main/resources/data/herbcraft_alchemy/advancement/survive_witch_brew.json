@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft_alchemy:witch_knowledge",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft_alchemy.survive_witch_brew.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft_alchemy.survive_witch_brew.description"
+    },
+    "icon": {
+      "id": "minecraft:splash_potion"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft.root.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft.root.description"
+    },
+    "icon": {
+      "id": "herbcraft:herbal_codex"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "herbcraft:gui/advancements/backgrounds/herbcraft"
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

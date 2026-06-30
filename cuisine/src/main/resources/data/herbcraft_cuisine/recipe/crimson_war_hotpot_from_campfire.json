@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": "herbcraft_cuisine:raw_crimson_war_hotpot",
+  "result": {
+    "id": "herbcraft_cuisine:crimson_war_hotpot"
+  }
+}

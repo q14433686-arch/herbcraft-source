@@ -1,0 +1,2690 @@
+{
+  "minecraft:dandelion": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.dandelion.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.dandelion.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.dandelion.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:golden_dandelion": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.golden_dandelion.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.golden_dandelion.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.golden_dandelion.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:poppy": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.poppy.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.poppy.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.poppy.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:blue_orchid": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.blue_orchid.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.blue_orchid.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.blue_orchid.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:allium": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.allium.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.allium.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.allium.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:azure_bluet": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.azure_bluet.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.azure_bluet.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.azure_bluet.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:red_tulip": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.red_tulip.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.red_tulip.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.red_tulip.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:orange_tulip": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.orange_tulip.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.orange_tulip.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.orange_tulip.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:pink_tulip": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.pink_tulip.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pink_tulip.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pink_tulip.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:white_tulip": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.white_tulip.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.white_tulip.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.white_tulip.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:oxeye_daisy": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.oxeye_daisy.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.oxeye_daisy.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.oxeye_daisy.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:cornflower": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.cornflower.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.cornflower.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.cornflower.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:lily_of_the_valley": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.lily_of_the_valley.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.lily_of_the_valley.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.lily_of_the_valley.suspect",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:wither_rose": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.wither_rose.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.wither_rose.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.wither_rose.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:torchflower": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.torchflower.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.torchflower.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.torchflower.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:closed_eyeblossom": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.closed_eyeblossom.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.closed_eyeblossom.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.closed_eyeblossom.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:open_eyeblossom": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.open_eyeblossom.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.open_eyeblossom.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.open_eyeblossom.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:cactus_flower": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.cactus_flower.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.cactus_flower.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.cactus_flower.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:wildflowers": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.wildflowers.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.wildflowers.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.wildflowers.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:pink_petals": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.pink_petals.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pink_petals.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pink_petals.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:sunflower": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.sunflower.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.sunflower.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.sunflower.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:lilac": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.lilac.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.lilac.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.lilac.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:rose_bush": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.rose_bush.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.rose_bush.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.rose_bush.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:peony": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.peony.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.peony.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.peony.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:pitcher_plant": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.pitcher_plant.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pitcher_plant.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pitcher_plant.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:short_grass": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.short_grass.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.short_grass.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.short_grass.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:tall_grass": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.tall_grass.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.tall_grass.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.tall_grass.suspect",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:fern": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.fern.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.fern.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.fern.suspect",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:large_fern": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.large_fern.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.large_fern.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.large_fern.suspect",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:seagrass": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.seagrass.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.seagrass.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.seagrass.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:lily_pad": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.lily_pad.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.lily_pad.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.lily_pad.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:spore_blossom": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.spore_blossom.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.spore_blossom.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.spore_blossom.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:sugar_cane": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.sugar_cane.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.sugar_cane.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.sugar_cane.suspect",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:cocoa_beans": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.cocoa_beans.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.cocoa_beans.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.cocoa_beans.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:bamboo": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.bamboo.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.bamboo.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.bamboo.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:kelp": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.kelp.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.kelp.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.kelp.suspect",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:snowball": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.snowball.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.snowball.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.snowball.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:ice": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.ice.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.ice.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.ice.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:packed_ice": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.packed_ice.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.packed_ice.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.packed_ice.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:blue_ice": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.blue_ice.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.blue_ice.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.blue_ice.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:powder_snow_bucket": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.powder_snow_bucket.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.powder_snow_bucket.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.powder_snow_bucket.suspect",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:resin_clump": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.resin_clump.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.resin_clump.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.resin_clump.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:resin_brick": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.resin_brick.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.resin_brick.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.resin_brick.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:nether_wart": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.nether_wart.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.nether_wart.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.nether_wart.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:fermented_spider_eye": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.fermented_spider_eye.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.fermented_spider_eye.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.fermented_spider_eye.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:blaze_powder": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.blaze_powder.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.blaze_powder.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.blaze_powder.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:magma_cream": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.magma_cream.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.magma_cream.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.magma_cream.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:ghast_tear": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.ghast_tear.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.ghast_tear.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.ghast_tear.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:rabbit_foot": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.rabbit_foot.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.rabbit_foot.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.rabbit_foot.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:phantom_membrane": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.phantom_membrane.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.phantom_membrane.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.phantom_membrane.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:glistering_melon_slice": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.glistering_melon_slice.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.glistering_melon_slice.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.glistering_melon_slice.suspect",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:golden_carrot": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.golden_carrot.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.golden_carrot.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.golden_carrot.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:sugar": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.sugar.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.sugar.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.sugar.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:glowstone_dust": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.glowstone_dust.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.glowstone_dust.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.glowstone_dust.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:slime_ball": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.slime_ball.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.slime_ball.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.slime_ball.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:egg": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.egg.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.egg.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.egg.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:blue_egg": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.blue_egg.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.blue_egg.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.blue_egg.suspect",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:brown_egg": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.brown_egg.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.brown_egg.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.brown_egg.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:honeycomb": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.honeycomb.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.honeycomb.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.honeycomb.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:honeycomb_block": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.honeycomb_block.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.honeycomb_block.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.honeycomb_block.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:honey_block": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.honey_block.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.honey_block.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.honey_block.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:pumpkin": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.pumpkin.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pumpkin.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pumpkin.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:melon": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.melon.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.melon.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.melon.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:wheat_seeds": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.wheat_seeds.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.wheat_seeds.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.wheat_seeds.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:beetroot_seeds": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.beetroot_seeds.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.beetroot_seeds.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.beetroot_seeds.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:melon_seeds": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.melon_seeds.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.melon_seeds.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.melon_seeds.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:pumpkin_seeds": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.pumpkin_seeds.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pumpkin_seeds.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pumpkin_seeds.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:torchflower_seeds": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.torchflower_seeds.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.torchflower_seeds.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.torchflower_seeds.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:pitcher_pod": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.pitcher_pod.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pitcher_pod.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pitcher_pod.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:oak_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.oak_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.oak_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.oak_leaves.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:spruce_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.spruce_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.spruce_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.spruce_leaves.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:birch_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.birch_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.birch_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.birch_leaves.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:jungle_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.jungle_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.jungle_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.jungle_leaves.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:acacia_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.acacia_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.acacia_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.acacia_leaves.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:dark_oak_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.dark_oak_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.dark_oak_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.dark_oak_leaves.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:mangrove_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.mangrove_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.mangrove_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.mangrove_leaves.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:cherry_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.cherry_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.cherry_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.cherry_leaves.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:pale_oak_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.pale_oak_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pale_oak_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pale_oak_leaves.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:azalea_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.azalea_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.azalea_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.azalea_leaves.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:flowering_azalea_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.flowering_azalea_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.flowering_azalea_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.flowering_azalea_leaves.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:oak_sapling": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.oak_sapling.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.oak_sapling.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.oak_sapling.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:birch_sapling": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.birch_sapling.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.birch_sapling.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.birch_sapling.suspect",
+        "truth": true,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:spruce_sapling": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.spruce_sapling.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.spruce_sapling.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.spruce_sapling.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:jungle_sapling": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.jungle_sapling.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.jungle_sapling.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.jungle_sapling.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:acacia_sapling": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.acacia_sapling.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.acacia_sapling.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.acacia_sapling.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:dark_oak_sapling": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.dark_oak_sapling.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.dark_oak_sapling.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.dark_oak_sapling.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:pale_oak_sapling": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.pale_oak_sapling.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pale_oak_sapling.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.pale_oak_sapling.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:mangrove_propagule": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.mangrove_propagule.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.mangrove_propagule.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.mangrove_propagule.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:cherry_sapling": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.cherry_sapling.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.cherry_sapling.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.cherry_sapling.suspect",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:azalea": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.azalea.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.azalea.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.azalea.suspect",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:flowering_azalea": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.flowering_azalea.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.flowering_azalea.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.flowering_azalea.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:dried_kelp_block": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.dried_kelp_block.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.dried_kelp_block.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.dried_kelp_block.suspect",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:sea_pickle": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.sea_pickle.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.sea_pickle.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.sea_pickle.suspect",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:brown_mushroom": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.brown_mushroom.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.brown_mushroom.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.brown_mushroom.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:crimson_fungus": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.crimson_fungus.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.crimson_fungus.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.crimson_fungus.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:warped_fungus": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.warped_fungus.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.warped_fungus.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.warped_fungus.suspect",
+        "truth": false,
+        "source_tier": "trade",
+        "suspicious": true
+      }
+    ]
+  }
+}

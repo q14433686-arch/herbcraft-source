@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft_cuisine:water_bowl",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft_cuisine.first_dish.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft_cuisine.first_dish.description"
+    },
+    "icon": {
+      "id": "herbcraft_cuisine:dandelion_salad"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

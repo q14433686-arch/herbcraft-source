@@ -1,0 +1,558 @@
+item,name,source_key
+minecraft:bordure_indented_banner_pattern,,model
+minecraft:brewer_pottery_sherd,,model
+minecraft:burn_pottery_sherd,,model
+minecraft:danger_pottery_sherd,,model
+minecraft:field_masoned_banner_pattern,,model
+minecraft:flower_banner_pattern,,model
+minecraft:guster_banner_pattern,,model
+minecraft:phantom_membrane,,model
+minecraft:poisonous_potato,,model
+minecraft:rabbit_foot,,model
+minecraft:skull_banner_pattern,,model
+rmf:admin_tooltip,(Admin Item),item.rmf.admin_tooltip
+rmf:angler_pottery_sherd,Angler Pottery Sherd,item.rmf.angler_pottery_sherd
+rmf:apple_juice,Apple Juice,item.rmf.apple_juice
+rmf:apple_mash,Apple Mash,item.rmf.apple_mash
+rmf:apple_pie,Apple Pie,item.rmf.apple_pie
+rmf:apple_pie_slice,Apple Pie Slice,item.rmf.apple_pie_slice
+rmf:archer_pottery_sherd,Archer Pottery Sherd,item.rmf.archer_pottery_sherd
+rmf:arms_up_pottery_sherd,Arms Up Pottery Sherd,item.rmf.arms_up_pottery_sherd
+rmf:bacon,Raw Bacon,item.rmf.bacon
+rmf:baguette,Baguette,item.rmf.baguette
+rmf:baked_beans,Bowl of Baked Beans,item.rmf.baked_beans
+rmf:baking_pan,Baking Pan,item.rmf.baking_pan
+rmf:baking_pan_cooking,,model
+rmf:baking_pan_inventory,,model
+rmf:baking_pan_model,,model
+rmf:banana,Banana,item.rmf.banana
+rmf:banana_bread,Banana Bread,item.rmf.banana_bread
+rmf:banana_dough,Banana Dough,item.rmf.banana_dough
+rmf:banana_juice,Banana Juice,item.rmf.banana_juice
+rmf:banana_mash,Banana Mash,item.rmf.banana_mash
+rmf:banana_smoothie,Banana Smoothie,item.rmf.banana_smoothie
+rmf:beef_burger,Beef Burger,item.rmf.beef_burger
+rmf:berry_bowl,Berry Medley,item.rmf.berry_bowl
+rmf:berry_cookie,Berry Cookie,item.rmf.berry_cookie
+rmf:biomash,Biomash,item.rmf.biomash
+rmf:biomass,Biomass,item.rmf.biomass
+rmf:blackberry,Blackberry,item.rmf.blackberry
+rmf:blackberry_mash,Blackberry Mash,item.rmf.blackberry_mash
+rmf:blackberry_smoothie,Blackberry Smoothie,item.rmf.blackberry_smoothie
+rmf:blazing_stew,Blazing Stew,item.rmf.blazing_stew
+rmf:blueberry,Blueberry,item.rmf.blueberry
+rmf:blueberry_mash,Blueberry Mash,item.rmf.blueberry_mash
+rmf:blueberry_smoothie,Blueberry Smoothie,item.rmf.blueberry_smoothie
+rmf:bordure_indented_banner_pattern,Bordure Indented Banner Pattern,item.rmf.bordure_indented_banner_pattern
+rmf:brewer_pottery_sherd,Brewer Pottery Sherd,item.rmf.brewer_pottery_sherd
+rmf:brownie,Brownie,item.rmf.brownie
+rmf:burn_pottery_sherd,Burn Pottery Sherd,item.rmf.burn_pottery_sherd
+rmf:burned_marshmallow_stick,Burned Marshmallow on a Stick,item.rmf.burned_marshmallow_stick
+rmf:burrito,Burrito,item.rmf.burrito
+rmf:cactus_fruit,Prickly Pear,item.rmf.cactus_fruit
+rmf:cactus_juice,Cactus Fruit Juice,item.rmf.cactus_juice
+rmf:cake.five_bites,Bites: 5 / 7,item.rmf.cake.five_bites
+rmf:cake.four_bites,Bites: 4 / 7,item.rmf.cake.four_bites
+rmf:cake.one_bite,Bites: 1 / 7,item.rmf.cake.one_bite
+rmf:cake.six_bites,Bites: 6 / 7,item.rmf.cake.six_bites
+rmf:cake.three_bites,Bites: 3 / 7,item.rmf.cake.three_bites
+rmf:cake.two_bites,Bites: 2 / 7,item.rmf.cake.two_bites
+rmf:cake_five_bites,,model
+rmf:cake_four_bites,,model
+rmf:cake_one_bite,,model
+rmf:cake_six_bites,,model
+rmf:cake_slice,Slice of Cake,item.rmf.cake_slice
+rmf:cake_three_bites,,model
+rmf:cake_two_bites,,model
+rmf:carrot_cake,Carrot Cake,item.rmf.carrot_cake
+rmf:carrot_cake_model,,model
+rmf:cat_food,Bowl of Cat Food,item.rmf.cat_food
+rmf:cereal,Bowl of Cereal,item.rmf.cereal
+rmf:charged_lemonade,Charged Lemonade,item.rmf.charged_lemonade
+rmf:charged_lemonade.desc,Now with 400mg of Caffeine!,item.rmf.charged_lemonade.desc
+rmf:cheese,Cheese,item.rmf.cheese
+rmf:cheese_pizza_slice,Cheese Pizza Slice,item.rmf.cheese_pizza_slice
+rmf:cheese_sandwich,Grilled(?) Cheese Sandwich,item.rmf.cheese_sandwich
+rmf:cheeseburger,Cheeseburger,item.rmf.cheeseburger
+rmf:cheesecake,Cheesecake,item.rmf.cheesecake
+rmf:cheesecake_model,,model
+rmf:chef_apron,Chef's Apron,item.rmf.chef_apron
+rmf:chef_hat,Chef's Hat,item.rmf.chef_hat
+rmf:chicken_burger,Chicken Burger,item.rmf.chicken_burger
+rmf:chicken_parmesan,Bowl of Chicken Parmesan,item.rmf.chicken_parmesan
+rmf:chicken_soup,Chicken Noodle Soup,item.rmf.chicken_soup
+rmf:chicken_wing,Raw Chicken Wing,item.rmf.chicken_wing
+rmf:chocolate_bar_dark,Bar of Dark Chocolate,item.rmf.chocolate_bar_dark
+rmf:chocolate_bar_milk,Bar of Milk Chocolate,item.rmf.chocolate_bar_milk
+rmf:chocolate_bar_white,Bar of White Chocolate,item.rmf.chocolate_bar_white
+rmf:chocolate_cake,Chocolate Cake,item.rmf.chocolate_cake
+rmf:chocolate_cake_model,,model
+rmf:chocolate_cake_slice,Slice of Chocolate Cake,item.rmf.chocolate_cake_slice
+rmf:chocolate_cupcake,Chocolate Cupcake,item.rmf.chocolate_cupcake
+rmf:chocolate_ice_cream,Chocolate Ice Cream,item.rmf.chocolate_ice_cream
+rmf:chocolate_milk,Chocolate Milk,item.rmf.chocolate_milk
+rmf:churro,Churro,item.rmf.churro
+rmf:churro_one_bite,,model
+rmf:churro_two_bites,,model
+rmf:cinnamon_bun,,model
+rmf:cleaver,Cleaver,item.rmf.cleaver
+rmf:cleaver_inv,,model
+rmf:cocoa_cookie,Cocoa Cookie,item.rmf.cocoa_cookie
+rmf:coconut,Coconut,item.rmf.coconut
+rmf:coconut_half,Coconut Half,item.rmf.coconut_half
+rmf:coconut_mash,Coconut Mash,item.rmf.coconut_mash
+rmf:coconut_milk,Coconut Milk Bucket,item.rmf.coconut_milk
+rmf:coffee,Bottle of Coffee,item.rmf.coffee
+rmf:coffee_beans,Coffee Beans,item.rmf.coffee_beans
+rmf:coffee_grounds,Coffee Grounds,item.rmf.coffee_grounds
+rmf:cookbook,Gourmand's Digest,item.rmf.cookbook
+rmf:cookbook_alt_milk,Other Milk Types,item.rmf.cookbook_alt_milk
+rmf:cookbook_changes,Vanilla Changes,item.rmf.cookbook_changes
+rmf:cookbook_edition,Edition,item.rmf.cookbook_edition
+rmf:cookbook_mashes,Mashed Items,item.rmf.cookbook_mashes
+rmf:cookbook_model,,model
+rmf:cookbook_snow_cones,Snow Cones,item.rmf.cookbook_snow_cones
+rmf:cookbook_stonecutter,Stonecutter Recipes,item.rmf.cookbook_stonecutter
+rmf:cooked_bacon,Cooked Bacon,item.rmf.cooked_bacon
+rmf:cooked_chicken_wing,Cooked Chicken Wing,item.rmf.cooked_chicken_wing
+rmf:cooked_corn,Corn on the Cob,item.rmf.cooked_corn
+rmf:cooked_corn_eating,,model
+rmf:cooked_ham,Cooked Ham,item.rmf.cooked_ham
+rmf:cooked_ham_eating,,model
+rmf:cooked_honeycomb,Honeycomb Candy,item.rmf.cooked_honeycomb
+rmf:cooked_pufferfish_tail,Cooked Pufferfish Tail,item.rmf.cooked_pufferfish_tail
+rmf:cooked_rice,Cooked Rice,item.rmf.cooked_rice
+rmf:cooking_pot,Cooking Pot,item.rmf.cooking_pot
+rmf:cooking_pot_water,Pot of Water,item.rmf.cooking_pot_water
+rmf:cooled_charcoal,,model
+rmf:corn,Maize,item.rmf.corn
+rmf:corn_dog,Corn Dog,item.rmf.corn_dog
+rmf:cottage_cheese,Cottage Cheese,item.rmf.cottage_cheese
+rmf:cracker,Wheat Cracker,item.rmf.cracker
+rmf:croissant,Croissant,item.rmf.croissant
+rmf:crowbar,Crowbar,item.rmf.crowbar
+rmf:cupcake,Cupcake,item.rmf.cupcake
+rmf:curry,Bowl of Curry,item.rmf.curry
+rmf:cut_potatoes,Potato Fries,item.rmf.cut_potatoes
+rmf:cutting_board,Cutting Board,item.rmf.cutting_board
+rmf:cutting_board_model,,model
+rmf:danger_pottery_sherd,Danger Pottery Sherd,item.rmf.danger_pottery_sherd
+rmf:decor_tooltip,(Decorative Item),item.rmf.decor_tooltip
+rmf:diamond_apple,Diamond Apple,item.rmf.diamond_apple
+rmf:diamond_shears,Diamond Shears,item.rmf.diamond_shears
+rmf:display_glass_bottle,Glass Bottle Display,item.rmf.display_glass_bottle
+rmf:display_glass_bottle_model,,model
+rmf:dog_food,Bowl of Dog Food,item.rmf.dog_food
+rmf:double_glazed_fritter,Double Glazed Apple Fritter,item.rmf.double_glazed_fritter
+rmf:double_glazed_fritter.desc,These are NOT safe for human consumption.,item.rmf.double_glazed_fritter.desc
+rmf:dough,Dough,item.rmf.dough
+rmf:dough_baguette,Baguette-Shaped Dough,item.rmf.dough_baguette
+rmf:dough_berry_cookie,Berry Cookie Dough,item.rmf.dough_berry_cookie
+rmf:dough_cocoa_cookie,Cocoa Cookie Dough,item.rmf.dough_cocoa_cookie
+rmf:dough_cookie,Cookie Dough,item.rmf.dough_cookie
+rmf:dough_croissant,Croissant-Shaped Dough,item.rmf.dough_croissant
+rmf:dough_glow_berry_cookie,Glow Berry Cookie Dough,item.rmf.dough_glow_berry_cookie
+rmf:dough_honey_cookie,Honey Cookie Dough,item.rmf.dough_honey_cookie
+rmf:dough_muffin,Muffin-Shaped Dough,item.rmf.dough_muffin
+rmf:dough_nut,Donut-Shaped Dough,item.rmf.dough_nut
+rmf:dough_pretzel,Pretzel-Shaped Dough,item.rmf.dough_pretzel
+rmf:dough_shapeless,,model
+rmf:dragon_breath,,model
+rmf:dragon_fruit,Dragon Fruit,item.rmf.dragon_fruit
+rmf:dragon_fruit_juice,Dragon Fruit Juice,item.rmf.dragon_fruit_juice
+rmf:dragon_fruit_mash,Dragon Fruit Mash,item.rmf.dragon_fruit_mash
+rmf:dragon_fruit_pie,Dragon Fruit Pie,item.rmf.dragon_fruit_pie
+rmf:dragon_fruit_smoothie,Dragon Fruit Smoothie,item.rmf.dragon_fruit_smoothie
+rmf:dragon_pie_mix,Unbaked Dragon Fruit Pie,item.rmf.dragon_pie_mix
+rmf:dumpling,Dumpling,item.rmf.dumpling
+rmf:egg_roll,Egg Roll,item.rmf.egg_roll
+rmf:emerald_apple,Emerald Apple,item.rmf.emerald_apple
+rmf:enchanted_diamond_apple,Enchanted Diamond Apple,item.rmf.enchanted_diamond_apple
+rmf:enchanted_emerald_apple,Enchanted Emerald Apple,item.rmf.enchanted_emerald_apple
+rmf:enchanted_golden_apple_juice,Enchanted Golden Apple Juice,item.rmf.enchanted_golden_apple_juice
+rmf:enchanted_golden_apple_juice.desc,You have to admit this is a bit overkill.,item.rmf.enchanted_golden_apple_juice.desc
+rmf:farmer_burger,Farmer's Delight Burger,item.rmf.farmer_burger
+rmf:field_masoned_banner_pattern,Field Masoned Banner Pattern,item.rmf.field_masoned_banner_pattern
+rmf:filled_donut,Filled Donut,item.rmf.filled_donut
+rmf:fillet_burger,Fillet Burger,item.rmf.fillet_burger
+rmf:fire_extinguisher,Fire Extinguisher,item.rmf.fire_extinguisher
+rmf:fish_and_chips,Fish & Chips,item.rmf.fish_and_chips
+rmf:flower_banner_pattern,Flower Charge Banner Pattern,item.rmf.flower_banner_pattern
+rmf:french_toast,French Toast,item.rmf.french_toast
+rmf:fried_dragon_egg,Fried Dragon Egg,item.rmf.fried_dragon_egg
+rmf:fried_egg,Fried Egg,item.rmf.fried_egg
+rmf:fried_rice,Bowl of Fried Rice,item.rmf.fried_rice
+rmf:fried_sniffer_egg,Fried Sniffer Egg,item.rmf.fried_sniffer_egg
+rmf:fried_tofu,Fried Tofu,item.rmf.fried_tofu
+rmf:frosted_pumpkin_pie,Frosted Pumpkin Pie,item.rmf.frosted_pumpkin_pie
+rmf:fruit_punch,Bottle of Fruit Punch,item.rmf.fruit_punch
+rmf:fruitcake,Fruitcake,item.rmf.fruitcake
+rmf:frying_pan,Frying Pan,item.rmf.frying_pan
+rmf:frying_pan_cooking,,model
+rmf:frying_pan_inventory,,model
+rmf:frying_pan_model,,model
+rmf:garlic_bread,Garlic Bread,item.rmf.garlic_bread
+rmf:glass_item_frame,Glass Item Frame,item.rmf.glass_item_frame
+rmf:glazed_donut,Glazed Donut,item.rmf.glazed_donut
+rmf:glow_berry_cookie,Glow Berry Cookie,item.rmf.glow_berry_cookie
+rmf:glow_berry_jam,Bowl of Glow Berry Jam,item.rmf.glow_berry_jam
+rmf:glow_berry_mash,Glow Berry Mash,item.rmf.glow_berry_mash
+rmf:glow_berry_muffin,Glow Berry Muffin,item.rmf.glow_berry_muffin
+rmf:glow_berry_pie,Glow Berry Pie,item.rmf.glow_berry_pie
+rmf:glow_filled_donut,Glow Filled Donut,item.rmf.glow_filled_donut
+rmf:glow_glass_item_frame,Glowing Glass Item Frame,item.rmf.glow_glass_item_frame
+rmf:glow_pbj_sandwich,Glowing PB&J Sandwich,item.rmf.glow_pbj_sandwich
+rmf:golden_apple_juice,Golden Apple Juice,item.rmf.golden_apple_juice
+rmf:golden_frying_pan,Golden Frying Pan,item.rmf.golden_frying_pan
+rmf:golden_frying_pan_cooking,,model
+rmf:golden_frying_pan_inventory,,model
+rmf:golden_frying_pan_model,,model
+rmf:granola,Bar of Granola,item.rmf.granola
+rmf:grape_juice,Grape Juice,item.rmf.grape_juice
+rmf:guster_banner_pattern,Guster Banner Pattern,item.rmf.guster_banner_pattern
+rmf:half_marshmallow_sandwich,,model
+rmf:ham,Bone-In Ham,item.rmf.ham
+rmf:hard_boiled_egg,Hard Boiled Egg,item.rmf.hard_boiled_egg
+rmf:herbs,Mixed Herbs,item.rmf.herbs
+rmf:honey_apple,Honeyed Apple,item.rmf.honey_apple
+rmf:honey_ball,Honeyball,item.rmf.honey_ball
+rmf:honey_chicken,Honey Garlic Chicken,item.rmf.honey_chicken
+rmf:honey_cookie,Honey Cookie,item.rmf.honey_cookie
+rmf:honeybun,Honeybun,item.rmf.honeybun
+rmf:honeycomb_candy,,model
+rmf:honeyed_apple,,model
+rmf:hot_cocoa,Bottle of Hot Cocoa,item.rmf.hot_cocoa
+rmf:hot_dog,Hot Dog,item.rmf.hot_dog
+rmf:ice_cream,Plain Ice Cream,item.rmf.ice_cream
+rmf:iced_tea,Bottle of Iced Tea,item.rmf.iced_tea
+rmf:icon,,model
+rmf:ignited_charcoal,,model
+rmf:impossible_burger,Impossible Burger,item.rmf.impossible_burger
+rmf:incinerated_marshmallow_stick,Charcoal on a Stick,item.rmf.incinerated_marshmallow_stick
+rmf:item_crate,Empty Item Crate,item.rmf.item_crate
+rmf:item_crate_apple,Crate of Apples,item.rmf.item_crate_apple
+rmf:item_crate_banana,Crate of Bananas,item.rmf.item_crate_banana
+rmf:item_crate_beef,Crate of Raw Beef,item.rmf.item_crate_beef
+rmf:item_crate_blackberry,Crate of Blackberries,item.rmf.item_crate_blackberry
+rmf:item_crate_blue_egg,Crate of Blue Eggs,item.rmf.item_crate_blue_egg
+rmf:item_crate_blueberry,Crate of Blueberries,item.rmf.item_crate_blueberry
+rmf:item_crate_brown_egg,Crate of Brown Eggs,item.rmf.item_crate_brown_egg
+rmf:item_crate_brown_mushroom,Crate of Brown Mushrooms,item.rmf.item_crate_brown_mushroom
+rmf:item_crate_carrot,Crate of Carrots,item.rmf.item_crate_carrot
+rmf:item_crate_charcoal,Crate of Charcoal,item.rmf.item_crate_charcoal
+rmf:item_crate_chicken,Crate of Raw Chicken,item.rmf.item_crate_chicken
+rmf:item_crate_cocoa_beans,Crate of Cocoa Beans,item.rmf.item_crate_cocoa_beans
+rmf:item_crate_coconut,Crate of Coconuts,item.rmf.item_crate_coconut
+rmf:item_crate_cod,Crate of Raw Cod,item.rmf.item_crate_cod
+rmf:item_crate_coffee_beans,Crate of Coffee Beans,item.rmf.item_crate_coffee_beans
+rmf:item_crate_corn,Crate of Maize,item.rmf.item_crate_corn
+rmf:item_crate_crate,Crate of Item Crates,item.rmf.item_crate_crate
+rmf:item_crate_dragon_fruit,Crate of Dragon Fruit,item.rmf.item_crate_dragon_fruit
+rmf:item_crate_egg,Crate of Eggs,item.rmf.item_crate_egg
+rmf:item_crate_glow_berries,Crate of Glow Berries,item.rmf.item_crate_glow_berries
+rmf:item_crate_ham,Crate of Bone-In Ham,item.rmf.item_crate_ham
+rmf:item_crate_lemon,Crate of Lemons,item.rmf.item_crate_lemon
+rmf:item_crate_mango,Crate of Mangoes,item.rmf.item_crate_mango
+rmf:item_crate_melon_seeds,Crate of Melon Seeds,item.rmf.item_crate_melon_seeds
+rmf:item_crate_milk_barrel,Crate of Milk Barrels,item.rmf.item_crate_milk_barrel
+rmf:item_crate_mutton,Crate of Raw Mutton,item.rmf.item_crate_mutton
+rmf:item_crate_nether_wart,Crate of Nether Wart,item.rmf.item_crate_nether_wart
+rmf:item_crate_orange,Crate of Oranges,item.rmf.item_crate_orange
+rmf:item_crate_pale_apple,Crate of Pale Apples,item.rmf.item_crate_pale_apple
+rmf:item_crate_pasta,Crate of Pasta,item.rmf.item_crate_pasta
+rmf:item_crate_peach,Crate of Peaches,item.rmf.item_crate_peach
+rmf:item_crate_popcorn_bag,Crate of Popcorn Bags,item.rmf.item_crate_popcorn_bag
+rmf:item_crate_popcorn_seeds,Crate of Popcorn Seeds,item.rmf.item_crate_popcorn_seeds
+rmf:item_crate_porkchop,Crate of Raw Porkchop,item.rmf.item_crate_porkchop
+rmf:item_crate_potato,Crate of Potatoes,item.rmf.item_crate_potato
+rmf:item_crate_pufferfish,Crate of Pufferfish,item.rmf.item_crate_pufferfish
+rmf:item_crate_pumpkin,Crate of Pumpkins,item.rmf.item_crate_pumpkin
+rmf:item_crate_pumpkin_seeds,Crate of Pumpkin Seeds,item.rmf.item_crate_pumpkin_seeds
+rmf:item_crate_rabbit,Crate of Raw Rabbit,item.rmf.item_crate_rabbit
+rmf:item_crate_raspberry,Crate of Raspberries,item.rmf.item_crate_raspberry
+rmf:item_crate_red_mushroom,Crate of Red Mushrooms,item.rmf.item_crate_red_mushroom
+rmf:item_crate_rice,Crate of Rice Grains,item.rmf.item_crate_rice
+rmf:item_crate_salmon,Crate of Raw Salmon,item.rmf.item_crate_salmon
+rmf:item_crate_salt,Crate of Salt,item.rmf.item_crate_salt
+rmf:item_crate_seasoning,Crate of Assorted Seasoning,item.rmf.item_crate_seasoning
+rmf:item_crate_strawberry,Crate of Strawberries,item.rmf.item_crate_strawberry
+rmf:item_crate_sugar_cane,Crate of Sugar Cane,item.rmf.item_crate_sugar_cane
+rmf:item_crate_sweet_berries,Crate of Sweet Berries,item.rmf.item_crate_sweet_berries
+rmf:item_crate_taiga_beans,Crate of Taiga Beans,item.rmf.item_crate_taiga_beans
+rmf:item_crate_tomato,Crate of Tomatoes,item.rmf.item_crate_tomato
+rmf:item_crate_tomato_seeds,Crate of Tomato Seeds,item.rmf.item_crate_tomato_seeds
+rmf:item_crate_vegetable_oil,Crate of Vegetable Oil,item.rmf.item_crate_vegetable_oil
+rmf:item_crate_vibrant_apple,Crate of Vibrant Apples,item.rmf.item_crate_vibrant_apple
+rmf:item_crate_vinegar,Crate of Apple Cider Vinegar,item.rmf.item_crate_vinegar
+rmf:item_crate_water_barrel,Crate of Water Barrels,item.rmf.item_crate_water_barrel
+rmf:item_crate_wheat_seeds,Crate of Wheat Seeds,item.rmf.item_crate_wheat_seeds
+rmf:juicer,Juicer,item.rmf.juicer
+rmf:juicer_open,,model
+rmf:kabob,Kabob,item.rmf.kabob
+rmf:kabob_one_bite,,model
+rmf:kabob_two_bites,,model
+rmf:lasagna,Bowl of Lasagna,item.rmf.lasagna
+rmf:lemon,Lemon,item.rmf.lemon
+rmf:lemon_juice,Bottle of Lemon Juice,item.rmf.lemon_juice
+rmf:lemon_pie,Lemon Pie,item.rmf.lemon_pie
+rmf:lemon_pie_mix,Unbaked Lemon Pie,item.rmf.lemon_pie_mix
+rmf:lemonade,Glass of Lemonade,item.rmf.lemonade
+rmf:lettuce,Lettuce Leaf,item.rmf.lettuce
+rmf:lousy_shirt,Lousy T-Shirt,item.rmf.lousy_shirt
+rmf:mac_and_cheese,Bowl of Mac & Cheese,item.rmf.mac_and_cheese
+rmf:mango,Mango,item.rmf.mango
+rmf:mango_juice,Mango Juice,item.rmf.mango_juice
+rmf:mango_mash,Mango Mash,item.rmf.mango_mash
+rmf:mango_smoothie,Mango Smoothie,item.rmf.mango_smoothie
+rmf:marshmallow_sandwich,Marshmallow Sandwich,item.rmf.marshmallow_sandwich
+rmf:marshmallow_sandwich.help,This Marshmallow Sandwich is missing a Wheat Cracker.,item.rmf.marshmallow_sandwich.help
+rmf:marshmallow_stick,Marshmallow on a Stick,item.rmf.marshmallow_stick
+rmf:marshmallow_stick_roast,,model
+rmf:marshmallows,Marshmallows,item.rmf.marshmallows
+rmf:mashed_potatoes,Bowl of Mashed Potatoes,item.rmf.mashed_potatoes
+rmf:mct_sandwich,MCT Sandwich,item.rmf.mct_sandwich
+rmf:meaty_pizza_slice,Meaty Pizza Slice,item.rmf.meaty_pizza_slice
+rmf:melon_juice,Melon Juice,item.rmf.melon_juice
+rmf:melon_mash,Melon Mash,item.rmf.melon_mash
+rmf:melon_smoothie,Melon Smoothie,item.rmf.melon_smoothie
+rmf:menu,Writable Menu,item.rmf.menu
+rmf:menu_model,,model
+rmf:milk_barrel,Barrel of Milk,item.rmf.milk_barrel
+rmf:milk_bottle,,model
+rmf:miso_soup,Bowl of Miso Soup,item.rmf.miso_soup
+rmf:mixing_bowl,Mixing Bowl,item.rmf.mixing_bowl
+rmf:mixing_bowl.contents_banana_mash,Banana Mash,item.rmf.mixing_bowl.contents_banana_mash
+rmf:mixing_bowl.contents_berries,Berries,item.rmf.mixing_bowl.contents_berries
+rmf:mixing_bowl.contents_bread,Bread,item.rmf.mixing_bowl.contents_bread
+rmf:mixing_bowl.contents_dough,Dough,item.rmf.mixing_bowl.contents_dough
+rmf:mixing_bowl.contents_dragon_fruit,Dragon Fruit,item.rmf.mixing_bowl.contents_dragon_fruit
+rmf:mixing_bowl.contents_egg,Egg,item.rmf.mixing_bowl.contents_egg
+rmf:mixing_bowl.contents_flour,Flour,item.rmf.mixing_bowl.contents_flour
+rmf:mixing_bowl.contents_glow_berry_jam,Glow Berry Jam,item.rmf.mixing_bowl.contents_glow_berry_jam
+rmf:mixing_bowl.contents_glow_berry_mash,Glow Berry Mash,item.rmf.mixing_bowl.contents_glow_berry_mash
+rmf:mixing_bowl.contents_lemon_juice,Lemon Juice,item.rmf.mixing_bowl.contents_lemon_juice
+rmf:mixing_bowl.contents_milk,Milk,item.rmf.mixing_bowl.contents_milk
+rmf:mixing_bowl.contents_orange,Orange,item.rmf.mixing_bowl.contents_orange
+rmf:mixing_bowl.contents_pale_apple,Pale Apple,item.rmf.mixing_bowl.contents_pale_apple
+rmf:mixing_bowl.contents_peach,Peach,item.rmf.mixing_bowl.contents_peach
+rmf:mixing_bowl.contents_peanut,Peanuts,item.rmf.mixing_bowl.contents_peanut
+rmf:mixing_bowl.contents_salt,Salt,item.rmf.mixing_bowl.contents_salt
+rmf:mixing_bowl.contents_seasoning,Seasoning,item.rmf.mixing_bowl.contents_seasoning
+rmf:mixing_bowl.contents_sweet_berry_jam,Sweet Berry Jam,item.rmf.mixing_bowl.contents_sweet_berry_jam
+rmf:mixing_bowl.contents_sweet_berry_mash,Sweet Berry Mash,item.rmf.mixing_bowl.contents_sweet_berry_mash
+rmf:mixing_bowl.contents_taiga_beans,Taiga Beans,item.rmf.mixing_bowl.contents_taiga_beans
+rmf:mixing_bowl_inventory,,model
+rmf:mixing_bowl_model,,model
+rmf:monster_jerky,Monster Jerky,item.rmf.monster_jerky
+rmf:monster_mash,Monster Mash,item.rmf.monster_mash
+rmf:monster_mash.desc1,This looks AND smells awful.,item.rmf.monster_mash.desc1
+rmf:monster_mash.desc2,Nothing good can come from eating this.,item.rmf.monster_mash.desc2
+rmf:monster_puree,Monster Purée,item.rmf.monster_puree
+rmf:monster_puree.desc1,This blend of monster bits and pieces,item.rmf.monster_puree.desc1
+rmf:monster_puree.desc2,has been genetically engineered to hurt you.,item.rmf.monster_puree.desc2
+rmf:mortar_and_pestle,Mortar & Pestle,item.rmf.mortar_and_pestle
+rmf:mortar_and_pestle/acacia_inventory,,model
+rmf:mortar_and_pestle/bamboo_inventory,,model
+rmf:mortar_and_pestle/birch_inventory,,model
+rmf:mortar_and_pestle/brick_inventory,,model
+rmf:mortar_and_pestle/cherry_inventory,,model
+rmf:mortar_and_pestle/crimson_inventory,,model
+rmf:mortar_and_pestle/dark_oak_inventory,,model
+rmf:mortar_and_pestle/jungle_inventory,,model
+rmf:mortar_and_pestle/mangrove_inventory,,model
+rmf:mortar_and_pestle/oak_inventory,,model
+rmf:mortar_and_pestle/pale_oak_inventory,,model
+rmf:mortar_and_pestle/spruce_inventory,,model
+rmf:mortar_and_pestle/stone_inventory,,model
+rmf:mortar_and_pestle/warped_inventory,,model
+rmf:nacho,Nacho Chip,item.rmf.nacho
+rmf:nether_wart_soup,Bowl of Nether Wart Soup,item.rmf.nether_wart_soup
+rmf:newspaper,,model
+rmf:oat_milk,Oat Milk Bucket,item.rmf.oat_milk
+rmf:oatmeal,Bowl of Oatmeal,item.rmf.oatmeal
+rmf:oblivian_stew,Bowl of Oblivian Stew,item.rmf.oblivian_stew
+rmf:oblivian_stew.desc1,A stew created by the love of a community.,item.rmf.oblivian_stew.desc1
+rmf:oblivian_stew.desc2,Tastes like... sugar?,item.rmf.oblivian_stew.desc2
+rmf:omelette,Omelette,item.rmf.omelette
+rmf:ominous_cookie,Ominous Cookie,item.rmf.ominous_cookie
+rmf:ominous_cookie.desc1,This cookie comes from a Darker Plane...,item.rmf.ominous_cookie.desc1
+rmf:ominous_cookie.desc2,"...Suddenly, you don't feel hungry anymore.",item.rmf.ominous_cookie.desc2
+rmf:orange,Orange,item.rmf.orange
+rmf:orange_juice,Orange Juice,item.rmf.orange_juice
+rmf:pale_apple,Pale Apple,item.rmf.pale_apple
+rmf:pale_berries,Pale Berries,item.rmf.pale_berries
+rmf:pancake,Pancake,item.rmf.pancake
+rmf:pancake_mix,Bowl of Pancake Mix,item.rmf.pancake_mix
+rmf:pasta,Pasta,item.rmf.pasta
+rmf:pbj_sandwich,PB&J Sandwich,item.rmf.pbj_sandwich
+rmf:peach,Peach,item.rmf.peach
+rmf:peach_juice,Peach Juice,item.rmf.peach_juice
+rmf:peach_mash,Peach Mash,item.rmf.peach_mash
+rmf:peach_princess,,model
+rmf:peach_smoothie,Peach Smoothie,item.rmf.peach_smoothie
+rmf:peanut,Peanut,item.rmf.peanut
+rmf:peanut_butter,Bottle of Peanut Butter,item.rmf.peanut_butter
+rmf:phantom_membrane,Phantom Membrane,item.rmf.phantom_membrane
+rmf:pie_crust,Pie Crust,item.rmf.pie_crust
+rmf:pierogi,Pierogi,item.rmf.pierogi
+rmf:pineapple_juice,Pineapple Juice,item.rmf.pineapple_juice
+rmf:pizza_pouch,Pizza Pouch,item.rmf.pizza_pouch
+rmf:plain_donut,Plain Donut,item.rmf.plain_donut
+rmf:plain_muffin,Plain Muffin,item.rmf.plain_muffin
+rmf:poisonous_potato,Poisonous Potato,item.rmf.poisonous_potato
+rmf:popcorn_bag,Empty Popcorn Bag,item.rmf.popcorn_bag
+rmf:popcorn_bag_large,Large Bag of Popcorn,item.rmf.popcorn_bag_large
+rmf:popcorn_bag_medium,Medium Bag of Popcorn,item.rmf.popcorn_bag_medium
+rmf:popcorn_bag_small,Small Bag of Popcorn,item.rmf.popcorn_bag_small
+rmf:popcorn_bucket,Bucket of Popcorn,item.rmf.popcorn_bucket
+rmf:popcorn_seeds,Popcorn Seeds,item.rmf.popcorn_seeds
+rmf:popped_corn,Popped Corn,item.rmf.popped_corn
+rmf:poutine,Bowl of Poutine,item.rmf.poutine
+rmf:powder_snow_slab,Powder Snow Slab,item.rmf.powder_snow_slab
+rmf:pretzel,Pretzel,item.rmf.pretzel
+rmf:pretzel_chocolate,Chocolate-Covered Pretzel,item.rmf.pretzel_chocolate
+rmf:prickly_pear,,model
+rmf:pufferfish_tail,Raw Pufferfish Tail,item.rmf.pufferfish_tail
+rmf:pumpkin_pie_slice,Slice of Pumpkin Pie,item.rmf.pumpkin_pie_slice
+rmf:pumpkin_slice,Sliced Pumpkin,item.rmf.pumpkin_slice
+rmf:pumpkin_soup,Bowl of Pumpkin Soup,item.rmf.pumpkin_soup
+rmf:punnet,Punnet,item.rmf.punnet
+rmf:punnet.desc1,A basket for foraging! Place in the offhand and,item.rmf.punnet.desc1
+rmf:punnet.desc2,break grass with an empty hand to find ingredients.,item.rmf.punnet.desc2
+rmf:punnet_inventory,,model
+rmf:punnet_model,,model
+rmf:quesadilla,Quesadilla,item.rmf.quesadilla
+rmf:rabbit_foot,Rabbit's Foot,item.rmf.rabbit_foot
+rmf:rabbit_stew,Bowl of Hearty Stew,item.rmf.rabbit_stew
+rmf:radioactive_waste,Barrel of Radioactive Waste,item.rmf.radioactive_waste
+rmf:radioactive_waste.desc,"""Shipped from Mekanism with love 💘""",item.rmf.radioactive_waste.desc
+rmf:radioactive_waste_model,,model
+rmf:ramen,Bowl of Ramen,item.rmf.ramen
+rmf:raspberry,Raspberry,item.rmf.raspberry
+rmf:raspberry_mash,Raspberry Mash,item.rmf.raspberry_mash
+rmf:raspberry_smoothie,Raspberry Smoothie,item.rmf.raspberry_smoothie
+rmf:raw_eggs,Bowl of Raw Eggs,item.rmf.raw_eggs
+rmf:raw_omelette,Bowl of Raw Omelette,item.rmf.raw_omelette
+rmf:rice,Rice Grain,item.rmf.rice
+rmf:rice_bowl,Bowl of Cooked Rice,item.rmf.rice_bowl
+rmf:rice_cake,Rice Cake,item.rmf.rice_cake
+rmf:roasted_carrot,Roasted Carrot,item.rmf.roasted_carrot
+rmf:roasted_marshmallow_stick,Roasted Marshmallow on a Stick,item.rmf.roasted_marshmallow_stick
+rmf:rotten_tomato,Rotten Tomato,item.rmf.rotten_tomato
+rmf:salad,Bowl of Salad,item.rmf.salad
+rmf:salt,Salt,item.rmf.salt
+rmf:salt_and_seasoning,Salt & Seasoning,item.rmf.salt_and_seasoning
+rmf:salt_and_seasoning_model,,model
+rmf:salt_model,,model
+rmf:scrambled_eggs,Bowl of Scrambled Eggs,item.rmf.scrambled_eggs
+rmf:seasoning,Assorted Seasoning,item.rmf.seasoning
+rmf:seasoning_model,,model
+rmf:shaker_cup,Shaker Cup,item.rmf.shaker_cup
+rmf:shaker_cup.contents,Contents:,item.rmf.shaker_cup.contents
+rmf:shaker_cup.contents_banana_smoothie,Banana Smoothie,item.rmf.shaker_cup.contents_banana_smoothie
+rmf:shaker_cup.contents_blackberry_smoothie,Blackberry Smoothie,item.rmf.shaker_cup.contents_blackberry_smoothie
+rmf:shaker_cup.contents_blueberry_smoothie,Blueberry Smoothie,item.rmf.shaker_cup.contents_blueberry_smoothie
+rmf:shaker_cup.contents_coconut_milk,Coconut Milk,item.rmf.shaker_cup.contents_coconut_milk
+rmf:shaker_cup.contents_coffee,Coffee,item.rmf.shaker_cup.contents_coffee
+rmf:shaker_cup.contents_dragon_fruit_smoothie,Dragon Fruit Smoothie,item.rmf.shaker_cup.contents_dragon_fruit_smoothie
+rmf:shaker_cup.contents_honey,Honey,item.rmf.shaker_cup.contents_honey
+rmf:shaker_cup.contents_lemonade,Lemonade,item.rmf.shaker_cup.contents_lemonade
+rmf:shaker_cup.contents_mango_smoothie,Mango Smoothie,item.rmf.shaker_cup.contents_mango_smoothie
+rmf:shaker_cup.contents_melon_smoothie,Melon Smoothie,item.rmf.shaker_cup.contents_melon_smoothie
+rmf:shaker_cup.contents_peach_smoothie,Peach Smoothie,item.rmf.shaker_cup.contents_peach_smoothie
+rmf:shaker_cup.contents_raspberry_smoothie,Raspberry Smoothie,item.rmf.shaker_cup.contents_raspberry_smoothie
+rmf:shaker_cup.contents_snowball,Snowball,item.rmf.shaker_cup.contents_snowball
+rmf:shaker_cup.contents_strawberry_smoothie,Strawberry Smoothie,item.rmf.shaker_cup.contents_strawberry_smoothie
+rmf:shaker_cup.contents_sugar,Sugar,item.rmf.shaker_cup.contents_sugar
+rmf:shaker_cup.contents_vinegar,Apple Cider Vinegar,item.rmf.shaker_cup.contents_vinegar
+rmf:shaker_cup.contents_water,Water,item.rmf.shaker_cup.contents_water
+rmf:shaker_cup.crafting,Crafting:,item.rmf.shaker_cup.crafting
+rmf:shaker_cup.needs_shaking,Shake the cup to finish crafting!,item.rmf.shaker_cup.needs_shaking
+rmf:shaker_cup_model_empty,,model
+rmf:shaker_cup_model_shake,,model
+rmf:shaker_cup_model_used,,model
+rmf:shepard_pie,Slice of Shepard's Pie,item.rmf.shepard_pie
+rmf:skull_banner_pattern,Skull Charge Banner Pattern,item.rmf.skull_banner_pattern
+rmf:smoothie_banana,,model
+rmf:smoothie_blackberry,,model
+rmf:smoothie_blueberry,,model
+rmf:smoothie_dragon_fruit,,model
+rmf:smoothie_mango,,model
+rmf:smoothie_melon,,model
+rmf:smoothie_peach,,model
+rmf:smoothie_raspberry,,model
+rmf:smoothie_strawberry,,model
+rmf:snow_cone_black,Black Snow Cone,item.rmf.snow_cone_black
+rmf:snow_cone_blue,Blue Snow Cone,item.rmf.snow_cone_blue
+rmf:snow_cone_green,Green Snow Cone,item.rmf.snow_cone_green
+rmf:snow_cone_light_blue,Light Blue Snow Cone,item.rmf.snow_cone_light_blue
+rmf:snow_cone_lime,Lime Snow Cone,item.rmf.snow_cone_lime
+rmf:snow_cone_orange,Orange Snow Cone,item.rmf.snow_cone_orange
+rmf:snow_cone_pink,Pink Snow Cone,item.rmf.snow_cone_pink
+rmf:snow_cone_purple,Purple Snow Cone,item.rmf.snow_cone_purple
+rmf:snow_cone_red,Red Snow Cone,item.rmf.snow_cone_red
+rmf:snow_cone_white,White Snow Cone,item.rmf.snow_cone_white
+rmf:snow_cone_yellow,Yellow Snow Cone,item.rmf.snow_cone_yellow
+rmf:soft_boiled_egg,Soft Boiled Egg,item.rmf.soft_boiled_egg
+rmf:soy_milk,Soy Milk Bucket,item.rmf.soy_milk
+rmf:spaghetti,Bowl of Spaghetti,item.rmf.spaghetti
+rmf:spicy_mushroom_stew,Spicy Mushroom Stew,item.rmf.spicy_mushroom_stew
+rmf:stock,Bone Stock,item.rmf.stock
+rmf:stonecutter.desc,This recipe is used in a Stonecutter!,item.rmf.stonecutter.desc
+rmf:straw_hat,Straw Hat,item.rmf.straw_hat
+rmf:straw_hat_model,,model
+rmf:strawberry,Strawberry,item.rmf.strawberry
+rmf:strawberry_mash,Strawberry Mash,item.rmf.strawberry_mash
+rmf:strawberry_smoothie,Strawberry Smoothie,item.rmf.strawberry_smoothie
+rmf:stuffed_potato,Stuffed Potato,item.rmf.stuffed_potato
+rmf:stuffed_pumpkin,Stuffed Pumpkin,item.rmf.stuffed_pumpkin
+rmf:sushi,Sushi Roll,item.rmf.sushi
+rmf:sushi_log,Sushi Log,item.rmf.sushi_log
+rmf:sweet_berry_jam,Bowl of Sweet Berry Jam,item.rmf.sweet_berry_jam
+rmf:sweet_berry_mash,Sweet Berry Mash,item.rmf.sweet_berry_mash
+rmf:sweet_berry_muffin,Sweet Berry Muffin,item.rmf.sweet_berry_muffin
+rmf:sweet_berry_pie,Sweet Berry Pie,item.rmf.sweet_berry_pie
+rmf:taco,Taco,item.rmf.taco
+rmf:taiga_beans,Taiga Beans,item.rmf.taiga_beans
+rmf:taiga_flour,Taiga Bean Flour,item.rmf.taiga_flour
+rmf:tea,Bottle of Tea,item.rmf.tea
+rmf:test_item,Placeholder,item.rmf.test_item
+rmf:test_item.description,"Hi, I'm a Placeholder! If you can see me, something went wrong. 
+Send regfunkid a message about this!",item.rmf.test_item.description
+rmf:toast,Toast,item.rmf.toast
+rmf:tofu,Tofu,item.rmf.tofu
+rmf:tomato,Tomato,item.rmf.tomato
+rmf:tomato_sauce,Tomato Sauce,item.rmf.tomato_sauce
+rmf:tomato_seeds,Tomato Seeds,item.rmf.tomato_seeds
+rmf:tomato_soup,Bowl of Tomato Soup,item.rmf.tomato_soup
+rmf:triple_display_glass_bottle,Triple Glass Bottle Display,item.rmf.triple_display_glass_bottle
+rmf:triple_display_glass_bottle_model,,model
+rmf:unbaked_beans,Bowl of Unbaked Beans,item.rmf.unbaked_beans
+rmf:unbaked_fruitcake,Unbaked Fruitcake,item.rmf.unbaked_fruitcake
+rmf:uncooked_egg_roll,Uncooked Egg Roll,item.rmf.uncooked_egg_roll
+rmf:uncooked_glow_berry_jam,Bowl of Uncooked Glow Berry Jam,item.rmf.uncooked_glow_berry_jam
+rmf:uncooked_sweet_berry_jam,Bowl of Uncooked Sweet Berry Jam,item.rmf.uncooked_sweet_berry_jam
+rmf:unknown_item,???,item.rmf.unknown_item
+rmf:unlimited_bacon,Unlimited Bacon,item.rmf.unlimited_bacon
+rmf:veg_burrito,Veggie Burrito,item.rmf.veg_burrito
+rmf:veg_corn_dog,Veggie Corn Dog,item.rmf.veg_corn_dog
+rmf:veg_kabob,Veggie Kabob,item.rmf.veg_kabob
+rmf:veg_kabob_one_bite,,model
+rmf:veg_kabob_two_bites,,model
+rmf:veg_pizza_slice,Veggie Pizza Slice,item.rmf.veg_pizza_slice
+rmf:veg_quesadilla,Veggie Quesadilla,item.rmf.veg_quesadilla
+rmf:veg_taco,Veggie Taco,item.rmf.veg_taco
+rmf:vegetable_oil,Vegetable Oil,item.rmf.vegetable_oil
+rmf:veggie_dog,Veggie Dog,item.rmf.veggie_dog
+rmf:vibrant_apple,Vibrant Apple,item.rmf.vibrant_apple
+rmf:vinegar,Apple Cider Vinegar,item.rmf.vinegar
+rmf:waffle,Waffle,item.rmf.waffle
+rmf:waffle_batter,Bowl of Waffle Batter,item.rmf.waffle_batter
+rmf:water_barrel,Barrel of Water,item.rmf.water_barrel
+rmf:water_bottle,,model
+rmf:wheat_flour,Wheat Flour,item.rmf.wheat_flour
+rmf:wild_carrot,Wild Carrot,item.rmf.wild_carrot
+rmf:wild_potato,Wild Potato,item.rmf.wild_potato
+rmf:wooden_shears,Wooden Shears,item.rmf.wooden_shears
+rmf:yogurt,Bottle Of Yogurt,item.rmf.yogurt
+rmf:zombie_jerky,Zombie Jerky,item.rmf.zombie_jerky

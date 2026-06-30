@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.herbcraft.alchemy.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "AlchemyItemMixin",
+    "AlchemyPotionArrowMixin",
+    "AlchemyPlayerMixin",
+    "ItemCostAdvancedPotionMixin",
+    "BrewingStandIngredientSlotMixin",
+    "BrewingStandPotionSlotMixin",
+    "BrewingStandCatalystMixin",
+    "WitchHerbcraftPotionMixin",
+    "ThrownSplashPotionKnowledgeMixin",
+    "AreaEffectCloudKnowledgeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

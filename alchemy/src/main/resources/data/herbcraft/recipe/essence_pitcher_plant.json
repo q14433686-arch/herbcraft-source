@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:pitcher_plant",
+    "minecraft:pitcher_plant",
+    "minecraft:pitcher_plant",
+    "minecraft:pitcher_plant",
+    "minecraft:pitcher_plant",
+    "minecraft:pitcher_plant",
+    "minecraft:pitcher_plant",
+    "minecraft:pitcher_plant",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_pitcher_plant",
+    "count": 1
+  }
+}

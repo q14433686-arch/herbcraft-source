@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "item_injections": [
+    {
+      "loot_table": "minecraft:chests/village/village_temple",
+      "chance": 0.1,
+      "item": "minecraft:potion",
+      "potion": "herbcraft:dandelion_long"
+    },
+    {
+      "loot_table": "minecraft:chests/village/village_fletcher",
+      "chance": 0.12,
+      "item": "minecraft:tipped_arrow",
+      "count": 4,
+      "potion": "herbcraft:tulip_long"
+    },
+    {
+      "loot_table": "minecraft:chests/village/village_armorer",
+      "chance": 0.08,
+      "item": "minecraft:iron_chestplate",
+      "components": {
+        "herbcraft_alchemy:armor_support": {
+          "support_id": "steady_bearing",
+          "source_essence": "dandelion",
+          "orientation": "sustained",
+          "buffer_amount": 8,
+          "mode": "attached"
+        }
+      }
+    },
+    {
+      "loot_table": "minecraft:chests/bastion_bridge",
+      "chance": 0.08,
+      "item": "herbcraft:distilled_essence",
+      "components": {
+        "herbcraft_alchemy:distilled_essence": {
+          "source_essence": "crimson_fungus",
+          "orientation": "intense"
+        }
+      }
+    },
+    {
+      "loot_table": "minecraft:chests/ancient_city",
+      "chance": 0.06,
+      "item": "herbcraft:distilled_essence",
+      "components": {
+        "herbcraft_alchemy:distilled_essence": {
+          "source_essence": "wither_rose",
+          "orientation": "purified"
+        }
+      }
+    },
+    {
+      "loot_table": "minecraft:chests/stronghold_library",
+      "chance": 0.08,
+      "item": "minecraft:lingering_potion",
+      "potion": "herbcraft:dandelion_clarified"
+    },
+    {
+      "loot_table": "minecraft:chests/jungle_temple",
+      "chance": 0.08,
+      "item": "minecraft:tipped_arrow",
+      "count": 3,
+      "potion": "herbcraft:undead_venom"
+    },
+    {
+      "loot_table": "minecraft:chests/trial_chambers/reward_rare",
+      "chance": 0.08,
+      "item": "minecraft:splash_potion",
+      "potion": "herbcraft:poppy_strong"
+    }
+  ]
+}

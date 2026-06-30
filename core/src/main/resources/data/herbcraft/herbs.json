@@ -1,0 +1,2412 @@
+{
+  "schema_version": 1,
+  "note": "Generated migration table from current Herbcraft.java. M1 will make this authoritative in a later step.",
+  "herbs": [
+    {
+      "item": "minecraft:dandelion",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 4,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.4
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.5
+        }
+      }
+    },
+    {
+      "item": "minecraft:golden_dandelion",
+      "nutrition": 2,
+      "saturation_modifier": 1.2,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:absorption",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 30,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.15,
+          "amplifier": 1,
+          "duration_seconds": 5,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "item": "minecraft:poppy",
+      "nutrition": 1,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:weakness",
+        "minecraft:mining_fatigue"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:slowness",
+          "chance": 0.6,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": false
+        }
+      ],
+      "counter": "poppy"
+    },
+    {
+      "item": "minecraft:blue_orchid",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.35
+        },
+        "saturation": {
+          "amount": 0.3,
+          "chance": 0.55
+        }
+      }
+    },
+    {
+      "item": "minecraft:allium",
+      "nutrition": 1,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "remove_effects": [
+        "minecraft:poison"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.5
+        }
+      }
+    },
+    {
+      "item": "minecraft:azure_bluet",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:glowing"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:blindness",
+          "chance": 0.75,
+          "amplifier": 0,
+          "duration_seconds": 6,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:night_vision",
+          "chance": 0.05,
+          "amplifier": 0,
+          "duration_seconds": 30,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "item": "minecraft:red_tulip",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:weakness",
+          "chance": 0.5,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": false
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.3
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:orange_tulip",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:weakness",
+          "chance": 0.5,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": false
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.3
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:pink_tulip",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:weakness",
+          "chance": 0.5,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": false
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.3
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:white_tulip",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:nausea"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:weakness",
+          "chance": 0.5,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": false
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.3
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:oxeye_daisy",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "remove_effects": [
+        "minecraft:nausea"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.4,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.4
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.5
+        }
+      }
+    },
+    {
+      "item": "minecraft:cornflower",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "remove_effects": [
+        "minecraft:blindness"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:jump_boost",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.35
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.45
+        }
+      }
+    },
+    {
+      "item": "minecraft:lily_of_the_valley",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:slowness",
+        "minecraft:mining_fatigue"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "chance": 1.0,
+          "amplifier": 1,
+          "duration_seconds": 10,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:weakness",
+          "chance": 0.3,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:wither_rose",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:poison"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:wither",
+          "chance": 1.0,
+          "amplifier": 1,
+          "duration_seconds": 8,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:hunger",
+          "chance": 1.0,
+          "amplifier": 1,
+          "duration_seconds": 15,
+          "positive": false
+        }
+      ],
+      "flags": [
+        "clearPositiveEffects"
+      ]
+    },
+    {
+      "item": "minecraft:torchflower",
+      "nutrition": 2,
+      "saturation_modifier": 0.3,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:glowing",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 30,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:night_vision",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 60,
+          "positive": true
+        }
+      ],
+      "counter": "torchflower"
+    },
+    {
+      "item": "minecraft:closed_eyeblossom",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:bad_omen"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:darkness",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.5,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:resistance",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "item": "minecraft:open_eyeblossom",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:blindness",
+        "minecraft:darkness"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:glowing",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 20,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:wither",
+          "chance": 0.25,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:cactus_flower",
+      "nutrition": 1,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.4
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.5
+        }
+      }
+    },
+    {
+      "item": "minecraft:wildflowers",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:jump_boost",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.1
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.35
+        }
+      }
+    },
+    {
+      "item": "minecraft:pink_petals",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.15
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:sunflower",
+      "nutrition": 2,
+      "saturation_modifier": 0.2,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:absorption",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 30,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.45
+        }
+      }
+    },
+    {
+      "item": "minecraft:lilac",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:nausea"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "chance": 0.35,
+          "amplifier": 0,
+          "duration_seconds": 20,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.55
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.55
+        }
+      }
+    },
+    {
+      "item": "minecraft:rose_bush",
+      "nutrition": 1,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.3,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": true
+        }
+      ],
+      "damage_events": [
+        {
+          "chance": 0.3,
+          "amount": 1.0
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.45
+        }
+      }
+    },
+    {
+      "item": "minecraft:peony",
+      "nutrition": 1,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:weakness"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "chance": 0.3,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.5
+        }
+      }
+    },
+    {
+      "item": "minecraft:pitcher_plant",
+      "nutrition": 3,
+      "saturation_modifier": 0.5,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:poison"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:hunger",
+          "chance": 0.3,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:short_grass",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.05,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.3
+        }
+      }
+    },
+    {
+      "item": "minecraft:tall_grass",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.05,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.3
+        }
+      }
+    },
+    {
+      "item": "minecraft:fern",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "chance": 0.3,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.15
+        },
+        "saturation": {
+          "amount": 0.3,
+          "chance": 0.45
+        }
+      }
+    },
+    {
+      "item": "minecraft:large_fern",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "chance": 0.3,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.15
+        },
+        "saturation": {
+          "amount": 0.3,
+          "chance": 0.45
+        }
+      }
+    },
+    {
+      "item": "minecraft:seagrass",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.1
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:lily_pad",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:water_breathing",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.1
+        },
+        "saturation": {
+          "amount": 0.3,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:spore_blossom",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:slow_falling",
+          "chance": 0.35,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.35
+        }
+      }
+    },
+    {
+      "item": "minecraft:sugar_cane",
+      "nutrition": 1,
+      "saturation_modifier": 1.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "chance": 0.05,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "item": "minecraft:cocoa_beans",
+      "nutrition": 1,
+      "saturation_modifier": 0.2,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:haste",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "item": "minecraft:bamboo",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": false
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.1
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:kelp",
+      "nutrition": 1,
+      "saturation_modifier": 0.05,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:water_breathing",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.35
+        }
+      }
+    },
+    {
+      "item": "minecraft:snowball",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:nausea"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:slowness",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": false
+        }
+      ],
+      "flags": [
+        "shortUseProjectile"
+      ]
+    },
+    {
+      "item": "minecraft:ice",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:nausea"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:slowness",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:fire_resistance",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "item": "minecraft:packed_ice",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:slowness",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:fire_resistance",
+          "chance": 0.3,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        }
+      ],
+      "damage_events": [
+        {
+          "chance": 0.1,
+          "amount": 1.0
+        }
+      ]
+    },
+    {
+      "item": "minecraft:blue_ice",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:fire_resistance",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 30,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:slowness",
+          "chance": 1.0,
+          "amplifier": 1,
+          "duration_seconds": 8,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:powder_snow_bucket",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:poison",
+        "minecraft:nausea"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:slowness",
+          "chance": 1.0,
+          "amplifier": 1,
+          "duration_seconds": 6,
+          "positive": false
+        }
+      ],
+      "flags": [
+        "extinguish",
+        "bucketRemainder",
+        "drink"
+      ]
+    },
+    {
+      "item": "minecraft:resin_clump",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": false,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:weakness"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:slowness",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:resin_brick",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "chance": 0.3,
+          "amplifier": 0,
+          "duration_seconds": 20,
+          "positive": true
+        }
+      ],
+      "damage_events": [
+        {
+          "chance": 0.3,
+          "amount": 1.0
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.45
+        }
+      }
+    },
+    {
+      "item": "minecraft:nether_wart",
+      "nutrition": 1,
+      "saturation_modifier": 0.1,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:weakness"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "chance": 0.6,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:fermented_spider_eye",
+      "nutrition": 1,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:poison",
+        "minecraft:glowing"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:weakness",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.5,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:haste",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "item": "minecraft:blaze_powder",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:strength",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:nausea",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ],
+      "damage_events": [
+        {
+          "chance": 0.3,
+          "amount": 6.0
+        }
+      ]
+    },
+    {
+      "item": "minecraft:magma_cream",
+      "nutrition": 1,
+      "saturation_modifier": 0.1,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:fire_resistance",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 60,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.6,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:ghast_tear",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 1.0,
+          "amplifier": 1,
+          "duration_seconds": 10,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:levitation",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:rabbit_foot",
+      "nutrition": 1,
+      "saturation_modifier": 0.1,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:jump_boost",
+          "chance": 1.0,
+          "amplifier": 1,
+          "duration_seconds": 20,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:hunger",
+          "chance": 0.4,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:luck",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 120,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "item": "minecraft:phantom_membrane",
+      "nutrition": 1,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:slow_falling",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 20,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.6,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:glistering_melon_slice",
+      "nutrition": 4,
+      "saturation_modifier": 9.6,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:instant_health",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_ticks": 1,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:absorption",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 30,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "item": "minecraft:golden_carrot",
+      "nutrition": 6,
+      "saturation_modifier": 14.4,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:night_vision",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "item": "minecraft:sugar",
+      "nutrition": 1,
+      "saturation_modifier": 0.05,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        }
+      ],
+      "counter": "sugar"
+    },
+    {
+      "item": "minecraft:glowstone_dust",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:glowing",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 60,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:poison",
+          "chance": 0.6,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:slime_ball",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 6,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:jump_boost",
+          "chance": 0.3,
+          "amplifier": 0,
+          "duration_seconds": 12,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:resistance",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": true
+        }
+      ],
+      "counter": "slime",
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.3,
+          "chance": 0.45
+        }
+      }
+    },
+    {
+      "item": "minecraft:egg",
+      "nutrition": 2,
+      "saturation_modifier": 0.2,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:hunger",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": false
+        }
+      ],
+      "flags": [
+        "shortUseProjectile"
+      ]
+    },
+    {
+      "item": "minecraft:blue_egg",
+      "nutrition": 2,
+      "saturation_modifier": 0.2,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:hunger",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": false
+        }
+      ],
+      "flags": [
+        "shortUseProjectile"
+      ]
+    },
+    {
+      "item": "minecraft:brown_egg",
+      "nutrition": 2,
+      "saturation_modifier": 0.2,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:hunger",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": false
+        }
+      ],
+      "flags": [
+        "shortUseProjectile"
+      ]
+    },
+    {
+      "item": "minecraft:honeycomb",
+      "nutrition": 2,
+      "saturation_modifier": 0.2,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:poison"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:slowness",
+          "chance": 0.3,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:honeycomb_block",
+      "nutrition": 6,
+      "saturation_modifier": 0.3,
+      "consume_seconds": 3.2,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:slowness",
+          "chance": 0.5,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:honey_block",
+      "nutrition": 8,
+      "saturation_modifier": 0.2,
+      "consume_seconds": 3.2,
+      "medicinal": false,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:poison"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 20,
+          "positive": true
+        }
+      ],
+      "counter": "sugar"
+    },
+    {
+      "item": "minecraft:pumpkin",
+      "nutrition": 6,
+      "saturation_modifier": 0.2,
+      "consume_seconds": 3.2,
+      "medicinal": false,
+      "stack_group": false
+    },
+    {
+      "item": "minecraft:melon",
+      "nutrition": 8,
+      "saturation_modifier": 0.2,
+      "consume_seconds": 3.2,
+      "medicinal": false,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:nausea"
+      ]
+    },
+    {
+      "item": "minecraft:wheat_seeds",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.6
+        },
+        "saturation": {
+          "amount": 2.0,
+          "chance": 0.3
+        }
+      }
+    },
+    {
+      "item": "minecraft:beetroot_seeds",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.6
+        },
+        "saturation": {
+          "amount": 2.0,
+          "chance": 0.3
+        }
+      }
+    },
+    {
+      "item": "minecraft:melon_seeds",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.65
+        },
+        "saturation": {
+          "amount": 3.0,
+          "chance": 0.5
+        }
+      }
+    },
+    {
+      "item": "minecraft:pumpkin_seeds",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.65
+        },
+        "saturation": {
+          "amount": 3.0,
+          "chance": 0.5
+        }
+      }
+    },
+    {
+      "item": "minecraft:torchflower_seeds",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.6
+        },
+        "saturation": {
+          "amount": 2.0,
+          "chance": 0.35
+        }
+      }
+    },
+    {
+      "item": "minecraft:pitcher_pod",
+      "nutrition": 1,
+      "saturation_modifier": 1.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false
+    },
+    {
+      "item": "minecraft:oak_leaves",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.3,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:spruce_leaves",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.3,
+          "chance": 0.45
+        }
+      }
+    },
+    {
+      "item": "minecraft:birch_leaves",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.3,
+          "chance": 0.45
+        }
+      }
+    },
+    {
+      "item": "minecraft:jungle_leaves",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:jump_boost",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:poison",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": false
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.3,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:acacia_leaves",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.3,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:dark_oak_leaves",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 12,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.3,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:mangrove_leaves",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:water_breathing",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 20,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.3,
+          "chance": 0.45
+        }
+      }
+    },
+    {
+      "item": "minecraft:cherry_leaves",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:speed",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.1
+        },
+        "saturation": {
+          "amount": 0.4,
+          "chance": 0.55
+        }
+      }
+    },
+    {
+      "item": "minecraft:pale_oak_leaves",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:darkness",
+          "chance": 0.4,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:night_vision",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 20,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "item": "minecraft:azalea_leaves",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:slowness"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.4,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:flowering_azalea_leaves",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 3.2,
+      "medicinal": true,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:slowness",
+        "minecraft:weakness"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "chance": 1.0,
+          "amplifier": 1,
+          "duration_seconds": 6,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.5,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:oak_sapling",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.25
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.35
+        }
+      }
+    },
+    {
+      "item": "minecraft:birch_sapling",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.25
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.35
+        }
+      }
+    },
+    {
+      "item": "minecraft:spruce_sapling",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.25
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.35
+        }
+      }
+    },
+    {
+      "item": "minecraft:jungle_sapling",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.25
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.35
+        }
+      }
+    },
+    {
+      "item": "minecraft:acacia_sapling",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.25
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.35
+        }
+      }
+    },
+    {
+      "item": "minecraft:dark_oak_sapling",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.25
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.35
+        }
+      }
+    },
+    {
+      "item": "minecraft:pale_oak_sapling",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.15
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.3
+        }
+      }
+    },
+    {
+      "item": "minecraft:mangrove_propagule",
+      "nutrition": 1,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "food_rolls": {
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.35
+        }
+      }
+    },
+    {
+      "item": "minecraft:cherry_sapling",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": true
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.35
+        },
+        "saturation": {
+          "amount": 0.3,
+          "chance": 0.5
+        }
+      }
+    },
+    {
+      "item": "minecraft:azalea",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:slowness"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "chance": 0.6,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:flowering_azalea",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": false,
+      "remove_effects": [
+        "minecraft:slowness",
+        "minecraft:weakness"
+      ],
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "chance": 0.8,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.3,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:dried_kelp_block",
+      "nutrition": 9,
+      "saturation_modifier": 0.3,
+      "consume_seconds": 3.2,
+      "medicinal": false,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:slowness",
+          "chance": 0.4,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:saturation",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 2,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "item": "minecraft:sea_pickle",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:glowing",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 30,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:water_breathing",
+          "chance": 0.2,
+          "amplifier": 0,
+          "duration_seconds": 20,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.15,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ],
+      "food_rolls": {
+        "nutrition": {
+          "amount": 1,
+          "chance": 0.3
+        },
+        "saturation": {
+          "amount": 0.2,
+          "chance": 0.4
+        }
+      }
+    },
+    {
+      "item": "minecraft:brown_mushroom",
+      "nutrition": 1,
+      "saturation_modifier": 0.2,
+      "consume_seconds": 1.6,
+      "medicinal": false,
+      "stack_group": true,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "chance": 0.25,
+          "amplifier": 0,
+          "duration_seconds": 3,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:night_vision",
+          "chance": 0.1,
+          "amplifier": 0,
+          "duration_seconds": 20,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "item": "minecraft:crimson_fungus",
+      "nutrition": 2,
+      "saturation_modifier": 0.4,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:strength",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.5,
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "item": "minecraft:warped_fungus",
+      "nutrition": 2,
+      "saturation_modifier": 0.4,
+      "consume_seconds": 1.6,
+      "medicinal": true,
+      "stack_group": false,
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:fire_resistance",
+          "chance": 1.0,
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:nausea",
+          "chance": 0.4,
+          "amplifier": 0,
+          "duration_seconds": 8,
+          "positive": false
+        }
+      ]
+    }
+  ]
+}

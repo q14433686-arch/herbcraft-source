@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:ice",
+    "minecraft:snowball",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:snowcap_bowl",
+    "count": 1
+  }
+}

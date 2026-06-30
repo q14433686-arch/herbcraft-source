@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "hints": [
+    {
+      "id": "herbcraft_cuisine:first_water_bowl",
+      "trigger": "herbcraft_cuisine:first_water_bowl",
+      "message_key": "guide.herbcraft_cuisine.first_water_bowl",
+      "delivery": "chat_private",
+      "once": true
+    },
+    {
+      "id": "herbcraft_cuisine:first_dish",
+      "trigger": "herbcraft_cuisine:first_dish",
+      "message_key": "guide.herbcraft_cuisine.first_dish",
+      "delivery": "chat_private",
+      "once": true
+    }
+  ]
+}

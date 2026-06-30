@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:phantom_membrane",
+  "amount": 0,
+  "saturation": 0.0,
+  "effect_potency": 45,
+  "effect_duration": 220,
+  "effect_chance": 0.4
+}

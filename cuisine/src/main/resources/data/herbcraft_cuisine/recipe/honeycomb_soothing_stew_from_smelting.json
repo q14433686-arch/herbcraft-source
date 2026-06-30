@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": "herbcraft_cuisine:raw_honeycomb_soothing_stew",
+  "result": {
+    "id": "herbcraft_cuisine:honeycomb_soothing_stew"
+  }
+}

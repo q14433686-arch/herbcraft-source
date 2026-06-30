@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:open_eyeblossom",
+    "minecraft:cornflower",
+    "minecraft:carrot"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_eye_opening_soup",
+    "count": 1
+  }
+}

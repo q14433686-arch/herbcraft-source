@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "timing": {
+    "warning_debuff_ticks": 100,
+    "excess_debuff_ticks": 80,
+    "dietary_imbalance_relief_ticks": 1200,
+    "sustained_extra_ticks": 200,
+    "sustained_min_ticks": 400,
+    "well_nourished_ticks": 1800
+  },
+  "effects": {
+    "grain_deficiency": {
+      "category": "harmful",
+      "color": "c8a85a",
+      "attributes": [
+        { "attribute": "minecraft:block_break_speed", "id": "grain_deficiency_break_speed", "amount": -0.15, "operation": "add_multiplied_total" }
+      ]
+    },
+    "flesh_deficiency": {
+      "category": "harmful",
+      "color": "9a4a45",
+      "attributes": [
+        { "attribute": "minecraft:attack_damage", "id": "flesh_deficiency_attack_damage", "amount": -1.0, "operation": "add_value" }
+      ]
+    },
+    "oil_deficiency": {
+      "category": "harmful",
+      "color": "b8a060",
+      "attributes": [
+        { "attribute": "minecraft:movement_speed", "id": "oil_deficiency_movement_speed", "amount": -0.08, "operation": "add_multiplied_total" }
+      ]
+    },
+    "vege_deficiency": {
+      "category": "harmful",
+      "color": "6f9b4a",
+      "periodic_exhaustion": { "interval_ticks": 80, "amount": 0.08, "scale_with_amplifier": true }
+    },
+    "fruit_deficiency": {
+      "category": "harmful",
+      "color": "b66aa0",
+      "attributes": [
+        { "attribute": "minecraft:movement_speed", "id": "fruit_deficiency_movement_speed", "amount": -0.05, "operation": "add_multiplied_total" }
+      ]
+    },
+    "dietary_imbalance": {
+      "category": "harmful",
+      "color": "7f6aae",
+      "attributes": [
+        { "attribute": "minecraft:movement_speed", "id": "dietary_imbalance_movement_speed", "amount": -0.03, "operation": "add_multiplied_total" }
+      ],
+      "periodic_exhaustion": { "interval_ticks": 120, "amount": 0.04, "scale_with_amplifier": true }
+    },
+    "well_nourished": {
+      "category": "beneficial",
+      "color": "77b86a",
+      "attributes": [
+        { "attribute": "minecraft:armor", "id": "well_nourished_armor", "amount": 3.0, "operation": "add_value" },
+        { "attribute": "minecraft:knockback_resistance", "id": "well_nourished_knockback_resistance", "amount": 0.12, "operation": "add_value" }
+      ]
+    }
+  }
+}

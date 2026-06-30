@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:closed_eyeblossom",
+    "minecraft:resin_clump",
+    "minecraft:phantom_membrane"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_star_falling_soup",
+    "count": 1
+  }
+}

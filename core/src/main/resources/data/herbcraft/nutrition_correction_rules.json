@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "self_penalty_multiplier": 1.0,
+  "matrix": {
+    "grain": {
+      "flesh": 1.15,
+      "oil": 0.45,
+      "vege": 1.35,
+      "fruit": 0.0
+    },
+    "flesh": {
+      "grain": 0.0,
+      "oil": 0.0,
+      "vege": 1.6,
+      "fruit": 0.0
+    },
+    "oil": {
+      "grain": 0.25,
+      "flesh": 0.0,
+      "vege": 1.45,
+      "fruit": 0.0
+    },
+    "vege": {
+      "grain": 1.2,
+      "flesh": 1.2,
+      "oil": 0.5,
+      "fruit": 0.0
+    },
+    "fruit": {}
+  }
+}

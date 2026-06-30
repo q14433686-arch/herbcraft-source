@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "#herbcraft:edible_saplings",
+    "#herbcraft:edible_saplings",
+    "#herbcraft:edible_saplings"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:sapling_medley",
+    "count": 1
+  }
+}

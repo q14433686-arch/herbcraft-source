@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:oak_leaves",
+    "minecraft:oak_leaves",
+    "minecraft:oak_leaves",
+    "minecraft:oak_leaves",
+    "minecraft:oak_leaves",
+    "minecraft:oak_leaves",
+    "minecraft:oak_leaves",
+    "minecraft:oak_leaves",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_oak_leaves",
+    "count": 1
+  }
+}

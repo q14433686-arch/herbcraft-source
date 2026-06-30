@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": "herbcraft_cuisine:raw_cherry_nectar_porridge",
+  "result": {
+    "id": "herbcraft_cuisine:cherry_nectar_porridge"
+  }
+}

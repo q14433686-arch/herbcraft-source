@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "herbcraft:cleric/3/tulip_potion_emerald",
+    "herbcraft:cleric/3/azure_bluet_potion_emerald",
+    "herbcraft:cleric/3/essence_torchflower_emerald",
+    "herbcraft:cleric/3/emerald_lilac_potion",
+    "herbcraft:cleric/3/emerald_poppy_potion"
+  ]
+}

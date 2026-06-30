@@ -1,0 +1,297 @@
+{
+  "schema_version": 1,
+  "styles": [
+    {
+      "id": "sustained",
+      "implemented": true,
+      "first_batch": true,
+      "deferred": false,
+      "aliases": [
+        "long"
+      ],
+      "path_suffixes": [
+        "_long"
+      ],
+      "exact_paths": [],
+      "burden_profile": "slow_tail",
+      "thermal_shift": "warming_tail",
+      "qi_bias": "lingering_extension",
+      "clarity_level": "drawn_out",
+      "relation_modifier": "tail_carrying",
+      "flavor_bias": [
+        "sweet",
+        "sour"
+      ],
+      "trait_affinity": [
+        "nourishing",
+        "resinous",
+        "honeyed"
+      ],
+      "lang_key": "tooltip.herbcraft.potion.processing.sustained",
+      "burden_hint_key": "tooltip.herbcraft.potion.burden_profile.slow_tail",
+      "thermal_hint_key": "tooltip.herbcraft.potion.thermal_shift.warming_tail",
+      "qi_hint_key": "tooltip.herbcraft.potion.qi_bias.lingering_extension",
+      "clarity_hint_key": "tooltip.herbcraft.potion.clarity_level.drawn_out",
+      "relation_hint_key": "tooltip.herbcraft.potion.relation_modifier.tail_carrying",
+      "runtime": {
+        "duration_multiplier": 1.25,
+        "amplifier_delta": -1,
+        "max_amplifier": 1,
+        "force_non_ambient": false,
+        "force_visible": true,
+        "force_icon": true
+      },
+      "burden_weight": 18,
+      "tail_weight": 14
+    },
+    {
+      "id": "intense",
+      "implemented": true,
+      "first_batch": true,
+      "deferred": false,
+      "aliases": [
+        "strong"
+      ],
+      "path_suffixes": [
+        "_strong"
+      ],
+      "exact_paths": [],
+      "burden_profile": "sharp_peak",
+      "thermal_shift": "heated_spike",
+      "qi_bias": "forced_surge",
+      "clarity_level": "compressed_edge",
+      "relation_modifier": "conflict_amplifying",
+      "flavor_bias": [
+        "pungent",
+        "bitter"
+      ],
+      "trait_affinity": [
+        "fiery",
+        "stirring",
+        "toxic"
+      ],
+      "lang_key": "tooltip.herbcraft.potion.processing.intense",
+      "burden_hint_key": "tooltip.herbcraft.potion.burden_profile.sharp_peak",
+      "thermal_hint_key": "tooltip.herbcraft.potion.thermal_shift.heated_spike",
+      "qi_hint_key": "tooltip.herbcraft.potion.qi_bias.forced_surge",
+      "clarity_hint_key": "tooltip.herbcraft.potion.clarity_level.compressed_edge",
+      "relation_hint_key": "tooltip.herbcraft.potion.relation_modifier.conflict_amplifying",
+      "runtime": {
+        "duration_multiplier": 0.75,
+        "amplifier_delta": 1,
+        "max_amplifier": 2,
+        "force_non_ambient": false,
+        "force_visible": true,
+        "force_icon": true
+      },
+      "burden_weight": 34,
+      "tail_weight": 8
+    },
+    {
+      "id": "purified",
+      "implemented": true,
+      "first_batch": true,
+      "deferred": false,
+      "aliases": [
+        "clarified"
+      ],
+      "path_suffixes": [
+        "_clarified"
+      ],
+      "exact_paths": [],
+      "burden_profile": "clean_stable",
+      "thermal_shift": "tempered_clear",
+      "qi_bias": "settled_clarity",
+      "clarity_level": "purged_turbidity",
+      "relation_modifier": "conflict_buffering",
+      "flavor_bias": [
+        "bland",
+        "bitter"
+      ],
+      "trait_affinity": [
+        "clearing",
+        "floral",
+        "leafy"
+      ],
+      "lang_key": "tooltip.herbcraft.potion.processing.purified",
+      "burden_hint_key": "tooltip.herbcraft.potion.burden_profile.clean_stable",
+      "thermal_hint_key": "tooltip.herbcraft.potion.thermal_shift.tempered_clear",
+      "qi_hint_key": "tooltip.herbcraft.potion.qi_bias.settled_clarity",
+      "clarity_hint_key": "tooltip.herbcraft.potion.clarity_level.purged_turbidity",
+      "relation_hint_key": "tooltip.herbcraft.potion.relation_modifier.conflict_buffering",
+      "runtime": {
+        "duration_multiplier": 1.1,
+        "amplifier_delta": 0,
+        "max_amplifier": 1,
+        "force_non_ambient": true,
+        "force_visible": true,
+        "force_icon": true
+      },
+      "burden_weight": 12,
+      "tail_weight": 6
+    },
+    {
+      "id": "murky_edge",
+      "implemented": false,
+      "first_batch": false,
+      "deferred": true,
+      "aliases": [
+        "murky",
+        "t3"
+      ],
+      "path_suffixes": [
+        "_murky"
+      ],
+      "exact_paths": [
+        "undead_venom",
+        "cardiac_toxin",
+        "wither_venom_iii"
+      ],
+      "burden_profile": "dirty_edge",
+      "thermal_shift": "unstable_skew",
+      "qi_bias": "turbid_deviation",
+      "clarity_level": "muddy_unsettled",
+      "relation_modifier": "volatile_conflict",
+      "flavor_bias": [
+        "bitter",
+        "pungent"
+      ],
+      "trait_affinity": [
+        "toxic",
+        "fungal",
+        "withered"
+      ],
+      "lang_key": "tooltip.herbcraft.potion.processing.murky_edge",
+      "burden_hint_key": "tooltip.herbcraft.potion.burden_profile.dirty_edge",
+      "thermal_hint_key": "tooltip.herbcraft.potion.thermal_shift.unstable_skew",
+      "qi_hint_key": "tooltip.herbcraft.potion.qi_bias.turbid_deviation",
+      "clarity_hint_key": "tooltip.herbcraft.potion.clarity_level.muddy_unsettled",
+      "relation_hint_key": "tooltip.herbcraft.potion.relation_modifier.volatile_conflict",
+      "burden_weight": 42,
+      "tail_weight": 18
+    },
+    {
+      "id": "harmonized",
+      "implemented": false,
+      "first_batch": false,
+      "deferred": true,
+      "aliases": [
+        "harmonized",
+        "co_processed"
+      ],
+      "path_suffixes": [],
+      "exact_paths": [],
+      "burden_profile": "harmonized_bearing",
+      "thermal_shift": "balanced_middle",
+      "qi_bias": "coordinated_flow",
+      "clarity_level": "layered_harmony",
+      "relation_modifier": "compatibility_weaving",
+      "flavor_bias": [
+        "sweet",
+        "bland"
+      ],
+      "trait_affinity": [
+        "nourishing",
+        "floral",
+        "honeyed"
+      ],
+      "lang_key": "tooltip.herbcraft.potion.processing.harmonized",
+      "burden_hint_key": "tooltip.herbcraft.potion.burden_profile.harmonized_bearing",
+      "thermal_hint_key": "tooltip.herbcraft.potion.thermal_shift.balanced_middle",
+      "qi_hint_key": "tooltip.herbcraft.potion.qi_bias.coordinated_flow",
+      "clarity_hint_key": "tooltip.herbcraft.potion.clarity_level.layered_harmony",
+      "relation_hint_key": "tooltip.herbcraft.potion.relation_modifier.compatibility_weaving",
+      "burden_weight": 10,
+      "tail_weight": 10
+    }
+  ],
+  "burden_runtime": {
+    "decay_interval_ticks": 200,
+    "active_decay_amount": 5,
+    "tail_decay_amount": 2,
+    "max_burden": 1000
+  },
+  "burden_stages": [
+    {
+      "id": "steady",
+      "min_total": 0,
+      "speed_modifier": 0.0,
+      "message_key": "message.herbcraft_alchemy.potion_burden.stage.steady"
+    },
+    {
+      "id": "warming",
+      "min_total": 120,
+      "speed_modifier": 0.0,
+      "message_key": "message.herbcraft_alchemy.potion_burden.stage.warming",
+      "effect": "herbcraft_alchemy:potion_warming",
+      "effect_duration_ticks": 240
+    },
+    {
+      "id": "strain",
+      "min_total": 300,
+      "speed_modifier": -0.02,
+      "message_key": "message.herbcraft_alchemy.potion_burden.stage.strain",
+      "effect": "herbcraft_alchemy:potion_strain",
+      "effect_duration_ticks": 240
+    },
+    {
+      "id": "overload",
+      "min_total": 600,
+      "speed_modifier": -0.05,
+      "message_key": "message.herbcraft_alchemy.potion_burden.stage.overload",
+      "effect": "herbcraft_alchemy:potion_overload",
+      "effect_duration_ticks": 240
+    }
+  ],
+  "burden_consequence_profiles": {
+    "steady": {
+      "effect": "herbcraft_alchemy:potion_warming",
+      "strain_duration_multiplier": 0.75,
+      "overload_duration_multiplier": 0.75,
+      "exhaustion_per_tick": 0.0,
+      "message_key": "message.herbcraft_alchemy.potion_burden.profile.steady"
+    },
+    "warming": {
+      "effect": "herbcraft_alchemy:potion_heat_stir",
+      "strain_duration_multiplier": 1.0,
+      "overload_duration_multiplier": 1.15,
+      "exhaustion_per_tick": 0.0015,
+      "message_key": "message.herbcraft_alchemy.potion_burden.profile.warming"
+    },
+    "chilling": {
+      "effect": "herbcraft_alchemy:potion_cold_stagnation",
+      "strain_duration_multiplier": 1.0,
+      "overload_duration_multiplier": 1.15,
+      "exhaustion_per_tick": 0.0,
+      "message_key": "message.herbcraft_alchemy.potion_burden.profile.chilling"
+    },
+    "overdriven": {
+      "effect": "herbcraft_alchemy:potion_overdrive_rebound",
+      "strain_duration_multiplier": 1.05,
+      "overload_duration_multiplier": 1.25,
+      "exhaustion_per_tick": 0.0005,
+      "message_key": "message.herbcraft_alchemy.potion_burden.profile.overdriven"
+    },
+    "muddy": {
+      "effect": "herbcraft_alchemy:potion_turbid_disturbance",
+      "strain_duration_multiplier": 1.10,
+      "overload_duration_multiplier": 1.30,
+      "exhaustion_per_tick": 0.0,
+      "message_key": "message.herbcraft_alchemy.potion_burden.profile.muddy"
+    },
+    "scattering": {
+      "effect": "herbcraft_alchemy:potion_qi_scattering",
+      "strain_duration_multiplier": 1.0,
+      "overload_duration_multiplier": 1.15,
+      "exhaustion_per_tick": 0.002,
+      "message_key": "message.herbcraft_alchemy.potion_burden.profile.scattering"
+    },
+    "stagnating": {
+      "effect": "herbcraft_alchemy:potion_qi_stagnation",
+      "strain_duration_multiplier": 1.0,
+      "overload_duration_multiplier": 1.20,
+      "exhaustion_per_tick": 0.0,
+      "message_key": "message.herbcraft_alchemy.potion_burden.profile.stagnating"
+    }
+  }
+}

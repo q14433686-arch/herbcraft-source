@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft:herb_stack_3",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft.herb_stack_5.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft.herb_stack_5.description"
+    },
+    "icon": {
+      "id": "minecraft:large_fern"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

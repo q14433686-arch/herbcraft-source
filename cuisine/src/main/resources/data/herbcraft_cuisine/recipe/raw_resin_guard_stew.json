@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:resin_clump",
+    "minecraft:oak_leaves",
+    "minecraft:peony"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_resin_guard_stew",
+    "count": 1
+  }
+}

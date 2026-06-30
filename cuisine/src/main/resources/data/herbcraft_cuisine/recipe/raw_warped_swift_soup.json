@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:warped_fungus",
+    "minecraft:sugar",
+    "minecraft:sea_pickle"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_warped_swift_soup",
+    "count": 1
+  }
+}

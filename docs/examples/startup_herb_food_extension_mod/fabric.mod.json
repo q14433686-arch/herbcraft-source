@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "example_food",
+  "version": "1.0.0",
+  "name": "Example Herbcraft Startup Food Extension",
+  "environment": "*",
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "26.1.2",
+    "herbcraft": ">=1.1.2"
+  }
+}

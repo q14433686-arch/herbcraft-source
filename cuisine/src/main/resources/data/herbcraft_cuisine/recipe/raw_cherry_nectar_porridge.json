@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:cherry_leaves",
+    "minecraft:pink_petals",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_cherry_nectar_porridge",
+    "count": 1
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "_comment": "Nutrition panel UI theme. Resource packs can override this file to restyle the nutrition panel. Addon mods can add dimension entries to extend the panel.",
+  "overlay": {
+    "color": "0x80000000"
+  },
+  "panel": {
+    "base_width": 240,
+    "header_height": 28,
+    "footer_height": 24,
+    "padding": 8,
+    "background_color": "0xD0101010",
+    "border_color": "0xFFC0A060",
+    "border_width": 2,
+    "title_color": "0xFFDAA520",
+    "hint_color": "0xFF888888",
+    "value_color": "0xFFCCCCCC",
+    "use_background_texture": true,
+    "background_texture": "herbcraft:textures/gui/nutrition_panel_bg.png"
+  },
+  "rows": {
+    "height": 20,
+    "auto_scale": true,
+    "scale_rules": [
+      { "max_dimensions": 5, "row_height": 20 },
+      { "max_dimensions": 6, "row_height": 18 },
+      { "max_dimensions": 7, "row_height": 16 },
+      { "max_dimensions": 99, "row_height": 15 }
+    ],
+    "icon_offset_x": 8,
+    "icon_offset_y": -4,
+    "label_offset_x": 30,
+    "bar_offset_x": 80,
+    "value_offset_x": 186,
+    "label_color": "0xFFAAAAAA"
+  },
+  "bar": {
+    "width": 100,
+    "height": 8,
+    "background_color": "0xFF333333",
+    "border_color": "0xFF666666",
+    "danger_color": "0xFFFF0000",
+    "overflow_color": "0xFFFFFFFF",
+    "show_threshold_marks": true,
+    "threshold_mark_color": "0x80FFFFFF",
+    "threshold_mark_width": 1
+  },
+  "status": {
+    "margin_top": 6,
+    "max_lines": 2,
+    "color_normal": "0xFFCCCCCC",
+    "color_bad": "0xFFFF5555",
+    "color_correcting": "0xFF55FFAA",
+    "color_good": "0xFF55FF55"
+  },
+  "dimensions": [
+    {
+      "id": "grain",
+      "bar_color": "0xFFDAA520",
+      "icon_item": "minecraft:bread"
+    },
+    {
+      "id": "flesh",
+      "bar_color": "0xFFCD5C5C",
+      "icon_item": "minecraft:cooked_beef"
+    },
+    {
+      "id": "oil",
+      "bar_color": "0xFFFF8C00",
+      "icon_item": "minecraft:honeycomb"
+    },
+    {
+      "id": "vege",
+      "bar_color": "0xFF32CD32",
+      "icon_item": "minecraft:carrot"
+    },
+    {
+      "id": "fruit",
+      "bar_color": "0xFFDDA0DD",
+      "icon_item": "minecraft:apple"
+    }
+  ]
+}

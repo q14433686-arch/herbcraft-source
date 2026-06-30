@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:peony",
+    "minecraft:poppy",
+    "minecraft:resin_clump"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_peony_restoration_soup",
+    "count": 1
+  }
+}

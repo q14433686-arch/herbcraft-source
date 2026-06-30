@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "show_notification": false,
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:wither_rose",
+    "minecraft:lily_of_the_valley",
+    "minecraft:flowering_azalea_leaves",
+    "minecraft:closed_eyeblossom"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_deadly_hodgepodge",
+    "count": 1
+  }
+}

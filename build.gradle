@@ -1,0 +1,68 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version "${loom_version}" apply false
+}
+
+allprojects {
+    group = project.maven_group
+    repositories {
+        maven { name = 'Fabric'; url = 'https://maven.fabricmc.net/' }
+        mavenCentral()
+        maven { name = 'Shedaniel'; url = 'https://maven.shedaniel.me/' }
+        maven { name = 'Modrinth'; url = 'https://api.modrinth.com/maven' }
+        maven { name = 'BlameJared'; url = 'https://maven.blamejared.com' }
+        maven { name = 'Architectury'; url = 'https://maven.architectury.dev/' }
+    }
+}
+
+subprojects {
+    apply plugin: 'net.fabricmc.fabric-loom'
+    apply plugin: 'java-library'
+
+    base {
+        archivesName = project.name == 'core' ? 'herbcraft' : "herbcraft-${project.name}"
+    }
+
+    version = project.name == 'cuisine' ? '1.1.3' : '1.1.4'
+
+    dependencies {
+        minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
+        implementation "net.fabricmc:fabric-loader:${rootProject.loader_version}"
+        implementation "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
+    }
+
+    if (project.name == 'core') {
+        dependencies {
+            compileOnly "maven.modrinth:jade:26.1.0+fabric"
+            runtimeOnly "maven.modrinth:jade:26.1.0+fabric"
+        }
+    }
+
+    if (project.name == 'alchemy' || project.name == 'cuisine') {
+        dependencies { implementation project(':core') }
+    }
+
+    if (project.name == 'alchemy') {
+        dependencies {
+            compileOnly "mezz.jei:jei-${rootProject.minecraft_version}-common-api:${rootProject.jei_version}"
+            compileOnly "mezz.jei:jei-${rootProject.minecraft_version}-fabric-api:${rootProject.jei_version}"
+            compileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${rootProject.rei_version}"
+            compileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${rootProject.rei_version}"
+            compileOnly "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
+        }
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.release = 25
+        options.encoding = 'UTF-8'
+    }
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_25
+        targetCompatibility = JavaVersion.VERSION_25
+        withSourcesJar()
+    }
+
+    jar {
+        from(rootProject.file('LICENSE')) { rename { "${it}_${project.name}" } }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:kelp",
+    "minecraft:seagrass",
+    "minecraft:sea_pickle"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:sea_medley",
+    "count": 1
+  }
+}

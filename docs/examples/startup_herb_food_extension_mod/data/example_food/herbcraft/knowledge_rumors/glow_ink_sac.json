@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "entry": "herbal/glow_ink_sac",
+  "claims": [
+    {
+      "id": "glowing_ink",
+      "type": "note",
+      "text_key": "knowledge.example_food.glow_ink_sac.claim.glowing_ink",
+      "truth": true,
+      "source_tier": "common",
+      "suspicious": false
+    }
+  ]
+}

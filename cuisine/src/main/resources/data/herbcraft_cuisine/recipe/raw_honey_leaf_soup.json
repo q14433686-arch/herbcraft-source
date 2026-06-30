@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:allium",
+    "minecraft:honeycomb",
+    "#minecraft:leaves"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_honey_leaf_soup",
+    "count": 1
+  }
+}

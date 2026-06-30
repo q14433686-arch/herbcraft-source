@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:closed_eyeblossom",
+    "minecraft:wheat_seeds",
+    "minecraft:honeycomb"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_omen_calming_porridge",
+    "count": 1
+  }
+}

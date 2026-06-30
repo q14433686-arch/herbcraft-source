@@ -1,0 +1,942 @@
+{
+  "schema_version": 1,
+  "note": "Authoritative table for the 10 curated dishes (v3.6 §2.1). Effects fire at 100%. Recipe JSONs under data/herbcraft_cuisine/recipe/ must stay in sync with 'ingredients' (used for hodgepodge collision exclusion).",
+  "dishes": [
+    {
+      "id": "dandelion_salad",
+      "ingredients": [
+        "minecraft:dandelion",
+        "minecraft:dandelion"
+      ],
+      "nutrition": 4,
+      "saturation_modifier": 0.5,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 10
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": []
+    },
+    {
+      "id": "three_flower_platter",
+      "ingredients": [
+        "minecraft:dandelion",
+        "minecraft:oxeye_daisy",
+        "minecraft:cornflower"
+      ],
+      "nutrition": 5,
+      "saturation_modifier": 0.6,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 10
+        },
+        {
+          "effect": "minecraft:jump_boost",
+          "amplifier": 0,
+          "duration_seconds": 15
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": []
+    },
+    {
+      "id": "sea_medley",
+      "ingredients": [
+        "minecraft:kelp",
+        "minecraft:seagrass",
+        "minecraft:sea_pickle"
+      ],
+      "nutrition": 5,
+      "saturation_modifier": 0.6,
+      "effects": [
+        {
+          "effect": "minecraft:water_breathing",
+          "amplifier": 0,
+          "duration_seconds": 30
+        },
+        {
+          "effect": "minecraft:glowing",
+          "amplifier": 0,
+          "duration_seconds": 60
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": []
+    },
+    {
+      "id": "sapling_medley",
+      "ingredients": [
+        "#herbcraft:edible_saplings",
+        "#herbcraft:edible_saplings",
+        "#herbcraft:edible_saplings"
+      ],
+      "nutrition": 5,
+      "saturation_modifier": 0.6,
+      "effects": [
+        {
+          "effect": "minecraft:saturation",
+          "amplifier": 0,
+          "duration_seconds": 8
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": []
+    },
+    {
+      "id": "pine_needle_soup",
+      "ingredients": [
+        "minecraft:spruce_leaves",
+        "minecraft:spruce_leaves",
+        "minecraft:snowball"
+      ],
+      "nutrition": 4,
+      "saturation_modifier": 0.5,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 15
+        }
+      ],
+      "remove_effects": [
+        "minecraft:nausea"
+      ],
+      "effect_immunities": [
+        {
+          "effect": "minecraft:nausea",
+          "duration_seconds": 30
+        }
+      ],
+      "counter_items": [],
+      "can_always_eat": true
+    },
+    {
+      "id": "analgesic_stew",
+      "ingredients": [
+        "minecraft:poppy",
+        "minecraft:oxeye_daisy",
+        "minecraft:peony"
+      ],
+      "nutrition": 6,
+      "saturation_modifier": 0.7,
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "amplifier": 0,
+          "duration_seconds": 40
+        },
+        {
+          "effect": "minecraft:nausea",
+          "amplifier": 0,
+          "duration_seconds": 5
+        }
+      ],
+      "remove_effects": [
+        "minecraft:weakness",
+        "minecraft:mining_fatigue"
+      ],
+      "effect_immunities": [
+        {
+          "effect": "minecraft:weakness",
+          "duration_seconds": 60
+        },
+        {
+          "effect": "minecraft:mining_fatigue",
+          "duration_seconds": 60
+        }
+      ],
+      "counter_items": [
+        "minecraft:poppy"
+      ]
+    },
+    {
+      "id": "twin_fungus_hotpot",
+      "ingredients": [
+        "minecraft:crimson_fungus",
+        "minecraft:warped_fungus",
+        "minecraft:resin_clump"
+      ],
+      "nutrition": 8,
+      "saturation_modifier": 0.9,
+      "effects": [
+        {
+          "effect": "minecraft:strength",
+          "amplifier": 0,
+          "duration_seconds": 30
+        },
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 30
+        },
+        {
+          "effect": "minecraft:fire_resistance",
+          "amplifier": 0,
+          "duration_seconds": 60
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": [],
+      "consume_seconds": 3.2
+    },
+    {
+      "id": "honeyed_petals",
+      "ingredients": [
+        "minecraft:pink_petals",
+        "minecraft:pink_petals",
+        "minecraft:honeycomb"
+      ],
+      "nutrition": 6,
+      "saturation_modifier": 0.8,
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 30
+        }
+      ],
+      "remove_effects": [
+        "minecraft:poison"
+      ],
+      "effect_immunities": [
+        {
+          "effect": "minecraft:poison",
+          "duration_seconds": 45
+        }
+      ],
+      "counter_items": [
+        "minecraft:sugar"
+      ]
+    },
+    {
+      "id": "snowcap_bowl",
+      "ingredients": [
+        "minecraft:ice",
+        "minecraft:snowball",
+        "minecraft:sugar"
+      ],
+      "nutrition": 3,
+      "saturation_modifier": 0.4,
+      "effects": [
+        {
+          "effect": "minecraft:fire_resistance",
+          "amplifier": 0,
+          "duration_seconds": 60
+        }
+      ],
+      "remove_effects": [
+        "minecraft:nausea"
+      ],
+      "effect_immunities": [
+        {
+          "effect": "minecraft:nausea",
+          "duration_seconds": 30
+        }
+      ],
+      "counter_items": [],
+      "clear_fire": true
+    },
+    {
+      "id": "bitter_remedy",
+      "ingredients": [
+        "minecraft:azalea_leaves",
+        "minecraft:allium",
+        "minecraft:melon_slice"
+      ],
+      "nutrition": 6,
+      "saturation_modifier": 0.6,
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "amplifier": 0,
+          "duration_seconds": 3
+        }
+      ],
+      "remove_effects": [
+        "minecraft:poison",
+        "minecraft:slowness"
+      ],
+      "effect_immunities": [
+        {
+          "effect": "minecraft:poison",
+          "duration_seconds": 60
+        },
+        {
+          "effect": "minecraft:slowness",
+          "duration_seconds": 60
+        }
+      ],
+      "counter_items": []
+    }
+  ],
+  "note_v2": "v2 medicinal dishes (raw -> cook in furnace/smoker/campfire). Recipe JSONs are generated from this table; keep in sync.",
+  "medicinal_dishes": [
+    {
+      "id": "soul_cleansing_stew",
+      "ingredients": [
+        "minecraft:wither_rose",
+        "minecraft:honeycomb",
+        "minecraft:snowball"
+      ],
+      "nutrition": 5,
+      "saturation_modifier": 0.6,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 10
+        }
+      ],
+      "remove_effects": [
+        "minecraft:wither",
+        "minecraft:poison"
+      ],
+      "effect_immunities": [
+        {
+          "effect": "minecraft:wither",
+          "duration_seconds": 60
+        },
+        {
+          "effect": "minecraft:poison",
+          "duration_seconds": 60
+        }
+      ],
+      "counter_items": [],
+      "consume_seconds": 3.2
+    },
+    {
+      "id": "pumpkin_porridge",
+      "ingredients": [
+        "minecraft:pumpkin",
+        "minecraft:wheat_seeds",
+        "minecraft:sugar"
+      ],
+      "nutrition": 6,
+      "saturation_modifier": 0.7,
+      "effects": [
+        {
+          "effect": "minecraft:saturation",
+          "amplifier": 0,
+          "duration_seconds": 8
+        }
+      ],
+      "remove_effects": [
+        "minecraft:hunger",
+        "minecraft:nausea"
+      ],
+      "effect_immunities": [
+        {
+          "effect": "minecraft:hunger",
+          "duration_seconds": 45
+        },
+        {
+          "effect": "minecraft:nausea",
+          "duration_seconds": 45
+        }
+      ],
+      "counter_items": []
+    },
+    {
+      "id": "honey_leaf_soup",
+      "ingredients": [
+        "minecraft:allium",
+        "minecraft:honeycomb",
+        "#minecraft:leaves"
+      ],
+      "nutrition": 4,
+      "saturation_modifier": 0.5,
+      "effects": [
+        {
+          "effect": "minecraft:absorption",
+          "amplifier": 0,
+          "duration_seconds": 30
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": [],
+      "damage_events": [
+        {
+          "chance": 0.15,
+          "amount": 1.0
+        }
+      ]
+    },
+    {
+      "id": "stomach_waking_bowl",
+      "ingredients": [
+        "minecraft:ice",
+        "minecraft:oxeye_daisy",
+        "minecraft:melon_slice"
+      ],
+      "nutrition": 5,
+      "saturation_modifier": 0.6,
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 30
+        },
+        {
+          "effect": "minecraft:jump_boost",
+          "amplifier": 0,
+          "duration_seconds": 30
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": []
+    },
+    {
+      "id": "peony_restoration_soup",
+      "ingredients": [
+        "minecraft:peony",
+        "minecraft:poppy",
+        "minecraft:resin_clump"
+      ],
+      "nutrition": 8,
+      "saturation_modifier": 0.9,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 1,
+          "duration_seconds": 15
+        },
+        {
+          "effect": "minecraft:absorption",
+          "amplifier": 1,
+          "duration_seconds": 45
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": [],
+      "consume_seconds": 3.2
+    },
+    {
+      "id": "fatigue_breaking_stew",
+      "ingredients": [
+        "minecraft:poppy",
+        "minecraft:dandelion",
+        "minecraft:sugar"
+      ],
+      "nutrition": 6,
+      "saturation_modifier": 0.7,
+      "effects": [
+        {
+          "effect": "minecraft:haste",
+          "amplifier": 0,
+          "duration_seconds": 60
+        }
+      ],
+      "remove_effects": [
+        "minecraft:weakness",
+        "minecraft:mining_fatigue"
+      ],
+      "effect_immunities": [
+        {
+          "effect": "minecraft:weakness",
+          "duration_seconds": 60
+        },
+        {
+          "effect": "minecraft:mining_fatigue",
+          "duration_seconds": 60
+        }
+      ],
+      "counter_items": []
+    },
+    {
+      "id": "lily_mobility_stew",
+      "ingredients": [
+        "minecraft:lily_of_the_valley",
+        "minecraft:cornflower",
+        "minecraft:honeycomb"
+      ],
+      "nutrition": 3,
+      "saturation_modifier": 0.4,
+      "effects": [
+        {
+          "effect": "minecraft:instant_health",
+          "amplifier": 1,
+          "duration_seconds": 1
+        },
+        {
+          "effect": "minecraft:slowness",
+          "amplifier": 0,
+          "duration_seconds": 5
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": []
+    },
+    {
+      "id": "eye_opening_soup",
+      "ingredients": [
+        "minecraft:open_eyeblossom",
+        "minecraft:cornflower",
+        "minecraft:carrot"
+      ],
+      "nutrition": 5,
+      "saturation_modifier": 0.6,
+      "effects": [
+        {
+          "effect": "minecraft:night_vision",
+          "amplifier": 0,
+          "duration_seconds": 90
+        }
+      ],
+      "remove_effects": [
+        "minecraft:blindness",
+        "minecraft:darkness"
+      ],
+      "effect_immunities": [
+        {
+          "effect": "minecraft:blindness",
+          "duration_seconds": 60
+        },
+        {
+          "effect": "minecraft:darkness",
+          "duration_seconds": 60
+        }
+      ],
+      "counter_items": [],
+      "can_always_eat": true
+    },
+    {
+      "id": "star_falling_soup",
+      "ingredients": [
+        "minecraft:closed_eyeblossom",
+        "minecraft:resin_clump",
+        "minecraft:phantom_membrane"
+      ],
+      "nutrition": 5,
+      "saturation_modifier": 0.6,
+      "effects": [
+        {
+          "effect": "minecraft:slow_falling",
+          "amplifier": 0,
+          "duration_seconds": 90
+        },
+        {
+          "effect": "minecraft:jump_boost",
+          "amplifier": 0,
+          "duration_seconds": 60
+        },
+        {
+          "effect": "minecraft:saturation",
+          "amplifier": 0,
+          "duration_seconds": 8
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": []
+    },
+    {
+      "id": "omen_calming_porridge",
+      "ingredients": [
+        "minecraft:closed_eyeblossom",
+        "minecraft:wheat_seeds",
+        "minecraft:honeycomb"
+      ],
+      "nutrition": 5,
+      "saturation_modifier": 0.6,
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "amplifier": 1,
+          "duration_seconds": 30
+        }
+      ],
+      "remove_effects": [
+        "minecraft:bad_omen"
+      ],
+      "effect_immunities": [
+        {
+          "effect": "minecraft:bad_omen",
+          "duration_seconds": 120
+        }
+      ],
+      "counter_items": []
+    },
+    {
+      "id": "crimson_war_hotpot",
+      "ingredients": [
+        "minecraft:crimson_fungus",
+        "minecraft:resin_clump",
+        "minecraft:blaze_powder"
+      ],
+      "nutrition": 4,
+      "saturation_modifier": 0.5,
+      "effects": [
+        {
+          "effect": "minecraft:strength",
+          "amplifier": 1,
+          "duration_seconds": 25
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": [],
+      "ignite_seconds": 8
+    },
+    {
+      "id": "warped_swift_soup",
+      "ingredients": [
+        "minecraft:warped_fungus",
+        "minecraft:sugar",
+        "minecraft:sea_pickle"
+      ],
+      "nutrition": 5,
+      "saturation_modifier": 0.6,
+      "effects": [
+        {
+          "effect": "minecraft:fire_resistance",
+          "amplifier": 0,
+          "duration_seconds": 120
+        },
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 30
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": [],
+      "can_always_eat": true
+    },
+    {
+      "id": "cherry_nectar_porridge",
+      "ingredients": [
+        "minecraft:cherry_leaves",
+        "minecraft:pink_petals",
+        "minecraft:sugar"
+      ],
+      "nutrition": 4,
+      "saturation_modifier": 0.5,
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 30
+        },
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 10
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": []
+    },
+    {
+      "id": "pine_needle_broth",
+      "ingredients": [
+        "minecraft:spruce_leaves",
+        "minecraft:snowball",
+        "minecraft:honeycomb"
+      ],
+      "nutrition": 4,
+      "saturation_modifier": 0.5,
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 15
+        }
+      ],
+      "remove_effects": [
+        "minecraft:nausea"
+      ],
+      "effect_immunities": [
+        {
+          "effect": "minecraft:nausea",
+          "duration_seconds": 30
+        }
+      ],
+      "counter_items": [],
+      "can_always_eat": true
+    },
+    {
+      "id": "seafarer_stew",
+      "ingredients": [
+        "minecraft:kelp",
+        "minecraft:seagrass",
+        "minecraft:sea_pickle"
+      ],
+      "nutrition": 5,
+      "saturation_modifier": 0.6,
+      "effects": [
+        {
+          "effect": "minecraft:water_breathing",
+          "amplifier": 0,
+          "duration_seconds": 120
+        },
+        {
+          "effect": "minecraft:night_vision",
+          "amplifier": 0,
+          "duration_seconds": 60
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": [],
+      "can_always_eat": true
+    },
+    {
+      "id": "honeycomb_soothing_stew",
+      "ingredients": [
+        "minecraft:honeycomb",
+        "minecraft:pink_petals",
+        "minecraft:oxeye_daisy"
+      ],
+      "nutrition": 6,
+      "saturation_modifier": 0.7,
+      "effects": [
+        {
+          "effect": "minecraft:saturation",
+          "amplifier": 0,
+          "duration_seconds": 20
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": [
+        "minecraft:sugar"
+      ]
+    },
+    {
+      "id": "resin_guard_stew",
+      "ingredients": [
+        "minecraft:resin_clump",
+        "minecraft:oak_leaves",
+        "minecraft:peony"
+      ],
+      "nutrition": 4,
+      "saturation_modifier": 0.5,
+      "effects": [
+        {
+          "effect": "minecraft:haste",
+          "amplifier": 1,
+          "duration_seconds": 45
+        },
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 30
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": []
+    },
+    {
+      "id": "golden_dandelion_stew",
+      "ingredients": [
+        "minecraft:golden_dandelion",
+        "minecraft:dandelion",
+        "minecraft:honeycomb"
+      ],
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "can_always_eat": true,
+      "effects": [
+        {
+          "effect": "minecraft:instant_health",
+          "amplifier": 1,
+          "duration_seconds": 1
+        },
+        {
+          "effect": "minecraft:absorption",
+          "amplifier": 3,
+          "duration_seconds": 5
+        },
+        {
+          "effect": "minecraft:resistance",
+          "amplifier": 3,
+          "duration_seconds": 5
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": [],
+      "clear_all_effects": true
+    },
+    {
+      "id": "pale_night_soup",
+      "ingredients": [
+        "minecraft:pale_oak_leaves",
+        "minecraft:open_eyeblossom",
+        "minecraft:sugar"
+      ],
+      "nutrition": 5,
+      "saturation_modifier": 0.6,
+      "effects": [
+        {
+          "effect": "minecraft:jump_boost",
+          "amplifier": 1,
+          "duration_seconds": 45
+        },
+        {
+          "effect": "minecraft:slow_falling",
+          "amplifier": 0,
+          "duration_seconds": 30
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": [
+        "minecraft:sugar"
+      ],
+      "can_always_eat": true
+    },
+    {
+      "id": "blue_ice_brew",
+      "ingredients": [
+        "minecraft:blue_ice",
+        "minecraft:snowball",
+        "minecraft:sugar"
+      ],
+      "nutrition": 4,
+      "saturation_modifier": 0.5,
+      "effects": [
+        {
+          "effect": "minecraft:fire_resistance",
+          "amplifier": 0,
+          "duration_seconds": 90
+        }
+      ],
+      "remove_effects": [
+        "minecraft:slowness"
+      ],
+      "effect_immunities": [
+        {
+          "effect": "minecraft:slowness",
+          "duration_seconds": 45
+        }
+      ],
+      "counter_items": [],
+      "clear_frozen": true,
+      "can_always_eat": true
+    },
+    {
+      "id": "hundred_flower_feast",
+      "nutrition": 10,
+      "saturation_modifier": 1.0,
+      "can_always_eat": true,
+      "consume_seconds": 3.2,
+      "effects": [
+        {
+          "effect": "minecraft:strength",
+          "amplifier": 0,
+          "duration_seconds": 45,
+          "chance": 1.0
+        },
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 45,
+          "chance": 1.0
+        },
+        {
+          "effect": "minecraft:jump_boost",
+          "amplifier": 0,
+          "duration_seconds": 45,
+          "chance": 1.0
+        },
+        {
+          "effect": "minecraft:resistance",
+          "amplifier": 0,
+          "duration_seconds": 45,
+          "chance": 1.0
+        },
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 45,
+          "chance": 1.0
+        },
+        {
+          "effect": "minecraft:absorption",
+          "amplifier": 0,
+          "duration_seconds": 45,
+          "chance": 1.0
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": [],
+      "ingredients": [
+        "minecraft:dandelion",
+        "minecraft:oxeye_daisy",
+        "minecraft:cornflower",
+        "minecraft:blue_orchid",
+        "minecraft:allium",
+        "minecraft:pink_petals",
+        "minecraft:torchflower"
+      ]
+    },
+    {
+      "id": "deadly_hodgepodge",
+      "nutrition": 0,
+      "saturation_modifier": 0.0,
+      "can_always_eat": true,
+      "consume_seconds": 3.2,
+      "clear_all_effects": true,
+      "effects": [
+        {
+          "effect": "minecraft:instant_health",
+          "amplifier": 1,
+          "duration_seconds": 1,
+          "chance": 1.0
+        },
+        {
+          "effect": "minecraft:absorption",
+          "amplifier": 3,
+          "duration_seconds": 8,
+          "chance": 1.0
+        },
+        {
+          "effect": "minecraft:resistance",
+          "amplifier": 3,
+          "duration_seconds": 5,
+          "chance": 1.0
+        },
+        {
+          "effect": "minecraft:nausea",
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "chance": 1.0
+        },
+        {
+          "effect": "minecraft:hunger",
+          "amplifier": 1,
+          "duration_seconds": 20,
+          "chance": 1.0
+        }
+      ],
+      "remove_effects": [],
+      "effect_immunities": [],
+      "counter_items": [],
+      "ingredients": [
+        "minecraft:wither_rose",
+        "minecraft:lily_of_the_valley",
+        "minecraft:flowering_azalea_leaves",
+        "minecraft:closed_eyeblossom"
+      ]
+    }
+  ]
+}

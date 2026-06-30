@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "herbcraft_cuisine:item/honey_leaf_soup"
+  }
+}

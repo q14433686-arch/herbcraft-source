@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:spruce_leaves",
+    "minecraft:spruce_leaves",
+    "minecraft:snowball"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:pine_needle_soup",
+    "count": 1
+  }
+}

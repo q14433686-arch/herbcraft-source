@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:blue_orchid",
+    "minecraft:blue_orchid",
+    "minecraft:blue_orchid",
+    "minecraft:blue_orchid",
+    "minecraft:blue_orchid",
+    "minecraft:blue_orchid",
+    "minecraft:blue_orchid",
+    "minecraft:blue_orchid",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_blue_orchid",
+    "count": 1
+  }
+}

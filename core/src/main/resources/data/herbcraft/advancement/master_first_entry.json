@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft:first_page",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft.master_first_entry.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft.master_first_entry.description"
+    },
+    "icon": {
+      "id": "minecraft:book"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

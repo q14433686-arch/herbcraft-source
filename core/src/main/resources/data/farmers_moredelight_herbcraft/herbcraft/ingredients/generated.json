@@ -1,0 +1,437 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "item": "farmersdelight:apple_cider",
+      "section": "fruit"
+    },
+    {
+      "item": "farmersdelight:apple_pie_slice",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:bacon",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:bacon_and_eggs",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:bacon_sandwich",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:baked_cod_stew",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:barbecue_stick",
+      "section": "special"
+    },
+    {
+      "item": "farmersdelight:beef_patty",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:beef_stew",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:bone_broth",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:cabbage",
+      "section": "fruit"
+    },
+    {
+      "item": "farmersdelight:cabbage_leaf",
+      "section": "fruit"
+    },
+    {
+      "item": "farmersdelight:cabbage_rolls",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:cake_slice",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:chicken_cuts",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:chicken_sandwich",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:chicken_soup",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:chocolate_pie_slice",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:cod_roll",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:cod_slice",
+      "section": "seafood"
+    },
+    {
+      "item": "farmersdelight:cooked_bacon",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:cooked_chicken_cuts",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:cooked_cod_slice",
+      "section": "seafood"
+    },
+    {
+      "item": "farmersdelight:cooked_mutton_chops",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:cooked_rice",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:cooked_salmon_slice",
+      "section": "seafood"
+    },
+    {
+      "item": "farmersdelight:dumplings",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:egg_sandwich",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:fish_stew",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:fried_egg",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:fried_rice",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:fruit_salad",
+      "section": "fruit"
+    },
+    {
+      "item": "farmersdelight:gleaming_salad",
+      "section": "fruit"
+    },
+    {
+      "item": "farmersdelight:glow_berry_custard",
+      "section": "fruit"
+    },
+    {
+      "item": "farmersdelight:grilled_salmon",
+      "section": "seafood"
+    },
+    {
+      "item": "farmersdelight:ham",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:hamburger",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:honey_cookie",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:honey_glazed_ham",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:hot_cocoa",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:kelp_roll",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:kelp_roll_slice",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:melon_juice",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:melon_popsicle",
+      "section": "fruit"
+    },
+    {
+      "item": "farmersdelight:milk_bottle",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:minced_beef",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:mixed_salad",
+      "section": "fruit"
+    },
+    {
+      "item": "farmersdelight:mushroom_rice",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:mutton_chops",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:mutton_wrap",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:noodle_soup",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:onion",
+      "section": "fruit"
+    },
+    {
+      "item": "farmersdelight:onion_soup",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:pasta_with_meatballs",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:pasta_with_mutton_chop",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:pie_crust",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:pumpkin_pie_slice",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:pumpkin_slice",
+      "section": "fruit"
+    },
+    {
+      "item": "farmersdelight:pumpkin_soup",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:ratatouille",
+      "section": "special"
+    },
+    {
+      "item": "farmersdelight:raw_pasta",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:roast_chicken",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:roasted_mutton_chops",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:rotten_tomato",
+      "section": "fruit"
+    },
+    {
+      "item": "farmersdelight:salmon_roll",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:salmon_slice",
+      "section": "seafood"
+    },
+    {
+      "item": "farmersdelight:shepherds_pie",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:smoked_ham",
+      "section": "meat"
+    },
+    {
+      "item": "farmersdelight:squid_ink_pasta",
+      "section": "seafood"
+    },
+    {
+      "item": "farmersdelight:steak_and_potatoes",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:stuffed_potato",
+      "section": "special"
+    },
+    {
+      "item": "farmersdelight:stuffed_pumpkin",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:sweet_berry_cheesecake_slice",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:sweet_berry_cookie",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:tomato",
+      "section": "fruit"
+    },
+    {
+      "item": "farmersdelight:tomato_sauce",
+      "section": "special"
+    },
+    {
+      "item": "farmersdelight:vegetable_noodles",
+      "section": "grain"
+    },
+    {
+      "item": "farmersdelight:vegetable_soup",
+      "section": "soup"
+    },
+    {
+      "item": "farmersdelight:wheat_dough",
+      "section": "grain"
+    },
+    {
+      "item": "moredelight:bread_slice",
+      "section": "grain"
+    },
+    {
+      "item": "moredelight:carrot_soup",
+      "section": "soup"
+    },
+    {
+      "item": "moredelight:chicken_salad",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:chicken_sandwich_with_egg_and_tomato",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:chocolate_popsicle",
+      "section": "grain"
+    },
+    {
+      "item": "moredelight:cooked_rice_with_beef",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:cooked_rice_with_chicken_cuts",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:cooked_rice_with_porkchop",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:creamy_pasta_with_chicken_cuts",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:creamy_pasta_with_ham",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:egg_with_bacon_sandwich",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:hamburger_with_cheese",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:hamburger_with_egg",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:loaded_hamburger",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:omelette",
+      "section": "special"
+    },
+    {
+      "item": "moredelight:porkchop_sandwich",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:simple_hamburger",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:steak_sandwich",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:steak_with_egg_sandwich",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:toast",
+      "section": "grain"
+    },
+    {
+      "item": "moredelight:toast_with_blueberries",
+      "section": "fruit"
+    },
+    {
+      "item": "moredelight:toast_with_cheese",
+      "section": "grain"
+    },
+    {
+      "item": "moredelight:toast_with_chocolate",
+      "section": "grain"
+    },
+    {
+      "item": "moredelight:toast_with_egg",
+      "section": "meat"
+    },
+    {
+      "item": "moredelight:toast_with_glow_berries",
+      "section": "fruit"
+    },
+    {
+      "item": "moredelight:toast_with_honey",
+      "section": "grain"
+    },
+    {
+      "item": "moredelight:toast_with_peanut_butter",
+      "section": "grain"
+    },
+    {
+      "item": "moredelight:toast_with_sweet_berries",
+      "section": "fruit"
+    },
+    {
+      "item": "moredelight:tomato_sandwich",
+      "section": "grain"
+    }
+  ]
+}

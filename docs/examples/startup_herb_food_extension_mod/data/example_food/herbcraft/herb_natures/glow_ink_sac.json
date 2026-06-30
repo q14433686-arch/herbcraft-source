@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "item": "minecraft:glow_ink_sac",
+  "temperature": "cool",
+  "flavors": [
+    "salty",
+    "bland"
+  ],
+  "taste_flavors": [
+    "salty"
+  ],
+  "traits": [
+    "aquatic",
+    "lunar",
+    "curio"
+  ]
+}

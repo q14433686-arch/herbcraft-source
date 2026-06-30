@@ -1,0 +1,1314 @@
+{
+  "minecraft:dandelion": {
+    "temperature": "neutral",
+    "flavors": [
+      "sweet",
+      "bitter"
+    ],
+    "traits": [
+      "floral",
+      "nourishing",
+      "clearing"
+    ],
+    "taste_flavors": [
+      "sweet",
+      "bitter"
+    ]
+  },
+  "minecraft:golden_dandelion": {
+    "temperature": "warm",
+    "flavors": [
+      "sweet",
+      "bitter"
+    ],
+    "traits": [
+      "floral",
+      "nourishing",
+      "clearing"
+    ],
+    "taste_flavors": [
+      "sweet",
+      "bitter"
+    ]
+  },
+  "minecraft:poppy": {
+    "temperature": "cool",
+    "flavors": [
+      "astringent"
+    ],
+    "traits": [
+      "floral",
+      "sedating",
+      "addictive"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:blue_orchid": {
+    "temperature": "cool",
+    "flavors": [
+      "bitter"
+    ],
+    "traits": [
+      "floral",
+      "clearing"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:allium": {
+    "temperature": "neutral",
+    "flavors": [
+      "sweet",
+      "pungent"
+    ],
+    "traits": [
+      "floral"
+    ],
+    "taste_flavors": [
+      "sweet",
+      "bitter"
+    ]
+  },
+  "minecraft:azure_bluet": {
+    "temperature": "cool",
+    "flavors": [
+      "bitter",
+      "astringent"
+    ],
+    "traits": [
+      "floral",
+      "clearing"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:red_tulip": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent"
+    ],
+    "traits": [
+      "floral"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:orange_tulip": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent"
+    ],
+    "traits": [
+      "floral"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:pink_tulip": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent"
+    ],
+    "traits": [
+      "floral"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:white_tulip": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent"
+    ],
+    "traits": [
+      "floral"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:oxeye_daisy": {
+    "temperature": "neutral",
+    "flavors": [
+      "bitter"
+    ],
+    "traits": [
+      "floral",
+      "clearing"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:cornflower": {
+    "temperature": "neutral",
+    "flavors": [
+      "bitter"
+    ],
+    "traits": [
+      "floral",
+      "clearing"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:lily_of_the_valley": {
+    "temperature": "cool",
+    "flavors": [
+      "bitter",
+      "astringent"
+    ],
+    "traits": [
+      "floral",
+      "toxic",
+      "sedating"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:wither_rose": {
+    "temperature": "hot",
+    "flavors": [
+      "bitter",
+      "astringent"
+    ],
+    "traits": [
+      "floral",
+      "withered",
+      "toxic"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:torchflower": {
+    "temperature": "hot",
+    "flavors": [
+      "pungent"
+    ],
+    "traits": [
+      "floral",
+      "fiery",
+      "stirring"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:closed_eyeblossom": {
+    "temperature": "cool",
+    "flavors": [
+      "astringent"
+    ],
+    "traits": [
+      "floral",
+      "lunar",
+      "sedating"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:open_eyeblossom": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "floral"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:cactus_flower": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "sour"
+    ],
+    "traits": [
+      "floral"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "sour"
+    ]
+  },
+  "minecraft:wildflowers": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "floral"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:pink_petals": {
+    "temperature": "neutral",
+    "flavors": [
+      "sweet"
+    ],
+    "traits": [
+      "floral"
+    ],
+    "taste_flavors": [
+      "sweet",
+      "bitter"
+    ]
+  },
+  "minecraft:sunflower": {
+    "temperature": "warm",
+    "flavors": [
+      "sweet"
+    ],
+    "traits": [
+      "floral",
+      "solar"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:lilac": {
+    "temperature": "neutral",
+    "flavors": [
+      "pungent"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:rose_bush": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent"
+    ],
+    "traits": [
+      "floral"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:peony": {
+    "temperature": "neutral",
+    "flavors": [
+      "sweet",
+      "astringent"
+    ],
+    "traits": [
+      "floral",
+      "sedating"
+    ],
+    "taste_flavors": [
+      "sweet",
+      "bitter"
+    ]
+  },
+  "minecraft:pitcher_plant": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:short_grass": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:tall_grass": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:fern": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:large_fern": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:seagrass": {
+    "temperature": "cold",
+    "flavors": [
+      "salty",
+      "bland",
+      "sour"
+    ],
+    "traits": [
+      "leafy",
+      "aquatic"
+    ],
+    "taste_flavors": [
+      "salty",
+      "bland",
+      "sour"
+    ]
+  },
+  "minecraft:lily_pad": {
+    "temperature": "cool",
+    "flavors": [
+      "bitter",
+      "astringent"
+    ],
+    "traits": [
+      "floral",
+      "toxic",
+      "earthy"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:spore_blossom": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "floral",
+      "sedating"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:sugar_cane": {
+    "temperature": "neutral",
+    "flavors": [
+      "sweet"
+    ],
+    "traits": [
+      "nourishing"
+    ],
+    "taste_flavors": [
+      "sweet"
+    ]
+  },
+  "minecraft:cocoa_beans": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "sour"
+    ],
+    "traits": [
+      "curio",
+      "stirring"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "sour"
+    ]
+  },
+  "minecraft:bamboo": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "curio",
+      "earthy"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:kelp": {
+    "temperature": "cold",
+    "flavors": [
+      "salty",
+      "bland"
+    ],
+    "traits": [
+      "aquatic"
+    ],
+    "taste_flavors": [
+      "salty",
+      "bland"
+    ]
+  },
+  "minecraft:snowball": {
+    "temperature": "cold",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "icy"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:ice": {
+    "temperature": "cold",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "icy"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:packed_ice": {
+    "temperature": "cold",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "icy"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:blue_ice": {
+    "temperature": "cold",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "icy",
+      "clearing"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:powder_snow_bucket": {
+    "temperature": "cold",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "icy"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:resin_clump": {
+    "temperature": "warm",
+    "flavors": [
+      "pungent",
+      "astringent"
+    ],
+    "traits": [
+      "resinous"
+    ],
+    "taste_flavors": [
+      "pungent",
+      "astringent"
+    ]
+  },
+  "minecraft:resin_brick": {
+    "temperature": "warm",
+    "flavors": [
+      "pungent",
+      "astringent"
+    ],
+    "traits": [
+      "resinous"
+    ],
+    "taste_flavors": [
+      "pungent",
+      "astringent"
+    ]
+  },
+  "minecraft:nether_wart": {
+    "temperature": "neutral",
+    "flavors": [
+      "pungent",
+      "bitter"
+    ],
+    "traits": [
+      "nether",
+      "earthy"
+    ],
+    "taste_flavors": [
+      "pungent",
+      "bitter"
+    ]
+  },
+  "minecraft:fermented_spider_eye": {
+    "temperature": "neutral",
+    "flavors": [
+      "bitter",
+      "sour"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "sour"
+    ]
+  },
+  "minecraft:blaze_powder": {
+    "temperature": "hot",
+    "flavors": [
+      "pungent"
+    ],
+    "traits": [
+      "nether",
+      "fiery",
+      "stirring"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:magma_cream": {
+    "temperature": "hot",
+    "flavors": [
+      "pungent",
+      "astringent"
+    ],
+    "traits": [
+      "nether",
+      "fiery",
+      "stirring"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:ghast_tear": {
+    "temperature": "neutral",
+    "flavors": [
+      "salty"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:rabbit_foot": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:phantom_membrane": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:glistering_melon_slice": {
+    "temperature": "cold",
+    "flavors": [
+      "sweet",
+      "sour"
+    ],
+    "traits": [
+      "icy"
+    ],
+    "taste_flavors": [
+      "sweet",
+      "sour"
+    ]
+  },
+  "minecraft:golden_carrot": {
+    "temperature": "warm",
+    "flavors": [
+      "sweet"
+    ],
+    "traits": [
+      "nourishing",
+      "solar"
+    ],
+    "taste_flavors": [
+      "sweet"
+    ]
+  },
+  "minecraft:sugar": {
+    "temperature": "neutral",
+    "flavors": [
+      "sweet"
+    ],
+    "traits": [
+      "nourishing",
+      "stirring"
+    ],
+    "taste_flavors": [
+      "sweet"
+    ]
+  },
+  "minecraft:glowstone_dust": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:slime_ball": {
+    "temperature": "neutral",
+    "flavors": [
+      "pungent",
+      "astringent"
+    ],
+    "traits": [
+      "slimy"
+    ],
+    "taste_flavors": [
+      "pungent",
+      "astringent"
+    ]
+  },
+  "minecraft:egg": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:blue_egg": {
+    "temperature": "cool",
+    "flavors": [
+      "bitter"
+    ],
+    "traits": [
+      "clearing"
+    ],
+    "taste_flavors": [
+      "bitter"
+    ]
+  },
+  "minecraft:brown_egg": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:honeycomb": {
+    "temperature": "neutral",
+    "flavors": [
+      "sweet"
+    ],
+    "traits": [
+      "nourishing",
+      "honeyed"
+    ],
+    "taste_flavors": [
+      "sweet"
+    ]
+  },
+  "minecraft:honeycomb_block": {
+    "temperature": "neutral",
+    "flavors": [
+      "sweet"
+    ],
+    "traits": [
+      "nourishing",
+      "honeyed"
+    ],
+    "taste_flavors": [
+      "sweet"
+    ]
+  },
+  "minecraft:honey_block": {
+    "temperature": "neutral",
+    "flavors": [
+      "sweet"
+    ],
+    "traits": [
+      "nourishing",
+      "honeyed"
+    ],
+    "taste_flavors": [
+      "sweet"
+    ]
+  },
+  "minecraft:pumpkin": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:melon": {
+    "temperature": "neutral",
+    "flavors": [
+      "sweet"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "sweet"
+    ]
+  },
+  "minecraft:wheat_seeds": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:beetroot_seeds": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:melon_seeds": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:pumpkin_seeds": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:torchflower_seeds": {
+    "temperature": "hot",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "floral",
+      "fiery",
+      "stirring"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:pitcher_pod": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "curio"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:oak_leaves": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:spruce_leaves": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:birch_leaves": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:jungle_leaves": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:acacia_leaves": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:dark_oak_leaves": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:mangrove_leaves": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:cherry_leaves": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:pale_oak_leaves": {
+    "temperature": "cool",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy",
+      "withered",
+      "lunar"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:azalea_leaves": {
+    "temperature": "cold",
+    "flavors": [
+      "bitter",
+      "astringent"
+    ],
+    "traits": [
+      "leafy",
+      "toxic"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:flowering_azalea_leaves": {
+    "temperature": "cold",
+    "flavors": [
+      "bitter",
+      "astringent"
+    ],
+    "traits": [
+      "floral",
+      "leafy",
+      "toxic"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:oak_sapling": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:birch_sapling": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:spruce_sapling": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:jungle_sapling": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:acacia_sapling": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:dark_oak_sapling": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:pale_oak_sapling": {
+    "temperature": "cool",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy",
+      "withered",
+      "lunar"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:mangrove_propagule": {
+    "temperature": "neutral",
+    "flavors": [
+      "bland"
+    ],
+    "traits": [
+      "curio",
+      "earthy"
+    ],
+    "taste_flavors": [
+      "bland"
+    ]
+  },
+  "minecraft:cherry_sapling": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
+  },
+  "minecraft:azalea": {
+    "temperature": "neutral",
+    "flavors": [
+      "bitter",
+      "astringent"
+    ],
+    "traits": [
+      "toxic"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:flowering_azalea": {
+    "temperature": "neutral",
+    "flavors": [
+      "bitter",
+      "astringent"
+    ],
+    "traits": [
+      "floral",
+      "toxic"
+    ],
+    "taste_flavors": [
+      "bitter",
+      "astringent"
+    ]
+  },
+  "minecraft:dried_kelp_block": {
+    "temperature": "cold",
+    "flavors": [
+      "salty",
+      "bland"
+    ],
+    "traits": [
+      "aquatic"
+    ],
+    "taste_flavors": [
+      "salty",
+      "bland"
+    ]
+  },
+  "minecraft:sea_pickle": {
+    "temperature": "cold",
+    "flavors": [
+      "salty",
+      "bland",
+      "sour"
+    ],
+    "traits": [
+      "aquatic"
+    ],
+    "taste_flavors": [
+      "salty",
+      "bland",
+      "sour"
+    ]
+  },
+  "minecraft:brown_mushroom": {
+    "temperature": "neutral",
+    "flavors": [
+      "pungent"
+    ],
+    "traits": [
+      "fungal",
+      "earthy"
+    ],
+    "taste_flavors": [
+      "pungent",
+      "bitter"
+    ]
+  },
+  "minecraft:crimson_fungus": {
+    "temperature": "hot",
+    "flavors": [
+      "pungent"
+    ],
+    "traits": [
+      "nether",
+      "fiery",
+      "fungal",
+      "stirring"
+    ],
+    "taste_flavors": [
+      "pungent",
+      "bitter"
+    ]
+  },
+  "minecraft:warped_fungus": {
+    "temperature": "warm",
+    "flavors": [
+      "pungent"
+    ],
+    "traits": [
+      "nether",
+      "fungal",
+      "lunar"
+    ],
+    "taste_flavors": [
+      "pungent",
+      "bitter"
+    ]
+  }
+}

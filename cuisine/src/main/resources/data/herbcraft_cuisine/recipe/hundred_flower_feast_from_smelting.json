@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "ingredient": "herbcraft_cuisine:raw_hundred_flower_feast",
+  "result": {
+    "id": "herbcraft_cuisine:hundred_flower_feast"
+  },
+  "experience": 0.35,
+  "cookingtime": 200
+}

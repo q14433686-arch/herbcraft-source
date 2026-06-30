@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "entry": "herbal/allium",
+  "claims": [
+    {
+      "id": "calming_scent",
+      "type": "note",
+      "text_key": "knowledge.example_compat.allium.claim.calming_scent",
+      "truth": true,
+      "source_tier": "common",
+      "suspicious": false
+    }
+  ]
+}

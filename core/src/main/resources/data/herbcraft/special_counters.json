@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "counters": [
+    {
+      "id": "poppy",
+      "items": ["minecraft:poppy"],
+      "window_ticks": 1200,
+      "always_effects": [
+        { "effect": "minecraft:resistance", "duration_ticks": 240, "amplifier": 0 }
+      ],
+      "threshold_effects": [
+        { "min_count": 3, "effect": "minecraft:darkness", "duration_ticks": 200, "amplifier": 0 }
+      ]
+    },
+    {
+      "id": "torchflower",
+      "items": ["minecraft:torchflower"],
+      "window_ticks": 1200,
+      "threshold_effects": [
+        { "min_count": 3, "effect": "minecraft:fire_resistance", "duration_ticks": 600, "amplifier": 0 }
+      ]
+    },
+    {
+      "id": "sugar",
+      "items": ["minecraft:sugar"],
+      "window_ticks": 1200,
+      "threshold_effects": [
+        { "min_count": 4, "chance": 0.5, "effect": "minecraft:nausea", "duration_ticks": 160, "amplifier": 0 }
+      ]
+    },
+    {
+      "id": "sugar",
+      "items": ["minecraft:honey_block"],
+      "window_ticks": 1200,
+      "threshold_effects": [
+        { "min_count": 2, "chance": 0.5, "effect": "minecraft:nausea", "duration_ticks": 160, "amplifier": 0 }
+      ]
+    },
+    {
+      "id": "slime",
+      "items": ["minecraft:slime_ball"],
+      "window_ticks": 1200,
+      "threshold_effects": [
+        { "min_count": 3, "effect": "minecraft:slowness", "duration_ticks": 100, "amplifier": 0 }
+      ]
+    }
+  ]
+}

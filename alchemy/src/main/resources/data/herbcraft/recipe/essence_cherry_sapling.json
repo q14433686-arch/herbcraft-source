@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:cherry_sapling",
+    "minecraft:cherry_sapling",
+    "minecraft:cherry_sapling",
+    "minecraft:cherry_sapling",
+    "minecraft:cherry_sapling",
+    "minecraft:cherry_sapling",
+    "minecraft:cherry_sapling",
+    "minecraft:cherry_sapling",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_cherry_sapling",
+    "count": 1
+  }
+}

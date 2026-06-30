@@ -1,0 +1,17 @@
+{
+  "wants": {
+    "id": "minecraft:potion",
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "herbcraft:dandelion_clarified"
+      }
+    }
+  },
+  "gives": {
+    "id": "minecraft:emerald",
+    "count": 6
+  },
+  "max_uses": 16.0,
+  "reputation_discount": 0.05,
+  "xp": 20.0
+}

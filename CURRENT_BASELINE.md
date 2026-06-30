@@ -1,0 +1,468 @@
+# CURRENT_BASELINE
+
+This is the short authoritative anchor for the current Herbcraft working state. Every future agent turn that changes source, resources, docs, scripts, validation rules, versions, or release outputs must update this file before reporting completion.
+
+## Current baseline
+
+- Local baseline directory: `release_output/herbcraft_test_20260614_review/`
+- Source archive: `release_output/herbcraft_test_20260614_review/herbcraft-source-current-20260614.zip`
+- Current release/test version: Core/Alchemy `1.1.4`; Cuisine `1.1.3`
+- Minecraft: `26.1.2`
+- Fabric Loader: `0.19.3+`
+- Fabric API: `0.151.0+26.1.2+`
+- Java: `25+`
+- Gradle Wrapper: `9.4.1`
+- Loom: `1.16-SNAPSHOT` resolving as `1.16.3`
+
+## Current output files
+
+The current local output set should contain:
+
+- `herbcraft-1.1.4.jar`
+- `herbcraft-alchemy-1.1.4.jar`
+- `herbcraft-cuisine-1.1.3.jar`
+- `herbcraft-source-current-20260614.zip`
+
+Additional local test artifact:
+
+- `herbcraft-p4-runtime-test-datapack-20260617.zip` — datapack for validating reload-safe P4 metadata integration; not a public release file.
+
+`release_output/` is local/publishing-only and git-ignored. Public jars should be uploaded through GitHub Releases, not committed to the source repository. Do not use a directory literally named `output/`, because platform snapshots exclude it.
+
+## Environment/cache notes
+
+Do not delete useful build environment/cache state unless explicitly asked. In particular, preserve:
+
+- Gradle caches where possible.
+- `/tmp/herbcraft-jdk25` if present.
+- `scripts/setup_jdk25_temurin.sh`.
+- `reference_cache/26_1_porting_notes.md`.
+- Current local `release_output/` baseline if it exists; it is git-ignored and regenerable.
+
+If JDK 25 is missing, run:
+
+```bash
+bash scripts/setup_jdk25_temurin.sh
+JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew build --rerun-tasks
+```
+
+## Latest source-change note — 2026-06-30 viewer integration fixes
+
+The Alchemy JEI/REI viewer integration now includes:
+
+- corrected JEI brewing display slot order for distilled essence and processed potion routes;
+- JEI subtype interpreters and REI common comparators for componentized distilled essence and processed potion lookup;
+- initialized processed-potion display outputs for runtime stack-shape matching;
+- correlated JEI/REI smithing examples for distilled-essence coating and armor-support attachment.
+
+Detailed report: `docs/reports/ALCHEMY_VIEWER_COMPONENT_MATCHING_FIXES_20260630.md`. Client-only validation with actual JEI/REI is still required.
+
+Follow-up JEI fix: after REI exact matching was confirmed and JEI still overmatched distilled essences by shared item identity, JEI Herbcraft brewing displays now use a component-aware advanced brewing recipe manager plugin instead of the vanilla brewing factory registration.
+
+## Authoritative current facts
+
+### Versioning
+
+- `build.gradle` sets Core/Alchemy subproject versions to `1.1.4` and Cuisine to `1.1.3`.
+- Core `fabric.mod.json` version is `1.1.4`.
+- Alchemy `fabric.mod.json` version is `1.1.4` and depends on `herbcraft >=1.1.4`.
+- Cuisine `fabric.mod.json` version is `1.1.3` and depends on `herbcraft >=1.1.3`.
+
+### Core
+
+- Core mod ID: `herbcraft`.
+- `herbs.json` drives 96 edible definitions. P3.10 raw edible food-roll rebalance is implemented: entries may define optional `food_rolls.nutrition` and `food_rolls.saturation`; 70 raw herb entries were tuned so common scenery/flowers/leaves/saplings use probabilistic visible hunger and/or direct hidden saturation instead of stable early food. Post-client tuning made seeds more substantial (`S+2` ordinary seeds, `S+3` melon/pumpkin seeds) and raised sugar cane to stable visible +1 with `saturation_modifier = 1.0` (about +2 hidden saturation). `minecraft:blue_orchid` no longer has a guaranteed `minecraft:saturation` effect.
+- `herb_natures.json` covers 96 nature profiles.
+- Herb Codex exists with knowledge states, rumors, claim marks, errata verification, and UI sync.
+- `百草经总纲` is registered as `overview` in `HerbalChapter`.
+- Jade/tooltip display is knowledge-gated.
+- Nutrition is now based on custom Herbcraft effects, not vanilla negative effects.
+- 食材录 / Ingredient Codex is data-driven by `data/herbcraft/ingredients.json` and contains 39 vanilla food entries. External 食材录 entries can now be added through `data/<namespace>/herbcraft/ingredients/*.json`; non-vanilla entries use namespace-aware Codex IDs to avoid collisions.
+- `1.1.3` Codex guidance Phase 2.1/P3.7/P3.9 is implemented: guide entries under 百草经总纲 are data-backed by module-owned `codex_guides.json`; Core owns only Core guide pages while Cuisine/Alchemy own their addon guide pages. 五味/七情 guide lines reveal principle details from persisted player pharmacology discoveries rather than printing exact item nature in the guide. The 五味与性味 and 七情与配伍 guide pages now include plain beginner-facing microcopy explaining that 性味 is herb pharmacology rather than nutrition, and 七情 is recent-herb interaction rather than a fixed recipe list. One-time onboarding hints are data-backed by module-owned `guide_hints.json` files and persist seen IDs on player data. Cuisine/Alchemy now also have module-owned overview sections/sub-guide entries inside `膳房录` and `炼金要术`.
+- Pharmacology qi/relation tuning is now data-backed: `pharmacology_rules.json` owns `temperature_values` and ordered `seven_emotion_rules`; current temperature values are cold -15, cool -8, neutral 0, warm 8, hot 15, and qi regresses by 5 every 600 ticks. Core Codex pharmacology guide microcopy has been clarified in both languages without adding new advancements.
+
+### Nutrition current state
+
+Seven Herbcraft nutrition effects exist:
+
+- `herbcraft:grain_deficiency` / 谷气亏虚 / block break speed reduction.
+- `herbcraft:flesh_deficiency` / 血肉亏虚 / attack damage reduction.
+- `herbcraft:oil_deficiency` / 津脂不足 / movement speed reduction.
+- `herbcraft:vege_deficiency` / 蔬素不足 / periodic exhaustion.
+- `herbcraft:fruit_deficiency` / 津液不足 / light movement speed reduction. The former displayed “fruit” nutrition dimension is now presented as `津液` / `Fluids`.
+- `herbcraft:dietary_imbalance` / 饮食失衡 / light movement speed reduction plus periodic exhaustion.
+- `herbcraft:well_nourished` / 五养调和 / armor and knockback-resistance bonus.
+
+Current nutrition behavior:
+
+- Warning states remain light/probabilistic.
+- Danger states below `malnutrition_low` are sustained until the next nutrition check interval.
+- Starved state applies all five deficiency effects in sustained form.
+- Confirmed dietary imbalance is grace-gated, then sustained unless recent meals are actively correcting the imbalance.
+- Nutrition correction/recent-meal pass is implemented: the last 24 meals are tracked; the last 3600 ticks / 3 minutes form a correction scoring window; correction score threshold is 60; correction now uses `data/herbcraft/nutrition_correction_rules.json` relationship matrix; active correction applies extra high-dimension decay every 200 ticks by 15..45 until target 650. `fruit`/津液/Fluids is decoupled from the ordinary correction matrix: all ordinary fruit correction weights are `0.0`; high `fruit` is non-punitive in the base mod while low 津液 deficiency remains meaningful. The high-津液 surplus helper now requires at least two non-fruit dimensions above 850 that share a correction-matrix relationship (weight > 0 in either direction) before activating the -10/200t decay toward 700. A single excess dimension alone or two unrelated excess dimensions will not trigger fluid surplus decay.
+- New client status `correcting` / `饮食回正中` exists for active correction.
+- Water bowl keeps a 15% success chance and temporarily relieves dietary imbalance for 60 seconds without repairing nutrition values.
+- `/herbcraft nutrition get|set|preset` debug commands exist and require gamemaster permission. Presets include `correcting_flesh`, `correcting_oil`, `correcting_grain`, `excess_fruit_nonpunitive`, `fluid_surplus_pair`, `fluid_surplus_single`, and `fluid_surplus_unrelated`.
+- Nutrition effect mechanics and timing are data-backed by `data/herbcraft/nutrition_effects.json`. Nutrition dimension bands now use `NutritionRules` thresholds (`balancedMin`, `balancedMax`, `imbalanceHigh`) and punitive spread uses `imbalanceSpread`, so future JSON tuning is not bypassed by stale Java literals.
+- `NutritionRules.loadFromBundledJson()` fallback for `correction_high_threshold` is now 750, matching `nutrition_rules.json` and `NutritionRules.defaults()`; validators guard against returning to old 850 fallback behavior.
+- Nutrition effect icons are generated from vanilla item textures by `scripts/generate_nutrition_effect_icons.py`. The Nutrition panel now uses Codex-style trim/wrap/scissor safeguards so translated status/title/hint/label text cannot protrude outside the panel. English nutrition wording now uses `Greens` rather than `Vege` for the `vege` dimension.
+
+### Cuisine
+
+- Cuisine mod ID: `herbcraft_cuisine`.
+- Cuisine depends on Core only.
+- `dishes.json` currently defines 10 fixed dishes and 22 medicinal/hidden dishes.
+- Water bowl exists and can temporarily relieve dietary imbalance on the same 15% success chance as vanilla nausea relief.
+- `DishItem.clear_all_effects` skips Herbcraft nutrition effects.
+- `HodgepodgeItem.clearPositiveEffects` skips Herbcraft nutrition effects.
+- Hidden dishes exist in source and built jars:
+  - `hundred_flower_feast`
+  - `raw_hundred_flower_feast`
+  - `deadly_hodgepodge`
+  - `raw_deadly_hodgepodge`
+
+### Alchemy
+
+- Alchemy mod ID: `herbcraft_alchemy`.
+- Alchemy depends on Core only.
+- 40 current essence definitions are now data-backed by `data/herbcraft_alchemy/essences.json`.
+- Static essence fields still exist for compatibility but initialize via `essenceFromJson(...)`.
+- Extra essence definitions beyond the 40 compatibility fields are registered from `essences.json` at `AlchemyRegistries.initialize()` time; addons/data packs still need to provide recipes/assets/lang for polished extra entries.
+- Potion bonus pools are data-backed by `data/herbcraft_alchemy/potion_bonus_pools.json`.
+- Potion processing expansion foundation P1-P8 plus A-round custom effects are implemented by `data/herbcraft_alchemy/potion_processing_rules.json`, `data/herbcraft_alchemy/potion_burden_effects.json`, `AlchemyMobEffects`, `PotionProcessingRules`, `PotionProcessingRuntime`, `PotionBurdenRuntime`, Alchemy-owned player burden state, `PotionBurdenConsequenceRuntime`, `AlchemyExpansionEvents`, and `AlchemyProcessingAPI`: current stable potion paths map to style IDs (`_long` -> `sustained`, `_strong` -> `intense`, `_clarified` -> `purified`, `_murky`/risky special paths -> deferred `murky_edge`, plus reserved `harmonized`). P4 runtime effect-profile adjustments apply to `sustained`, `intense`, and `purified`; `_long`/`_strong` still avoid the legacy random quality/bonus advanced-potion path and no longer show the uninitialized-quality tooltip line. P5-P6 burden metadata/player runtime are implemented: processed potion stacks receive persistent/synced `potion_burden`, player burden persists/decays and clears on death. P7 stages now apply custom Alchemy MobEffects (`potion_warming`, `potion_strain`, `potion_overload`) from JSON; `clear_bearing` is registered for future support/buffering. P8 adds minimal events/read-only API hooks for future distillation, armor support, and advanced coating integration.
+- Special/T3 potion definitions and the safe witch throw pool are data-backed by `data/herbcraft_alchemy/special_potions.json`.
+- Witch loot is data-backed by `data/herbcraft_alchemy/witch_loot.json`.
+- Weapon coating rules are data-backed by `data/herbcraft_alchemy/coating_rules.json`.
+- Processed weapon coating E is implemented: `data/herbcraft_alchemy/processed_coating_rules.json` defines coating processing styles (`base`, `sustained`, `intense`, `purified`, reserved `murky_edge`); `WeaponCoating` now carries optional `processing_style` with default `base`; `blank_adhesive + weapon + distilled_essence` creates processed coatings while `blank_adhesive + weapon + base essence` remains the base route; amethyst/echo refinement preserves processing style; runtime hit effects and use counts read style multipliers; tooltips show processed coating style.
+- Armor-side support D/D2 foundation is implemented: `data/herbcraft_alchemy/armor_support_rules.json` maps distilled-essence orientations to armor support rows (`clear_bearing`, `steady_bearing`, `braced_bearing`, reserved `harmonized_bearing`); armor pieces receive persistent/network-synced `herbcraft_alchemy:armor_support` through smithing-table `herbcraft:armor_support_smithing`, not crafting. Adhesive linkage: blank adhesive applies ATTACHED support using armor + distilled essence; amethyst adhesive refines supported armor to CLEAR; echo adhesive refines supported armor to DEEP. Equipped support components buffer processed-potion burden through `POTION_BURDEN_BUFFER` and can apply `clear_bearing` feedback. This is protective/supportive only, not retaliation/thorns.
+- Distillation B3/D2 foundation is implemented: `data/herbcraft_alchemy/distillation_rules.json` defines orientations/catalysts (`purified`/honeycomb, `sustained`/redstone, `intense`/glowstone, reserved `harmonized`/amethyst); `herbcraft:distilled_essence` is a single styled container item carrying persistent/network-synced `source_essence` and `orientation` via `herbcraft_alchemy:distilled_essence`. D2 moved distillation from crafting table to brewing stand: essence items in brewing bottom slots + orientation catalyst in ingredient slot produce componentized distilled essences. `AlchemyDistillationAPI` exposes read-only queries. Distillation-to-potion routing C is implemented: matching base Herbcraft potion + matching distilled essence in the brewing stand routes to the existing stable processed potion path (`_clarified`, `_long`, `_strong`, or `wither_venom_iii` for intense wither rose) while preserving old redstone/glowstone/honeycomb routes. This intentionally avoids per-source item explosion and does not yet implement advanced coating.
+- Core/alchemy/cuisine Codex page loot injections are JSON-backed by each module's `codex_loot_injections.json`.
+- `BrewingStandCatalystMixin.java` exists and builds.
+- Hidden cuisine catalyst brewing source exists and preserves potion stack components by copying input stacks and setting only quality.
+
+## Externalized data tables already done
+
+The following formerly Java-hardcoded or partly Java-hardcoded systems are now JSON-backed:
+
+- `data/herbcraft/special_counters.json`
+- `data/herbcraft_cuisine/hodgepodge_rules.json`
+- `data/herbcraft_alchemy/potion_bonus_pools.json`
+- `data/herbcraft_alchemy/potion_processing_rules.json`
+- `data/herbcraft_alchemy/potion_burden_effects.json`
+- `data/herbcraft_alchemy/distillation_rules.json`
+- `data/herbcraft_alchemy/armor_support_rules.json`
+- `data/herbcraft_alchemy/essences.json`
+- `data/herbcraft/codex_loot_injections.json`
+- `data/herbcraft_alchemy/codex_loot_injections.json`
+- `data/herbcraft_cuisine/codex_loot_injections.json`
+- `data/herbcraft_alchemy/special_potions.json`
+- `data/herbcraft_alchemy/coating_rules.json`
+- `data/herbcraft_alchemy/processed_coating_rules.json`
+- `data/herbcraft_alchemy/witch_loot.json`
+- `data/herbcraft/nutrition_effects.json`
+- `data/herbcraft/ingredients.json`
+- `data/herbcraft/codex_guides.json`
+- `data/herbcraft_cuisine/codex_guides.json`
+- `data/herbcraft_alchemy/codex_guides.json`
+- `data/herbcraft/guide_hints.json`
+- `data/herbcraft_cuisine/guide_hints.json`
+- `data/herbcraft_alchemy/guide_hints.json`
+- `data/herbcraft/nutrition_correction_rules.json`
+- `data/herbcraft/pharmacology_rules.json`
+- `core/src/main/resources/data/herbcraft/nutrition_profiles.json` contains 162 nutrition profiles scaled to 0.6x for balanced pacing. `minecraft:milk_bucket` provides gentle flesh/oil nutrition (`flesh:14, oil:10`); `herbcraft_cuisine:water_bowl` provides trace fluids only (`fruit:5`).
+- `data/herbcraft_cuisine/environment/drinkable/*.json` provides optional Homeostatic drinkable data for Cuisine custom edible outputs. Values are balanced against Homeostatic's 20-point water bar; water bowl is `amount 6 / saturation 1.2` with `85%` thirst-effect risk to prevent trivial infinite hydration.
+- `data/herbcraft/environment/drinkable/*.json` provides optional Homeostatic drinkable data for selected Core/vanilla Herbcraft edible items not already covered by Homeostatic's known generated vanilla drinkables. Ice/snow/water-adjacent items give meaningful hydration; `minecraft:sugar_cane` is anchored at Homeostatic `amount 3 / saturation 0.5`; sweet/sticky/hot/toxic items use `amount 0` plus strong thirst-effect risk instead of negative hydration, because Homeostatic stores negative water internally without clamping to zero.
+- First low-risk external extension merge layer is implemented for server data under `data/<namespace>/herbcraft/herb_natures/*.json`, `nutrition_profiles/*.json`, `ingredients/*.json`, `special_counters/*.json`, `knowledge_rumors/*.json`, and `codex_loot_injections/*.json`. Runtime support is in `ExternalDataResources`, `HerbcraftExternalDataReloadListener`, and the corresponding Core registries/managers. Server-authoritative nutrition profiles, nature profiles, and ingredient entry IDs sync to clients through `HerbcraftDataSyncPayload` / `HerbcraftDataSyncManager`. External `special_counters` now use dynamic per-player counter storage keyed by counter ID rather than four hardcoded counters.
+- Startup-only external herb food registration is implemented for loaded Fabric mod/addon resources under `data/<namespace>/herbcraft/herbs/*.json`. It is scanned by `HerbFoodRegistry.loadExternalStartupResources()` during Herbcraft initialization before `DefaultItemComponentEvents.MODIFY` registration. It supports optional `food_rolls` fields for probabilistic visible hunger/direct hidden saturation settlement. It is **not** a world datapack `/reload` feature for changing FOOD/CONSUMABLE components.
+- Food-mod compatibility draft work for Farmer's Delight Refabricated, More Delight, and Reg's More Foods is tracked in `docs/reports/EXTERNAL_INGREDIENTS_CLIENT_SYNC_GENERATOR_API_20260616.md`. Rounds 1-5 are complete for the current decision. Author client testing passed for Farmer's Delight Refabricated + More Delight, and RMF was removed due datapack-driven item identity / vanilla-item collision risk. Reference generated datapack is kept under `docs/compat_drafts/food_mods_26_1_2/generated_pack/`, sourced from `compat_review_round5_farmer_moredelight.csv`, with 108 nutrition profiles, 108 ingredient entries, 5 herb nature entries, and 0 knowledge rumors. It is reference material only; the published route is built-in Core compat in `1.1.3`, because older jars do not have the food-nature bridge. The same Farmer+More data is bundled into Herbcraft Core under `data/farmers_moredelight_herbcraft/herbcraft/`, and a generic food-nature pharmacology bridge lets explicit nature+nutrition ordinary foods participate in pharmacology without overriding target mod food components. 百草志 registers these nature-bearing foods under `药食志` after tasting, while 食材录 keeps nutrition. Food-nature items are also wired into Herbcraft item tooltips, Jade item/entity display, and the 五味/七情 guide discovery counters.
+- P4.1-P4.5 are complete for the read/event extension boundary. `docs/JSON_EXTENSION_SPEC_1_1_3.md` is the authoritative JSON schema/boundary reference, `HerbcraftDataAPI` exposes read-only Java queries, `HerbcraftEvents` exposes observational events, examples live under `docs/examples/`, and `docs/reports/P4_EXTENSION_READINESS_1_1_3_20260617.md` summarizes 1.1.3 extension readiness. Java write/registration APIs remain deferred. `docs/reports/DATAPACK_RUNTIME_COMPAT_VERIFICATION_20260617.md` records the final source-level verification that reload-safe datapack metadata can integrate with recognition, UI/display, nutrition, food-nature pharmacology, and external special counters when the required surfaces are present.
+
+Validator:
+
+```bash
+python3 scripts/validate_externalized_rules.py
+```
+
+## Current key validators
+
+Run these after meaningful changes:
+
+```bash
+JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew build --rerun-tasks
+python3 scripts/check_lang_diff.py
+python3 scripts/validate_custom_nutrition_effects_phase8.py
+python3 scripts/validate_nutrition_correction_phase.py
+python3 scripts/validate_externalized_rules.py
+python3 scripts/validate_raw_herb_food_balance.py
+python3 scripts/validate_essence_resources.py
+python3 scripts/validate_potion_processing_rules.py
+python3 scripts/validate_potion_processing_runtime.py
+python3 scripts/validate_potion_burden_runtime.py
+python3 scripts/validate_potion_burden_consequences.py
+python3 scripts/validate_alchemy_burden_effects.py
+python3 scripts/validate_alchemy_expansion_boundaries.py
+python3 scripts/validate_distillation_foundation.py
+python3 scripts/validate_distillation_brewing_routing.py
+python3 scripts/validate_armor_support_foundation.py
+python3 scripts/validate_processed_coating_expansion.py
+python3 scripts/validate_homeostatic_compat.py
+python3 scripts/validate_nutrition_cuisine_immunity_isolation.py
+python3 scripts/validate_recipe_isolation.py
+python3 scripts/validate_item_textures.py
+python3 scripts/validate_task_abcd.py
+python3 scripts/validate_extended_features.py
+python3 scripts/validate_trade_tags.py
+python3 scripts/validate_external_extension_spec.py
+python3 scripts/validate_animal_food_tags.py
+python3 scripts/validate_catalyst_mixin.py
+python3 scripts/validate_nature_jade.py
+python3 scripts/validate_p1_codex_advancements.py
+python3 scripts/verify_built_jars.py
+```
+
+`validate_animal_food_tags.py` now searches the explicit `/home/user/cache/minecraft/client-26.1.2.jar`, Loom's downloaded client/merged jars, or `HERBCRAFT_VANILLA_CLIENT_JAR`. Run a Gradle build first if no vanilla jar cache exists.
+
+## Known remaining work / do not confuse with completed work
+
+Not yet done:
+
+- Author reported local real-client validation passed for the previously requested nutrition, Codex/Jade/UI, brewing catalyst, and related smoke checks with no visible bugs/conflicts.
+- Further real-client validation is still useful after future changes, especially for any new dynamic essence/resource-generation work.
+- Round-1 Homeostatic compatibility for Herbcraft Cuisine custom edible outputs is implemented as optional data under `data/herbcraft_cuisine/environment/drinkable/` and guarded by `scripts/validate_homeostatic_compat.py`.
+- Round-2 Homeostatic compatibility for selected Core/vanilla Herbcraft edible items is implemented as optional data under `data/herbcraft/environment/drinkable/`, with Homeostatic's known vanilla drinkable items intentionally avoided to reduce duplicate/override risk.
+- Fully data-driven automatic asset/recipe/lang generation for additional dynamic essences. Current dynamic support registers extra essence items/potions from JSON, but external resource/data files are still needed for a polished addon entry.
+- `scripts/generate_essence_resources.py` and `scripts/validate_essence_resources.py` now implement/check the first project-local essence resource generation step.
+- `scripts/generate_essence_resources.py` also supports `--scaffold-extension` for one-off standalone essence extension scaffolds, including optional wandering trader trade and Codex rumor skeletons. Scaffold mode now supports multiple source items through `--sources`, optional `--no-trade` / `--no-codex` switches, and `--check-extension` validation for generated or third-party scaffold directories.
+- `docs/examples/essence_extension_example/` provides an example essence extension layout.
+- `docs/EXTENDING_HERBCRAFT.md` documents the current extension surface and limitations. `docs/PUBLIC_EXTENSION_API_DESIGN.md` records the P4 Java API design draft; it is not an implemented stable API yet.
+- `docs/DOCUMENTATION_INDEX.md` maps current authoritative docs versus historical reports/release-copy snapshots so future agents do not anchor to stale files.
+- `docs/EXTERNAL_EXTENSION_SPEC_DRAFT.md` now tracks P1/P2/P3/P4 external extension planning and current implementation status.
+- `docs/HOMEOSTATIC_TEMPERATURE_COMPAT_NOTES.md` records P1 Homeostatic temperature research. No Homeostatic temperature gameplay integration is implemented yet.
+- `docs/examples/external_extension_compat_pack/` and `scripts/validate_external_extension_spec.py` provide the first example/validator for the P2 external merge layer.
+- `docs/examples/startup_herb_food_extension_mod/` provides an example layout for P3 startup-only herb food extension resources.
+- `docs/reports/P2_EXTERNAL_DATAPACK_SMOKE_20260615.md` records the successful P2 external datapack server smoke test and the resolved pack metadata warning.
+- `docs/reports/P3_STARTUP_HERB_FOOD_SMOKE_20260615.md` records the successful P3 temporary mod startup herb food server smoke test.
+- `docs/reports/EXTENSION_CONSISTENCY_REVIEW_20260615.md` records the post-P2/P3 consistency review and next-round recommendation.
+- `docs/reports/P3_CLIENT_TEST_CHECKLIST_20260615.md` gives the author a concrete real-client test table for the generated P3 startup food test addon.
+- Author reported the P3 real-client test passed fully: the test item was edible/functional, residual page and Herb Codex entries worked, and the item appeared normally in 奇材志 with expected description/lines.
+- `docs/reports/NUTRITION_FLUIDS_DESIGN_REVIEW_20260615.md` records the current analysis-only review of the 津液/Fluids excess design issue discovered during survival testing.
+- `release_output/herbcraft_test_20260614_review/herbcraft-p3-startup-food-test-addon-1.0.0.jar` is a generated test addon from `docs/examples/startup_herb_food_extension_mod/`; it is not a public release jar.
+- `docs/EXTENSION_GENERATOR_PLAN.md` remains the planning reference for future generator/API work and is updated with current implementation status.
+- P4 stable Java extension events/API remains deferred and should not be presented as implemented. P3 is implemented only for loaded Fabric mod/addon startup resources, not hot-reloadable world datapacks. External P3 herb items do not automatically gain tag membership; addons should provide item tags if they want tag-based systems such as hodgepodge to accept them.
+- Nutrition correction B+E hybrid is implemented, not just discussed. It tracks recent meals and uses amount-weighted correction score to relieve dietary imbalance and accelerate excessive-dimension decay. High 津液/Fluids is non-punitive in the base mod; low 津液 deficiency remains meaningful.
+- Historical correction-speed concern has been addressed by the current 750 correction threshold plus 15..45 per-10s decay range and graduated half-speed behavior for 750-849. Real-client tuning is still useful, but do not quote the old 4..12 or 12/10s timing as current.
+- `docs/reports/NUTRITION_CORRECTION_NEXT_IMPLEMENTATION_SPEC_20260615.md` records the design spec, `docs/reports/NUTRITION_CORRECTION_TUNING_MATRIX_PROPOSAL_20260615.md` records the matrix/timing proposal, and `docs/reports/NUTRITION_CORRECTION_IMPLEMENTATION_REPORT_20260615.md` records the implemented matrix tuning: dimension-specific correction matrix, stronger 15..45 per-10s decay, and high-津液 surplus normalization of other excesses toward 700.
+- Correction stacking issue is fixed in source/build: `correctionScore` no longer requires the correcting dimension's stored value to be below `correctionTargetValue` 650, and matrix decay plus high-津液 surplus decay are computed from original tick values and stacked before applying. In high flesh + high vege + high fruit scenarios, valid recent matrix meals can now stack with the high-津液 -10 helper instead of being filtered out.
+- Coupling issue is fixed in source/build: ordinary correction-matrix `fruit`/津液 weights are now all `0.0`, so fruit-bearing foods no longer suppress `DIETARY_IMBALANCE` through the ordinary correction matrix. 津液 remains active only as low-deficiency, non-punitive high storage, and high-津液 surplus helper (requires at least two related non-fruit excess dimensions before activating decay toward 700). See `docs/reports/NUTRITION_FLUIDS_CORRECTION_COUPLING_REVIEW_20260615.md`.
+- P3.10 raw Herbcraft edible hunger/saturation rebalance is implemented in source/build and guarded by `scripts/validate_raw_herb_food_balance.py`. A client-feedback pass strengthened seeds and sugar cane after the first rollout felt too weak. It still needs real-client retesting, especially stronger seeds, sugar cane +1 visible/about +2 hidden saturation with Homeostatic amount 3, raw kelp short relief, common forage spam, and leaves at full hunger. Core pharmacology guide microcopy has also been clarified in the Codex rather than adding extra advancements. Cuisine hidden-catalyst Codex wording now explicitly says Alchemy linkage requires the Alchemy chapter/module (`炼金分册` / `Alchemy chapter`).
+- Documentation/source consistency audit is recorded in `docs/reports/DOCS_AND_SOURCE_CONSISTENCY_AUDIT_20260616.md`; it updated current handoff docs, marked historical docs, and fixed data-backed nutrition threshold/spread usage in Java.
+
+Do not redo completed work unless a new bug is observed.
+
+## Per-turn rule
+
+At the end of every future turn that changes the project, update this file with:
+
+1. What changed this turn.
+2. Whether output jars/source zip were updated.
+3. Which validations were run.
+4. Any new remaining risks.
+
+If this file is not updated after a modifying turn, the next agent may anchor to stale state. That is considered a serious workflow error.
+
+## Last updated
+
+- Date: 2026-06-30
+- Change: Bumped Core (`herbcraft`) and Alchemy (`herbcraft_alchemy`) from `1.1.3` to `1.1.4`, updated Alchemy's Core dependency to `>=1.1.4`, kept Cuisine (`herbcraft_cuisine`) at `1.1.3`, updated per-module built-jar verification, and synchronized current release-facing documentation. Report: `docs/reports/VERSION_BUMP_CORE_ALCHEMY_1_1_4_20260630.md`.
+- Output updated: jar metadata/docs changed, so the project was rebuilt. Refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.4.jar`, `herbcraft-alchemy-1.1.4.jar`, `herbcraft-cuisine-1.1.3.jar`, regenerated `herbcraft-source-current-20260614.zip`, and kept `herbcraft-p4-runtime-test-datapack-20260617.zip`. Stale staged Core/Alchemy `1.1.3` jars were removed from the current output directory to avoid accidental upload confusion.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon --max-workers=1 -Dorg.gradle.jvmargs='-Xmx1024m -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS; `python3 scripts/check_lang_diff.py` — PASS; `python3 scripts/verify_built_jars.py` — PASS.
+- Remaining risks: no gameplay behavior was intentionally changed; client-only check is limited to confirming the mod list/version display and normal boot with Core `1.1.4`, Alchemy `1.1.4`, and Cuisine `1.1.3`.
+
+## Last updated
+
+- Date: 2026-06-30
+- Change: Implemented Alchemy trade/world-loot/potion-arrow adaptation for newer processed/distilled/support mechanics while reusing existing rules. Added data-driven villager trades for sustained/intense/T3 potions, processed potion arrows, distilled essence samples, and armor-support armor samples; updated trade tags with `replace=false`; added bundled `alchemy_loot_injections.json` and loader support in `AlchemyCodexHooks`; added vanilla-style `minecraft:crafting_imbue` recipe `advanced_tipped_arrow.json`; added `AlchemyPotionArrowMixin` to initialize processed arrow metadata before vanilla hit effects and apply taste/progression/burden after player hit exposure; added `scripts/validate_alchemy_trade_loot_arrow_adaptation.py`. Report: `docs/reports/ALCHEMY_TRADE_LOOT_ARROW_ADAPTATION_20260630.md`.
+- Output updated: jar-facing Java/resources/recipe/trade/loot/validator/docs changed, so the project was rebuilt. Refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, regenerated `herbcraft-source-current-20260614.zip`, and recreated `herbcraft-p4-runtime-test-datapack-20260617.zip`.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon --max-workers=1 -Dorg.gradle.jvmargs='-Xmx1024m -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS; `python3 scripts/validate_alchemy_trade_loot_arrow_adaptation.py` — PASS; `python3 scripts/validate_trade_tags.py` — PASS; `python3 scripts/validate_bugfix_advanced_potion_trade.py` — PASS; `python3 scripts/validate_alchemy_advancement_and_sync.py` — PASS; `python3 scripts/validate_potion_processing_rules.py` — PASS; `python3 scripts/validate_potion_burden_runtime.py` — PASS; `python3 scripts/validate_extended_features.py` — PASS; `python3 scripts/check_lang_diff.py` — PASS; `python3 scripts/verify_built_jars.py` — PASS.
+- Remaining risks: live-client/world confirmation is still needed for trade appearance, loot injection frequency, and potion-arrow effect/progression/burden behavior. Prices/chances are conservative first-pass values and may need tuning after client playtest.
+
+## Last updated
+
+- Date: 2026-06-30
+- Change: Completed Alchemy advancement/progression hardening and data-sync audit. Added `first_distilled_essence`, `first_sustained`, `first_intense`, and `first_armor_support`; narrowed potion-use progression so broad inventory scanning no longer grants taste/use milestones; moved potion progression grants to actual drink/splash/lingering exposure via `AlchemyKnowledgeSupport.markPotionTasted`; normalized special potion source paths for knowledge/progression; updated Alchemy guide gating and the advancement/lang rebuild helper; added `scripts/validate_alchemy_advancement_and_sync.py`. Sync audit conclusion: Alchemy stack components are persistent/network-synchronized, while Alchemy processing/support/coating/distillation/burden-effect rule tables remain bundled/startup mod-jar rules and require client/server jar parity for tooltip/viewer rule-text consistency. Report: `docs/reports/ALCHEMY_ADVANCEMENT_AND_SYNC_AUDIT_20260630.md`.
+- Output updated: jar-facing Java/resources/lang/advancement/validator/docs changed, so the project was rebuilt. Refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, regenerated `herbcraft-source-current-20260614.zip`, and recreated `herbcraft-p4-runtime-test-datapack-20260617.zip`.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon --max-workers=1 -Dorg.gradle.jvmargs='-Xmx1024m -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS; full `scripts/validate_*.py` suite — PASS; `python3 scripts/check_lang_diff.py` — PASS; `python3 scripts/verify_built_jars.py` — PASS.
+- Remaining risks: live-client confirmation is still needed that picking up processed potions no longer grants taste/use advancements, while drink/splash/lingering exposure does; guide reveal timing should be checked in-client. Alchemy rule tables are not currently hot-reload/server-synced datapack data, so matching client/server Alchemy jars remain required for tooltip/viewer rule-text parity.
+
+## Last updated
+
+- Date: 2026-06-30
+- Change: Implemented Alchemy burden profile consequences and armor-support specialization. `potion_processing_rules.json` now owns `burden_consequence_profiles` for steady/warming/chilling/overdriven/muddy/scattering/stagnating outcomes, and `PotionBurdenConsequenceRuntime` applies profile-specific effects/messages on top of total burden stages. Added six profile effects with icons/lang. `PlayerPotionBurdenState` persists the last consumed processed-potion semantic context and support mitigation fields. Armor support now uses split active/tail buffers, matching style/profile bonuses, consequence mitigation, and tail-decay support from `armor_support_rules.json`: clear bearing specializes in muddy/clear stabilization, steady bearing in tail/slow-tail support, and braced bearing in intense/sharp/overdriven peaks. Existing simple `POTION_BURDEN_BUFFER` was retained; `POTION_BURDEN_BUFFER_DETAILED` was added for split support. Report: `docs/reports/ALCHEMY_BURDEN_PROFILE_AND_ARMOR_SPECIALIZATION_20260630.md`.
+- Output updated: jar-facing Java/resources/JSON/lang/icons/validators/docs changed, so the project was rebuilt. Refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, regenerated `herbcraft-source-current-20260614.zip`, and recreated `herbcraft-p4-runtime-test-datapack-20260617.zip`.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon --max-workers=1 -Dorg.gradle.jvmargs='-Xmx1024m -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS; full/current validator suite recorded in `docs/reports/ALCHEMY_BURDEN_PROFILE_AND_ARMOR_SPECIALIZATION_20260630.md` — PASS, including new `python3 scripts/validate_alchemy_burden_profile_specialization.py` and built-jar verification.
+- Remaining risks: source-level and validator checks pass, but live-client confirmation is still needed for actual burden-profile feel, effect/message readability, armor-support specialization feel for single pieces vs full sets, and compatibility behavior for any third-party listeners using the simple burden-buffer event.
+
+- Date: 2026-06-30
+- Change: Completed a fresh Arena.ai environment setup and validator synchronization pass for the current `1.1.3` source line. The repository was cloned, `AGENT_BRIEF.md` was read, `docs/reports/CURRENT_AGENT_BRIEF.md` was regenerated, the authoritative anchors were re-read, `gradlew` execute permission was restored, JDK 25 was provisioned, and the full Java 25 Gradle build passed. Validator maintenance only: `validate_externalized_rules.py` now recognizes current `guide_alchemy_armor_support`; `validate_potion_burden_runtime.py` now matches the compact tooltip / Codex semantic migration; `validate_panel_hodge_recipe.py` now checks data-driven Codex theme values and JSON-backed hodgepodge herb-count rules. Report: `docs/reports/ENVIRONMENT_SETUP_ARENA_20260630.md`.
+- Output updated: validator/report/docs changed and this fresh workspace lacked local outputs, so `release_output/herbcraft_test_20260614_review/` was recreated/refreshed with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, regenerated `herbcraft-source-current-20260614.zip`, and recreated `herbcraft-p4-runtime-test-datapack-20260617.zip`.
+- Validations/checks this turn: `python3 scripts/generate_agent_brief.py --write` — PASS; `chmod +x gradlew` — PASS; `bash scripts/setup_jdk25_temurin.sh` — PASS; `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon --max-workers=1 -Dorg.gradle.jvmargs='-Xmx1024m -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS; full/current validator suite recorded in `docs/reports/ENVIRONMENT_SETUP_ARENA_20260630.md` — PASS, including language parity, nutrition, externalized rules, raw herb balance, Alchemy processing/burden/distillation/armor/coating, Homeostatic, recipe/item/trade/API, JEI/REI viewer validators, bootstrap/nutrition/HerbalChapter split validators, Codex/client-state validators, and built-jar verification.
+- Remaining risks: source-level and validator checks pass, but live-client confirmation is still needed for JEI/REI optional viewer loading/display behavior, componentized distilled-essence search/click paths, processed-potion tooltip/Codex readability, splash/lingering runtime exposure, and real UI interactions.
+
+- Date: 2026-06-30
+- Change: Added Fabric 26.1.2 JEI/REI adapters for the newer Alchemy recipes while preserving optional viewer dependencies and the existing plugin entrypoint class paths. JEI now registers Brewing Stand displays through `IVanillaRecipeFactory.createBrewingRecipe(...)` and smithing extensions for both coating and armor support. REI now registers built-in brewing/smithing displays for essence distillation, processed-potion routing, armor support apply/refine, and processed coating variants. Normal, splash, and lingering processed-potion routes are included. The validator `scripts/validate_coating_viewer_plugins.py` was expanded to cover the broader adapter surface. Report: `docs/reports/ALCHEMY_VIEWER_ADAPTERS_20260630.md`.
+- Output updated: jar-facing Java and validator/report docs changed, so the project was rebuilt. Refreshed local publishing artifacts under `release_output/herbcraft_test_20260614_review/`: `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, regenerated `herbcraft-source-current-20260614.zip`, and recreated `herbcraft-p4-runtime-test-datapack-20260617.zip`.
+- Validations/checks this turn: searched current Fabric 26.1.2 JEI/REI dependency guidance and inspected cached JEI/REI APIs; `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon --max-workers=1 -Dorg.gradle.jvmargs='-Xmx1024m -Dfile.encoding=UTF-8' :alchemy:compileJava --stacktrace` — PASS; `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon --max-workers=1 -Dorg.gradle.jvmargs='-Xmx1024m -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS; `python3 scripts/validate_coating_viewer_plugins.py` — PASS; `python3 scripts/validate_distillation_brewing_routing.py` — PASS; `python3 scripts/validate_armor_support_foundation.py` — PASS; `python3 scripts/validate_processed_coating_expansion.py` — PASS; `python3 scripts/validate_potion_processing_rules.py` — PASS; `python3 scripts/validate_potion_source_projection.py` — PASS; `python3 scripts/validate_potion_body_state_projection.py` — PASS; `python3 scripts/validate_potion_relation_and_catalyst_semantics.py` — PASS; `python3 scripts/validate_alchemy_knowledge_gating_and_codex.py` — PASS; `python3 scripts/check_lang_diff.py` — PASS; `python3 scripts/verify_built_jars.py` — PASS.
+- Remaining risks: source-level and validator checks pass, but live-client confirmation is still needed with JEI installed alone and REI installed alone: optional entrypoint loading, category placement, search/click behavior for componentized distilled essences, processed potion bottle variants, armor support stacks, and processed coating variants.
+
+## Previous updates
+
+- Date: 2026-06-30
+- Change: Fixed the author-reported post-linkage Alchemy/Core display, knowledge-gating, and Codex issues across multiple client-review passes. Processed-potion `性味偏向` / `特质亲和` use Core lang prefixes; verbose processed-potion semantics moved from long item tooltip into mastered Alchemy Codex entries; potion mastered pages now have separators between processing-style blocks; `来源药材` uses localized source item/essence names; `_long`, `_strong`, `_clarified`, and `_murky` map back to base `alchemy/potion_<base>` entries. Normal, splash, and lingering potion containers are recognized; drinking, splash exposure, and lingering-cloud exposure mark tasted, and splash/lingering now route through `PotionBurdenRuntime` for source pharmacology, body-state, relation, burden, armor support buffering, and extension events. The lingering-cloud mixin no longer shadows inherited `Entity.tickCount`, fixing the `AreaEffectCloudKnowledgeMixin` bootstrap crash. Core guide regressions were repaired: `五味与性味` and `七情与配伍` again read actual `PlayerPharmacologyState` discovery keys and show latest triggered examples, and missing Chinese keys for `食材录与五养` / `残页与校勘` were added. Added/updated validators and report `docs/reports/ALCHEMY_KNOWLEDGE_GATING_CODEX_FIXES_20260630.md`.
+- Output updated: jar-facing Java/resources/lang/validator content changed, so the project was rebuilt. Refreshed local publishing artifacts under `release_output/herbcraft_test_20260614_review/`: `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, regenerated `herbcraft-source-current-20260614.zip`, and recreated `herbcraft-p4-runtime-test-datapack-20260617.zip`.
+- Validations/checks this turn: initial `./gradlew` permission check failed until `chmod +x gradlew` was run; one full build attempt with `-Xmx768m` had the known sandbox Gradle daemon disappearance during multi-project build, then retry with `--max-workers=1 -Xmx1024m` passed. `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon --max-workers=1 -Dorg.gradle.jvmargs='-Xmx1024m -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS (`BUILD SUCCESSFUL`). `python3 scripts/validate_potion_processing_rules.py` — PASS. `python3 scripts/validate_potion_source_projection.py` — PASS. `python3 scripts/validate_potion_body_state_projection.py` — PASS. `python3 scripts/validate_potion_relation_and_catalyst_semantics.py` — PASS. `python3 scripts/validate_alchemy_knowledge_gating_and_codex.py` — PASS. `python3 scripts/check_lang_diff.py` — PASS. `python3 scripts/verify_built_jars.py` — PASS.
+- Remaining risks: source-level and validator checks pass, but live-client confirmation is still needed for compact tooltip readability, mastered Codex detail layout/scrolling after style separators, restored 五味/七情 latest-example rendering with real gameplay discoveries, splash/lingering runtime effects during actual thrown-potion gameplay, Codex state transitions while the book UI is open, and armor-support guide discoverability.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Completed Alchemy processed weapon coating expansion E. Added `data/herbcraft_alchemy/processed_coating_rules.json` and `ProcessedCoatingRules`; extended `WeaponCoating` with optional `processing_style` defaulting to `base`; updated `CoatingSystem`, `CoatingHitHandler`, `CoatingSmithingRecipe`, and `CoatingTooltips` so `blank_adhesive + weapon + distilled_essence` creates processed coatings while the existing base essence route remains valid. Implemented style modifiers for uses/effect duration/amplifier for `sustained`, `intense`, and `purified`; `murky_edge` remains reserved. Amethyst/echo refinement preserves processing style. Added `scripts/validate_processed_coating_expansion.py` and report `docs/reports/ALCHEMY_PROCESSED_WEAPON_COATING_E_20260629.md`.
+- Output updated: rebuilt all jars and refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, and regenerated `herbcraft-source-current-20260614.zip`. P4 runtime datapack zip remains present.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon -Dorg.gradle.jvmargs='-Xmx1g -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS (`BUILD SUCCESSFUL`). `python3 scripts/validate_processed_coating_expansion.py` — PASS. `python3 scripts/verify_built_jars.py` — PASS. Full validator suite passed: `check_lang_diff.py`, `validate_custom_nutrition_effects_phase8.py`, `validate_nutrition_correction_phase.py`, `validate_externalized_rules.py`, `validate_raw_herb_food_balance.py`, `validate_essence_resources.py`, `validate_potion_processing_rules.py`, `validate_potion_processing_runtime.py`, `validate_potion_burden_runtime.py`, `validate_potion_burden_consequences.py`, `validate_alchemy_burden_effects.py`, `validate_alchemy_expansion_boundaries.py`, `validate_distillation_foundation.py`, `validate_distillation_brewing_routing.py`, `validate_armor_support_foundation.py`, `validate_processed_coating_expansion.py`, `validate_homeostatic_compat.py`, `validate_nutrition_cuisine_immunity_isolation.py`, `validate_recipe_isolation.py`, `validate_item_textures.py`, `validate_task_abcd.py`, `validate_extended_features.py`, `validate_trade_tags.py`, `validate_external_extension_spec.py`, `validate_animal_food_tags.py`, `validate_catalyst_mixin.py`, `validate_nature_jade.py`, `validate_p1_codex_advancements.py`, `validate_coating_recipe_display.py`, `validate_coating_viewer_plugins.py`, `validate_bootstrap_split_phase1.py`, `validate_nutrition_split_phase2.py`, `validate_coupling_hotspots.py`, `validate_codex_payload_separation.py`, `validate_codex_respawn_ui_state.py`, `validate_player_state_respawn_copy.py`, and `verify_built_jars.py`.
+- Remaining risks: source-level verified only. Client must confirm processed coating application with distilled essences, tooltip style line, style-preserving amethyst/echo refinement, and combat feel for sustained/intense/purified. JEI/REI explicit plugin rows for processed distilled-essence coating may require a later viewer-specific parity pass if vanilla display projection is insufficient.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Completed Alchemy station migration D2 per user correction. Distillation is no longer a crafting-table route: old distilled essence crafting recipe JSON files were removed, and `DistilledEssenceBrewing` / `BrewingStandCatalystMixin` now allow essence items in brewing bottom slots plus orientation catalysts in the ingredient slot to produce componentized distilled essences. Armor support is no longer a crafting-table route: old `armor_support.json` was removed, and `ArmorSupportSmithingRecipe` / `herbcraft:armor_support_smithing` now use smithing-table recipes with adhesive linkage. `blank_adhesive + armor + distilled_essence` applies ATTACHED support; `amethyst_adhesive + supported armor` refines to CLEAR; `echo_adhesive + supported armor` refines to DEEP. Added `ArmorSupportMode` and updated tooltips/validators. Wrote `docs/reports/ALCHEMY_STATION_MIGRATION_D2_20260629.md`.
+- Output updated: rebuilt all jars and refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, and regenerated `herbcraft-source-current-20260614.zip`. P4 runtime datapack zip remains present.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon -Dorg.gradle.jvmargs='-Xmx1g -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS (`BUILD SUCCESSFUL`). Full validator suite passed: `check_lang_diff.py`, `validate_custom_nutrition_effects_phase8.py`, `validate_nutrition_correction_phase.py`, `validate_externalized_rules.py`, `validate_raw_herb_food_balance.py`, `validate_essence_resources.py`, `validate_potion_processing_rules.py`, `validate_potion_processing_runtime.py`, `validate_potion_burden_runtime.py`, `validate_potion_burden_consequences.py`, `validate_alchemy_burden_effects.py`, `validate_alchemy_expansion_boundaries.py`, `validate_distillation_foundation.py`, `validate_distillation_brewing_routing.py`, `validate_armor_support_foundation.py`, `validate_homeostatic_compat.py`, `validate_nutrition_cuisine_immunity_isolation.py`, `validate_recipe_isolation.py`, `validate_item_textures.py`, `validate_task_abcd.py`, `validate_extended_features.py`, `validate_trade_tags.py`, `validate_external_extension_spec.py`, `validate_animal_food_tags.py`, `validate_catalyst_mixin.py`, `validate_nature_jade.py`, `validate_p1_codex_advancements.py`, `validate_coating_recipe_display.py`, `validate_coating_viewer_plugins.py`, `validate_bootstrap_split_phase1.py`, `validate_nutrition_split_phase2.py`, `validate_coupling_hotspots.py`, `validate_codex_payload_separation.py`, `validate_codex_respawn_ui_state.py`, `validate_player_state_respawn_copy.py`, and `verify_built_jars.py`.
+- Remaining risks: source-level verified only. Client must confirm brewing-stand distillation, smithing-table armor support application/refinement, adhesive semantics, no old crafting-table outputs, support tooltip/mode display, burden buffering, and preservation of hidden Cuisine catalyst and old potion modifier routes. Next recommended board is E: processed weapon coating expansion.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Completed Alchemy armor-side support D foundation. Added `data/herbcraft_alchemy/armor_support_rules.json`, persistent/network-synced `ArmorSupportComponent` (`herbcraft_alchemy:armor_support`), `ArmorSupportRecipe` / `ArmorSupportRecipes`, `ArmorSupportRuntime`, and client `ArmorSupportTooltips`. Any armor item with vanilla `EQUIPPABLE` armor slot can be combined with an implemented distilled essence to receive support metadata. Equipped support buffers processed-potion burden through `AlchemyExpansionEvents.POTION_BURDEN_BUFFER` and can apply `clear_bearing` feedback. The design is explicitly protective/body-supportive, not retaliation-first.
+- Output updated: rebuilt all jars and refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, and regenerated `herbcraft-source-current-20260614.zip`. P4 runtime datapack zip remains present.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon -Dorg.gradle.jvmargs='-Xmx1g -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS (`BUILD SUCCESSFUL`). `python3 scripts/validate_armor_support_foundation.py` — PASS. `python3 scripts/verify_built_jars.py` — PASS. Full validator suite passed: `check_lang_diff.py`, `validate_custom_nutrition_effects_phase8.py`, `validate_nutrition_correction_phase.py`, `validate_externalized_rules.py`, `validate_raw_herb_food_balance.py`, `validate_essence_resources.py`, `validate_potion_processing_rules.py`, `validate_potion_processing_runtime.py`, `validate_potion_burden_runtime.py`, `validate_potion_burden_consequences.py`, `validate_alchemy_burden_effects.py`, `validate_alchemy_expansion_boundaries.py`, `validate_distillation_foundation.py`, `validate_distillation_brewing_routing.py`, `validate_armor_support_foundation.py`, `validate_homeostatic_compat.py`, `validate_nutrition_cuisine_immunity_isolation.py`, `validate_recipe_isolation.py`, `validate_item_textures.py`, `validate_task_abcd.py`, `validate_extended_features.py`, `validate_trade_tags.py`, `validate_external_extension_spec.py`, `validate_animal_food_tags.py`, `validate_catalyst_mixin.py`, `validate_nature_jade.py`, `validate_p1_codex_advancements.py`, `validate_coating_recipe_display.py`, `validate_coating_viewer_plugins.py`, `validate_bootstrap_split_phase1.py`, `validate_nutrition_split_phase2.py`, `validate_coupling_hotspots.py`, `validate_codex_payload_separation.py`, `validate_codex_respawn_ui_state.py`, `validate_player_state_respawn_copy.py`, and `verify_built_jars.py`.
+- Remaining risks: source-level verified only. Client must confirm armor + distilled essence crafting works, support tooltip displays, equipped armor reduces burden gained from processed potions, clear_bearing feedback appears, and ordinary armor remains unchanged. Next recommended board is E: processed weapon coating expansion.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Completed Alchemy distillation-to-potion routing C. Added `DistilledEssenceBrewing` and wired `BrewingStandCatalystMixin` so a componentized distilled essence in the brewing ingredient slot routes a matching base Herbcraft potion to the corresponding existing processed potion path: `purified` -> `_clarified`, `sustained` -> `_long`, `intense` -> `_strong`, with wither rose intense routing to `wither_venom_iii`. The source essence stored on the distilled essence must match the base potion path; mismatches do not brew or consume the distilled essence. Existing redstone/glowstone/honeycomb and hidden Cuisine catalyst routes remain intact. Output stacks clear stale quality/bonus/style/burden/init components so the new potion path initializes cleanly.
+- Output updated: rebuilt all jars and refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, and regenerated `herbcraft-source-current-20260614.zip`. P4 runtime datapack zip remains present.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon -Dorg.gradle.jvmargs='-Xmx1g -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS (`BUILD SUCCESSFUL`). `python3 scripts/validate_distillation_foundation.py` — PASS. `python3 scripts/validate_distillation_brewing_routing.py` — PASS. `python3 scripts/verify_built_jars.py` — PASS. Full validator suite passed: `check_lang_diff.py`, `validate_custom_nutrition_effects_phase8.py`, `validate_nutrition_correction_phase.py`, `validate_externalized_rules.py`, `validate_raw_herb_food_balance.py`, `validate_essence_resources.py`, `validate_potion_processing_rules.py`, `validate_potion_processing_runtime.py`, `validate_potion_burden_runtime.py`, `validate_potion_burden_consequences.py`, `validate_alchemy_burden_effects.py`, `validate_alchemy_expansion_boundaries.py`, `validate_distillation_foundation.py`, `validate_distillation_brewing_routing.py`, `validate_homeostatic_compat.py`, `validate_nutrition_cuisine_immunity_isolation.py`, `validate_recipe_isolation.py`, `validate_item_textures.py`, `validate_task_abcd.py`, `validate_extended_features.py`, `validate_trade_tags.py`, `validate_external_extension_spec.py`, `validate_animal_food_tags.py`, `validate_catalyst_mixin.py`, `validate_nature_jade.py`, `validate_p1_codex_advancements.py`, `validate_coating_recipe_display.py`, `validate_coating_viewer_plugins.py`, `validate_bootstrap_split_phase1.py`, `validate_nutrition_split_phase2.py`, `validate_coupling_hotspots.py`, `validate_codex_payload_separation.py`, `validate_codex_respawn_ui_state.py`, `validate_player_state_respawn_copy.py`, and `verify_built_jars.py`.
+- Remaining risks: source-level verified only. Client must confirm distilled essence can be used in brewing ingredient slot, matching source/potion brews correctly, mismatches do not consume, old vanilla-style modifier routes still work, hidden Cuisine catalyst brewing still works, and outputs do not keep stale components. Next recommended board is D: armor-side burden support / protective alchemy.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Completed Alchemy distillation B3 foundation while preserving texture/style consistency. Added `data/herbcraft_alchemy/distillation_rules.json`, `DistillationRules`, `DistillationComponents`, `DistilledEssenceComponent`, `DistillationItems`, `DistillationRecipe`, `DistillationRecipes`, read-only `AlchemyDistillationAPI`, client `DistilledEssenceTooltips`, generic custom recipes for purified/sustained/intense distillation, and assets/lang for `herbcraft:distilled_essence`. The implementation follows the mixed B3 route: one visible distilled essence container item with persistent/network-synced `source_essence` and `orientation` component, not one item per herb/source/orientation. The texture is derived from the existing essence bottle silhouette with pale distilled liquid/sparkle treatment to keep visual family consistency. This foundation does not yet route distilled essences into potion processing, armor support, or processed weapon coating.
+- Output updated: rebuilt all jars and refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, and regenerated `herbcraft-source-current-20260614.zip`. P4 runtime datapack zip remains present.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon -Dorg.gradle.jvmargs='-Xmx1g -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS (`BUILD SUCCESSFUL`). `python3 scripts/validate_distillation_foundation.py` — PASS. `python3 scripts/verify_built_jars.py` — PASS. Full validator suite passed: `check_lang_diff.py`, `validate_custom_nutrition_effects_phase8.py`, `validate_nutrition_correction_phase.py`, `validate_externalized_rules.py`, `validate_raw_herb_food_balance.py`, `validate_essence_resources.py`, `validate_potion_processing_rules.py`, `validate_potion_processing_runtime.py`, `validate_potion_burden_runtime.py`, `validate_potion_burden_consequences.py`, `validate_alchemy_burden_effects.py`, `validate_alchemy_expansion_boundaries.py`, `validate_distillation_foundation.py`, `validate_homeostatic_compat.py`, `validate_nutrition_cuisine_immunity_isolation.py`, `validate_recipe_isolation.py`, `validate_item_textures.py`, `validate_task_abcd.py`, `validate_extended_features.py`, `validate_trade_tags.py`, `validate_external_extension_spec.py`, `validate_animal_food_tags.py`, `validate_catalyst_mixin.py`, `validate_nature_jade.py`, `validate_p1_codex_advancements.py`, `validate_coating_recipe_display.py`, `validate_coating_viewer_plugins.py`, `validate_bootstrap_split_phase1.py`, `validate_nutrition_split_phase2.py`, `validate_coupling_hotspots.py`, `validate_codex_payload_separation.py`, `validate_codex_respawn_ui_state.py`, `validate_player_state_respawn_copy.py`, and `verify_built_jars.py`.
+- Remaining risks: source-level verified only. Client must confirm generic distillation crafting works with any essence + orientation catalyst, the componentized output tooltip correctly shows source/orientation, the item appears in the Alchemy creative tab, and the new texture matches the existing essence style in-game. Next recommended board is C: distillation routing into potion processing.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Completed Alchemy custom burden effects A-round and fixed the client-reported misleading tooltip issue. `_long` and `_strong` style-only potions no longer show the "quality will be rolled when this stack is updated" line, while `_clarified` / `_murky` legacy advanced paths still can. Added JSON-backed custom Alchemy MobEffects via `data/herbcraft_alchemy/potion_burden_effects.json`, `AlchemyBurdenEffectRules`, and `AlchemyMobEffects`: `potion_warming`, `potion_strain`, `potion_overload`, and reserved support effect `clear_bearing`. Burden stages now apply these custom effects instead of direct raw movement modifiers; strain/overload movement modifiers live in effect rules. Added effect lang keys/icons and validator `validate_alchemy_burden_effects.py`. Wrote `docs/reports/ALCHEMY_CUSTOM_BURDEN_EFFECTS_A_ROUND_20260629.md`.
+- Output updated: rebuilt all jars and refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, and regenerated `herbcraft-source-current-20260614.zip`. P4 runtime datapack zip remains present.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon -Dorg.gradle.jvmargs='-Xmx1g -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS (`BUILD SUCCESSFUL`). Full validator suite passed: `check_lang_diff.py`, `validate_custom_nutrition_effects_phase8.py`, `validate_nutrition_correction_phase.py`, `validate_externalized_rules.py`, `validate_raw_herb_food_balance.py`, `validate_essence_resources.py`, `validate_potion_processing_rules.py`, `validate_potion_processing_runtime.py`, `validate_potion_burden_runtime.py`, `validate_potion_burden_consequences.py`, `validate_alchemy_burden_effects.py`, `validate_alchemy_expansion_boundaries.py`, `validate_homeostatic_compat.py`, `validate_nutrition_cuisine_immunity_isolation.py`, `validate_recipe_isolation.py`, `validate_item_textures.py`, `validate_task_abcd.py`, `validate_extended_features.py`, `validate_trade_tags.py`, `validate_external_extension_spec.py`, `validate_animal_food_tags.py`, `validate_catalyst_mixin.py`, `validate_nature_jade.py`, `validate_p1_codex_advancements.py`, `validate_coating_recipe_display.py`, `validate_coating_viewer_plugins.py`, `validate_bootstrap_split_phase1.py`, `validate_nutrition_split_phase2.py`, `validate_coupling_hotspots.py`, `validate_codex_payload_separation.py`, `validate_codex_respawn_ui_state.py`, `validate_player_state_respawn_copy.py`, and `verify_built_jars.py`.
+- Remaining risks: source-level verified only. Client must confirm `_long`/`_strong` no longer show the uninitialized quality line, custom burden effects appear with icons/names, strain/overload movement changes still feel mild, and death/decay clear effects. Next major-board discussion should choose between distillation foundation, distillation-to-potion routing, armor-side burden support, or processed weapon coating.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Completed Alchemy expansion Round 4 / P7-P8, finishing the four-round source-level foundation. Added data-backed burden stages to `potion_processing_rules.json`, `PotionBurdenConsequenceRuntime` with conservative movement-speed consequences (`strain` -2%, `overload` -5%), stage-change messages/events, stage persistence, and modifier cleanup on death. Added P8 integration surfaces: `AlchemyExpansionEvents` (`PROCESSING_STYLE_APPLIED`, `POTION_BURDEN_APPLIED`, `POTION_BURDEN_STAGE_CHANGED`, `POTION_BURDEN_BUFFER`) and read-only `AlchemyProcessingAPI` for style/burden/stage queries. Added validators `validate_potion_burden_consequences.py` and `validate_alchemy_expansion_boundaries.py`, and wrote `docs/reports/ALCHEMY_BURDEN_CONSEQUENCES_AND_EXTENSION_HOOKS_P7_P8_20260629.md`.
+- Output updated: rebuilt all jars and refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, and regenerated `herbcraft-source-current-20260614.zip`. P4 runtime datapack zip remains present.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon -Dorg.gradle.jvmargs='-Xmx1g -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS (`BUILD SUCCESSFUL`). Full validator suite passed: `check_lang_diff.py`, `validate_custom_nutrition_effects_phase8.py`, `validate_nutrition_correction_phase.py`, `validate_externalized_rules.py`, `validate_raw_herb_food_balance.py`, `validate_essence_resources.py`, `validate_potion_processing_rules.py`, `validate_potion_processing_runtime.py`, `validate_potion_burden_runtime.py`, `validate_potion_burden_consequences.py`, `validate_alchemy_expansion_boundaries.py`, `validate_homeostatic_compat.py`, `validate_nutrition_cuisine_immunity_isolation.py`, `validate_recipe_isolation.py`, `validate_item_textures.py`, `validate_task_abcd.py`, `validate_extended_features.py`, `validate_trade_tags.py`, `validate_external_extension_spec.py`, `validate_animal_food_tags.py`, `validate_catalyst_mixin.py`, `validate_nature_jade.py`, `validate_p1_codex_advancements.py`, `validate_coating_recipe_display.py`, `validate_coating_viewer_plugins.py`, `validate_bootstrap_split_phase1.py`, `validate_nutrition_split_phase2.py`, `validate_coupling_hotspots.py`, `validate_codex_payload_separation.py`, `validate_codex_respawn_ui_state.py`, `validate_player_state_respawn_copy.py`, and `verify_built_jars.py`.
+- Remaining risks: all four rounds are source-level verified only. Real-client testing must confirm burden stage messages, movement modifier application/cleanup, burden decay/death reset, tooltip projection, and that `_long`/`_strong` still avoid random quality/bonus behavior. Distillation, armor alchemy, and advanced processed-essence coating remain future systems; P8 only added narrow hooks/query API.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Completed Alchemy expansion Round 3 / P5-P6 for potion burden metadata and player burden runtime. Added persistent/network-synced `PotionBurdenComponent` (`herbcraft_alchemy:potion_burden`), JSON-owned style burden weights/tail weights and decay settings in `potion_processing_rules.json`, `PotionBurdenRuntime` metadata/consume hooks, Alchemy-owned `PlayerPotionBurdenState`, `AlchemyPlayerMixin` persistence/death reset, and `PlayerPotionBurdenRuntime` server tick decay + alive-copy policy. Processed potion tooltips now show burden weights. P7 threshold consequences remain intentionally unimplemented. Added `scripts/validate_potion_burden_runtime.py` and wrote `docs/reports/ALCHEMY_POTION_BURDEN_METADATA_RUNTIME_P5_P6_20260629.md`.
+- Output updated: rebuilt all jars and refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, and regenerated `herbcraft-source-current-20260614.zip`. P4 runtime datapack zip remains present.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon -Dorg.gradle.jvmargs='-Xmx1g -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS (`BUILD SUCCESSFUL`). Full validator suite passed: `check_lang_diff.py`, `validate_custom_nutrition_effects_phase8.py`, `validate_nutrition_correction_phase.py`, `validate_externalized_rules.py`, `validate_raw_herb_food_balance.py`, `validate_essence_resources.py`, `validate_potion_processing_rules.py`, `validate_potion_processing_runtime.py`, `validate_potion_burden_runtime.py`, `validate_homeostatic_compat.py`, `validate_nutrition_cuisine_immunity_isolation.py`, `validate_recipe_isolation.py`, `validate_item_textures.py`, `validate_task_abcd.py`, `validate_extended_features.py`, `validate_trade_tags.py`, `validate_external_extension_spec.py`, `validate_animal_food_tags.py`, `validate_catalyst_mixin.py`, `validate_nature_jade.py`, `validate_p1_codex_advancements.py`, `validate_coating_recipe_display.py`, `validate_coating_viewer_plugins.py`, `validate_bootstrap_split_phase1.py`, `validate_nutrition_split_phase2.py`, `validate_coupling_hotspots.py`, `validate_codex_payload_separation.py`, `validate_codex_respawn_ui_state.py`, `validate_player_state_respawn_copy.py`, and `verify_built_jars.py`.
+- Remaining risks: P5-P6 are source-level verified only; real-client testing must confirm burden metadata appears, drinking processed potions increases/decays burden, and death clears it. No P7 threshold consequences are active yet, so burden currently has no gameplay penalty beyond storage/decay. P8 cross-system distillation/armor/weapon-coating integration remains future work.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Completed Alchemy expansion Round 2 / P4 for potion-processing runtime behavior. `potion_processing_rules.json` first-batch styles `sustained`, `intense`, and `purified` are now `implemented: true` and carry JSON-owned runtime profiles. Added `PotionProcessingRuntime` to apply bounded effect-profile rewrites from those profiles, added persistent/synced `POTION_PROCESSING_STYLE` to prevent repeat rewrites, and wired `AdvancedPotionStackInitializer` so implemented style runtime applies once per stack. `_long` and `_strong` now receive sustained/intense style processing but still do not enter the legacy advanced quality/bonus randomization path. `murky_edge` and `harmonized` remain deferred/not implemented. Added `scripts/validate_potion_processing_runtime.py` and wrote `docs/reports/ALCHEMY_POTION_PROCESSING_RUNTIME_P4_20260629.md`.
+- Output updated: rebuilt all jars and refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, and regenerated `herbcraft-source-current-20260614.zip`. P4 runtime datapack zip remains present.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon -Dorg.gradle.jvmargs='-Xmx1g -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS (`BUILD SUCCESSFUL`). `python3 scripts/validate_potion_processing_rules.py` — PASS. `python3 scripts/validate_potion_processing_runtime.py` — PASS. `python3 scripts/verify_built_jars.py` — PASS. Full validator suite passed: `check_lang_diff.py`, `validate_custom_nutrition_effects_phase8.py`, `validate_nutrition_correction_phase.py`, `validate_externalized_rules.py`, `validate_raw_herb_food_balance.py`, `validate_essence_resources.py`, `validate_potion_processing_rules.py`, `validate_potion_processing_runtime.py`, `validate_homeostatic_compat.py`, `validate_nutrition_cuisine_immunity_isolation.py`, `validate_recipe_isolation.py`, `validate_item_textures.py`, `validate_task_abcd.py`, `validate_extended_features.py`, `validate_trade_tags.py`, `validate_external_extension_spec.py`, `validate_animal_food_tags.py`, `validate_catalyst_mixin.py`, `validate_nature_jade.py`, `validate_p1_codex_advancements.py`, `validate_coating_recipe_display.py`, `validate_coating_viewer_plugins.py`, `validate_bootstrap_split_phase1.py`, `validate_nutrition_split_phase2.py`, `validate_coupling_hotspots.py`, `validate_codex_payload_separation.py`, `validate_codex_respawn_ui_state.py`, `validate_player_state_respawn_copy.py`, and `verify_built_jars.py`.
+- Remaining risks: P4 is source-level verified only; real-client testing must confirm `_long`, `_strong`, and `_clarified` effect profiles feel correct and that `_long`/`_strong` do not unexpectedly roll quality/bonus. P5-P7 potion burden metadata/player runtime/threshold consequences are not implemented. P8 cross-system distillation/armor/weapon-coating integration remains future work.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Completed Alchemy expansion Round 1 / P1-P3 for the potion-processing foundation. Added data-backed `data/herbcraft_alchemy/potion_processing_rules.json`, new `PotionProcessingRules` loader/query layer, style-id facades in `AdvancedPotionStackInitializer`, tooltip projection for processing style/burden tendency, and style-aware clarified/murky acquisition routing. Current stable potion IDs and runtime potion behavior are intentionally preserved: `_long` and `_strong` are mapped to `sustained` / `intense` but are not converted into initialized advanced potions, and all first-batch styles remain `implemented: false` until the P4 runtime behavior pass. Added `scripts/validate_potion_processing_rules.py`, updated `verify_built_jars.py`, and wrote `docs/reports/ALCHEMY_POTION_PROCESSING_FOUNDATION_P1_P3_20260629.md`.
+- Output updated: rebuilt all jars and refreshed `release_output/herbcraft_test_20260614_review/` with `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, and regenerated `herbcraft-source-current-20260614.zip`. P4 runtime datapack zip remains present.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon -Dorg.gradle.jvmargs='-Xmx1g -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS (`BUILD SUCCESSFUL`). Full validator suite passed: `check_lang_diff.py`, `validate_custom_nutrition_effects_phase8.py`, `validate_nutrition_correction_phase.py`, `validate_externalized_rules.py`, `validate_raw_herb_food_balance.py`, `validate_essence_resources.py`, `validate_potion_processing_rules.py`, `validate_homeostatic_compat.py`, `validate_nutrition_cuisine_immunity_isolation.py`, `validate_recipe_isolation.py`, `validate_item_textures.py`, `validate_task_abcd.py`, `validate_extended_features.py`, `validate_trade_tags.py`, `validate_external_extension_spec.py`, `validate_animal_food_tags.py`, `validate_catalyst_mixin.py`, `validate_nature_jade.py`, `validate_p1_codex_advancements.py`, `validate_coating_recipe_display.py`, `validate_coating_viewer_plugins.py`, `validate_bootstrap_split_phase1.py`, `validate_nutrition_split_phase2.py`, `validate_coupling_hotspots.py`, `validate_codex_payload_separation.py`, `validate_codex_respawn_ui_state.py`, `validate_player_state_respawn_copy.py`, and `verify_built_jars.py`.
+- Remaining risks: P4 runtime effect rewriting is not implemented yet and must avoid double-scaling because `_long` / `_strong` already have registry-time transformations. P5-P7 potion burden metadata/player runtime/threshold consequences are not implemented. Real-client confirmation is still needed for the new tooltip projection and to ensure long/strong potions did not gain unintended quality/bonus behavior.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Reviewed the attached `ALCHEMY_EXPANSION_MASTER_STATUS.md` against current source and added `docs/reports/ALCHEMY_EXPANSION_FEASIBILITY_REVIEW_20260629.md`. The expansion direction is feasible, but source verification found the attached document is ahead of the current repository for potion-processing/burden implementation claims: current source does not yet contain `potion_processing_rules.json`, `PotionProcessingRules`, `processingStyleId(...)`, `PotionProcessingRuntime`, potion burden components/runtime, player-level potion burden storage, or `murky_edge` / `harmonized` source rows. The report records current related code and recommends starting with a data-backed potion-processing style foundation over existing `_long` / `_strong` / `_clarified` / `_murky` paths if Alchemy expansion is selected next.
+- Output updated: documentation-only review; gameplay Java, JSON balance/content, resources, recipes, language files, and jar behavior were not changed. Refreshed `docs/reports/CURRENT_AGENT_BRIEF.md` and regenerated `release_output/herbcraft_test_20260614_review/herbcraft-source-current-20260614.zip` to include the new report and handoff docs. Jars were not rebuilt this turn because no jar-facing content changed.
+- Validations/checks this turn: source searches for `potion_processing_rules`, `PotionProcessingRules`, `processingStyleId`, `PotionProcessingRuntime`, `PotionBurden`, `PlayerPotionBurden`, `murky_edge`, and `harmonized` — confirmed absent in `alchemy/src` and `core/src`; inspected current related Alchemy/Core files. `python3 scripts/check_lang_diff.py` — PASS. `python3 scripts/validate_externalized_rules.py` — PASS. `python3 scripts/validate_external_extension_spec.py` — PASS. `python3 scripts/validate_coating_viewer_plugins.py` — PASS. Initial daemon build attempt disappeared unexpectedly; retry with `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew --no-daemon -Dorg.gradle.jvmargs='-Xmx1g -Dfile.encoding=UTF-8' build --rerun-tasks --stacktrace` — PASS (`BUILD SUCCESSFUL`). `python3 scripts/verify_built_jars.py` — PASS. `python3 scripts/generate_agent_brief.py --write` — PASS.
+- Remaining risks: if the attached master-status file is later imported into the repo as authoritative, section 7 must be reconciled with current source before coding to avoid agents assuming nonexistent potion-processing/burden classes already exist. Real-client JEI/REI coating confirmation and other client-only UI/compat/survival checks remain pending.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Completed current sandbox environment setup from a fresh clone and refreshed source validators that had become stale after earlier structural splits. No gameplay Java logic, JSON content, resources, recipes, language files, or jar-facing mod behavior was intentionally changed. Validator maintenance made the checks aware of the current split source layout: bootstrap checks now include `HerbcraftDataBootstrap` / `HerbcraftKnowledgeBootstrap`; nutrition validators now inspect `NutritionRuntimeService`, `NutritionEffectApplicator`, `NutritionDiscoveryHooks`, and `NutritionDebugService`; HerbalChapter/Codex/Jade validators now inspect split `HerbalChapter*` files. Added `docs/reports/ENVIRONMENT_SETUP_AND_VALIDATOR_REFRESH_20260629.md` and updated the documentation index/changelog.
+- Output updated: recreated the local git-ignored `release_output/herbcraft_test_20260614_review/` directory in this fresh clone with rebuilt `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, regenerated `herbcraft-source-current-20260614.zip`, and recreated `herbcraft-p4-runtime-test-datapack-20260617.zip` from source-side files under `docs/compat_drafts/p4_runtime_datapack_test/`.
+- Validations/checks this turn: `python3 scripts/generate_agent_brief.py --write` etup_jdk25_temurin.sh` — PASS. `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew build --rerun-tasks` — PASS (`BUILD SUCCESSFUL`). Full validator suite passed: `check_lang_diff.py`, `validate_custom_nutrition_effects_phase8.py`, `validate_nutrition_correction_phase.py`, `validate_externalized_rules.py`, `validate_raw_herb_food_balance.py`, `validate_essence_resources.py`, `validate_homeostatic_compat.py`, `validate_nutrition_cuisine_immunity_isolation.py`, `validate_recipe_isolation.py`, `validate_item_textures.py`, `validate_task_abcd.py`, `validate_extended_features.py`, `validate_trade_tags.py`, `validate_external_extension_spec.py`, `validate_animal_food_tags.py`, `validate_catalyst_mixin.py`, `validate_nature_jade.py`, `validate_p1_codex_advancements.py`, `validate_coating_recipe_display.py`, `validate_coating_viewer_plugins.py`, `validate_bootstrap_split_phase1.py`, `validate_nutrition_split_phase2.py`, `validate_coupling_hotspots.py`, `validate_codex_payload_separation.py`, `validate_codex_respawn_ui_state.py`, `validate_player_state_respawn_copy.py`, and `verify_built_jars.py`.
+- Remaining risks: final JEI/REI confirmation remains client-only with the user's exact installed viewer versions and modpack. Codex UI interaction/theme behavior, Farmer+More live optional compat behavior, and raw-herb early-survival feel also remain client-only. `HerbalChapter` remains the next planned structural hotspot after the weapon coating viewer issue is client-confirmed.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Completed the third/source-level follow-up for the weapon coating (武器淬层) JEI/REI visibility bug after user confirmed the passive vanilla-display fixes were still insufficient. Alchemy now includes explicit optional viewer integrations: `CoatingJeiPlugin` registers JEI smithing category extension + explicit `RecipeTypes.SMITHING` recipe holders and is exposed through the required Fabric JEI entrypoint `jei_mod_plugin`; `CoatingReiPlugin` registers REI `DefaultSmithingDisplay` entries through a `rei_client` entrypoint and now expands `#herbcraft:coatable_weapons` so REI shows all valid coatable weapon inputs/outputs instead of only an iron-sword sample. The earlier vanilla `RecipeDisplay` fallback and `isSpecial() == false` remain in place. All display rows are generated from the data-backed essence registry and use real coated sample stacks; runtime smithing matching/assembly remains unchanged.
+- Output updated: refreshed local `release_output/herbcraft_test_20260614_review/` with rebuilt `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, and regenerated `herbcraft-source-current-20260614.zip`.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew :alchemy:compileJava --stacktrace` — PASS after adding compile-only JEI/REI/Architectury APIs. `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew build` — PASS (`BUILD SUCCESSFUL`). `python3 scripts/validate_coating_recipe_display.py` — PASS. `python3 scripts/validate_coating_viewer_plugins.py` — PASS, including REI coatable-tag expansion guard. `python3 scripts/verify_built_jars.py` — PASS and now checks JEI/REI plugin classes. Jar listing confirmed `CoatingJeiPlugin.class` and `CoatingReiPlugin.class` are present and no `mezz/jei`, `shedaniel`, or `architectury` API packages are bundled into Alchemy. After REI was confirmed visible but JEI was not, JEI Fabric plugin loading was inspected and `fabric.mod.json` was corrected to include `jei_mod_plugin` -> `CoatingJeiPlugin`.
+- Remaining risks: final confirmation remains client-only with the user's exact JEI/REI versions and modpack. If searching still fails after this entrypoint-corrected explicit plugin build, collect the client log for JEI plugin loading errors and verify whether the installed JEI version matches the compiled 26.1.2 API line. `HerbalChapter` remains the next planned structural hotspot after this bug is client-confirmed.
+
+### Previous update
+
+- Date: 2026-06-29
+- Change: Continued the weapon coating (武器淬层) recipe-viewer visibility bugfix after user reported the first fix was not sufficient. `CoatingSmithingRecipe` now both overrides `display()` with vanilla `SmithingRecipeDisplay` rows and returns `false` from `isSpecial()`, avoiding the common JEI/REI filter path for special/custom recipes. Display rows are generated from the data-backed essence registry; runtime smithing matching/assembly remains custom and unchanged. Added `AlchemyRegistries.essenceInfos()` as an immutable read-only accessor for display generation and strengthened `scripts/validate_coating_recipe_display.py` to guard non-special classification.
+- Output updated: refreshed local `release_output/herbcraft_test_20260614_review/` with rebuilt `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, and regenerated `herbcraft-source-current-20260614.zip`.
+- Validations/checks this turn: `bash scripts/setup_jdk25_temurin.sh` — PASS. `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew :alchemy:compileJava --stacktrace` — PASS. `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew build` — PASS (`BUILD SUCCESSFUL`). `python3 scripts/validate_coating_recipe_display.py` — PASS (including non-special guard). `python3 scripts/verify_built_jars.py` — PASS.
+- Remaining risks: JEI/REI/CurseForge recipe-viewer indexing is client-only and still must be confirmed in a real client with Core + Alchemy + JEI or REI. Confirm searching `淬层` / `coating` / adhesive names / essence names shows smithing-table apply/refine recipes, and confirm runtime smithing behavior is unchanged. `HerbalChapter` remains the next major structural hotspot from the previous architecture plan.
+
+### Previous update
+
+- Date: 2026-06-28
+- Change: Completed structural decomposition Phase 2 for the nutrition subsystem. `NutritionManager` is now a thin facade, with runtime evaluation/ticking moved to `NutritionRuntimeService`, effect/modifier handling moved to `NutritionEffectApplicator`, ingredient discovery side effects moved to `NutritionDiscoveryHooks`, and debug mutations moved to `NutritionDebugService`. The intent was to reduce multi-responsibility coupling while preserving the public API and runtime behavior.
+- Output updated: refreshed local `release_output/herbcraft_test_20260614_review/` with rebuilt `herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`, and a regenerated `herbcraft-source-current-20260614.zip` including the nutrition split and validator.
+- Validations/checks this turn: `JAVA_HOME=/tmp/herbcraft-jdk25/jdk-25 ./gradlew build` — PASS (`BUILD SUCCESSFUL`). `validate_nutrition_split_phase2.py` — PASS. `validate_bootstrap_split_phase1.py` — PASS. `validate_coupling_hotspots.py` — PASS. `validate_codex_payload_separation.py` — PASS. `validate_codex_respawn_ui_state.py` — PASS. `validate_player_state_respawn_copy.py` — PASS. `verify_built_jars.py` — PASS.
+- Remaining risks: `HerbalChapter` remains a major multi-responsibility hotspot. Runtime client/server verification is still needed to confirm nutrition behavior, ingredient discovery side effects, and death/respawn boundaries are unchanged after the structural split.
+
+### Previous update
+
+- Date: 2026-06-18
+- Change: Identified and fixed a major UI logic bug in `CodexScreen.java` where clicking on errata (勘误) options / claim marks produced no reaction in-game. Root cause: `maxRightScroll(...)` called `contentHeight(...)` which contained an erroneous `this.claimHitboxes.clear()` call, wiping out all claim hitboxes at the end of every rendering frame and during `mouseClicked` evaluations. Fixed by removing `this.claimHitboxes.clear()` from `contentHeight`, implementing robust multi-line wrapped hitbox height computation in `renderRightPanel`, and adding strict screen-area scissor bounds checks in `mouseClicked`. Authored `docs/reports/CODEX_CLAIM_HITBOX_BUGFIX_20260618.md` and added `scripts/validate_codex_hitboxes.py`. E.g. fully verified environment setup, AST/AST logic, and automated validation suite.
+- Output updated: yes. All three jars (`herbcraft-1.1.3.jar`, `herbcraft-alchemy-1.1.3.jar`, `herbcraft-cuisine-1.1.3.jar`) and source zip (`herbcraft-source-current-20260614.zip`) rebuilt and refreshed.
+- Validations/checks this turn: Gradle build passed successfully (`BUILD SUCCESSFUL`). `validate_codex_hitboxes.py`, `check_lang_diff.py`, `validate_custom_nutrition_effects_phase8.py`, `validate_nutrition_correction_phase.py`, `validate_externalized_rules.py`, `validate_raw_herb_food_balance.py`, `validate_essence_resources.py`, `validate_homeostatic_compat.py`, `validate_nutrition_cuisine_immunity_isolation.py`, `validate_recipe_isolation.py`, `validate_item_textures.py`, `validate_task_abcd.py`, `validate_extended_features.py`, `validate_trade_tags.py`, `validate_external_extension_spec.py`, `validate_animal_food_tags.py`, `validate_catalyst_mixin.py`, `validate_p1_codex_advancements.py`, `validate_nature_jade.py`, and `verify_built_jars.py` — all passed.
+- Remaining risks: Client testing needed to confirm: (1) errata options and claim marks are fully interactive and update correctly upon click; (2) Light/Dark theme toggle and readability; (3) item icons and nature flavor tags rendering in Codex; (4) interactive scrollbars; (5) Farmer+More built-in compat integration; (6) P3.10 raw herb probability rolls and seed/sugarcane survival feel. Awaiting user confirmation for the next development action.
+
+### Previous update
+
+- Date: 2026-06-17
+- Change: UI data-driven Layer 1+2 implementation. Layer 1: Added `codex_theme.json`, `nutrition_theme.json`, `CodexTheme.java`, `NutritionTheme.java`, and theme reload listener. All hardcoded UI constants now read from JSON. Layer 2: Extended `CodexSnapshotPayload.EntrySnap` with `itemId`, `temperature`, `flavors` fields; added item icon rendering and nature flavor tag rendering in the Codex right panel (both disabled by default, enable in theme JSON). Refactored `CodexScreen.java` and `NutritionPanelScreen.java` to use theme. Nutrition panel supports dynamic dimension count with auto-scaling. All new features disabled by default to preserve current visual behavior. Author decisions recorded in `docs/reports/DECISIONS_UI_AND_HARDCORE_MOD_20260617.md`.
+- Output updated: yes. All three jars rebuilt and refreshed. Source zip refreshed.
+- Validations/checks this turn: Gradle build passed. `check_lang_diff.py`, `validate_externalized_rules.py`, `validate_external_extension_spec.py`, `validate_nutrition_correction_phase.py`, `validate_p1_codex_advancements.py`, `validate_raw_herb_food_balance.py`, `validate_custom_nutrition_effects_phase8.py`, `validate_nature_jade.py`, `validate_catalyst_mixin.py`, `verify_built_jars.py` — all passed.
+- Remaining risks: Client testing needed to confirm: (1) item icons render correctly next to entry titles across all chapters; (2) nature flavor tags display with correct colors; (3) scrollbars work on both panels; (4) completion badge counts are accurate; (5) nutrition panel threshold marks are visible. Before public upload, do final release text/platform review. Next step: art direction discussion with author → AI texture generation → beautification activation.
+
+### Previous update
+
+- Date: 2026-06-17
+- Change: Deep discussion on UI data-driven architecture, Codex beautification spec, and hardcore mod direction. Added `docs/reports/UI_DATADRIVEN_AND_HARDCORE_MOD_DEEP_DISCUSSION_20260617.md` with three-layer data-driven UI plan (theme JSON / component registry / declarative layout), pixel-level Codex texture/layout spec (10+ textures, item icons, nature tags, breadcrumb, scrollbar, search), hardcore mod positioning (recommended: independent core mod `严生` + Herbcraft compat bridge, not pure addon), health slider concept (0-100, 5 anchor zones), seasonal herb interaction, and cocoa_fat confirmed as placeholder only. No source code or jars changed.
+- Output updated: no. Documentation/report-only pass; jars and source zip unchanged from the previous validated state.
+- Validations/checks this turn: `check_lang_diff.py`, `validate_externalized_rules.py`, `validate_external_extension_spec.py`, `validate_nutrition_correction_phase.py`, `validate_p1_codex_advancements.py`, `validate_raw_herb_food_balance.py` — all passed. `generate_agent_brief.py --write` regenerated. No build needed (no source changes).
+- Remaining risks: Before public upload, the author should do final release text/platform review. UI data-driven conversion and Codex beautification are recommended for 1.2.0 but not blockers for 1.1.3 release. Hardcore mod architecture (Mode B: independent core + bridge) requires separate project setup when ready to proceed.
+p when ready to proceed.

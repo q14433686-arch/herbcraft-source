@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "herbcraft_cuisine:farmer/3/dandelion_salad_emerald",
+    "herbcraft_cuisine:farmer/3/sea_medley_emerald",
+    "herbcraft_cuisine:farmer/3/twin_fungus_hotpot_emerald"
+  ]
+}

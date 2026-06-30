@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft:root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft.first_page.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft.first_page.description"
+    },
+    "icon": {
+      "id": "herbcraft:tattered_page"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "essences": [
+    {
+      "id": "lavender",
+      "source_items": ["examplemod:lavender"],
+      "potion_name": "lavender",
+      "effects": [
+        { "effect": "minecraft:regeneration", "amplifier": 0, "duration_seconds": 20, "positive": true },
+        { "effect": "minecraft:slowness", "amplifier": 0, "duration_seconds": 8, "positive": false }
+      ]
+    }
+  ]
+}

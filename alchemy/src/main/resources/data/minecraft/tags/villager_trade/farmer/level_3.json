@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "herbcraft:farmer/3/oak_leaves_emerald",
+    "herbcraft:farmer/3/crimson_fungus_emerald",
+    "herbcraft:farmer/3/warped_fungus_emerald"
+  ]
+}

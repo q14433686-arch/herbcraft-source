@@ -1,0 +1,12 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 6
+  },
+  "gives": {
+    "id": "herbcraft:essence_torchflower"
+  },
+  "max_uses": 1.0,
+  "reputation_discount": 0.05,
+  "xp": 12.0
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft_cuisine:first_dish",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft_cuisine.first_hodgepodge.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft_cuisine.first_hodgepodge.description"
+    },
+    "icon": {
+      "id": "herbcraft_cuisine:hodgepodge"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

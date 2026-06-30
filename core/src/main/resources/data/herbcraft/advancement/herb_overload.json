@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft:herb_stack_8",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft.herb_overload.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft.herb_overload.description"
+    },
+    "icon": {
+      "id": "minecraft:poisonous_potato"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

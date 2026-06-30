@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "page_injections": [
+    { "loot_table": "minecraft:chests/village/village_temple", "chance": 0.18, "chapter": "alchemy", "entry": "", "page_kind": "common" }
+  ]
+}

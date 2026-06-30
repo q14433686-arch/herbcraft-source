@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "min_herbs": 3,
+  "max_herbs": 7,
+  "normal_max_herbs": 4,
+  "nutrition_cap": 10,
+  "chance_bonus": 0.15,
+  "max_stack_gain": 3,
+  "floral_bonus_min_count": 2,
+  "clash": {
+    "base_chance": 0.30,
+    "toxic_bonus": 0.10,
+    "clearing_reduction": 0.15,
+    "bland_reduction": 0.10,
+    "min_chance": 0.0,
+    "max_chance": 0.80,
+    "nausea_seconds": 10,
+    "toxic_without_clearing_duration_multiplier": 1.5
+  }
+}

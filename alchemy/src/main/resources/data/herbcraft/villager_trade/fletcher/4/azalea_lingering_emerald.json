@@ -1,0 +1,17 @@
+{
+  "wants": {
+    "id": "minecraft:lingering_potion",
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "herbcraft:azalea_leaves"
+      }
+    }
+  },
+  "gives": {
+    "id": "minecraft:emerald",
+    "count": 8
+  },
+  "max_uses": 4.0,
+  "reputation_discount": 0.05,
+  "xp": 20.0
+}

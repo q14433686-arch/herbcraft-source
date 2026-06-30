@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:lily_of_the_valley",
+    "minecraft:lily_of_the_valley",
+    "minecraft:lily_of_the_valley",
+    "minecraft:lily_of_the_valley",
+    "minecraft:lily_of_the_valley",
+    "minecraft:lily_of_the_valley",
+    "minecraft:lily_of_the_valley",
+    "minecraft:lily_of_the_valley",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_lily_of_the_valley",
+    "count": 1
+  }
+}

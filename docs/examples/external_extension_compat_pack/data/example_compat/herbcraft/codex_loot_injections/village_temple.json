@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "loot_table": "minecraft:chests/village/village_temple",
+  "chance": 0.05,
+  "chapter": "herbal",
+  "entry": "allium",
+  "page_kind": "common"
+}

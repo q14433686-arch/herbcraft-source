@@ -1,0 +1,17 @@
+{
+  "wants": {
+    "id": "herbcraft:essence_wither_rose",
+    "count": 1
+  },
+  "gives": {
+    "id": "minecraft:emerald",
+    "count": 18
+  },
+  "max_uses": 4.0,
+  "reputation_discount": 0.05,
+  "xp": 30.0,
+  "additional_wants": {
+    "id": "herbcraft:blank_adhesive",
+    "count": 1
+  }
+}

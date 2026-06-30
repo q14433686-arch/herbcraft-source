@@ -1,0 +1,17 @@
+{
+  "wants": {
+    "id": "minecraft:potion",
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "herbcraft:undead_venom"
+      }
+    }
+  },
+  "gives": {
+    "id": "minecraft:emerald",
+    "count": 32
+  },
+  "max_uses": 4.0,
+  "reputation_discount": 0.05,
+  "xp": 30.0
+}

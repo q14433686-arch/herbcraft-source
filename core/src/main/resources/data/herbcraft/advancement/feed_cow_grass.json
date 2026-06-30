@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft:first_bite",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft.feed_cow_grass.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft.feed_cow_grass.description"
+    },
+    "icon": {
+      "id": "minecraft:wheat"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

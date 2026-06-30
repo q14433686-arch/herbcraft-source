@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:pink_petals",
+    "minecraft:pink_petals",
+    "minecraft:honeycomb"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:honeyed_petals",
+    "count": 1
+  }
+}

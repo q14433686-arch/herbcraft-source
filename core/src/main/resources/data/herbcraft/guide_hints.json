@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "hints": [
+    {
+      "id": "herbcraft:first_herb_bite",
+      "trigger": "herbcraft:first_herb_bite",
+      "message_key": "guide.herbcraft.first_herb_bite",
+      "delivery": "chat_private",
+      "once": true
+    },
+    {
+      "id": "herbcraft:first_codex_open",
+      "trigger": "herbcraft:first_codex_open",
+      "message_key": "guide.herbcraft.first_codex_open",
+      "delivery": "chat_private",
+      "once": true
+    },
+    {
+      "id": "herbcraft:first_page_read",
+      "trigger": "herbcraft:first_page_read",
+      "message_key": "guide.herbcraft.first_page_read",
+      "delivery": "chat_private",
+      "once": true
+    },
+    {
+      "id": "herbcraft:first_ingredient_tasted",
+      "trigger": "herbcraft:first_ingredient_tasted",
+      "message_key": "guide.herbcraft.first_ingredient_tasted",
+      "delivery": "chat_private",
+      "once": true
+    },
+    {
+      "id": "herbcraft:first_correction",
+      "trigger": "herbcraft:first_correction",
+      "message_key": "guide.herbcraft.first_correction",
+      "delivery": "actionbar",
+      "once": true
+    }
+  ]
+}

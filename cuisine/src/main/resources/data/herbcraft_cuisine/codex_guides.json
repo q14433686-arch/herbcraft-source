@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "guide_cuisine",
+      "chapter": "herbal",
+      "section": "overview",
+      "title_key": "book.herbcraft_cuisine.guide.cuisine.title",
+      "kind": "herbcraft_cuisine:cuisine",
+      "always_visible": true
+    },
+    {
+      "id": "guide_cuisine_overview",
+      "chapter": "cuisine",
+      "section": "overview",
+      "title_key": "book.herbcraft_cuisine.guide.overview.title",
+      "kind": "herbcraft_cuisine:overview",
+      "always_visible": true
+    },
+    {
+      "id": "guide_cuisine_water_bowl",
+      "chapter": "cuisine",
+      "section": "overview",
+      "title_key": "book.herbcraft_cuisine.guide.water_bowl.title",
+      "kind": "herbcraft_cuisine:water_bowl",
+      "always_visible": true
+    },
+    {
+      "id": "guide_cuisine_dishes",
+      "chapter": "cuisine",
+      "section": "overview",
+      "title_key": "book.herbcraft_cuisine.guide.dishes.title",
+      "kind": "herbcraft_cuisine:dishes",
+      "always_visible": true
+    },
+    {
+      "id": "guide_cuisine_hodgepodge",
+      "chapter": "cuisine",
+      "section": "overview",
+      "title_key": "book.herbcraft_cuisine.guide.hodgepodge.title",
+      "kind": "herbcraft_cuisine:hodgepodge",
+      "always_visible": true
+    },
+    {
+      "id": "guide_cuisine_immunity",
+      "chapter": "cuisine",
+      "section": "overview",
+      "title_key": "book.herbcraft_cuisine.guide.immunity.title",
+      "kind": "herbcraft_cuisine:immunity",
+      "always_visible": true
+    },
+    {
+      "id": "guide_cuisine_hidden_catalyst",
+      "chapter": "cuisine",
+      "section": "overview",
+      "title_key": "book.herbcraft_cuisine.guide.hidden_catalyst.title",
+      "kind": "herbcraft_cuisine:hidden_catalyst",
+      "always_visible": true
+    }
+  ]
+}

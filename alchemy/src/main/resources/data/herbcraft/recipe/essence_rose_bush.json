@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:rose_bush",
+    "minecraft:rose_bush",
+    "minecraft:rose_bush",
+    "minecraft:rose_bush",
+    "minecraft:rose_bush",
+    "minecraft:rose_bush",
+    "minecraft:rose_bush",
+    "minecraft:rose_bush",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_rose_bush",
+    "count": 1
+  }
+}

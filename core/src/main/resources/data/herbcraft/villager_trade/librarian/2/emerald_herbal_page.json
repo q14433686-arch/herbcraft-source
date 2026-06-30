@@ -1,0 +1,23 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 2
+  },
+  "gives": {
+    "id": "herbcraft:tattered_page"
+  },
+  "max_uses": 8.0,
+  "reputation_discount": 0.05,
+  "xp": 5.0,
+  "given_item_modifiers": [
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "herbcraft:page_entry": {
+          "chapter": "herbal"
+        },
+        "herbcraft:page_kind": "trade"
+      }
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "effects": {
+    "potion_warming": {
+      "category": "neutral",
+      "color": "D88C30",
+      "attributes": []
+    },
+    "potion_strain": {
+      "category": "harmful",
+      "color": "B07A35",
+      "attributes": [
+        {
+          "attribute": "minecraft:movement_speed",
+          "id": "potion_strain_speed",
+          "amount": -0.02,
+          "operation": "add_multiplied_base"
+        }
+      ]
+    },
+    "potion_overload": {
+      "category": "harmful",
+      "color": "8A2430",
+      "attributes": [
+        {
+          "attribute": "minecraft:movement_speed",
+          "id": "potion_overload_speed",
+          "amount": -0.05,
+          "operation": "add_multiplied_base"
+        }
+      ]
+    },
+    "potion_heat_stir": {
+      "category": "harmful",
+      "color": "D85A24",
+      "attributes": [
+        {
+          "attribute": "minecraft:attack_damage",
+          "id": "potion_heat_stir_attack",
+          "amount": -0.5,
+          "operation": "add_value"
+        }
+      ]
+    },
+    "potion_cold_stagnation": {
+      "category": "harmful",
+      "color": "5CA8D8",
+      "attributes": [
+        {
+          "attribute": "minecraft:block_break_speed",
+          "id": "potion_cold_stagnation_break",
+          "amount": -0.08,
+          "operation": "add_multiplied_total"
+        },
+        {
+          "attribute": "minecraft:movement_speed",
+          "id": "potion_cold_stagnation_speed",
+          "amount": -0.02,
+          "operation": "add_multiplied_total"
+        }
+      ]
+    },
+    "potion_overdrive_rebound": {
+      "category": "harmful",
+      "color": "E0B13A",
+      "attributes": [
+        {
+          "attribute": "minecraft:attack_damage",
+          "id": "potion_overdrive_rebound_attack",
+          "amount": -1.0,
+          "operation": "add_value"
+        }
+      ]
+    },
+    "potion_turbid_disturbance": {
+      "category": "harmful",
+      "color": "6D5A4A",
+      "attributes": [
+        {
+          "attribute": "minecraft:movement_speed",
+          "id": "potion_turbid_disturbance_speed",
+          "amount": -0.03,
+          "operation": "add_multiplied_total"
+        },
+        {
+          "attribute": "minecraft:attack_damage",
+          "id": "potion_turbid_disturbance_attack",
+          "amount": -0.5,
+          "operation": "add_value"
+        }
+      ]
+    },
+    "potion_qi_scattering": {
+      "category": "harmful",
+      "color": "C7D05A",
+      "attributes": []
+    },
+    "potion_qi_stagnation": {
+      "category": "harmful",
+      "color": "6F6A8E",
+      "attributes": [
+        {
+          "attribute": "minecraft:movement_speed",
+          "id": "potion_qi_stagnation_speed",
+          "amount": -0.04,
+          "operation": "add_multiplied_total"
+        }
+      ]
+    },
+    "clear_bearing": {
+      "category": "beneficial",
+      "color": "72D6C9",
+      "attributes": []
+    }
+  }
+}

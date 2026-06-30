@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "entries": [
+    { "item": "minecraft:honey_bottle", "values": { "fruit": 10, "vege": 2 } },
+    { "item": "minecraft:bread", "values": { "grain": 36 } },
+    { "item": "minecraft:baked_potato", "values": { "grain": 20, "vege": 8 } }
+  ]
+}

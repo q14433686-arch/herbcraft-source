@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:azalea_leaves",
+    "minecraft:allium",
+    "minecraft:melon_slice"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:bitter_remedy",
+    "count": 1
+  }
+}

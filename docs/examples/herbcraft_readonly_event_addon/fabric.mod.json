@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "example_herbcraft_api_addon",
+  "version": "1.0.0",
+  "name": "Example Herbcraft API Addon",
+  "description": "Documentation-only example showing HerbcraftDataAPI and HerbcraftEvents usage.",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.herbcraftapi.ExampleHerbcraftApiAddon"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "26.1.2",
+    "java": ">=25",
+    "fabric-api": "*",
+    "herbcraft": ">=1.1.3"
+  }
+}

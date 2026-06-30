@@ -1,0 +1,192 @@
+item,name,source_key
+farmersdelight:acacia_cabinet,,model
+farmersdelight:apple_cider,Apple Cider,item.farmersdelight.apple_cider
+farmersdelight:apple_pie,,model
+farmersdelight:apple_pie_slice,Slice of Apple Pie,item.farmersdelight.apple_pie_slice
+farmersdelight:bacon,Raw Bacon,item.farmersdelight.bacon
+farmersdelight:bacon_and_eggs,Bacon and Eggs,item.farmersdelight.bacon_and_eggs
+farmersdelight:bacon_sandwich,Bacon Sandwich,item.farmersdelight.bacon_sandwich
+farmersdelight:baked_cod_stew,Baked Cod Stew,item.farmersdelight.baked_cod_stew
+farmersdelight:bamboo_basket,,model
+farmersdelight:bamboo_cabinet,,model
+farmersdelight:barbecue_stick,Barbecue on a Stick,item.farmersdelight.barbecue_stick
+farmersdelight:beef_patty,Beef Patty,item.farmersdelight.beef_patty
+farmersdelight:beef_stew,Beef Stew,item.farmersdelight.beef_stew
+farmersdelight:beetroot_crate,,model
+farmersdelight:birch_cabinet,,model
+farmersdelight:black_canvas_sign,,model
+farmersdelight:black_hanging_canvas_sign,,model
+farmersdelight:blue_canvas_sign,,model
+farmersdelight:blue_hanging_canvas_sign,,model
+farmersdelight:bone_broth,Bone Broth,item.farmersdelight.bone_broth
+farmersdelight:brown_canvas_sign,,model
+farmersdelight:brown_hanging_canvas_sign,,model
+farmersdelight:brown_mushroom_colony,,model
+farmersdelight:cabbage,Cabbage,item.farmersdelight.cabbage
+farmersdelight:cabbage_crate,,model
+farmersdelight:cabbage_leaf,Cabbage Leaf,item.farmersdelight.cabbage_leaf
+farmersdelight:cabbage_rolls,Cabbage Rolls,item.farmersdelight.cabbage_rolls
+farmersdelight:cabbage_seeds,Cabbage Seeds,item.farmersdelight.cabbage_seeds
+farmersdelight:cake_slice,Slice of Cake,item.farmersdelight.cake_slice
+farmersdelight:canvas,Canvas,item.farmersdelight.canvas
+farmersdelight:canvas_rug,,model
+farmersdelight:canvas_sign,,model
+farmersdelight:carrot_crate,,model
+farmersdelight:cherry_cabinet,,model
+farmersdelight:chicken_cuts,Raw Chicken Cuts,item.farmersdelight.chicken_cuts
+farmersdelight:chicken_sandwich,Chicken Sandwich,item.farmersdelight.chicken_sandwich
+farmersdelight:chicken_soup,Chicken Soup,item.farmersdelight.chicken_soup
+farmersdelight:chocolate_pie,,model
+farmersdelight:chocolate_pie_slice,Slice of Chocolate Pie,item.farmersdelight.chocolate_pie_slice
+farmersdelight:cod_roll,Cod Roll,item.farmersdelight.cod_roll
+farmersdelight:cod_slice,Raw Cod Slice,item.farmersdelight.cod_slice
+farmersdelight:cooked_bacon,Cooked Bacon,item.farmersdelight.cooked_bacon
+farmersdelight:cooked_chicken_cuts,Cooked Chicken Cuts,item.farmersdelight.cooked_chicken_cuts
+farmersdelight:cooked_cod_slice,Cooked Cod Slice,item.farmersdelight.cooked_cod_slice
+farmersdelight:cooked_mutton_chops,Cooked Mutton Chops,item.farmersdelight.cooked_mutton_chops
+farmersdelight:cooked_rice,Cooked Rice,item.farmersdelight.cooked_rice
+farmersdelight:cooked_salmon_slice,Cooked Salmon Slice,item.farmersdelight.cooked_salmon_slice
+farmersdelight:cooking_pot,,model
+farmersdelight:copper_knife,Copper Knife,item.farmersdelight.copper_knife
+farmersdelight:crimson_cabinet,,model
+farmersdelight:cutting_board,,model
+farmersdelight:cyan_canvas_sign,,model
+farmersdelight:cyan_hanging_canvas_sign,,model
+farmersdelight:dark_oak_cabinet,,model
+farmersdelight:debug_pumpkin_pie,,model
+farmersdelight:diamond_knife,Diamond Knife,item.farmersdelight.diamond_knife
+farmersdelight:dog_food,Dog Food,item.farmersdelight.dog_food
+farmersdelight:dumplings,Dumplings,item.farmersdelight.dumplings
+farmersdelight:earthworm,Earthworm,item.farmersdelight.earthworm
+farmersdelight:egg_sandwich,Egg Sandwich,item.farmersdelight.egg_sandwich
+farmersdelight:fish_stew,Fish Stew,item.farmersdelight.fish_stew
+farmersdelight:flint_knife,Flint Knife,item.farmersdelight.flint_knife
+farmersdelight:fried_egg,Fried Egg,item.farmersdelight.fried_egg
+farmersdelight:fried_rice,Fried Rice,item.farmersdelight.fried_rice
+farmersdelight:fruit_salad,Fruit Salad,item.farmersdelight.fruit_salad
+farmersdelight:full_tatami_mat,,model
+farmersdelight:gleaming_salad,Bowl of Gleaming Salad,item.farmersdelight.gleaming_salad
+farmersdelight:gleaming_salad_block,,model
+farmersdelight:glow_berry_custard,Glow Berry Custard,item.farmersdelight.glow_berry_custard
+farmersdelight:golden_knife,Golden Knife,item.farmersdelight.golden_knife
+farmersdelight:gray_canvas_sign,,model
+farmersdelight:gray_hanging_canvas_sign,,model
+farmersdelight:green_canvas_sign,,model
+farmersdelight:green_hanging_canvas_sign,,model
+farmersdelight:grilled_salmon,Grilled Salmon,item.farmersdelight.grilled_salmon
+farmersdelight:half_tatami_mat,,model
+farmersdelight:ham,Ham,item.farmersdelight.ham
+farmersdelight:hamburger,Hamburger,item.farmersdelight.hamburger
+farmersdelight:hanging_canvas_sign,,model
+farmersdelight:honey_cookie,Honey Cookie,item.farmersdelight.honey_cookie
+farmersdelight:honey_glazed_ham,Plate of Honey Glazed Ham,item.farmersdelight.honey_glazed_ham
+farmersdelight:honey_glazed_ham_block,,model
+farmersdelight:horse_feed,Horse Feed,item.farmersdelight.horse_feed
+farmersdelight:hot_cocoa,Hot Cocoa,item.farmersdelight.hot_cocoa
+farmersdelight:iron_knife,Iron Knife,item.farmersdelight.iron_knife
+farmersdelight:jungle_cabinet,,model
+farmersdelight:kelp_roll,Kelp Roll,item.farmersdelight.kelp_roll
+farmersdelight:kelp_roll_slice,Kelp Roll Slice,item.farmersdelight.kelp_roll_slice
+farmersdelight:light_blue_canvas_sign,,model
+farmersdelight:light_blue_hanging_canvas_sign,,model
+farmersdelight:light_gray_canvas_sign,,model
+farmersdelight:light_gray_hanging_canvas_sign,,model
+farmersdelight:lime_canvas_sign,,model
+farmersdelight:lime_hanging_canvas_sign,,model
+farmersdelight:magenta_canvas_sign,,model
+farmersdelight:magenta_hanging_canvas_sign,,model
+farmersdelight:mangrove_cabinet,,model
+farmersdelight:melon_juice,Melon Juice,item.farmersdelight.melon_juice
+farmersdelight:melon_popsicle,Melon Popsicle,item.farmersdelight.melon_popsicle
+farmersdelight:milk_bottle,Milk Bottle,item.farmersdelight.milk_bottle
+farmersdelight:minced_beef,Minced Beef,item.farmersdelight.minced_beef
+farmersdelight:mixed_salad,Mixed Salad,item.farmersdelight.mixed_salad
+farmersdelight:mug,,model
+farmersdelight:mushroom_rice,Mushroom Rice,item.farmersdelight.mushroom_rice
+farmersdelight:mutton_chops,Raw Mutton Chops,item.farmersdelight.mutton_chops
+farmersdelight:mutton_wrap,Mutton Wrap,item.farmersdelight.mutton_wrap
+farmersdelight:nether_salad,Nether Salad,item.farmersdelight.nether_salad
+farmersdelight:netherite_knife,Netherite Knife,item.farmersdelight.netherite_knife
+farmersdelight:noodle_soup,Noodle Soup,item.farmersdelight.noodle_soup
+farmersdelight:oak_cabinet,,model
+farmersdelight:onion,Onion,item.farmersdelight.onion
+farmersdelight:onion_crate,,model
+farmersdelight:onion_soup,Onion Soup,item.farmersdelight.onion_soup
+farmersdelight:orange_canvas_sign,,model
+farmersdelight:orange_hanging_canvas_sign,,model
+farmersdelight:organic_compost,,model
+farmersdelight:pasta_with_meatballs,Pasta with Meatballs,item.farmersdelight.pasta_with_meatballs
+farmersdelight:pasta_with_mutton_chop,Pasta with Mutton Chop,item.farmersdelight.pasta_with_mutton_chop
+farmersdelight:pie_crust,Pie Crust,item.farmersdelight.pie_crust
+farmersdelight:pink_canvas_sign,,model
+farmersdelight:pink_hanging_canvas_sign,,model
+farmersdelight:potato_crate,,model
+farmersdelight:pumpkin_pie_slice,Slice of Pumpkin Pie,item.farmersdelight.pumpkin_pie_slice
+farmersdelight:pumpkin_slice,Pumpkin Slice,item.farmersdelight.pumpkin_slice
+farmersdelight:pumpkin_soup,Pumpkin Soup,item.farmersdelight.pumpkin_soup
+farmersdelight:purple_canvas_sign,,model
+farmersdelight:purple_hanging_canvas_sign,,model
+farmersdelight:ratatouille,Ratatouille,item.farmersdelight.ratatouille
+farmersdelight:raw_pasta,Raw Pasta,item.farmersdelight.raw_pasta
+farmersdelight:red_canvas_sign,,model
+farmersdelight:red_hanging_canvas_sign,,model
+farmersdelight:red_mushroom_colony,,model
+farmersdelight:rice,Rice,item.farmersdelight.rice
+farmersdelight:rice_bag,,model
+farmersdelight:rice_bale,,model
+farmersdelight:rice_panicle,Rice Panicle,item.farmersdelight.rice_panicle
+farmersdelight:rice_roll_medley_block,,model
+farmersdelight:rich_soil,,model
+farmersdelight:rich_soil_farmland,,model
+farmersdelight:roast_chicken,Plate of Roast Chicken,item.farmersdelight.roast_chicken
+farmersdelight:roast_chicken_block,,model
+farmersdelight:roasted_mutton_chops,Roasted Mutton Chops,item.farmersdelight.roasted_mutton_chops
+farmersdelight:rope,,model
+farmersdelight:rope_fence,,model
+farmersdelight:rope_fence_gate,,model
+farmersdelight:rotten_tomato,Rotten Tomato,item.farmersdelight.rotten_tomato
+farmersdelight:safety_net,,model
+farmersdelight:salmon_roll,Salmon Roll,item.farmersdelight.salmon_roll
+farmersdelight:salmon_slice,Raw Salmon Slice,item.farmersdelight.salmon_slice
+farmersdelight:sandy_shrub,,model
+farmersdelight:shepherds_pie,Plate of Shepherd's Pie,item.farmersdelight.shepherds_pie
+farmersdelight:shepherds_pie_block,,model
+farmersdelight:skillet,,model
+farmersdelight:skillet.how_to_cook,Use your other hand to hold ingredients!,item.farmersdelight.skillet.how_to_cook
+farmersdelight:skillet.underwater,Can't cook underwater...,item.farmersdelight.skillet.underwater
+farmersdelight:skillet_cooking,,model
+farmersdelight:smoked_ham,Smoked Ham,item.farmersdelight.smoked_ham
+farmersdelight:spruce_cabinet,,model
+farmersdelight:squid_ink_pasta,Squid Ink Pasta,item.farmersdelight.squid_ink_pasta
+farmersdelight:steak_and_potatoes,Steak and Potatoes,item.farmersdelight.steak_and_potatoes
+farmersdelight:stove,,model
+farmersdelight:straw,Straw,item.farmersdelight.straw
+farmersdelight:straw_bale,,model
+farmersdelight:stuffed_potato,Stuffed Potato,item.farmersdelight.stuffed_potato
+farmersdelight:stuffed_pumpkin,Bowl of Stuffed Pumpkin,item.farmersdelight.stuffed_pumpkin
+farmersdelight:stuffed_pumpkin_block,,model
+farmersdelight:sweet_berry_cheesecake,,model
+farmersdelight:sweet_berry_cheesecake_slice,Slice of Sweet Berry Cheesecake,item.farmersdelight.sweet_berry_cheesecake_slice
+farmersdelight:sweet_berry_cookie,Sweet Berry Cookie,item.farmersdelight.sweet_berry_cookie
+farmersdelight:tatami,,model
+farmersdelight:tomato,Tomato,item.farmersdelight.tomato
+farmersdelight:tomato_crate,,model
+farmersdelight:tomato_sauce,Tomato Sauce,item.farmersdelight.tomato_sauce
+farmersdelight:tomato_seeds,Tomato Seeds,item.farmersdelight.tomato_seeds
+farmersdelight:tree_bark,Tree Bark,item.farmersdelight.tree_bark
+farmersdelight:vegetable_noodles,Vegetable Noodles,item.farmersdelight.vegetable_noodles
+farmersdelight:vegetable_soup,Vegetable Soup,item.farmersdelight.vegetable_soup
+farmersdelight:warped_cabinet,,model
+farmersdelight:wheat_dough,Wheat Dough,item.farmersdelight.wheat_dough
+farmersdelight:white_canvas_sign,,model
+farmersdelight:white_hanging_canvas_sign,,model
+farmersdelight:wild_beetroots,,model
+farmersdelight:wild_cabbages,,model
+farmersdelight:wild_carrots,,model
+farmersdelight:wild_onions,,model
+farmersdelight:wild_potatoes,,model
+farmersdelight:wild_rice,,model
+farmersdelight:wild_tomatoes,,model
+farmersdelight:wooden_basket,,model
+farmersdelight:yellow_canvas_sign,,model
+farmersdelight:yellow_hanging_canvas_sign,,model

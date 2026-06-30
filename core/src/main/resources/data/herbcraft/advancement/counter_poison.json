@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft:bitter_medicine",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft.counter_poison.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft.counter_poison.description"
+    },
+    "icon": {
+      "id": "minecraft:wither_rose"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:brown_mushroom",
+    "minecraft:brown_mushroom",
+    "minecraft:brown_mushroom",
+    "minecraft:brown_mushroom",
+    "minecraft:brown_mushroom",
+    "minecraft:brown_mushroom",
+    "minecraft:brown_mushroom",
+    "minecraft:brown_mushroom",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_brown_mushroom",
+    "count": 1
+  }
+}

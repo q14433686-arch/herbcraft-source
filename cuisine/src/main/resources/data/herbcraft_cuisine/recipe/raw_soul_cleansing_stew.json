@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:wither_rose",
+    "minecraft:honeycomb",
+    "minecraft:snowball"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_soul_cleansing_stew",
+    "count": 1
+  }
+}

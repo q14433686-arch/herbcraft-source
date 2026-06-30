@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:large_fern",
+    "minecraft:large_fern",
+    "minecraft:large_fern",
+    "minecraft:large_fern",
+    "minecraft:large_fern",
+    "minecraft:large_fern",
+    "minecraft:large_fern",
+    "minecraft:large_fern",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_fern",
+    "count": 1
+  }
+}

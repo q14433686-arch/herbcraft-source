@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:torchflower",
+    "minecraft:torchflower",
+    "minecraft:torchflower",
+    "minecraft:torchflower",
+    "minecraft:torchflower",
+    "minecraft:torchflower",
+    "minecraft:torchflower",
+    "minecraft:torchflower",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_torchflower",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft:root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft.villager_trade_herbcraft.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft.villager_trade_herbcraft.description"
+    },
+    "icon": {
+      "id": "minecraft:emerald"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

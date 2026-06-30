@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:dandelion",
+    "minecraft:oxeye_daisy",
+    "minecraft:cornflower"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:three_flower_platter",
+    "count": 1
+  }
+}

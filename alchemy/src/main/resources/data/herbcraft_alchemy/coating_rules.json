@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "expiry_ticks": 12000,
+  "refined_expiry_ticks": 14400,
+  "signature_duration_seconds": 5,
+  "random_duration_seconds": 4,
+  "random_min_amplifier": 1,
+  "random_max_amplifier": 3,
+  "hit_duration_min_seconds": 2,
+  "hit_duration_max_seconds": 8,
+  "hit_duration_multiplier": 0.1,
+  "positive_signature": "minecraft:regeneration",
+  "negative_signature": "minecraft:darkness",
+  "positive_random_pool": [
+    "minecraft:speed",
+    "minecraft:resistance",
+    "minecraft:strength",
+    "minecraft:haste",
+    "minecraft:jump_boost",
+    "minecraft:absorption"
+  ],
+  "negative_random_pool": [
+    "minecraft:hunger",
+    "minecraft:weakness",
+    "minecraft:slowness",
+    "minecraft:nausea",
+    "minecraft:mining_fatigue",
+    "minecraft:blindness",
+    "minecraft:levitation"
+  ],
+  "use_rules": [
+    { "max_score": 1, "uses": 24 },
+    { "max_score": 2, "uses": 20 },
+    { "max_score": 3, "uses": 16 },
+    { "max_score": 999, "uses": 12 }
+  ],
+  "refined_uses_multiplier": 2
+}

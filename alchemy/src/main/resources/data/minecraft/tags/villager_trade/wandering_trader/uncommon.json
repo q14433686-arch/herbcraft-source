@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "herbcraft:wanderer/emerald_essence_wither_rose",
+    "herbcraft:wanderer/emerald_essence_warped_fungus",
+    "herbcraft:wanderer/emerald_essence_crimson_fungus",
+    "herbcraft:wanderer/emerald_essence_torchflower",
+    "herbcraft:wanderer/emerald_essence_flowering_azalea_leaves",
+    "herbcraft:wanderer/emerald_essence_cherry_leaves",
+    "herbcraft:wanderer/emerald_essence_sea_pickle",
+    "herbcraft:wanderer/emerald_essence_pale_oak_leaves",
+    "herbcraft:wanderer/emerald_essence_closed_eyeblossom",
+    "herbcraft:wanderer/emerald_essence_open_eyeblossom",
+    "herbcraft:wanderer/emerald_distilled_essence_dandelion_sustained",
+    "herbcraft:wanderer/emerald_distilled_essence_poppy_intense"
+  ]
+}

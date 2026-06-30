@@ -1,0 +1,13 @@
+.gradle/
+build/
+out/
+.idea/
+*.iml
+run/
+logs/
+.DS_Store
+*.log
+release/
+cache/
+node_modules/
+release_output/

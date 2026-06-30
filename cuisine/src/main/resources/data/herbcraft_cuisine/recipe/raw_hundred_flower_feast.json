@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "show_notification": false,
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:dandelion",
+    "minecraft:oxeye_daisy",
+    "minecraft:cornflower",
+    "minecraft:blue_orchid",
+    "minecraft:allium",
+    "minecraft:pink_petals",
+    "minecraft:torchflower"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_hundred_flower_feast",
+    "count": 1
+  }
+}

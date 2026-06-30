@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:short_grass",
+    "minecraft:tall_grass",
+    "minecraft:fern",
+    "minecraft:oxeye_daisy",
+    "minecraft:azure_bluet"
+  ]
+}

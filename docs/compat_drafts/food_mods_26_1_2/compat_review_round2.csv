@@ -1,0 +1,318 @@
+item,source_mod,english_name,ingredient_section,grain,flesh,oil,vege,fruit,temperature,flavors,taste_flavors,traits,rumor_key,review_status,review_notes
+farmersdelight:apple_cider,farmersdelight,Apple Cider,fruit,,,,4,18,,,,,,reviewed_draft_farmer,
+farmersdelight:apple_pie_slice,farmersdelight,Slice of Apple Pie,grain,24,,8,,12,,,,,,reviewed_draft_farmer,
+farmersdelight:bacon,farmersdelight,Raw Bacon,meat,,18,6,,,,,,,,reviewed_draft_farmer,
+farmersdelight:bacon_and_eggs,farmersdelight,Bacon and Eggs,meat,,30,12,,,,,,,,reviewed_draft_farmer,
+farmersdelight:bacon_sandwich,farmersdelight,Bacon Sandwich,meat,20,18,8,8,,,,,,,reviewed_draft_farmer,
+farmersdelight:baked_cod_stew,farmersdelight,Baked Cod Stew,soup,6,22,6,6,8,,,,,,reviewed_draft_farmer,
+farmersdelight:barbecue_stick,farmersdelight,Barbecue on a Stick,special,8,,2,8,,,,,,,reviewed_draft_farmer,uncertain special food; needs review
+farmersdelight:beef_patty,farmersdelight,Beef Patty,meat,,30,12,,,,,,,,reviewed_draft_farmer,
+farmersdelight:beef_stew,farmersdelight,Beef Stew,soup,6,22,6,6,8,,,,,,reviewed_draft_farmer,
+farmersdelight:bone_broth,farmersdelight,Bone Broth,soup,6,,,10,12,,,,,,reviewed_draft_farmer,
+farmersdelight:cabbage,farmersdelight,Cabbage,fruit,,,,14,4,neutral,sweet;bland,sweet;bland,leafy;nourishing,,reviewed_draft_farmer,
+farmersdelight:cabbage_leaf,farmersdelight,Cabbage Leaf,fruit,,,,14,4,neutral,sweet;bland,sweet;bland,leafy;nourishing,,reviewed_draft_farmer,
+farmersdelight:cabbage_rolls,farmersdelight,Cabbage Rolls,grain,20,,8,8,,,,,,,reviewed_draft_farmer,
+farmersdelight:cabbage_seeds,farmersdelight,Cabbage Seeds,grain,4,,3,2,,neutral,sweet;bland,sweet;bland,leafy;nourishing,,reviewed_draft_farmer,
+farmersdelight:cake_slice,farmersdelight,Slice of Cake,grain,24,,8,,12,,,,,,reviewed_draft_farmer,
+farmersdelight:chicken_cuts,farmersdelight,Raw Chicken Cuts,meat,,18,6,,,,,,,,reviewed_draft_farmer,
+farmersdelight:chicken_sandwich,farmersdelight,Chicken Sandwich,meat,20,18,8,8,,,,,,,reviewed_draft_farmer,
+farmersdelight:chicken_soup,farmersdelight,Chicken Soup,soup,6,22,6,6,8,,,,,,reviewed_draft_farmer,
+farmersdelight:chocolate_pie_slice,farmersdelight,Slice of Chocolate Pie,grain,24,,8,,12,,,,,,reviewed_draft_farmer,
+farmersdelight:cod_roll,farmersdelight,Cod Roll,meat,20,18,8,8,,,,,,,reviewed_draft_farmer,
+farmersdelight:cod_slice,farmersdelight,Raw Cod Slice,seafood,,24,8,,,,,,,,reviewed_draft_farmer,
+farmersdelight:cooked_bacon,farmersdelight,Cooked Bacon,meat,,30,12,,,,,,,,reviewed_draft_farmer,
+farmersdelight:cooked_chicken_cuts,farmersdelight,Cooked Chicken Cuts,meat,,30,12,,,,,,,,reviewed_draft_farmer,
+farmersdelight:cooked_cod_slice,farmersdelight,Cooked Cod Slice,seafood,,24,8,,,,,,,,reviewed_draft_farmer,
+farmersdelight:cooked_mutton_chops,farmersdelight,Cooked Mutton Chops,meat,,30,12,,,,,,,,reviewed_draft_farmer,
+farmersdelight:cooked_rice,farmersdelight,Cooked Rice,grain,24,,,,,,,,,,reviewed_draft_farmer,
+farmersdelight:cooked_salmon_slice,farmersdelight,Cooked Salmon Slice,seafood,,24,8,,,,,,,,reviewed_draft_farmer,
+farmersdelight:dumplings,farmersdelight,Dumplings,grain,20,,8,8,,,,,,,reviewed_draft_farmer,
+farmersdelight:egg_sandwich,farmersdelight,Egg Sandwich,meat,20,18,8,8,,,,,,,reviewed_draft_farmer,
+farmersdelight:fish_stew,farmersdelight,Fish Stew,soup,6,22,6,6,8,,,,,,reviewed_draft_farmer,
+farmersdelight:fried_egg,farmersdelight,Fried Egg,meat,,30,12,,,,,,,,reviewed_draft_farmer,
+farmersdelight:fried_rice,farmersdelight,Fried Rice,grain,24,,6,,,,,,,,reviewed_draft_farmer,
+farmersdelight:fruit_salad,farmersdelight,Fruit Salad,fruit,,,2,24,8,,,,,,reviewed_draft_farmer,
+farmersdelight:gleaming_salad,farmersdelight,Bowl of Gleaming Salad,fruit,,,2,24,8,,,,,,reviewed_draft_farmer,
+farmersdelight:glow_berry_custard,farmersdelight,Glow Berry Custard,fruit,,,,4,18,,,,,,reviewed_draft_farmer,
+farmersdelight:grilled_salmon,farmersdelight,Grilled Salmon,seafood,,24,8,,,,,,,,reviewed_draft_farmer,
+farmersdelight:ham,farmersdelight,Ham,meat,,30,12,,,,,,,,reviewed_draft_farmer,
+farmersdelight:hamburger,farmersdelight,Hamburger,meat,20,18,8,8,,,,,,,reviewed_draft_farmer,
+farmersdelight:honey_cookie,farmersdelight,Honey Cookie,grain,24,,8,,12,,,,,,reviewed_draft_farmer,
+farmersdelight:honey_glazed_ham,farmersdelight,Plate of Honey Glazed Ham,meat,,30,12,,,,,,,,reviewed_draft_farmer,
+farmersdelight:hot_cocoa,farmersdelight,Hot Cocoa,soup,6,8,6,10,12,,,,,,reviewed_draft_farmer,
+farmersdelight:kelp_roll,farmersdelight,Kelp Roll,grain,20,,8,8,,,,,,,reviewed_draft_farmer,
+farmersdelight:kelp_roll_slice,farmersdelight,Kelp Roll Slice,grain,20,,8,8,,,,,,,reviewed_draft_farmer,
+farmersdelight:melon_juice,farmersdelight,Melon Juice,soup,6,,,10,12,,,,,,reviewed_draft_farmer,
+farmersdelight:melon_popsicle,farmersdelight,Melon Popsicle,fruit,,,,4,18,,,,,,reviewed_draft_farmer,
+farmersdelight:milk_bottle,farmersdelight,Milk Bottle,soup,6,8,6,10,12,,,,,,reviewed_draft_farmer,
+farmersdelight:minced_beef,farmersdelight,Minced Beef,meat,,18,6,,,,,,,,reviewed_draft_farmer,
+farmersdelight:mixed_salad,farmersdelight,Mixed Salad,fruit,,,2,24,8,,,,,,reviewed_draft_farmer,
+farmersdelight:mushroom_rice,farmersdelight,Mushroom Rice,grain,24,,6,,,,,,,,reviewed_draft_farmer,
+farmersdelight:mutton_chops,farmersdelight,Raw Mutton Chops,meat,,18,6,,,,,,,,reviewed_draft_farmer,
+farmersdelight:mutton_wrap,farmersdelight,Mutton Wrap,grain,20,,8,8,,,,,,,reviewed_draft_farmer,
+farmersdelight:noodle_soup,farmersdelight,Noodle Soup,soup,6,,,10,12,,,,,,reviewed_draft_farmer,
+farmersdelight:onion,farmersdelight,Onion,fruit,,,,14,4,neutral,pungent;sweet,pungent;sweet,nourishing;stirring,,reviewed_draft_farmer,
+farmersdelight:onion_soup,farmersdelight,Onion Soup,soup,6,,,10,12,,,,,,reviewed_draft_farmer,
+farmersdelight:pasta_with_meatballs,farmersdelight,Pasta with Meatballs,meat,,30,12,,,,,,,,reviewed_draft_farmer,
+farmersdelight:pasta_with_mutton_chop,farmersdelight,Pasta with Mutton Chop,meat,,30,12,,,,,,,,reviewed_draft_farmer,
+farmersdelight:pie_crust,farmersdelight,Pie Crust,grain,12,,2,,,,,,,,reviewed_draft_farmer,raw/unfinished grain product; toned down
+farmersdelight:pumpkin_pie_slice,farmersdelight,Slice of Pumpkin Pie,grain,24,,8,,12,,,,,,reviewed_draft_farmer,
+farmersdelight:pumpkin_slice,farmersdelight,Pumpkin Slice,fruit,,,,14,4,neutral,sweet,sweet,nourishing,,reviewed_draft_farmer,
+farmersdelight:pumpkin_soup,farmersdelight,Pumpkin Soup,soup,6,,,10,12,,,,,,reviewed_draft_farmer,
+farmersdelight:ratatouille,farmersdelight,Ratatouille,special,8,,2,8,,,,,,,reviewed_draft_farmer,uncertain special food; needs review
+farmersdelight:raw_pasta,farmersdelight,Raw Pasta,grain,12,,2,,,,,,,,reviewed_draft_farmer,raw/unfinished grain product; toned down
+farmersdelight:rice,farmersdelight,Rice,grain,16,,,,,neutral,sweet;bland,bland,nourishing,,reviewed_draft_farmer,
+farmersdelight:roast_chicken,farmersdelight,Plate of Roast Chicken,meat,,30,12,,,,,,,,reviewed_draft_farmer,
+farmersdelight:roasted_mutton_chops,farmersdelight,Roasted Mutton Chops,meat,,30,12,,,,,,,,reviewed_draft_farmer,
+farmersdelight:rotten_tomato,farmersdelight,Rotten Tomato,fruit,,,,8,2,,,,,,reviewed_draft_farmer,rotten/risky produce; nutrition toned down
+farmersdelight:salmon_roll,farmersdelight,Salmon Roll,meat,20,18,8,8,,,,,,,reviewed_draft_farmer,
+farmersdelight:salmon_slice,farmersdelight,Raw Salmon Slice,seafood,,24,8,,,,,,,,reviewed_draft_farmer,
+farmersdelight:shepherds_pie,farmersdelight,Plate of Shepherd's Pie,grain,24,,8,,12,,,,,,reviewed_draft_farmer,
+farmersdelight:smoked_ham,farmersdelight,Smoked Ham,meat,,30,12,,,,,,,,reviewed_draft_farmer,
+farmersdelight:squid_ink_pasta,farmersdelight,Squid Ink Pasta,seafood,,24,8,,,,,,,,reviewed_draft_farmer,
+farmersdelight:steak_and_potatoes,farmersdelight,Steak and Potatoes,soup,6,,,10,12,,,,,,reviewed_draft_farmer,
+farmersdelight:stuffed_potato,farmersdelight,Stuffed Potato,special,8,,2,8,,,,,,,reviewed_draft_farmer,uncertain special food; needs review
+farmersdelight:stuffed_pumpkin,farmersdelight,Bowl of Stuffed Pumpkin,soup,6,,,10,12,,,,,,reviewed_draft_farmer,
+farmersdelight:sweet_berry_cheesecake_slice,farmersdelight,Slice of Sweet Berry Cheesecake,grain,24,,8,,12,,,,,,reviewed_draft_farmer,
+farmersdelight:sweet_berry_cookie,farmersdelight,Sweet Berry Cookie,grain,24,,8,,12,,,,,,reviewed_draft_farmer,
+farmersdelight:tomato,farmersdelight,Tomato,fruit,,,,14,4,neutral,sweet;sour,sour;sweet,nourishing,,reviewed_draft_farmer,
+farmersdelight:tomato_sauce,farmersdelight,Tomato Sauce,special,8,,2,8,,,,,,,reviewed_draft_farmer,uncertain special food; needs review
+farmersdelight:tomato_seeds,farmersdelight,Tomato Seeds,grain,4,,3,2,,neutral,sweet;sour,sour;sweet,nourishing,,reviewed_draft_farmer,
+farmersdelight:vegetable_noodles,farmersdelight,Vegetable Noodles,grain,24,,6,,,,,,,,reviewed_draft_farmer,
+farmersdelight:vegetable_soup,farmersdelight,Vegetable Soup,soup,6,,,10,12,,,,,,reviewed_draft_farmer,
+farmersdelight:wheat_dough,farmersdelight,Wheat Dough,grain,12,,2,,,,,,,,reviewed_draft_farmer,raw/unfinished grain product; toned down
+moredelight:bread_slice,moredelight,Bread Slice,grain,24,,6,,,,,,,,reviewed_draft_more_delight,
+moredelight:carrot_soup,moredelight,Carrot Soup,soup,6,,,10,12,,,,,,reviewed_draft_more_delight,
+moredelight:chicken_salad,moredelight,Chicken Salad,meat,,16,8,24,8,,,,,,reviewed_draft_more_delight,
+moredelight:chicken_sandwich_with_egg_and_tomato,moredelight,Chicken Sandwich with Egg and Tomato,meat,20,18,8,8,,,,,,,reviewed_draft_more_delight,
+moredelight:chocolate_popsicle,moredelight,Chocolate Popsicle,grain,24,,8,,12,,,,,,reviewed_draft_more_delight,
+moredelight:cooked_rice_with_beef,moredelight,Cooked Rice with Beef,meat,,30,12,,,,,,,,reviewed_draft_more_delight,
+moredelight:cooked_rice_with_chicken_cuts,moredelight,Cooked Rice with Chicken Cuts,meat,,30,12,,,,,,,,reviewed_draft_more_delight,
+moredelight:cooked_rice_with_porkchop,moredelight,Cooked Rice with Porkchop,meat,,30,12,,,,,,,,reviewed_draft_more_delight,
+moredelight:creamy_pasta_with_chicken_cuts,moredelight,Creamy Pasta with Chicken Cuts,meat,,18,6,,,,,,,,reviewed_draft_more_delight,
+moredelight:creamy_pasta_with_ham,moredelight,Creamy Pasta with Ham,meat,,30,12,,,,,,,,reviewed_draft_more_delight,
+moredelight:egg_with_bacon_sandwich,moredelight,Egg with Bacon Sandwich,meat,20,18,8,8,,,,,,,reviewed_draft_more_delight,
+moredelight:hamburger_with_cheese,moredelight,Hamburger with Cheese,meat,20,18,8,8,,,,,,,reviewed_draft_more_delight,
+moredelight:hamburger_with_egg,moredelight,Hamburger with Egg,meat,20,18,8,8,,,,,,,reviewed_draft_more_delight,
+moredelight:loaded_hamburger,moredelight,Loaded Hamburger,meat,20,18,8,8,,,,,,,reviewed_draft_more_delight,
+moredelight:omelette,moredelight,Omelet,special,8,,2,8,,,,,,,reviewed_draft_more_delight,uncertain special food; needs review
+moredelight:porkchop_sandwich,moredelight,Porkchop Sandwich,meat,20,18,8,8,,,,,,,reviewed_draft_more_delight,
+moredelight:simple_hamburger,moredelight,Simple Hamburger,meat,20,18,8,8,,,,,,,reviewed_draft_more_delight,
+moredelight:steak_sandwich,moredelight,Steak Sandwich,meat,20,18,8,8,,,,,,,reviewed_draft_more_delight,
+moredelight:steak_with_egg_sandwich,moredelight,Steak with Egg Sandwich,meat,20,18,8,8,,,,,,,reviewed_draft_more_delight,
+moredelight:toast,moredelight,Toast,grain,24,,6,,,,,,,,reviewed_draft_more_delight,
+moredelight:toast_with_blueberries,moredelight,Toast with Blueberries,fruit,,,,4,18,,,,,,reviewed_draft_more_delight,
+moredelight:toast_with_cheese,moredelight,Toast with Cheese,grain,24,,6,,,,,,,,reviewed_draft_more_delight,
+moredelight:toast_with_chocolate,moredelight,Toast with Chocolate,grain,24,,8,,12,,,,,,reviewed_draft_more_delight,
+moredelight:toast_with_egg,moredelight,Toast with Egg,meat,,30,12,,,,,,,,reviewed_draft_more_delight,
+moredelight:toast_with_glow_berries,moredelight,Toast with Glow Berries,fruit,,,,4,18,,,,,,reviewed_draft_more_delight,
+moredelight:toast_with_honey,moredelight,Toast with Honey,grain,24,,8,,12,,,,,,reviewed_draft_more_delight,
+moredelight:toast_with_peanut_butter,moredelight,Toast with Peanut Butter,grain,24,,6,,,,,,,,reviewed_draft_more_delight,
+moredelight:toast_with_sweet_berries,moredelight,Toast with Sweet Berries,fruit,,,,4,18,,,,,,reviewed_draft_more_delight,
+moredelight:tomato_sandwich,moredelight,Tomato Sandwich,grain,20,,8,8,,,,,,,reviewed_draft_more_delight,
+rmf:apple_juice,rmf,Apple Juice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:apple_mash,rmf,Apple Mash,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:apple_pie,rmf,Apple Pie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:apple_pie_slice,rmf,Apple Pie Slice,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:bacon,rmf,Raw Bacon,meat,,18,6,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:baked_beans,rmf,Bowl of Baked Beans,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:banana,rmf,Banana,fruit,,,,4,18,neutral,sweet,sweet,nourishing,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:banana_bread,rmf,Banana Bread,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:banana_dough,rmf,Banana Dough,grain,12,,2,,,,,,,,rmf_identity_risk_review,raw/unfinished grain product; toned down; RMF modded wrapper/datapack identity requires real client test
+rmf:banana_juice,rmf,Banana Juice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:banana_mash,rmf,Banana Mash,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:banana_smoothie,rmf,Banana Smoothie,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:beef_burger,rmf,Beef Burger,meat,20,18,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:berry_bowl,rmf,Berry Medley,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:berry_cookie,rmf,Berry Cookie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:biomash,rmf,Biomash,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:blackberry,rmf,Blackberry,fruit,,,,4,18,neutral,sweet,sweet,nourishing,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:blackberry_mash,rmf,Blackberry Mash,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:blackberry_smoothie,rmf,Blackberry Smoothie,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:blazing_stew,rmf,Blazing Stew,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:blueberry,rmf,Blueberry,fruit,,,,4,18,neutral,sweet,sweet,nourishing,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:blueberry_mash,rmf,Blueberry Mash,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:blueberry_smoothie,rmf,Blueberry Smoothie,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cactus_juice,rmf,Cactus Fruit Juice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cake_slice,rmf,Slice of Cake,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:carrot_cake,rmf,Carrot Cake,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cereal,rmf,Bowl of Cereal,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cheese,rmf,Cheese,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:cheese_pizza_slice,rmf,Cheese Pizza Slice,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cheese_sandwich,rmf,Grilled(?) Cheese Sandwich,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cheeseburger,rmf,Cheeseburger,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cheesecake,rmf,Cheesecake,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:chicken_burger,rmf,Chicken Burger,meat,20,18,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:chicken_parmesan,rmf,Bowl of Chicken Parmesan,soup,6,22,6,6,8,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:chicken_soup,rmf,Chicken Noodle Soup,soup,6,22,6,6,8,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:chicken_wing,rmf,Raw Chicken Wing,meat,,18,6,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:chocolate_bar_dark,rmf,Bar of Dark Chocolate,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:chocolate_bar_milk,rmf,Bar of Milk Chocolate,soup,6,8,6,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:chocolate_bar_white,rmf,Bar of White Chocolate,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:chocolate_cake,rmf,Chocolate Cake,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:chocolate_cake_slice,rmf,Slice of Chocolate Cake,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:chocolate_ice_cream,rmf,Chocolate Ice Cream,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:chocolate_milk,rmf,Chocolate Milk,soup,6,8,6,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cocoa_cookie,rmf,Cocoa Cookie,soup,6,8,6,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:coconut_mash,rmf,Coconut Mash,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:coconut_milk,rmf,Coconut Milk Bucket,soup,6,8,6,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:coffee,rmf,Bottle of Coffee,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:coffee_beans,rmf,Coffee Beans,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:coffee_grounds,rmf,Coffee Grounds,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cooked_bacon,rmf,Cooked Bacon,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cooked_chicken_wing,rmf,Cooked Chicken Wing,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cooked_ham,rmf,Cooked Ham,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cooked_honeycomb,rmf,Honeycomb Candy,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:cooked_pufferfish_tail,rmf,Cooked Pufferfish Tail,seafood,,24,8,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cooked_rice,rmf,Cooked Rice,grain,24,,,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:cottage_cheese,rmf,Cottage Cheese,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:curry,rmf,Bowl of Curry,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:diamond_apple,rmf,Diamond Apple,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:double_glazed_fritter,rmf,Double Glazed Apple Fritter,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:dough,rmf,Dough,grain,12,,2,,,,,,,,rmf_identity_risk_review,raw/unfinished grain product; toned down; RMF modded wrapper/datapack identity requires real client test
+rmf:dough_baguette,rmf,Baguette-Shaped Dough,grain,12,,2,,,,,,,,rmf_identity_risk_review,raw/unfinished grain product; toned down; RMF modded wrapper/datapack identity requires real client test
+rmf:dough_berry_cookie,rmf,Berry Cookie Dough,grain,12,,2,,,,,,,,rmf_identity_risk_review,raw/unfinished grain product; toned down; RMF modded wrapper/datapack identity requires real client test
+rmf:dough_cocoa_cookie,rmf,Cocoa Cookie Dough,soup,6,8,6,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:dough_cookie,rmf,Cookie Dough,grain,12,,2,,,,,,,,rmf_identity_risk_review,raw/unfinished grain product; toned down; RMF modded wrapper/datapack identity requires real client test
+rmf:dough_croissant,rmf,Croissant-Shaped Dough,grain,12,,2,,,,,,,,rmf_identity_risk_review,raw/unfinished grain product; toned down; RMF modded wrapper/datapack identity requires real client test
+rmf:dough_glow_berry_cookie,rmf,Glow Berry Cookie Dough,grain,12,,2,,,,,,,,rmf_identity_risk_review,raw/unfinished grain product; toned down; RMF modded wrapper/datapack identity requires real client test
+rmf:dough_honey_cookie,rmf,Honey Cookie Dough,grain,12,,2,,,,,,,,rmf_identity_risk_review,raw/unfinished grain product; toned down; RMF modded wrapper/datapack identity requires real client test
+rmf:dough_muffin,rmf,Muffin-Shaped Dough,grain,12,,2,,,,,,,,rmf_identity_risk_review,raw/unfinished grain product; toned down; RMF modded wrapper/datapack identity requires real client test
+rmf:dough_nut,rmf,Donut-Shaped Dough,grain,12,,2,,,,,,,,rmf_identity_risk_review,raw/unfinished grain product; toned down; RMF modded wrapper/datapack identity requires real client test
+rmf:dough_pretzel,rmf,Pretzel-Shaped Dough,grain,12,,2,,,,,,,,rmf_identity_risk_review,raw/unfinished grain product; toned down; RMF modded wrapper/datapack identity requires real client test
+rmf:dragon_fruit_juice,rmf,Dragon Fruit Juice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:dragon_fruit_mash,rmf,Dragon Fruit Mash,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:dragon_fruit_pie,rmf,Dragon Fruit Pie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:dragon_fruit_smoothie,rmf,Dragon Fruit Smoothie,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:dragon_pie_mix,rmf,Unbaked Dragon Fruit Pie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:dumpling,rmf,Dumpling,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:egg_roll,rmf,Egg Roll,meat,20,18,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:emerald_apple,rmf,Emerald Apple,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:enchanted_diamond_apple,rmf,Enchanted Diamond Apple,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:enchanted_emerald_apple,rmf,Enchanted Emerald Apple,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:enchanted_golden_apple_juice,rmf,Enchanted Golden Apple Juice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:farmer_burger,rmf,Farmer's Delight Burger,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:fillet_burger,rmf,Fillet Burger,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:fish_and_chips,rmf,Fish & Chips,seafood,,24,8,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:french_toast,rmf,French Toast,grain,24,,6,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:fried_dragon_egg,rmf,Fried Dragon Egg,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:fried_egg,rmf,Fried Egg,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:fried_rice,rmf,Bowl of Fried Rice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:fried_sniffer_egg,rmf,Fried Sniffer Egg,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:frosted_pumpkin_pie,rmf,Frosted Pumpkin Pie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:fruitcake,rmf,Fruitcake,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:garlic_bread,rmf,Garlic Bread,grain,24,,6,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:glow_berry_cookie,rmf,Glow Berry Cookie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:glow_berry_jam,rmf,Bowl of Glow Berry Jam,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:glow_berry_mash,rmf,Glow Berry Mash,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:glow_berry_muffin,rmf,Glow Berry Muffin,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:glow_berry_pie,rmf,Glow Berry Pie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:glow_filled_donut,rmf,Glow Filled Donut,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:glow_pbj_sandwich,rmf,Glowing PB&J Sandwich,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:golden_apple_juice,rmf,Golden Apple Juice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:grape_juice,rmf,Grape Juice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:ham,rmf,Bone-In Ham,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:hard_boiled_egg,rmf,Hard Boiled Egg,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:honey_apple,rmf,Honeyed Apple,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:honey_ball,rmf,Honeyball,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:honey_chicken,rmf,Honey Garlic Chicken,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:honey_cookie,rmf,Honey Cookie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:honeybun,rmf,Honeybun,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:hot_cocoa,rmf,Bottle of Hot Cocoa,soup,6,8,6,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:iced_tea,rmf,Bottle of Iced Tea,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:impossible_burger,rmf,Impossible Burger,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:juicer,rmf,Juicer,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:lasagna,rmf,Bowl of Lasagna,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:lemon_juice,rmf,Bottle of Lemon Juice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:lemon_pie,rmf,Lemon Pie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:lemon_pie_mix,rmf,Unbaked Lemon Pie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:mac_and_cheese,rmf,Bowl of Mac & Cheese,soup,6,8,6,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:mango_juice,rmf,Mango Juice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:mango_mash,rmf,Mango Mash,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:mango_smoothie,rmf,Mango Smoothie,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:marshmallow_sandwich,rmf,Marshmallow Sandwich,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:mct_sandwich,rmf,MCT Sandwich,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:meaty_pizza_slice,rmf,Meaty Pizza Slice,meat,20,18,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:melon_juice,rmf,Melon Juice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:melon_mash,rmf,Melon Mash,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:melon_smoothie,rmf,Melon Smoothie,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:milk_barrel,rmf,Barrel of Milk,soup,6,8,6,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:miso_soup,rmf,Bowl of Miso Soup,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:monster_mash,rmf,Monster Mash,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:oat_milk,rmf,Oat Milk Bucket,soup,6,8,6,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:oatmeal,rmf,Bowl of Oatmeal,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:oblivian_stew,rmf,Bowl of Oblivian Stew,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:omelette,rmf,Omelette,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:ominous_cookie,rmf,Ominous Cookie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:orange_juice,rmf,Orange Juice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:pale_apple,rmf,Pale Apple,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:pale_berries,rmf,Pale Berries,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:pasta,rmf,Pasta,grain,24,,6,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:pbj_sandwich,rmf,PB&J Sandwich,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:peach_juice,rmf,Peach Juice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:peach_mash,rmf,Peach Mash,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:peach_smoothie,rmf,Peach Smoothie,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:pie_crust,rmf,Pie Crust,grain,12,,2,,,,,,,,rmf_identity_risk_review,raw/unfinished grain product; toned down; RMF modded wrapper/datapack identity requires real client test
+rmf:pierogi,rmf,Pierogi,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:pineapple_juice,rmf,Pineapple Juice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:pizza_pouch,rmf,Pizza Pouch,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:popcorn_seeds,rmf,Popcorn Seeds,grain,4,,3,2,,neutral,bland,bland,curio,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:poutine,rmf,Bowl of Poutine,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:pretzel_chocolate,rmf,Chocolate-Covered Pretzel,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:pufferfish_tail,rmf,Raw Pufferfish Tail,seafood,,24,8,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:pumpkin_pie_slice,rmf,Slice of Pumpkin Pie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:pumpkin_slice,rmf,Sliced Pumpkin,fruit,,,,14,4,neutral,sweet,sweet,nourishing,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:pumpkin_soup,rmf,Bowl of Pumpkin Soup,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:rabbit_stew,rmf,Bowl of Hearty Stew,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:ramen,rmf,Bowl of Ramen,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:raspberry,rmf,Raspberry,fruit,,,,4,18,neutral,sweet,sweet,nourishing,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:raspberry_mash,rmf,Raspberry Mash,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:raspberry_smoothie,rmf,Raspberry Smoothie,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:raw_eggs,rmf,Bowl of Raw Eggs,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:raw_omelette,rmf,Bowl of Raw Omelette,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:rice,rmf,Rice Grain,grain,16,,,,,neutral,sweet;bland,bland,nourishing,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:rice_bowl,rmf,Bowl of Cooked Rice,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:rice_cake,rmf,Rice Cake,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:roasted_carrot,rmf,Roasted Carrot,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:rotten_tomato,rmf,Rotten Tomato,fruit,,,,8,2,,,,,,rmf_identity_risk_review,rotten/risky produce; nutrition toned down; RMF modded wrapper/datapack identity requires real client test
+rmf:salad,rmf,Bowl of Salad,fruit,,,2,24,8,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:scrambled_eggs,rmf,Bowl of Scrambled Eggs,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:shepard_pie,rmf,Slice of Shepard's Pie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:soft_boiled_egg,rmf,Soft Boiled Egg,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:soy_milk,rmf,Soy Milk Bucket,soup,6,8,6,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:spaghetti,rmf,Bowl of Spaghetti,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:spicy_mushroom_stew,rmf,Spicy Mushroom Stew,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:strawberry,rmf,Strawberry,fruit,,,,4,18,neutral,sweet,sweet,nourishing,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:strawberry_mash,rmf,Strawberry Mash,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:strawberry_smoothie,rmf,Strawberry Smoothie,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:stuffed_pumpkin,rmf,Stuffed Pumpkin,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:sushi,rmf,Sushi Roll,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:sweet_berry_jam,rmf,Bowl of Sweet Berry Jam,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:sweet_berry_mash,rmf,Sweet Berry Mash,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:sweet_berry_muffin,rmf,Sweet Berry Muffin,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:sweet_berry_pie,rmf,Sweet Berry Pie,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:taco,rmf,Taco,grain,20,,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:taiga_beans,rmf,Taiga Beans,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:tea,rmf,Bottle of Tea,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:toast,rmf,Toast,grain,24,,6,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:tomato,rmf,Tomato,fruit,,,,14,4,neutral,sweet;sour,sour;sweet,nourishing,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:tomato_sauce,rmf,Tomato Sauce,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test
+rmf:tomato_seeds,rmf,Tomato Seeds,grain,4,,3,2,,neutral,sweet;sour,sour;sweet,nourishing,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:tomato_soup,rmf,Bowl of Tomato Soup,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:unbaked_beans,rmf,Bowl of Unbaked Beans,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:unbaked_fruitcake,rmf,Unbaked Fruitcake,grain,24,,8,,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:uncooked_egg_roll,rmf,Uncooked Egg Roll,meat,20,18,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:uncooked_glow_berry_jam,rmf,Bowl of Uncooked Glow Berry Jam,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:uncooked_sweet_berry_jam,rmf,Bowl of Uncooked Sweet Berry Jam,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:unlimited_bacon,rmf,Unlimited Bacon,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:veg_burrito,rmf,Veggie Burrito,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:veg_corn_dog,rmf,Veggie Corn Dog,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:veg_kabob,rmf,Veggie Kabob,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:veg_pizza_slice,rmf,Veggie Pizza Slice,meat,20,18,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:veg_quesadilla,rmf,Veggie Quesadilla,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:veg_taco,rmf,Veggie Taco,meat,20,18,8,8,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:veggie_dog,rmf,Veggie Dog,meat,,30,12,,,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:vibrant_apple,rmf,Vibrant Apple,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:vinegar,rmf,Apple Cider Vinegar,fruit,,,,4,18,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:waffle_batter,rmf,Bowl of Waffle Batter,soup,6,,,10,12,,,,,,rmf_identity_risk_review,RMF modded wrapper/datapack identity requires real client test
+rmf:wild_carrot,rmf,Wild Carrot,special,8,,2,8,,,,,,,rmf_identity_risk_review,uncertain special food; needs review; RMF modded wrapper/datapack identity requires real client test

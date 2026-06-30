@@ -1,0 +1,626 @@
+{
+  "minecraft:dandelion": {
+    "vege": 5,
+    "fruit": 2
+  },
+  "minecraft:golden_dandelion": {
+    "vege": 8,
+    "fruit": 4,
+    "oil": 2
+  },
+  "minecraft:poppy": {
+    "vege": 14
+  },
+  "minecraft:blue_orchid": {
+    "vege": 5,
+    "fruit": 2
+  },
+  "minecraft:allium": {
+    "vege": 14
+  },
+  "minecraft:azure_bluet": {
+    "vege": 6
+  },
+  "minecraft:red_tulip": {
+    "vege": 7
+  },
+  "minecraft:orange_tulip": {
+    "vege": 7
+  },
+  "minecraft:pink_tulip": {
+    "vege": 7
+  },
+  "minecraft:white_tulip": {
+    "vege": 7
+  },
+  "minecraft:oxeye_daisy": {
+    "vege": 5,
+    "fruit": 2
+  },
+  "minecraft:cornflower": {
+    "vege": 7
+  },
+  "minecraft:lily_of_the_valley": {
+    "vege": 6
+  },
+  "minecraft:wither_rose": {
+    "vege": 6
+  },
+  "minecraft:torchflower": {
+    "vege": 10,
+    "oil": 4
+  },
+  "minecraft:closed_eyeblossom": {
+    "vege": 5,
+    "fruit": 1
+  },
+  "minecraft:open_eyeblossom": {
+    "vege": 4,
+    "fruit": 2
+  },
+  "minecraft:cactus_flower": {
+    "vege": 7,
+    "fruit": 7
+  },
+  "minecraft:wildflowers": {
+    "vege": 7
+  },
+  "minecraft:pink_petals": {
+    "vege": 4,
+    "fruit": 3
+  },
+  "minecraft:sunflower": {
+    "vege": 14,
+    "oil": 8
+  },
+  "minecraft:lilac": {
+    "vege": 6,
+    "fruit": 1
+  },
+  "minecraft:rose_bush": {
+    "vege": 14
+  },
+  "minecraft:peony": {
+    "vege": 11,
+    "fruit": 3
+  },
+  "minecraft:pitcher_plant": {
+    "vege": 17,
+    "fruit": 4
+  },
+  "minecraft:spore_blossom": {
+    "vege": 7
+  },
+  "minecraft:short_grass": {
+    "vege": 6
+  },
+  "minecraft:tall_grass": {
+    "vege": 6
+  },
+  "minecraft:fern": {
+    "vege": 14
+  },
+  "minecraft:large_fern": {
+    "vege": 14
+  },
+  "minecraft:seagrass": {
+    "vege": 7
+  },
+  "minecraft:lily_pad": {
+    "vege": 7
+  },
+  "minecraft:kelp": {
+    "vege": 7
+  },
+  "minecraft:sea_pickle": {
+    "vege": 4,
+    "fruit": 3
+  },
+  "minecraft:dried_kelp_block": {
+    "vege": 50,
+    "grain": 15
+  },
+  "minecraft:sugar_cane": {
+    "fruit": 11,
+    "grain": 4
+  },
+  "minecraft:cocoa_beans": {
+    "fruit": 4,
+    "oil": 3
+  },
+  "minecraft:bamboo": {
+    "vege": 7
+  },
+  "minecraft:sugar": {
+    "fruit": 5,
+    "grain": 2
+  },
+  "minecraft:powder_snow_bucket": {
+    "vege": 6
+  },
+  "minecraft:resin_clump": {
+    "oil": 7
+  },
+  "minecraft:resin_brick": {
+    "oil": 7
+  },
+  "minecraft:slime_ball": {
+    "oil": 7
+  },
+  "minecraft:honeycomb": {
+    "fruit": 16,
+    "oil": 6
+  },
+  "minecraft:honeycomb_block": {
+    "fruit": 29,
+    "oil": 14
+  },
+  "minecraft:honey_block": {
+    "fruit": 38,
+    "oil": 19
+  },
+  "minecraft:egg": {
+    "flesh": 11,
+    "oil": 4
+  },
+  "minecraft:blue_egg": {
+    "flesh": 11,
+    "oil": 4
+  },
+  "minecraft:brown_egg": {
+    "flesh": 11,
+    "oil": 4
+  },
+  "minecraft:pumpkin": {
+    "vege": 29,
+    "grain": 14
+  },
+  "minecraft:melon": {
+    "fruit": 46,
+    "vege": 11
+  },
+  "minecraft:wheat_seeds": {
+    "grain": 5,
+    "vege": 2
+  },
+  "minecraft:beetroot_seeds": {
+    "grain": 5,
+    "vege": 2
+  },
+  "minecraft:melon_seeds": {
+    "grain": 3,
+    "oil": 2,
+    "vege": 2
+  },
+  "minecraft:pumpkin_seeds": {
+    "grain": 2,
+    "oil": 3,
+    "vege": 2
+  },
+  "minecraft:torchflower_seeds": {
+    "grain": 5,
+    "vege": 2
+  },
+  "minecraft:pitcher_pod": {
+    "grain": 5,
+    "vege": 2
+  },
+  "minecraft:oak_leaves": {
+    "vege": 7
+  },
+  "minecraft:spruce_leaves": {
+    "vege": 7
+  },
+  "minecraft:birch_leaves": {
+    "vege": 7
+  },
+  "minecraft:jungle_leaves": {
+    "vege": 7
+  },
+  "minecraft:acacia_leaves": {
+    "vege": 7
+  },
+  "minecraft:dark_oak_leaves": {
+    "vege": 7
+  },
+  "minecraft:mangrove_leaves": {
+    "vege": 7
+  },
+  "minecraft:cherry_leaves": {
+    "vege": 14
+  },
+  "minecraft:pale_oak_leaves": {
+    "vege": 6
+  },
+  "minecraft:azalea_leaves": {
+    "vege": 6
+  },
+  "minecraft:flowering_azalea_leaves": {
+    "vege": 5,
+    "fruit": 1
+  },
+  "minecraft:oak_sapling": {
+    "vege": 7
+  },
+  "minecraft:birch_sapling": {
+    "vege": 7
+  },
+  "minecraft:spruce_sapling": {
+    "vege": 7
+  },
+  "minecraft:jungle_sapling": {
+    "vege": 7
+  },
+  "minecraft:acacia_sapling": {
+    "vege": 7
+  },
+  "minecraft:dark_oak_sapling": {
+    "vege": 7
+  },
+  "minecraft:pale_oak_sapling": {
+    "vege": 7
+  },
+  "minecraft:mangrove_propagule": {
+    "vege": 5,
+    "fruit": 2
+  },
+  "minecraft:cherry_sapling": {
+    "vege": 8,
+    "fruit": 6
+  },
+  "minecraft:azalea": {
+    "vege": 6
+  },
+  "minecraft:flowering_azalea": {
+    "vege": 5,
+    "fruit": 1
+  },
+  "minecraft:brown_mushroom": {
+    "flesh": 5,
+    "vege": 2
+  },
+  "minecraft:crimson_fungus": {
+    "flesh": 11,
+    "oil": 4
+  },
+  "minecraft:warped_fungus": {
+    "flesh": 11,
+    "oil": 4
+  },
+  "minecraft:nether_wart": {
+    "vege": 6,
+    "oil": 1
+  },
+  "minecraft:fermented_spider_eye": {
+    "grain": 5,
+    "oil": 2
+  },
+  "minecraft:magma_cream": {
+    "oil": 7
+  },
+  "minecraft:rabbit_foot": {
+    "flesh": 7
+  },
+  "minecraft:phantom_membrane": {
+    "flesh": 7
+  },
+  "minecraft:glistering_melon_slice": {
+    "fruit": 21,
+    "vege": 8
+  },
+  "minecraft:golden_carrot": {
+    "vege": 31,
+    "oil": 8,
+    "grain": 5
+  },
+  "herbcraft_cuisine:dandelion_salad": {
+    "vege": 48,
+    "fruit": 18
+  },
+  "herbcraft_cuisine:three_flower_platter": {
+    "vege": 60,
+    "fruit": 24
+  },
+  "herbcraft_cuisine:sea_medley": {
+    "vege": 60,
+    "fruit": 18
+  },
+  "herbcraft_cuisine:sapling_medley": {
+    "vege": 48,
+    "grain": 18
+  },
+  "herbcraft_cuisine:honeyed_petals": {
+    "fruit": 48,
+    "vege": 24,
+    "oil": 12
+  },
+  "herbcraft_cuisine:pine_needle_soup": {
+    "vege": 54,
+    "fruit": 18
+  },
+  "herbcraft_cuisine:pine_needle_broth": {
+    "vege": 60,
+    "fruit": 24
+  },
+  "herbcraft_cuisine:bitter_remedy": {
+    "vege": 48,
+    "fruit": 12
+  },
+  "herbcraft_cuisine:soul_cleansing_stew": {
+    "vege": 54,
+    "fruit": 30
+  },
+  "herbcraft_cuisine:snowcap_bowl": {
+    "vege": 30,
+    "fruit": 24
+  },
+  "herbcraft_cuisine:blue_ice_brew": {
+    "fruit": 30,
+    "vege": 18
+  },
+  "herbcraft_cuisine:analgesic_stew": {
+    "vege": 48,
+    "fruit": 18,
+    "oil": 12
+  },
+  "herbcraft_cuisine:stomach_waking_bowl": {
+    "vege": 42,
+    "fruit": 30
+  },
+  "herbcraft_cuisine:twin_fungus_hotpot": {
+    "flesh": 60,
+    "oil": 30,
+    "vege": 18
+  },
+  "herbcraft_cuisine:crimson_war_hotpot": {
+    "flesh": 72,
+    "oil": 24,
+    "vege": 12
+  },
+  "herbcraft_cuisine:fatigue_breaking_stew": {
+    "vege": 48,
+    "grain": 24,
+    "fruit": 12
+  },
+  "herbcraft_cuisine:peony_restoration_soup": {
+    "vege": 60,
+    "fruit": 24,
+    "oil": 18
+  },
+  "herbcraft_cuisine:resin_guard_stew": {
+    "oil": 36,
+    "vege": 36,
+    "grain": 18
+  },
+  "herbcraft_cuisine:lily_mobility_stew": {
+    "vege": 42,
+    "fruit": 30
+  },
+  "herbcraft_cuisine:pumpkin_porridge": {
+    "grain": 60,
+    "vege": 24,
+    "fruit": 12
+  },
+  "herbcraft_cuisine:honey_leaf_soup": {
+    "fruit": 42,
+    "oil": 24,
+    "vege": 24
+  },
+  "herbcraft_cuisine:cherry_nectar_porridge": {
+    "fruit": 48,
+    "grain": 30,
+    "vege": 18
+  },
+  "herbcraft_cuisine:omen_calming_porridge": {
+    "grain": 48,
+    "vege": 30,
+    "fruit": 12
+  },
+  "herbcraft_cuisine:honeycomb_soothing_stew": {
+    "fruit": 48,
+    "oil": 30,
+    "vege": 18
+  },
+  "herbcraft_cuisine:eye_opening_soup": {
+    "vege": 48,
+    "fruit": 24,
+    "flesh": 18
+  },
+  "herbcraft_cuisine:star_falling_soup": {
+    "vege": 36,
+    "oil": 24,
+    "flesh": 18
+  },
+  "herbcraft_cuisine:pale_night_soup": {
+    "vege": 42,
+    "fruit": 24
+  },
+  "herbcraft_cuisine:warped_swift_soup": {
+    "flesh": 36,
+    "fruit": 24,
+    "vege": 18
+  },
+  "herbcraft_cuisine:seafarer_stew": {
+    "vege": 60,
+    "fruit": 24
+  },
+  "herbcraft_cuisine:golden_dandelion_stew": {
+    "vege": 72,
+    "fruit": 48,
+    "oil": 18
+  },
+  "herbcraft_cuisine:hundred_flower_feast": {
+    "vege": 84,
+    "fruit": 72,
+    "oil": 36,
+    "grain": 30
+  },
+  "herbcraft_cuisine:deadly_hodgepodge": {
+    "vege": 12,
+    "fruit": 6
+  },
+  "herbcraft_cuisine:water_bowl": {
+    "fruit": 5
+  },
+  "herbcraft_cuisine:hodgepodge": {
+    "vege": 24,
+    "fruit": 18,
+    "grain": 12,
+    "oil": 12,
+    "flesh": 12
+  },
+  "minecraft:bread": {
+    "grain": 36
+  },
+  "minecraft:baked_potato": {
+    "grain": 28,
+    "vege": 8
+  },
+  "minecraft:cookie": {
+    "grain": 10,
+    "oil": 4
+  },
+  "minecraft:pumpkin_pie": {
+    "grain": 33,
+    "fruit": 16,
+    "oil": 8
+  },
+  "minecraft:cooked_beef": {
+    "flesh": 41,
+    "oil": 16
+  },
+  "minecraft:cooked_porkchop": {
+    "flesh": 37,
+    "oil": 21
+  },
+  "minecraft:cooked_chicken": {
+    "flesh": 35,
+    "oil": 8
+  },
+  "minecraft:cooked_mutton": {
+    "flesh": 30,
+    "oil": 13
+  },
+  "minecraft:cooked_rabbit": {
+    "flesh": 28,
+    "oil": 8
+  },
+  "minecraft:cooked_cod": {
+    "flesh": 27,
+    "oil": 9
+  },
+  "minecraft:cooked_salmon": {
+    "flesh": 30,
+    "oil": 13
+  },
+  "minecraft:beef": {
+    "flesh": 16,
+    "oil": 6
+  },
+  "minecraft:porkchop": {
+    "flesh": 14,
+    "oil": 7
+  },
+  "minecraft:chicken": {
+    "flesh": 11,
+    "oil": 3
+  },
+  "minecraft:mutton": {
+    "flesh": 10,
+    "oil": 5
+  },
+  "minecraft:rabbit": {
+    "flesh": 17,
+    "oil": 5
+  },
+  "minecraft:cod": {
+    "flesh": 11,
+    "oil": 3
+  },
+  "minecraft:salmon": {
+    "flesh": 10,
+    "oil": 5
+  },
+  "minecraft:tropical_fish": {
+    "flesh": 5,
+    "oil": 2
+  },
+  "minecraft:pufferfish": {
+    "flesh": 5,
+    "oil": 2
+  },
+  "minecraft:rotten_flesh": {
+    "flesh": 29
+  },
+  "minecraft:dried_kelp": {
+    "vege": 7
+  },
+  "minecraft:carrot": {
+    "vege": 17,
+    "fruit": 4
+  },
+  "minecraft:beetroot": {
+    "vege": 7
+  },
+  "minecraft:beetroot_soup": {
+    "vege": 32,
+    "grain": 11
+  },
+  "minecraft:mushroom_stew": {
+    "vege": 30,
+    "grain": 13
+  },
+  "minecraft:rabbit_stew": {
+    "flesh": 31,
+    "vege": 24,
+    "grain": 17
+  },
+  "minecraft:suspicious_stew": {
+    "vege": 29,
+    "grain": 14
+  },
+  "minecraft:potato": {
+    "grain": 5,
+    "vege": 2
+  },
+  "minecraft:poisonous_potato": {
+    "grain": 10,
+    "vege": 5
+  },
+  "minecraft:apple": {
+    "fruit": 23,
+    "vege": 5
+  },
+  "minecraft:golden_apple": {
+    "fruit": 22,
+    "vege": 7
+  },
+  "minecraft:enchanted_golden_apple": {
+    "fruit": 16,
+    "vege": 6,
+    "grain": 4,
+    "flesh": 4
+  },
+  "minecraft:sweet_berries": {
+    "fruit": 14
+  },
+  "minecraft:glow_berries": {
+    "fruit": 10,
+    "vege": 4
+  },
+  "minecraft:melon_slice": {
+    "fruit": 11,
+    "vege": 3
+  },
+  "minecraft:chorus_fruit": {
+    "fruit": 29
+  },
+  "minecraft:honey_bottle": {
+    "fruit": 30,
+    "grain": 13
+  },
+  "minecraft:milk_bucket": {
+    "flesh": 14,
+    "oil": 10
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 8
+  },
+  "gives": {
+    "id": "herbcraft:distilled_essence"
+  },
+  "max_uses": 2.0,
+  "reputation_discount": 0.05,
+  "xp": 10.0,
+  "given_item_modifiers": [
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "herbcraft_alchemy:distilled_essence": {
+          "source_essence": "dandelion",
+          "orientation": "sustained"
+        }
+      }
+    }
+  ]
+}

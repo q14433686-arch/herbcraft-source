@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "item": "minecraft:allium",
+  "temperature": "cool",
+  "flavors": ["bitter", "pungent"],
+  "taste_flavors": ["bitter", "astringent"],
+  "traits": ["floral", "sedating"]
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "entries": [
+    { "item": "minecraft:honey_bottle", "section": "soup" },
+    { "item": "minecraft:bread", "section": "grain" },
+    { "item": "minecraft:baked_potato", "section": "grain" }
+  ]
+}

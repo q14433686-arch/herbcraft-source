@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft:blank_adhesive",
+    "minecraft:amethyst_shard"
+  ],
+  "result": {
+    "id": "herbcraft:amethyst_adhesive",
+    "count": 1
+  }
+}

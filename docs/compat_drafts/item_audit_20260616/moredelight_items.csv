@@ -1,0 +1,39 @@
+item,name,source_key
+moredelight:bread_slice,Bread Slice,item.moredelight.bread_slice
+moredelight:carrot_soup,Carrot Soup,item.moredelight.carrot_soup
+moredelight:chicken_salad,Chicken Salad,item.moredelight.chicken_salad
+moredelight:chicken_sandwich_with_egg_and_tomato,Chicken Sandwich with Egg and Tomato,item.moredelight.chicken_sandwich_with_egg_and_tomato
+moredelight:chocolate_popsicle,Chocolate Popsicle,item.moredelight.chocolate_popsicle
+moredelight:cooked_rice_with_beef,Cooked Rice with Beef,item.moredelight.cooked_rice_with_beef
+moredelight:cooked_rice_with_chicken_cuts,Cooked Rice with Chicken Cuts,item.moredelight.cooked_rice_with_chicken_cuts
+moredelight:cooked_rice_with_porkchop,Cooked Rice with Porkchop,item.moredelight.cooked_rice_with_porkchop
+moredelight:creamy_pasta_with_chicken_cuts,Creamy Pasta with Chicken Cuts,item.moredelight.creamy_pasta_with_chicken_cuts
+moredelight:creamy_pasta_with_ham,Creamy Pasta with Ham,item.moredelight.creamy_pasta_with_ham
+moredelight:diced_potatoes,Diced Potatoes,item.moredelight.diced_potatoes
+moredelight:diced_potatoes_with_beef,Diced Potatoes with Beef,item.moredelight.diced_potatoes_with_beef
+moredelight:diced_potatoes_with_chicken_cuts,Diced Potatoes with Chicken Cuts,item.moredelight.diced_potatoes_with_chicken_cuts
+moredelight:diced_potatoes_with_egg_and_tomato,Diced Potatoes with Egg and Tomato,item.moredelight.diced_potatoes_with_egg_and_tomato
+moredelight:diced_potatoes_with_porkchop,Diced Potatoes with Porkchop,item.moredelight.diced_potatoes_with_porkchop
+moredelight:egg_with_bacon_sandwich,Egg with Bacon Sandwich,item.moredelight.egg_with_bacon_sandwich
+moredelight:hamburger_with_cheese,Hamburger with Cheese,item.moredelight.hamburger_with_cheese
+moredelight:hamburger_with_egg,Hamburger with Egg,item.moredelight.hamburger_with_egg
+moredelight:loaded_hamburger,Loaded Hamburger,item.moredelight.loaded_hamburger
+moredelight:mashed_potatoes,Mashed Potatoes,item.moredelight.mashed_potatoes
+moredelight:omelette,Omelet,item.moredelight.omelette
+moredelight:porkchop_sandwich,Porkchop Sandwich,item.moredelight.porkchop_sandwich
+moredelight:potato_salad,Potato Salad,item.moredelight.potato_salad
+moredelight:simple_hamburger,Simple Hamburger,item.moredelight.simple_hamburger
+moredelight:steak_sandwich,Steak Sandwich,item.moredelight.steak_sandwich
+moredelight:steak_with_egg_sandwich,Steak with Egg Sandwich,item.moredelight.steak_with_egg_sandwich
+moredelight:stone_knife,Stone Knife,item.moredelight.stone_knife
+moredelight:toast,Toast,item.moredelight.toast
+moredelight:toast_with_blueberries,Toast with Blueberries,item.moredelight.toast_with_blueberries
+moredelight:toast_with_cheese,Toast with Cheese,item.moredelight.toast_with_cheese
+moredelight:toast_with_chocolate,Toast with Chocolate,item.moredelight.toast_with_chocolate
+moredelight:toast_with_egg,Toast with Egg,item.moredelight.toast_with_egg
+moredelight:toast_with_glow_berries,Toast with Glow Berries,item.moredelight.toast_with_glow_berries
+moredelight:toast_with_honey,Toast with Honey,item.moredelight.toast_with_honey
+moredelight:toast_with_peanut_butter,Toast with Peanut Butter,item.moredelight.toast_with_peanut_butter
+moredelight:toast_with_sweet_berries,Toast with Sweet Berries,item.moredelight.toast_with_sweet_berries
+moredelight:tomato_sandwich,Tomato Sandwich,item.moredelight.tomato_sandwich
+moredelight:wooden_knife,Wooden Knife,item.moredelight.wooden_knife

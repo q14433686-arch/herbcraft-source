@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "ingredient": "herbcraft_cuisine:raw_deadly_hodgepodge",
+  "result": {
+    "id": "herbcraft_cuisine:deadly_hodgepodge"
+  },
+  "experience": 0.35,
+  "cookingtime": 200
+}

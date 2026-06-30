@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:cactus_flower",
+    "minecraft:cactus_flower",
+    "minecraft:cactus_flower",
+    "minecraft:cactus_flower",
+    "minecraft:cactus_flower",
+    "minecraft:cactus_flower",
+    "minecraft:cactus_flower",
+    "minecraft:cactus_flower",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_cactus_flower",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "herbcraft:fletcher/5/undead_lingering_emerald",
+    "herbcraft:fletcher/5/emerald_arrow_wither_arrow",
+    "herbcraft:fletcher/5/emerald_arrow_undead_arrow",
+    "herbcraft:fletcher/5/emerald_arrow_wither_venom_iii_arrow"
+  ]
+}

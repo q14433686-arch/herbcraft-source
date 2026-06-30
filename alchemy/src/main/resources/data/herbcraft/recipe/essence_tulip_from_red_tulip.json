@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:red_tulip",
+    "minecraft:red_tulip",
+    "minecraft:red_tulip",
+    "minecraft:red_tulip",
+    "minecraft:red_tulip",
+    "minecraft:red_tulip",
+    "minecraft:red_tulip",
+    "minecraft:red_tulip",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_tulip",
+    "count": 1
+  }
+}

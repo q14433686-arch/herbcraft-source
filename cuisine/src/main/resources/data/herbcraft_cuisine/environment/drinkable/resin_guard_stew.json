@@ -1,0 +1,8 @@
+{
+  "type": "herbcraft_cuisine:resin_guard_stew",
+  "amount": 1,
+  "saturation": 0.2,
+  "effect_potency": 45,
+  "effect_duration": 200,
+  "effect_chance": 0.2
+}

@@ -1,0 +1,741 @@
+{
+  "schema_version": 1,
+  "essences": [
+    {
+      "id": "dandelion",
+      "source_items": [
+        "minecraft:dandelion"
+      ],
+      "potion_name": "dandelion",
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "golden_dandelion",
+      "source_items": [
+        "minecraft:golden_dandelion"
+      ],
+      "potion_name": "golden_dandelion",
+      "effects": [
+        {
+          "effect": "minecraft:absorption",
+          "amplifier": 0,
+          "duration_seconds": 240,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 1,
+          "duration_seconds": 5,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "poppy",
+      "source_items": [
+        "minecraft:poppy"
+      ],
+      "potion_name": "poppy",
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "amplifier": 0,
+          "duration_seconds": 95,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:nausea",
+          "amplifier": 0,
+          "duration_seconds": 65,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:slowness",
+          "amplifier": 0,
+          "duration_seconds": 35,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "blue_orchid",
+      "source_items": [
+        "minecraft:blue_orchid"
+      ],
+      "potion_name": "blue_orchid",
+      "effects": [
+        {
+          "effect": "minecraft:saturation",
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 25,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "azure_bluet",
+      "source_items": [
+        "minecraft:azure_bluet"
+      ],
+      "potion_name": "azure_bluet",
+      "effects": [
+        {
+          "effect": "minecraft:blindness",
+          "amplifier": 0,
+          "duration_seconds": 25,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "tulip",
+      "source_items": [
+        "minecraft:red_tulip",
+        "minecraft:orange_tulip",
+        "minecraft:white_tulip",
+        "minecraft:pink_tulip"
+      ],
+      "potion_name": "tulip",
+      "effects": [
+        {
+          "effect": "minecraft:weakness",
+          "amplifier": 0,
+          "duration_seconds": 25,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "oxeye_daisy",
+      "source_items": [
+        "minecraft:oxeye_daisy"
+      ],
+      "potion_name": "oxeye_daisy",
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 20,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "cornflower",
+      "source_items": [
+        "minecraft:cornflower"
+      ],
+      "potion_name": "cornflower",
+      "effects": [
+        {
+          "effect": "minecraft:jump_boost",
+          "amplifier": 0,
+          "duration_seconds": 25,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "lily_of_the_valley",
+      "source_items": [
+        "minecraft:lily_of_the_valley"
+      ],
+      "potion_name": "lily_of_the_valley",
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 25,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:poison",
+          "amplifier": 1,
+          "duration_seconds": 80,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:weakness",
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "wither_rose",
+      "source_items": [
+        "minecraft:wither_rose"
+      ],
+      "potion_name": "wither_rose",
+      "effects": [
+        {
+          "effect": "minecraft:wither",
+          "amplifier": 1,
+          "duration_seconds": 65,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:hunger",
+          "amplifier": 1,
+          "duration_seconds": 120,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "torchflower",
+      "source_items": [
+        "minecraft:torchflower"
+      ],
+      "potion_name": "torchflower",
+      "effects": [
+        {
+          "effect": "minecraft:glowing",
+          "amplifier": 0,
+          "duration_seconds": 240,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:night_vision",
+          "amplifier": 0,
+          "duration_seconds": 95,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "closed_eyeblossom",
+      "source_items": [
+        "minecraft:closed_eyeblossom"
+      ],
+      "potion_name": "closed_eyeblossom",
+      "effects": [
+        {
+          "effect": "minecraft:darkness",
+          "amplifier": 0,
+          "duration_seconds": 80,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:nausea",
+          "amplifier": 0,
+          "duration_seconds": 25,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:resistance",
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "open_eyeblossom",
+      "source_items": [
+        "minecraft:open_eyeblossom"
+      ],
+      "potion_name": "open_eyeblossom",
+      "effects": [
+        {
+          "effect": "minecraft:glowing",
+          "amplifier": 0,
+          "duration_seconds": 160,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:wither",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "cactus_flower",
+      "source_items": [
+        "minecraft:cactus_flower"
+      ],
+      "potion_name": "cactus_flower",
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "pink_petals",
+      "source_items": [
+        "minecraft:pink_petals"
+      ],
+      "potion_name": "pink_petals",
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "sunflower",
+      "source_items": [
+        "minecraft:sunflower"
+      ],
+      "potion_name": "sunflower",
+      "effects": [
+        {
+          "effect": "minecraft:absorption",
+          "amplifier": 0,
+          "duration_seconds": 50,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "lilac",
+      "source_items": [
+        "minecraft:lilac"
+      ],
+      "potion_name": "lilac",
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 65,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "rose_bush",
+      "source_items": [
+        "minecraft:rose_bush"
+      ],
+      "potion_name": "rose_bush",
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "peony",
+      "source_items": [
+        "minecraft:peony"
+      ],
+      "potion_name": "peony",
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "amplifier": 0,
+          "duration_seconds": 35,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "pitcher_plant",
+      "source_items": [
+        "minecraft:pitcher_plant"
+      ],
+      "potion_name": "pitcher_plant",
+      "effects": [
+        {
+          "effect": "minecraft:hunger",
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "fern",
+      "source_items": [
+        "minecraft:fern",
+        "minecraft:large_fern"
+      ],
+      "potion_name": "fern",
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "spore_blossom",
+      "source_items": [
+        "minecraft:spore_blossom"
+      ],
+      "potion_name": "spore_blossom",
+      "effects": [
+        {
+          "effect": "minecraft:nausea",
+          "amplifier": 0,
+          "duration_seconds": 65,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:slow_falling",
+          "amplifier": 0,
+          "duration_seconds": 50,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "cocoa_beans",
+      "source_items": [
+        "minecraft:cocoa_beans"
+      ],
+      "potion_name": "cocoa_beans",
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:haste",
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "oak_leaves",
+      "source_items": [
+        "minecraft:oak_leaves"
+      ],
+      "potion_name": "oak_leaves",
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "spruce_leaves",
+      "source_items": [
+        "minecraft:spruce_leaves"
+      ],
+      "potion_name": "spruce_leaves",
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "birch_leaves",
+      "source_items": [
+        "minecraft:birch_leaves"
+      ],
+      "potion_name": "birch_leaves",
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 25,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "acacia_leaves",
+      "source_items": [
+        "minecraft:acacia_leaves"
+      ],
+      "potion_name": "acacia_leaves",
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "mangrove_leaves",
+      "source_items": [
+        "minecraft:mangrove_leaves"
+      ],
+      "potion_name": "mangrove_leaves",
+      "effects": [
+        {
+          "effect": "minecraft:water_breathing",
+          "amplifier": 0,
+          "duration_seconds": 25,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "cherry_leaves",
+      "source_items": [
+        "minecraft:cherry_leaves"
+      ],
+      "potion_name": "cherry_leaves",
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "pale_oak_leaves",
+      "source_items": [
+        "minecraft:pale_oak_leaves"
+      ],
+      "potion_name": "pale_oak_leaves",
+      "effects": [
+        {
+          "effect": "minecraft:darkness",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:night_vision",
+          "amplifier": 0,
+          "duration_seconds": 25,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "azalea_leaves",
+      "source_items": [
+        "minecraft:azalea_leaves"
+      ],
+      "potion_name": "azalea_leaves",
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "amplifier": 0,
+          "duration_seconds": 65,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:nausea",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "flowering_azalea_leaves",
+      "source_items": [
+        "minecraft:flowering_azalea_leaves"
+      ],
+      "potion_name": "flowering_azalea_leaves",
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "amplifier": 1,
+          "duration_seconds": 50,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:nausea",
+          "amplifier": 0,
+          "duration_seconds": 25,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "cherry_sapling",
+      "source_items": [
+        "minecraft:cherry_sapling"
+      ],
+      "potion_name": "cherry_sapling",
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "azalea",
+      "source_items": [
+        "minecraft:azalea"
+      ],
+      "potion_name": "azalea",
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "amplifier": 0,
+          "duration_seconds": 20,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "flowering_azalea",
+      "source_items": [
+        "minecraft:flowering_azalea"
+      ],
+      "potion_name": "flowering_azalea",
+      "effects": [
+        {
+          "effect": "minecraft:poison",
+          "amplifier": 0,
+          "duration_seconds": 40,
+          "positive": false
+        },
+        {
+          "effect": "minecraft:nausea",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "kelp",
+      "source_items": [
+        "minecraft:kelp"
+      ],
+      "potion_name": "kelp",
+      "effects": [
+        {
+          "effect": "minecraft:water_breathing",
+          "amplifier": 0,
+          "duration_seconds": 20,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "sea_pickle",
+      "source_items": [
+        "minecraft:sea_pickle"
+      ],
+      "potion_name": "sea_pickle",
+      "effects": [
+        {
+          "effect": "minecraft:glowing",
+          "amplifier": 0,
+          "duration_seconds": 240,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:water_breathing",
+          "amplifier": 0,
+          "duration_seconds": 30,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "crimson_fungus",
+      "source_items": [
+        "minecraft:crimson_fungus"
+      ],
+      "potion_name": "crimson_fungus",
+      "effects": [
+        {
+          "effect": "minecraft:strength",
+          "amplifier": 0,
+          "duration_seconds": 80,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:nausea",
+          "amplifier": 0,
+          "duration_seconds": 15,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "warped_fungus",
+      "source_items": [
+        "minecraft:warped_fungus"
+      ],
+      "potion_name": "warped_fungus",
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 80,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:fire_resistance",
+          "amplifier": 0,
+          "duration_seconds": 120,
+          "positive": true
+        },
+        {
+          "effect": "minecraft:nausea",
+          "amplifier": 0,
+          "duration_seconds": 20,
+          "positive": false
+        }
+      ]
+    },
+    {
+      "id": "brown_mushroom",
+      "source_items": [
+        "minecraft:brown_mushroom"
+      ],
+      "potion_name": "brown_mushroom",
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": true
+        }
+      ]
+    }
+  ]
+}

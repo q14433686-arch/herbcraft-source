@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft:first_bite",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft.bitter_medicine.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft.bitter_medicine.description"
+    },
+    "icon": {
+      "id": "minecraft:lily_of_the_valley"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

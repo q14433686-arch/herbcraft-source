@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:cornflower",
+    "minecraft:cornflower",
+    "minecraft:cornflower",
+    "minecraft:cornflower",
+    "minecraft:cornflower",
+    "minecraft:cornflower",
+    "minecraft:cornflower",
+    "minecraft:cornflower",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_cornflower",
+    "count": 1
+  }
+}

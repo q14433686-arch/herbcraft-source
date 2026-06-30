@@ -1,0 +1,18 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 8
+  },
+  "gives": {
+    "id": "minecraft:potion"
+  },
+  "max_uses": 16.0,
+  "reputation_discount": 0.05,
+  "xp": 10.0,
+  "given_item_modifiers": [
+    {
+      "function": "minecraft:set_potion",
+      "id": "herbcraft:poppy"
+    }
+  ]
+}

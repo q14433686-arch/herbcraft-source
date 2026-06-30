@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:lily_of_the_valley",
+    "minecraft:cornflower",
+    "minecraft:honeycomb"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_lily_mobility_stew",
+    "count": 1
+  }
+}

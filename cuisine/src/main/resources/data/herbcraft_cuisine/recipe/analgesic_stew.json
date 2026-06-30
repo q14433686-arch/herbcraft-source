@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:poppy",
+    "minecraft:oxeye_daisy",
+    "minecraft:peony"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:analgesic_stew",
+    "count": 1
+  }
+}

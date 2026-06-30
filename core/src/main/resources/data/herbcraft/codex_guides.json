@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "guide_recognizing",
+      "chapter": "herbal",
+      "section": "overview",
+      "title_key": "book.herbcraft.guide.recognizing.title",
+      "kind": "herbcraft:recognizing",
+      "always_visible": true
+    },
+    {
+      "id": "guide_knowledge_states",
+      "chapter": "herbal",
+      "section": "overview",
+      "title_key": "book.herbcraft.guide.knowledge_states.title",
+      "kind": "herbcraft:knowledge_states",
+      "always_visible": true
+    },
+    {
+      "id": "guide_flavors",
+      "chapter": "herbal",
+      "section": "overview",
+      "title_key": "book.herbcraft.guide.flavors.title",
+      "kind": "herbcraft:flavors",
+      "always_visible": true
+    },
+    {
+      "id": "guide_seven_emotions",
+      "chapter": "herbal",
+      "section": "overview",
+      "title_key": "book.herbcraft.guide.seven_emotions.title",
+      "kind": "herbcraft:seven_emotions",
+      "always_visible": true
+    },
+    {
+      "id": "guide_herb_stack",
+      "chapter": "herbal",
+      "section": "overview",
+      "title_key": "book.herbcraft.guide.herb_stack.title",
+      "kind": "herbcraft:herb_stack",
+      "always_visible": true
+    },
+    {
+      "id": "guide_ingredients",
+      "chapter": "herbal",
+      "section": "overview",
+      "title_key": "book.herbcraft.guide.ingredients.title",
+      "kind": "herbcraft:ingredients",
+      "always_visible": true
+    },
+    {
+      "id": "guide_errata",
+      "chapter": "herbal",
+      "section": "overview",
+      "title_key": "book.herbcraft.guide.errata.title",
+      "kind": "herbcraft:errata",
+      "always_visible": true
+    }
+  ]
+}

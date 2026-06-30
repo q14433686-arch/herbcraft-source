@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:sea_pickle",
+    "minecraft:sea_pickle",
+    "minecraft:sea_pickle",
+    "minecraft:sea_pickle",
+    "minecraft:sea_pickle",
+    "minecraft:sea_pickle",
+    "minecraft:sea_pickle",
+    "minecraft:sea_pickle",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_sea_pickle",
+    "count": 1
+  }
+}

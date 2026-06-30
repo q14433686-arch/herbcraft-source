@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "herbcraft_cuisine:twin_fungus_hotpot",
+    "count": 1
+  },
+  "gives": {
+    "id": "minecraft:emerald",
+    "count": 5
+  },
+  "max_uses": 8.0,
+  "reputation_discount": 0.05,
+  "xp": 20.0
+}

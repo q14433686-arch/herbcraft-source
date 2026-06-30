@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft:master_25_entries",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft.master_all_core.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft.master_all_core.description"
+    },
+    "icon": {
+      "id": "minecraft:enchanted_book"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

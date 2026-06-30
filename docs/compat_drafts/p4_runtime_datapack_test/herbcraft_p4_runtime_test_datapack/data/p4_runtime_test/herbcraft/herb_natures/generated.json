@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "item": "minecraft:honey_bottle",
+      "temperature": "warm",
+      "flavors": ["sweet", "bland"],
+      "taste_flavors": ["sweet"],
+      "traits": ["honeyed", "nourishing"]
+    },
+    {
+      "item": "minecraft:bread",
+      "temperature": "warm",
+      "flavors": ["sweet", "bland"],
+      "taste_flavors": ["sweet", "bland"],
+      "traits": ["nourishing", "earthy"]
+    },
+    {
+      "item": "minecraft:baked_potato",
+      "temperature": "neutral",
+      "flavors": ["sweet", "bland"],
+      "taste_flavors": ["sweet", "bland"],
+      "traits": ["nourishing", "earthy"]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "herbcraft_alchemy",
+	"version": "1.1.4",
+	"name": "Herbcraft: Alchemy | 百草可食：炼金分册",
+	"description": "Distill the essence. Brew the contract.",
+	"authors": [
+		"q14433686-arch"
+	],
+	"contributors": [
+		"Arena.ai Agent"
+	],
+	"license": "GPL-3.0",
+	"icon": "assets/herbcraft_alchemy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.herbcraft.alchemy.HerbcraftAlchemy"
+		],
+		"client": [
+			"com.herbcraft.alchemy.client.HerbcraftAlchemyClient"
+		],
+		"rei_client": [
+			"com.herbcraft.alchemy.compat.rei.CoatingReiPlugin"
+		],
+		"jei_mod_plugin": [
+			"com.herbcraft.alchemy.compat.jei.CoatingJeiPlugin"
+		],
+		"rei_common": [
+			"com.herbcraft.alchemy.compat.rei.CoatingReiCommonPlugin"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": ">=0.151.0+26.1.2",
+		"herbcraft": ">=1.1.4"
+	},
+	"mixins": [
+		"herbcraft_alchemy.mixins.json"
+	]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:wither_rose",
+    "minecraft:wither_rose",
+    "minecraft:wither_rose",
+    "minecraft:wither_rose",
+    "minecraft:wither_rose",
+    "minecraft:wither_rose",
+    "minecraft:wither_rose",
+    "minecraft:wither_rose",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_wither_rose",
+    "count": 1
+  }
+}

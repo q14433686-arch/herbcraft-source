@@ -1,0 +1,25 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 12
+  },
+  "gives": {
+    "id": "minecraft:iron_sword"
+  },
+  "max_uses": 4.0,
+  "reputation_discount": 0.05,
+  "xp": 20.0,
+  "given_item_modifiers": [
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "herbcraft:weapon_coating": {
+          "essence": "azalea_leaves",
+          "mode": "full",
+          "remaining_uses": 16,
+          "expires_at": -1
+        }
+      }
+    }
+  ]
+}

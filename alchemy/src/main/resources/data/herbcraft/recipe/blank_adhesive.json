@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:slime_ball",
+    "minecraft:honeycomb",
+    "minecraft:resin_clump",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:blank_adhesive",
+    "count": 1
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "guide_alchemy",
+      "chapter": "herbal",
+      "section": "overview",
+      "title_key": "book.herbcraft_alchemy.guide.alchemy.title",
+      "kind": "herbcraft_alchemy:alchemy",
+      "always_visible": true
+    },
+    {
+      "id": "guide_alchemy_overview",
+      "chapter": "alchemy",
+      "section": "overview",
+      "title_key": "book.herbcraft_alchemy.guide.overview.title",
+      "kind": "herbcraft_alchemy:overview",
+      "always_visible": true
+    },
+    {
+      "id": "guide_alchemy_essences",
+      "chapter": "alchemy",
+      "section": "overview",
+      "title_key": "book.herbcraft_alchemy.guide.essences.title",
+      "kind": "herbcraft_alchemy:essences",
+      "always_visible": true
+    },
+    {
+      "id": "guide_alchemy_potions",
+      "chapter": "alchemy",
+      "section": "overview",
+      "title_key": "book.herbcraft_alchemy.guide.potions.title",
+      "kind": "herbcraft_alchemy:potions",
+      "always_visible": true
+    },
+    {
+      "id": "guide_alchemy_clarified_murky",
+      "chapter": "alchemy",
+      "section": "overview",
+      "title_key": "book.herbcraft_alchemy.guide.clarified_murky.title",
+      "kind": "herbcraft_alchemy:clarified_murky",
+      "always_visible": true
+    },
+    {
+      "id": "guide_alchemy_quality_bonus",
+      "chapter": "alchemy",
+      "section": "overview",
+      "title_key": "book.herbcraft_alchemy.guide.quality_bonus.title",
+      "kind": "herbcraft_alchemy:quality_bonus",
+      "always_visible": true
+    },
+    {
+      "id": "guide_alchemy_coatings",
+      "chapter": "alchemy",
+      "section": "overview",
+      "title_key": "book.herbcraft_alchemy.guide.coatings.title",
+      "kind": "herbcraft_alchemy:coatings",
+      "always_visible": true
+    },
+    {
+      "id": "guide_alchemy_armor_support",
+      "chapter": "alchemy",
+      "section": "overview",
+      "title_key": "book.herbcraft_alchemy.guide.armor_support.title",
+      "kind": "herbcraft_alchemy:armor_support",
+      "always_visible": true
+    },
+    {
+      "id": "guide_alchemy_witch",
+      "chapter": "alchemy",
+      "section": "overview",
+      "title_key": "book.herbcraft_alchemy.guide.witch.title",
+      "kind": "herbcraft_alchemy:witch",
+      "always_visible": true
+    }
+  ]
+}

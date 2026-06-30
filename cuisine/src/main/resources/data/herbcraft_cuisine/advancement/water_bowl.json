@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft:root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft_cuisine.water_bowl.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft_cuisine.water_bowl.description"
+    },
+    "icon": {
+      "id": "herbcraft_cuisine:water_bowl"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

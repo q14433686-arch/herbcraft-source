@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:lilac",
+    "minecraft:lilac",
+    "minecraft:lilac",
+    "minecraft:lilac",
+    "minecraft:lilac",
+    "minecraft:lilac",
+    "minecraft:lilac",
+    "minecraft:lilac",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_lilac",
+    "count": 1
+  }
+}

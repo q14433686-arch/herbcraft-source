@@ -1,0 +1,18 @@
+{
+  "wants": {
+    "id": "minecraft:potion",
+    "count": 1,
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "herbcraft:azalea_leaves_murky"
+      }
+    }
+  },
+  "gives": {
+    "id": "minecraft:emerald",
+    "count": 10
+  },
+  "max_uses": 8.0,
+  "reputation_discount": 0.05,
+  "xp": 20.0
+}

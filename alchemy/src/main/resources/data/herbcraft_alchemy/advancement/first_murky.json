@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft_alchemy:first_potion",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft_alchemy.first_murky.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft_alchemy.first_murky.description"
+    },
+    "icon": {
+      "id": "minecraft:fermented_spider_eye"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

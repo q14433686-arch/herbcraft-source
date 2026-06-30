@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "herbcraft:cleric/2/essence_dandelion_emerald",
+    "herbcraft:cleric/2/essence_oxeye_daisy_emerald",
+    "herbcraft:cleric/2/emerald_dandelion_potion",
+    "herbcraft:cleric/2/emerald_cornflower_potion"
+  ]
+}

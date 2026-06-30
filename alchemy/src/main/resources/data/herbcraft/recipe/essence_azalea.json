@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:azalea",
+    "minecraft:azalea",
+    "minecraft:azalea",
+    "minecraft:azalea",
+    "minecraft:azalea",
+    "minecraft:azalea",
+    "minecraft:azalea",
+    "minecraft:azalea",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_azalea",
+    "count": 1
+  }
+}

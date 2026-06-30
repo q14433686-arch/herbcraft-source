@@ -1,0 +1,97 @@
+item,nutrition,saturation_modifier,food_roll_nutrition_amount,food_roll_nutrition_chance,food_roll_saturation_amount,food_roll_saturation_chance,medicinal,stack_group,positive_effects,negative_effects,has_saturation_effect,flags,counter,profile,nature_temperature,flavors,traits
+minecraft:dandelion,0,0.0,1,0.4,0.2,0.5,False,True,1,0,False,,,"{""fruit"": 2, ""vege"": 5}",neutral,"sweet,bitter","floral,nourishing,clearing"
+minecraft:golden_dandelion,2,1.2,,,,,True,False,2,0,False,,,"{""fruit"": 4, ""oil"": 2, ""vege"": 8}",warm,"sweet,bitter","floral,nourishing,clearing"
+minecraft:poppy,1,0.0,,,,,True,False,0,2,False,,poppy,"{""vege"": 14}",cool,astringent,"floral,sedating,addictive"
+minecraft:blue_orchid,0,0.0,1,0.35,0.3,0.55,False,True,1,0,False,,,"{""fruit"": 2, ""vege"": 5}",cool,bitter,"floral,clearing"
+minecraft:allium,1,0.0,,,0.2,0.5,False,True,1,0,False,,,"{""vege"": 14}",neutral,"sweet,pungent",floral
+minecraft:azure_bluet,0,0.0,,,,,True,False,1,1,False,,,"{""vege"": 6}",cool,"bitter,astringent","floral,clearing"
+minecraft:red_tulip,0,0.0,1,0.3,0.2,0.4,False,False,0,1,False,,,"{""vege"": 7}",neutral,astringent,floral
+minecraft:orange_tulip,0,0.0,1,0.3,0.2,0.4,False,False,0,1,False,,,"{""vege"": 7}",neutral,astringent,floral
+minecraft:pink_tulip,0,0.0,1,0.3,0.2,0.4,False,False,0,1,False,,,"{""vege"": 7}",neutral,astringent,floral
+minecraft:white_tulip,0,0.0,1,0.3,0.2,0.4,False,False,0,1,False,,,"{""vege"": 7}",neutral,astringent,floral
+minecraft:oxeye_daisy,0,0.0,1,0.4,0.2,0.5,False,True,1,0,False,,,"{""fruit"": 2, ""vege"": 5}",neutral,bitter,"floral,clearing"
+minecraft:cornflower,0,0.0,1,0.35,0.2,0.45,False,True,1,0,False,,,"{""vege"": 7}",neutral,bitter,"floral,clearing"
+minecraft:lily_of_the_valley,0,0.0,,,,,True,False,1,2,False,,,"{""vege"": 6}",cool,"bitter,astringent","floral,toxic,sedating"
+minecraft:wither_rose,0,0.0,,,,,True,False,0,2,False,clearPositiveEffects,,"{""vege"": 6}",hot,"bitter,astringent","floral,withered,toxic"
+minecraft:torchflower,2,0.3,,,,,False,True,2,0,False,,torchflower,"{""oil"": 4, ""vege"": 10}",hot,pungent,"floral,fiery,stirring"
+minecraft:closed_eyeblossom,0,0.0,,,,,True,False,1,2,False,,,"{""fruit"": 1, ""vege"": 5}",cool,astringent,"floral,lunar,sedating"
+minecraft:open_eyeblossom,0,0.0,,,,,True,False,1,1,False,,,"{""fruit"": 2, ""vege"": 4}",neutral,bland,floral
+minecraft:cactus_flower,1,0.0,1,0.4,0.2,0.5,False,True,1,0,False,,,"{""fruit"": 7, ""vege"": 7}",neutral,"astringent,sour",floral
+minecraft:wildflowers,0,0.0,1,0.1,0.2,0.35,False,True,3,0,False,,,"{""vege"": 7}",neutral,bland,floral
+minecraft:pink_petals,0,0.0,1,0.15,0.2,0.4,False,True,1,0,False,,,"{""fruit"": 3, ""vege"": 4}",neutral,sweet,floral
+minecraft:sunflower,2,0.2,,,0.2,0.45,False,True,1,0,False,,,"{""oil"": 8, ""vege"": 14}",warm,sweet,"floral,solar"
+minecraft:lilac,0,0.0,1,0.55,0.2,0.55,False,False,1,0,False,,,"{""fruit"": 1, ""vege"": 6}",neutral,pungent,curio
+minecraft:rose_bush,1,0.0,,,0.2,0.45,False,False,1,0,False,,,"{""vege"": 14}",neutral,astringent,floral
+minecraft:peony,1,0.0,,,0.2,0.5,False,False,1,0,False,,,"{""fruit"": 3, ""vege"": 11}",neutral,"sweet,astringent","floral,sedating"
+minecraft:pitcher_plant,3,0.5,,,,,False,False,0,1,False,,,"{""fruit"": 4, ""vege"": 17}",neutral,astringent,curio
+minecraft:short_grass,0,0.0,,,0.2,0.3,False,False,0,1,False,,,"{""vege"": 6}",neutral,"astringent,bland",leafy
+minecraft:tall_grass,0,0.0,,,0.2,0.3,False,False,0,1,False,,,"{""vege"": 6}",neutral,"astringent,bland",leafy
+minecraft:fern,0,0.0,1,0.15,0.3,0.45,False,False,1,1,False,,,"{""vege"": 14}",neutral,"astringent,bland",leafy
+minecraft:large_fern,0,0.0,1,0.15,0.3,0.45,False,False,1,1,False,,,"{""vege"": 14}",neutral,"astringent,bland",leafy
+minecraft:seagrass,0,0.0,1,0.1,0.2,0.4,False,False,0,1,False,,,"{""vege"": 7}",cold,"salty,bland,sour","leafy,aquatic"
+minecraft:lily_pad,0,0.0,1,0.1,0.3,0.4,False,True,1,0,False,,,"{""vege"": 7}",cool,"bitter,astringent","floral,toxic,earthy"
+minecraft:spore_blossom,0,0.0,1,0.35,,,True,False,1,1,False,,,"{""vege"": 7}",neutral,bland,"floral,sedating"
+minecraft:sugar_cane,1,1.0,,,,,False,False,1,0,False,,,"{""fruit"": 11, ""grain"": 4}",neutral,sweet,nourishing
+minecraft:cocoa_beans,1,0.2,,,,,False,False,2,0,False,,,"{""fruit"": 4, ""oil"": 3}",neutral,"astringent,sour","curio,stirring"
+minecraft:bamboo,0,0.0,1,0.1,0.2,0.4,False,False,0,1,False,,,"{""vege"": 7}",neutral,"astringent,bland","curio,earthy"
+minecraft:kelp,1,0.05,,,0.2,0.35,False,True,1,1,False,,,"{""vege"": 7}",cold,"salty,bland",aquatic
+minecraft:snowball,0,0.0,,,,,True,False,0,1,False,shortUseProjectile,,{},cold,bland,icy
+minecraft:ice,0,0.0,,,,,True,False,1,1,False,,,{},cold,bland,icy
+minecraft:packed_ice,0,0.0,,,,,True,False,1,1,False,,,{},cold,bland,icy
+minecraft:blue_ice,0,0.0,,,,,True,False,1,1,False,,,{},cold,bland,"icy,clearing"
+minecraft:powder_snow_bucket,0,0.0,,,,,True,False,0,1,False,"extinguish,bucketRemainder,drink",,"{""vege"": 6}",cold,bland,icy
+minecraft:resin_clump,0,0.0,,,0.2,0.4,False,False,0,1,False,,,"{""oil"": 7}",warm,"pungent,astringent",resinous
+minecraft:resin_brick,0,0.0,,,0.2,0.45,False,False,1,0,False,,,"{""oil"": 7}",warm,"pungent,astringent",resinous
+minecraft:nether_wart,1,0.1,,,,,False,False,0,1,False,,,"{""oil"": 1, ""vege"": 6}",neutral,"pungent,bitter","nether,earthy"
+minecraft:fermented_spider_eye,1,0.0,,,,,False,False,1,2,False,,,"{""grain"": 5, ""oil"": 2}",neutral,"bitter,sour",curio
+minecraft:blaze_powder,0,0.0,,,,,True,False,1,1,False,,,{},hot,pungent,"nether,fiery,stirring"
+minecraft:magma_cream,1,0.1,,,,,True,False,1,1,False,,,"{""oil"": 7}",hot,"pungent,astringent","nether,fiery,stirring"
+minecraft:ghast_tear,0,0.0,,,,,True,False,1,1,False,,,{},neutral,salty,curio
+minecraft:rabbit_foot,1,0.1,,,,,False,False,2,1,False,,,"{""flesh"": 7}",neutral,bland,curio
+minecraft:phantom_membrane,1,0.0,,,,,True,False,1,1,False,,,"{""flesh"": 7}",neutral,astringent,curio
+minecraft:glistering_melon_slice,4,9.6,,,,,True,False,2,0,False,,,"{""fruit"": 21, ""vege"": 8}",cold,"sweet,sour",icy
+minecraft:golden_carrot,6,14.4,,,,,False,False,1,0,False,,,"{""grain"": 5, ""oil"": 8, ""vege"": 31}",warm,sweet,"nourishing,solar"
+minecraft:sugar,1,0.05,,,,,False,False,1,0,False,,sugar,"{""fruit"": 5, ""grain"": 2}",neutral,sweet,"nourishing,stirring"
+minecraft:glowstone_dust,0,0.0,,,,,True,False,1,1,False,,,{},neutral,bland,curio
+minecraft:slime_ball,0,0.0,,,0.3,0.45,False,False,2,1,False,,slime,"{""oil"": 7}",neutral,"pungent,astringent",slimy
+minecraft:egg,2,0.2,,,,,False,False,1,1,False,shortUseProjectile,,"{""flesh"": 11, ""oil"": 4}",neutral,bland,curio
+minecraft:blue_egg,2,0.2,,,,,False,False,1,1,False,shortUseProjectile,,"{""flesh"": 11, ""oil"": 4}",cool,bitter,clearing
+minecraft:brown_egg,2,0.2,,,,,False,False,1,1,False,shortUseProjectile,,"{""flesh"": 11, ""oil"": 4}",neutral,bland,curio
+minecraft:honeycomb,2,0.2,,,,,False,False,1,1,False,,,"{""fruit"": 16, ""oil"": 6}",neutral,sweet,"nourishing,honeyed"
+minecraft:honeycomb_block,6,0.3,,,,,False,False,1,1,False,,,"{""fruit"": 29, ""oil"": 14}",neutral,sweet,"nourishing,honeyed"
+minecraft:honey_block,8,0.2,,,,,False,False,1,0,False,,sugar,"{""fruit"": 38, ""oil"": 19}",neutral,sweet,"nourishing,honeyed"
+minecraft:pumpkin,6,0.2,,,,,False,False,0,0,False,,,"{""grain"": 14, ""vege"": 29}",neutral,bland,curio
+minecraft:melon,8,0.2,,,,,False,False,0,0,False,,,"{""fruit"": 46, ""vege"": 11}",neutral,sweet,curio
+minecraft:wheat_seeds,0,0.0,1,0.6,2.0,0.3,False,False,0,0,False,,,"{""grain"": 5, ""vege"": 2}",neutral,bland,curio
+minecraft:beetroot_seeds,0,0.0,1,0.6,2.0,0.3,False,False,0,0,False,,,"{""grain"": 5, ""vege"": 2}",neutral,bland,curio
+minecraft:melon_seeds,0,0.0,1,0.65,3.0,0.5,False,False,0,0,False,,,"{""grain"": 3, ""oil"": 2, ""vege"": 2}",neutral,bland,curio
+minecraft:pumpkin_seeds,0,0.0,1,0.65,3.0,0.5,False,False,0,0,False,,,"{""grain"": 2, ""oil"": 3, ""vege"": 2}",neutral,bland,curio
+minecraft:torchflower_seeds,0,0.0,1,0.6,2.0,0.35,False,False,0,0,False,,,"{""grain"": 5, ""vege"": 2}",hot,bland,"floral,fiery,stirring"
+minecraft:pitcher_pod,1,1.0,,,,,False,False,0,0,False,,,"{""grain"": 5, ""vege"": 2}",neutral,bland,curio
+minecraft:oak_leaves,0,0.0,,,0.3,0.4,True,True,1,0,False,,,"{""vege"": 7}",neutral,"astringent,bland",leafy
+minecraft:spruce_leaves,0,0.0,,,0.3,0.45,True,True,1,0,False,,,"{""vege"": 7}",neutral,"astringent,bland",leafy
+minecraft:birch_leaves,0,0.0,,,0.3,0.45,True,True,1,0,False,,,"{""vege"": 7}",neutral,"astringent,bland",leafy
+minecraft:jungle_leaves,0,0.0,,,0.3,0.4,True,True,1,1,False,,,"{""vege"": 7}",neutral,"astringent,bland",leafy
+minecraft:acacia_leaves,0,0.0,,,0.3,0.4,True,True,1,0,False,,,"{""vege"": 7}",neutral,"astringent,bland",leafy
+minecraft:dark_oak_leaves,0,0.0,,,0.3,0.4,True,True,1,0,False,,,"{""vege"": 7}",neutral,"astringent,bland",leafy
+minecraft:mangrove_leaves,0,0.0,,,0.3,0.45,True,True,1,0,False,,,"{""vege"": 7}",neutral,"astringent,bland",leafy
+minecraft:cherry_leaves,0,0.0,1,0.1,0.4,0.55,True,True,2,0,False,,,"{""vege"": 14}",neutral,"astringent,bland",leafy
+minecraft:pale_oak_leaves,0,0.0,,,,,True,True,1,1,False,,,"{""vege"": 6}",cool,"astringent,bland","leafy,withered,lunar"
+minecraft:azalea_leaves,0,0.0,,,,,True,False,0,2,False,,,"{""vege"": 6}",cold,"bitter,astringent","leafy,toxic"
+minecraft:flowering_azalea_leaves,0,0.0,,,,,True,False,0,2,False,,,"{""fruit"": 1, ""vege"": 5}",cold,"bitter,astringent","floral,leafy,toxic"
+minecraft:oak_sapling,0,0.0,1,0.25,0.2,0.35,False,False,0,0,False,,,"{""vege"": 7}",neutral,"astringent,bland",leafy
+minecraft:birch_sapling,0,0.0,1,0.25,0.2,0.35,False,False,0,0,False,,,"{""vege"": 7}",neutral,"astringent,bland",leafy
+minecraft:spruce_sapling,0,0.0,1,0.25,0.2,0.35,False,False,0,0,False,,,"{""vege"": 7}",neutral,"astringent,bland",leafy
+minecraft:jungle_sapling,0,0.0,1,0.25,0.2,0.35,False,False,0,0,False,,,"{""vege"": 7}",neutral,"astringent,bland",leafy
+minecraft:acacia_sapling,0,0.0,1,0.25,0.2,0.35,False,False,0,0,False,,,"{""vege"": 7}",neutral,"astringent,bland",leafy
+minecraft:dark_oak_sapling,0,0.0,1,0.25,0.2,0.35,False,False,0,0,False,,,"{""vege"": 7}",neutral,"astringent,bland",leafy
+minecraft:pale_oak_sapling,0,0.0,1,0.15,0.2,0.3,False,False,0,0,False,,,"{""vege"": 7}",cool,"astringent,bland","leafy,withered,lunar"
+minecraft:mangrove_propagule,1,0.0,,,0.2,0.35,False,False,0,0,False,,,"{""fruit"": 2, ""vege"": 5}",neutral,bland,"curio,earthy"
+minecraft:cherry_sapling,0,0.0,1,0.35,0.3,0.5,False,True,1,0,False,,,"{""fruit"": 6, ""vege"": 8}",neutral,"astringent,bland",leafy
+minecraft:azalea,0,0.0,,,,,False,False,0,1,False,,,"{""vege"": 6}",neutral,"bitter,astringent",toxic
+minecraft:flowering_azalea,0,0.0,,,,,False,False,0,2,False,,,"{""fruit"": 1, ""vege"": 5}",neutral,"bitter,astringent","floral,toxic"
+minecraft:dried_kelp_block,9,0.3,,,,,False,False,1,1,True,,,"{""grain"": 15, ""vege"": 50}",cold,"salty,bland",aquatic
+minecraft:sea_pickle,0,0.0,1,0.3,0.2,0.4,True,True,2,1,False,,,"{""fruit"": 3, ""vege"": 4}",cold,"salty,bland,sour",aquatic
+minecraft:brown_mushroom,1,0.2,,,,,False,True,2,0,False,,,"{""flesh"": 5, ""vege"": 2}",neutral,pungent,"fungal,earthy"
+minecraft:crimson_fungus,2,0.4,,,,,True,False,1,1,False,,,"{""flesh"": 11, ""oil"": 4}",hot,pungent,"nether,fiery,fungal,stirring"
+minecraft:warped_fungus,2,0.4,,,,,True,False,2,1,False,,,"{""flesh"": 11, ""oil"": 4}",warm,pungent,"nether,fungal,lunar"

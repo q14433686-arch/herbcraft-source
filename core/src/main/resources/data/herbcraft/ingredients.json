@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "note": "Defines which vanilla/non-herb foods appear in the 食材录 knowledge chapter. Items must already have a nutrition profile in nutrition_profiles.json. Section assignment determines Codex grouping.",
+  "sections": [
+    "meat",
+    "seafood",
+    "grain",
+    "fruit",
+    "soup",
+    "special"
+  ],
+  "entries": [
+    { "item": "minecraft:cooked_beef", "section": "meat" },
+    { "item": "minecraft:beef", "section": "meat" },
+    { "item": "minecraft:cooked_porkchop", "section": "meat" },
+    { "item": "minecraft:porkchop", "section": "meat" },
+    { "item": "minecraft:cooked_chicken", "section": "meat" },
+    { "item": "minecraft:chicken", "section": "meat" },
+    { "item": "minecraft:cooked_mutton", "section": "meat" },
+    { "item": "minecraft:mutton", "section": "meat" },
+    { "item": "minecraft:cooked_rabbit", "section": "meat" },
+    { "item": "minecraft:rabbit", "section": "meat" },
+    { "item": "minecraft:rotten_flesh", "section": "meat" },
+
+    { "item": "minecraft:cooked_cod", "section": "seafood" },
+    { "item": "minecraft:cod", "section": "seafood" },
+    { "item": "minecraft:cooked_salmon", "section": "seafood" },
+    { "item": "minecraft:salmon", "section": "seafood" },
+    { "item": "minecraft:tropical_fish", "section": "seafood" },
+    { "item": "minecraft:pufferfish", "section": "seafood" },
+
+    { "item": "minecraft:bread", "section": "grain" },
+    { "item": "minecraft:cookie", "section": "grain" },
+    { "item": "minecraft:baked_potato", "section": "grain" },
+    { "item": "minecraft:potato", "section": "grain" },
+    { "item": "minecraft:pumpkin_pie", "section": "grain" },
+
+    { "item": "minecraft:apple", "section": "fruit" },
+    { "item": "minecraft:sweet_berries", "section": "fruit" },
+    { "item": "minecraft:glow_berries", "section": "fruit" },
+    { "item": "minecraft:melon_slice", "section": "fruit" },
+    { "item": "minecraft:chorus_fruit", "section": "fruit" },
+    { "item": "minecraft:carrot", "section": "fruit" },
+    { "item": "minecraft:beetroot", "section": "fruit" },
+    { "item": "minecraft:dried_kelp", "section": "fruit" },
+
+    { "item": "minecraft:mushroom_stew", "section": "soup" },
+    { "item": "minecraft:beetroot_soup", "section": "soup" },
+    { "item": "minecraft:rabbit_stew", "section": "soup" },
+    { "item": "minecraft:suspicious_stew", "section": "soup" },
+
+    { "item": "minecraft:golden_apple", "section": "special" },
+    { "item": "minecraft:enchanted_golden_apple", "section": "special" },
+    { "item": "minecraft:honey_bottle", "section": "special" },
+    { "item": "minecraft:milk_bucket", "section": "special" },
+    { "item": "minecraft:poisonous_potato", "section": "special" }
+  ]
+}

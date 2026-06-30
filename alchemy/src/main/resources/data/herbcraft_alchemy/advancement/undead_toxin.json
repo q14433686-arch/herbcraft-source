@@ -1,0 +1,27 @@
+{
+  "parent": "herbcraft_alchemy:first_murky",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.herbcraft_alchemy.undead_toxin.title"
+    },
+    "description": {
+      "translate": "advancements.herbcraft_alchemy.undead_toxin.description"
+    },
+    "icon": {
+      "id": "minecraft:wither_rose"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

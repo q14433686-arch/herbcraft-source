@@ -1,0 +1,25 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 48
+  },
+  "gives": {
+    "id": "minecraft:diamond_axe"
+  },
+  "max_uses": 2.0,
+  "reputation_discount": 0.05,
+  "xp": 30.0,
+  "given_item_modifiers": [
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "herbcraft:weapon_coating": {
+          "essence": "wither_rose",
+          "mode": "full",
+          "remaining_uses": 12,
+          "expires_at": -1
+        }
+      }
+    }
+  ]
+}

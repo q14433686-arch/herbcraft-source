@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": "herbcraft_cuisine:raw_resin_guard_stew",
+  "result": {
+    "id": "herbcraft_cuisine:resin_guard_stew"
+  }
+}

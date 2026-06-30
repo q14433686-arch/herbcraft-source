@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "example_compat:sweet_overuse",
+  "items": ["minecraft:honey_bottle"],
+  "window_ticks": 1200,
+  "threshold_effects": [
+    { "min_count": 3, "chance": 0.35, "effect": "minecraft:nausea", "duration_ticks": 120, "amplifier": 0 }
+  ]
+}

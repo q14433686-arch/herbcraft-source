@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": "herbcraft_cuisine:raw_lily_mobility_stew",
+  "result": {
+    "id": "herbcraft_cuisine:lily_mobility_stew"
+  }
+}

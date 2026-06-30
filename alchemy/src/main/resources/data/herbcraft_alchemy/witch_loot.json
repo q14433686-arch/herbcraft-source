@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "page": {
+    "chance": 0.15,
+    "chapter": "alchemy",
+    "entry": "",
+    "page_kind": "trade"
+  },
+  "essence_pool": {
+    "chance": 0.10,
+    "items": [
+      "herbcraft:essence_poppy",
+      "herbcraft:essence_azure_bluet",
+      "herbcraft:essence_tulip",
+      "herbcraft:essence_azalea",
+      "herbcraft:essence_pitcher_plant"
+    ]
+  },
+  "potion_pool": {
+    "chance": 0.03,
+    "item": "minecraft:potion",
+    "potions": [
+      "herbcraft:witch_tulip_murky"
+    ]
+  }
+}

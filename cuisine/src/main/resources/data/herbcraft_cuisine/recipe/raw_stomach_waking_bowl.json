@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "herbcraft_cuisine:water_bowl",
+    "minecraft:ice",
+    "minecraft:oxeye_daisy",
+    "minecraft:melon_slice"
+  ],
+  "result": {
+    "id": "herbcraft_cuisine:raw_stomach_waking_bowl",
+    "count": 1
+  }
+}

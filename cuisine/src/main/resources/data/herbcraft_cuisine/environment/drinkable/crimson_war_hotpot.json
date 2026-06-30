@@ -1,0 +1,8 @@
+{
+  "type": "herbcraft_cuisine:crimson_war_hotpot",
+  "amount": 0,
+  "saturation": 0.0,
+  "effect_potency": 45,
+  "effect_duration": 300,
+  "effect_chance": 0.5
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:closed_eyeblossom",
+    "minecraft:closed_eyeblossom",
+    "minecraft:closed_eyeblossom",
+    "minecraft:closed_eyeblossom",
+    "minecraft:closed_eyeblossom",
+    "minecraft:closed_eyeblossom",
+    "minecraft:closed_eyeblossom",
+    "minecraft:closed_eyeblossom",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_closed_eyeblossom",
+    "count": 1
+  }
+}

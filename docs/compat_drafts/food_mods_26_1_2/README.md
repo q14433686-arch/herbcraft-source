@@ -1,0 +1,434 @@
+# 26.1.2 Food-Mod Item ID Audit Draft
+
+Status: draft compatibility workspace; values require author review and real-client testing.
+
+## Current review state
+
+- Round 1 item-ID audit is recorded in `item_ids_audit.csv`.
+- Round 2 cleaned the first food table into `compat_review_round2.csv` and removed obvious false positives in `round2_removed_false_positives.csv`.
+- Round 3 revised optional herb nature / rumor fields into `compat_review_round3.csv` and documented the decisions in `ROUND3_NATURE_RUMOR_NOTES.md`.
+- Round 4 regenerated `generated_pack/` from `compat_review_round3.csv`, validated its JSON/item-set shape, and added the Chinese review table `ROUND4_CHINESE_NATURE_TABLE.md`.
+- Round 5 client testing passed for Farmer's Delight Refabricated + More Delight and rejected RMF due datapack-driven item identity / vanilla-item collision risk.
+- Round 5 regenerated `generated_pack/` from `compat_review_round5_farmer_moredelight.csv` and added `ROUND5_FINAL_CHINESE_NATURE_TABLE.md`. After the `1.1.3` Core integration, this generated datapack is reference/example material only; the published route is built-in Core compatibility.
+- The checked-in `generated_pack/` directory is now the Farmer's Delight + More Delight release-candidate draft; RMF is intentionally absent.
+- Post-Round-5 integration: the same Farmer+More data is now bundled into Herbcraft Core under `data/farmers_moredelight_herbcraft/herbcraft/`, and a generic food-nature pharmacology bridge lets explicit nature+nutrition foods participate in nature pharmacology without overriding target mod food components.
+
+## Counts
+
+- Round 1 audit: farmersdelight 191 item-like IDs found, moredelight 38, rmf 545.
+- Round 2/3 kept draft entries: 317 total before RMF removal.
+- Round 5 final Farmer's Delight + More Delight draft after non-edible seed/raw-rice removal: 108 entries total, 108 nutrition profiles, 108 ingredient entries, 5 herb nature entries, 0 knowledge rumors.
+- RMF final count: 0 entries; removed by client-test decision.
+
+## Important caveats
+
+- The long per-mod item lists below are the historical item audit, not the final inclusion list. Final included rows are in `compat_review_round5_farmer_moredelight.csv`; Farmer's Delight raw `rice`, `cabbage_seeds`, and `tomato_seeds` were removed because they are not edible in the target mod.
+- Farmer's Delight and More Delight are normal Fabric mods with identifiable item IDs.
+- Reg's More Foods also has a datapack/resource-pack distribution and a modded wrapper. Its author notes that datapack items can share underlying namespaced IDs in some contexts; the generated `rmf:*` list comes from the modded wrapper assets and must be client-tested before publishing compatibility.
+- Nutrition and nature values below are draft values only; do not publish before Round 5 client testing.
+
+## farmersdelight
+
+- `farmersdelight:apple_cider` — Apple Cider
+- `farmersdelight:apple_pie` — 
+- `farmersdelight:apple_pie_slice` — Slice of Apple Pie
+- `farmersdelight:bacon` — Raw Bacon
+- `farmersdelight:bacon_and_eggs` — Bacon and Eggs
+- `farmersdelight:bacon_sandwich` — Bacon Sandwich
+- `farmersdelight:baked_cod_stew` — Baked Cod Stew
+- `farmersdelight:barbecue_stick` — Barbecue on a Stick
+- `farmersdelight:beef_patty` — Beef Patty
+- `farmersdelight:beef_stew` — Beef Stew
+- `farmersdelight:bone_broth` — Bone Broth
+- `farmersdelight:cabbage` — Cabbage
+- `farmersdelight:cabbage_leaf` — Cabbage Leaf
+- `farmersdelight:cabbage_rolls` — Cabbage Rolls
+- `farmersdelight:cabbage_seeds` — Cabbage Seeds
+- `farmersdelight:cake_slice` — Slice of Cake
+- `farmersdelight:chicken_cuts` — Raw Chicken Cuts
+- `farmersdelight:chicken_sandwich` — Chicken Sandwich
+- `farmersdelight:chicken_soup` — Chicken Soup
+- `farmersdelight:chocolate_pie` — 
+- `farmersdelight:chocolate_pie_slice` — Slice of Chocolate Pie
+- `farmersdelight:cod_roll` — Cod Roll
+- `farmersdelight:cod_slice` — Raw Cod Slice
+- `farmersdelight:cooked_bacon` — Cooked Bacon
+- `farmersdelight:cooked_chicken_cuts` — Cooked Chicken Cuts
+- `farmersdelight:cooked_cod_slice` — Cooked Cod Slice
+- `farmersdelight:cooked_mutton_chops` — Cooked Mutton Chops
+- `farmersdelight:cooked_rice` — Cooked Rice
+- `farmersdelight:cooked_salmon_slice` — Cooked Salmon Slice
+- `farmersdelight:debug_pumpkin_pie` — 
+- `farmersdelight:dog_food` — Dog Food
+- `farmersdelight:dumplings` — Dumplings
+- `farmersdelight:egg_sandwich` — Egg Sandwich
+- `farmersdelight:fish_stew` — Fish Stew
+- `farmersdelight:fried_egg` — Fried Egg
+- `farmersdelight:fried_rice` — Fried Rice
+- `farmersdelight:fruit_salad` — Fruit Salad
+- `farmersdelight:gleaming_salad` — Bowl of Gleaming Salad
+- `farmersdelight:gleaming_salad_block` — 
+- `farmersdelight:glow_berry_custard` — Glow Berry Custard
+- `farmersdelight:grilled_salmon` — Grilled Salmon
+- `farmersdelight:ham` — Ham
+- `farmersdelight:hamburger` — Hamburger
+- `farmersdelight:honey_cookie` — Honey Cookie
+- `farmersdelight:honey_glazed_ham` — Plate of Honey Glazed Ham
+- `farmersdelight:honey_glazed_ham_block` — 
+- `farmersdelight:hot_cocoa` — Hot Cocoa
+- `farmersdelight:kelp_roll` — Kelp Roll
+- `farmersdelight:kelp_roll_slice` — Kelp Roll Slice
+- `farmersdelight:melon_juice` — Melon Juice
+- `farmersdelight:melon_popsicle` — Melon Popsicle
+- `farmersdelight:milk_bottle` — Milk Bottle
+- `farmersdelight:minced_beef` — Minced Beef
+- `farmersdelight:mixed_salad` — Mixed Salad
+- `farmersdelight:mushroom_rice` — Mushroom Rice
+- `farmersdelight:mutton_chops` — Raw Mutton Chops
+- `farmersdelight:mutton_wrap` — Mutton Wrap
+- `farmersdelight:noodle_soup` — Noodle Soup
+- `farmersdelight:onion` — Onion
+- `farmersdelight:onion_soup` — Onion Soup
+- `farmersdelight:pasta_with_meatballs` — Pasta with Meatballs
+- `farmersdelight:pasta_with_mutton_chop` — Pasta with Mutton Chop
+- `farmersdelight:pie_crust` — Pie Crust
+- `farmersdelight:pumpkin_pie_slice` — Slice of Pumpkin Pie
+- `farmersdelight:pumpkin_slice` — Pumpkin Slice
+- `farmersdelight:pumpkin_soup` — Pumpkin Soup
+- `farmersdelight:ratatouille` — Ratatouille
+- `farmersdelight:raw_pasta` — Raw Pasta
+- `farmersdelight:rice` — Rice
+- `farmersdelight:rice_bag` — 
+- `farmersdelight:rice_roll_medley_block` — 
+- `farmersdelight:roast_chicken` — Plate of Roast Chicken
+- `farmersdelight:roast_chicken_block` — 
+- `farmersdelight:roasted_mutton_chops` — Roasted Mutton Chops
+- `farmersdelight:rotten_tomato` — Rotten Tomato
+- `farmersdelight:salmon_roll` — Salmon Roll
+- `farmersdelight:salmon_slice` — Raw Salmon Slice
+- `farmersdelight:shepherds_pie` — Plate of Shepherd's Pie
+- `farmersdelight:shepherds_pie_block` — 
+- `farmersdelight:smoked_ham` — Smoked Ham
+- `farmersdelight:squid_ink_pasta` — Squid Ink Pasta
+- `farmersdelight:steak_and_potatoes` — Steak and Potatoes
+- `farmersdelight:stuffed_potato` — Stuffed Potato
+- `farmersdelight:stuffed_pumpkin` — Bowl of Stuffed Pumpkin
+- `farmersdelight:stuffed_pumpkin_block` — 
+- `farmersdelight:sweet_berry_cheesecake` — 
+- `farmersdelight:sweet_berry_cheesecake_slice` — Slice of Sweet Berry Cheesecake
+- `farmersdelight:sweet_berry_cookie` — Sweet Berry Cookie
+- `farmersdelight:tomato` — Tomato
+- `farmersdelight:tomato_sauce` — Tomato Sauce
+- `farmersdelight:tomato_seeds` — Tomato Seeds
+- `farmersdelight:vegetable_noodles` — Vegetable Noodles
+- `farmersdelight:vegetable_soup` — Vegetable Soup
+- `farmersdelight:wheat_dough` — Wheat Dough
+- `farmersdelight:wild_cabbages` — 
+- `farmersdelight:wild_carrots` — 
+- `farmersdelight:wild_onions` — 
+- `farmersdelight:wild_rice` — 
+- `farmersdelight:wild_tomatoes` — 
+
+## moredelight
+
+- `moredelight:bread_slice` — Bread Slice
+- `moredelight:carrot_soup` — Carrot Soup
+- `moredelight:chicken_salad` — Chicken Salad
+- `moredelight:chicken_sandwich_with_egg_and_tomato` — Chicken Sandwich with Egg and Tomato
+- `moredelight:chocolate_popsicle` — Chocolate Popsicle
+- `moredelight:cooked_rice_with_beef` — Cooked Rice with Beef
+- `moredelight:cooked_rice_with_chicken_cuts` — Cooked Rice with Chicken Cuts
+- `moredelight:cooked_rice_with_porkchop` — Cooked Rice with Porkchop
+- `moredelight:creamy_pasta_with_chicken_cuts` — Creamy Pasta with Chicken Cuts
+- `moredelight:creamy_pasta_with_ham` — Creamy Pasta with Ham
+- `moredelight:egg_with_bacon_sandwich` — Egg with Bacon Sandwich
+- `moredelight:hamburger_with_cheese` — Hamburger with Cheese
+- `moredelight:hamburger_with_egg` — Hamburger with Egg
+- `moredelight:loaded_hamburger` — Loaded Hamburger
+- `moredelight:omelette` — Omelet
+- `moredelight:porkchop_sandwich` — Porkchop Sandwich
+- `moredelight:simple_hamburger` — Simple Hamburger
+- `moredelight:steak_sandwich` — Steak Sandwich
+- `moredelight:steak_with_egg_sandwich` — Steak with Egg Sandwich
+- `moredelight:toast` — Toast
+- `moredelight:toast_with_blueberries` — Toast with Blueberries
+- `moredelight:toast_with_cheese` — Toast with Cheese
+- `moredelight:toast_with_chocolate` — Toast with Chocolate
+- `moredelight:toast_with_egg` — Toast with Egg
+- `moredelight:toast_with_glow_berries` — Toast with Glow Berries
+- `moredelight:toast_with_honey` — Toast with Honey
+- `moredelight:toast_with_peanut_butter` — Toast with Peanut Butter
+- `moredelight:toast_with_sweet_berries` — Toast with Sweet Berries
+- `moredelight:tomato_sandwich` — Tomato Sandwich
+
+## rmf
+
+- `rmf:apple_juice` — Apple Juice
+- `rmf:apple_mash` — Apple Mash
+- `rmf:apple_pie` — Apple Pie
+- `rmf:apple_pie_slice` — Apple Pie Slice
+- `rmf:bacon` — Raw Bacon
+- `rmf:baked_beans` — Bowl of Baked Beans
+- `rmf:banana` — Banana
+- `rmf:banana_bread` — Banana Bread
+- `rmf:banana_dough` — Banana Dough
+- `rmf:banana_juice` — Banana Juice
+- `rmf:banana_mash` — Banana Mash
+- `rmf:banana_smoothie` — Banana Smoothie
+- `rmf:beef_burger` — Beef Burger
+- `rmf:berry_bowl` — Berry Medley
+- `rmf:berry_cookie` — Berry Cookie
+- `rmf:biomash` — Biomash
+- `rmf:blackberry` — Blackberry
+- `rmf:blackberry_mash` — Blackberry Mash
+- `rmf:blackberry_smoothie` — Blackberry Smoothie
+- `rmf:blazing_stew` — Blazing Stew
+- `rmf:blueberry` — Blueberry
+- `rmf:blueberry_mash` — Blueberry Mash
+- `rmf:blueberry_smoothie` — Blueberry Smoothie
+- `rmf:cactus_juice` — Cactus Fruit Juice
+- `rmf:cake.five_bites` — Bites: 5 / 7
+- `rmf:cake.four_bites` — Bites: 4 / 7
+- `rmf:cake.one_bite` — Bites: 1 / 7
+- `rmf:cake.six_bites` — Bites: 6 / 7
+- `rmf:cake.three_bites` — Bites: 3 / 7
+- `rmf:cake.two_bites` — Bites: 2 / 7
+- `rmf:cake_five_bites` — 
+- `rmf:cake_four_bites` — 
+- `rmf:cake_one_bite` — 
+- `rmf:cake_six_bites` — 
+- `rmf:cake_slice` — Slice of Cake
+- `rmf:cake_three_bites` — 
+- `rmf:cake_two_bites` — 
+- `rmf:carrot_cake` — Carrot Cake
+- `rmf:cat_food` — Bowl of Cat Food
+- `rmf:cereal` — Bowl of Cereal
+- `rmf:cheese` — Cheese
+- `rmf:cheese_pizza_slice` — Cheese Pizza Slice
+- `rmf:cheese_sandwich` — Grilled(?) Cheese Sandwich
+- `rmf:cheeseburger` — Cheeseburger
+- `rmf:cheesecake` — Cheesecake
+- `rmf:chicken_burger` — Chicken Burger
+- `rmf:chicken_parmesan` — Bowl of Chicken Parmesan
+- `rmf:chicken_soup` — Chicken Noodle Soup
+- `rmf:chicken_wing` — Raw Chicken Wing
+- `rmf:chocolate_bar_dark` — Bar of Dark Chocolate
+- `rmf:chocolate_bar_milk` — Bar of Milk Chocolate
+- `rmf:chocolate_bar_white` — Bar of White Chocolate
+- `rmf:chocolate_cake` — Chocolate Cake
+- `rmf:chocolate_cake_slice` — Slice of Chocolate Cake
+- `rmf:chocolate_ice_cream` — Chocolate Ice Cream
+- `rmf:chocolate_milk` — Chocolate Milk
+- `rmf:cocoa_cookie` — Cocoa Cookie
+- `rmf:coconut_mash` — Coconut Mash
+- `rmf:coconut_milk` — Coconut Milk Bucket
+- `rmf:coffee` — Bottle of Coffee
+- `rmf:coffee_beans` — Coffee Beans
+- `rmf:coffee_grounds` — Coffee Grounds
+- `rmf:cooked_bacon` — Cooked Bacon
+- `rmf:cooked_chicken_wing` — Cooked Chicken Wing
+- `rmf:cooked_ham` — Cooked Ham
+- `rmf:cooked_ham_eating` — 
+- `rmf:cooked_honeycomb` — Honeycomb Candy
+- `rmf:cooked_pufferfish_tail` — Cooked Pufferfish Tail
+- `rmf:cooked_rice` — Cooked Rice
+- `rmf:cottage_cheese` — Cottage Cheese
+- `rmf:curry` — Bowl of Curry
+- `rmf:diamond_apple` — Diamond Apple
+- `rmf:dog_food` — Bowl of Dog Food
+- `rmf:double_glazed_fritter` — Double Glazed Apple Fritter
+- `rmf:double_glazed_fritter.desc` — These are NOT safe for human consumption.
+- `rmf:dough` — Dough
+- `rmf:dough_baguette` — Baguette-Shaped Dough
+- `rmf:dough_berry_cookie` — Berry Cookie Dough
+- `rmf:dough_cocoa_cookie` — Cocoa Cookie Dough
+- `rmf:dough_cookie` — Cookie Dough
+- `rmf:dough_croissant` — Croissant-Shaped Dough
+- `rmf:dough_glow_berry_cookie` — Glow Berry Cookie Dough
+- `rmf:dough_honey_cookie` — Honey Cookie Dough
+- `rmf:dough_muffin` — Muffin-Shaped Dough
+- `rmf:dough_nut` — Donut-Shaped Dough
+- `rmf:dough_pretzel` — Pretzel-Shaped Dough
+- `rmf:dough_shapeless` — 
+- `rmf:dragon_fruit_juice` — Dragon Fruit Juice
+- `rmf:dragon_fruit_mash` — Dragon Fruit Mash
+- `rmf:dragon_fruit_pie` — Dragon Fruit Pie
+- `rmf:dragon_fruit_smoothie` — Dragon Fruit Smoothie
+- `rmf:dragon_pie_mix` — Unbaked Dragon Fruit Pie
+- `rmf:dumpling` — Dumpling
+- `rmf:egg_roll` — Egg Roll
+- `rmf:emerald_apple` — Emerald Apple
+- `rmf:enchanted_diamond_apple` — Enchanted Diamond Apple
+- `rmf:enchanted_emerald_apple` — Enchanted Emerald Apple
+- `rmf:enchanted_golden_apple_juice` — Enchanted Golden Apple Juice
+- `rmf:enchanted_golden_apple_juice.desc` — You have to admit this is a bit overkill.
+- `rmf:farmer_burger` — Farmer's Delight Burger
+- `rmf:fillet_burger` — Fillet Burger
+- `rmf:fish_and_chips` — Fish & Chips
+- `rmf:french_toast` — French Toast
+- `rmf:fried_dragon_egg` — Fried Dragon Egg
+- `rmf:fried_egg` — Fried Egg
+- `rmf:fried_rice` — Bowl of Fried Rice
+- `rmf:fried_sniffer_egg` — Fried Sniffer Egg
+- `rmf:frosted_pumpkin_pie` — Frosted Pumpkin Pie
+- `rmf:fruitcake` — Fruitcake
+- `rmf:garlic_bread` — Garlic Bread
+- `rmf:glow_berry_cookie` — Glow Berry Cookie
+- `rmf:glow_berry_jam` — Bowl of Glow Berry Jam
+- `rmf:glow_berry_mash` — Glow Berry Mash
+- `rmf:glow_berry_muffin` — Glow Berry Muffin
+- `rmf:glow_berry_pie` — Glow Berry Pie
+- `rmf:glow_filled_donut` — Glow Filled Donut
+- `rmf:glow_glass_item_frame` — Glowing Glass Item Frame
+- `rmf:glow_pbj_sandwich` — Glowing PB&J Sandwich
+- `rmf:golden_apple_juice` — Golden Apple Juice
+- `rmf:grape_juice` — Grape Juice
+- `rmf:half_marshmallow_sandwich` — 
+- `rmf:ham` — Bone-In Ham
+- `rmf:hard_boiled_egg` — Hard Boiled Egg
+- `rmf:honey_apple` — Honeyed Apple
+- `rmf:honey_ball` — Honeyball
+- `rmf:honey_chicken` — Honey Garlic Chicken
+- `rmf:honey_cookie` — Honey Cookie
+- `rmf:honeybun` — Honeybun
+- `rmf:honeycomb_candy` — 
+- `rmf:honeyed_apple` — 
+- `rmf:hot_cocoa` — Bottle of Hot Cocoa
+- `rmf:iced_tea` — Bottle of Iced Tea
+- `rmf:impossible_burger` — Impossible Burger
+- `rmf:juicer` — Juicer
+- `rmf:juicer_open` — 
+- `rmf:lasagna` — Bowl of Lasagna
+- `rmf:lemon_juice` — Bottle of Lemon Juice
+- `rmf:lemon_pie` — Lemon Pie
+- `rmf:lemon_pie_mix` — Unbaked Lemon Pie
+- `rmf:mac_and_cheese` — Bowl of Mac & Cheese
+- `rmf:mango_juice` — Mango Juice
+- `rmf:mango_mash` — Mango Mash
+- `rmf:mango_smoothie` — Mango Smoothie
+- `rmf:marshmallow_sandwich` — Marshmallow Sandwich
+- `rmf:marshmallow_sandwich.help` — This Marshmallow Sandwich is missing a Wheat Cracker.
+- `rmf:mct_sandwich` — MCT Sandwich
+- `rmf:meaty_pizza_slice` — Meaty Pizza Slice
+- `rmf:melon_juice` — Melon Juice
+- `rmf:melon_mash` — Melon Mash
+- `rmf:melon_smoothie` — Melon Smoothie
+- `rmf:milk_barrel` — Barrel of Milk
+- `rmf:milk_bottle` — 
+- `rmf:miso_soup` — Bowl of Miso Soup
+- `rmf:mixing_bowl` — Mixing Bowl
+- `rmf:mixing_bowl.contents_banana_mash` — Banana Mash
+- `rmf:mixing_bowl.contents_berries` — Berries
+- `rmf:mixing_bowl.contents_bread` — Bread
+- `rmf:mixing_bowl.contents_dough` — Dough
+- `rmf:mixing_bowl.contents_dragon_fruit` — Dragon Fruit
+- `rmf:mixing_bowl.contents_egg` — Egg
+- `rmf:mixing_bowl.contents_flour` — Flour
+- `rmf:mixing_bowl.contents_glow_berry_jam` — Glow Berry Jam
+- `rmf:mixing_bowl.contents_glow_berry_mash` — Glow Berry Mash
+- `rmf:mixing_bowl.contents_lemon_juice` — Lemon Juice
+- `rmf:mixing_bowl.contents_milk` — Milk
+- `rmf:mixing_bowl.contents_orange` — Orange
+- `rmf:mixing_bowl.contents_pale_apple` — Pale Apple
+- `rmf:mixing_bowl.contents_peach` — Peach
+- `rmf:mixing_bowl.contents_peanut` — Peanuts
+- `rmf:mixing_bowl.contents_salt` — Salt
+- `rmf:mixing_bowl.contents_seasoning` — Seasoning
+- `rmf:mixing_bowl.contents_sweet_berry_jam` — Sweet Berry Jam
+- `rmf:mixing_bowl.contents_sweet_berry_mash` — Sweet Berry Mash
+- `rmf:mixing_bowl.contents_taiga_beans` — Taiga Beans
+- `rmf:monster_mash` — Monster Mash
+- `rmf:monster_mash.desc1` — This looks AND smells awful.
+- `rmf:monster_mash.desc2` — Nothing good can come from eating this.
+- `rmf:monster_puree.desc1` — This blend of monster bits and pieces
+- `rmf:oat_milk` — Oat Milk Bucket
+- `rmf:oatmeal` — Bowl of Oatmeal
+- `rmf:oblivian_stew` — Bowl of Oblivian Stew
+- `rmf:oblivian_stew.desc1` — A stew created by the love of a community.
+- `rmf:oblivian_stew.desc2` — Tastes like... sugar?
+- `rmf:omelette` — Omelette
+- `rmf:ominous_cookie` — Ominous Cookie
+- `rmf:ominous_cookie.desc1` — This cookie comes from a Darker Plane...
+- `rmf:ominous_cookie.desc2` — ...Suddenly, you don't feel hungry anymore.
+- `rmf:orange_juice` — Orange Juice
+- `rmf:pale_apple` — Pale Apple
+- `rmf:pale_berries` — Pale Berries
+- `rmf:pasta` — Pasta
+- `rmf:pbj_sandwich` — PB&J Sandwich
+- `rmf:peach_juice` — Peach Juice
+- `rmf:peach_mash` — Peach Mash
+- `rmf:peach_smoothie` — Peach Smoothie
+- `rmf:pie_crust` — Pie Crust
+- `rmf:pierogi` — Pierogi
+- `rmf:pineapple_juice` — Pineapple Juice
+- `rmf:pizza_pouch` — Pizza Pouch
+- `rmf:popcorn_seeds` — Popcorn Seeds
+- `rmf:poutine` — Bowl of Poutine
+- `rmf:pretzel_chocolate` — Chocolate-Covered Pretzel
+- `rmf:pufferfish_tail` — Raw Pufferfish Tail
+- `rmf:pumpkin_pie_slice` — Slice of Pumpkin Pie
+- `rmf:pumpkin_slice` — Sliced Pumpkin
+- `rmf:pumpkin_soup` — Bowl of Pumpkin Soup
+- `rmf:rabbit_stew` — Bowl of Hearty Stew
+- `rmf:ramen` — Bowl of Ramen
+- `rmf:raspberry` — Raspberry
+- `rmf:raspberry_mash` — Raspberry Mash
+- `rmf:raspberry_smoothie` — Raspberry Smoothie
+- `rmf:raw_eggs` — Bowl of Raw Eggs
+- `rmf:raw_omelette` — Bowl of Raw Omelette
+- `rmf:rice` — Rice Grain
+- `rmf:rice_bowl` — Bowl of Cooked Rice
+- `rmf:rice_cake` — Rice Cake
+- `rmf:roasted_carrot` — Roasted Carrot
+- `rmf:rotten_tomato` — Rotten Tomato
+- `rmf:salad` — Bowl of Salad
+- `rmf:scrambled_eggs` — Bowl of Scrambled Eggs
+- `rmf:shepard_pie` — Slice of Shepard's Pie
+- `rmf:smoothie_banana` — 
+- `rmf:smoothie_blackberry` — 
+- `rmf:smoothie_blueberry` — 
+- `rmf:smoothie_dragon_fruit` — 
+- `rmf:smoothie_mango` — 
+- `rmf:smoothie_melon` — 
+- `rmf:smoothie_peach` — 
+- `rmf:smoothie_raspberry` — 
+- `rmf:smoothie_strawberry` — 
+- `rmf:soft_boiled_egg` — Soft Boiled Egg
+- `rmf:soy_milk` — Soy Milk Bucket
+- `rmf:spaghetti` — Bowl of Spaghetti
+- `rmf:spicy_mushroom_stew` — Spicy Mushroom Stew
+- `rmf:strawberry` — Strawberry
+- `rmf:strawberry_mash` — Strawberry Mash
+- `rmf:strawberry_smoothie` — Strawberry Smoothie
+- `rmf:stuffed_pumpkin` — Stuffed Pumpkin
+- `rmf:sushi` — Sushi Roll
+- `rmf:sweet_berry_jam` — Bowl of Sweet Berry Jam
+- `rmf:sweet_berry_mash` — Sweet Berry Mash
+- `rmf:sweet_berry_muffin` — Sweet Berry Muffin
+- `rmf:sweet_berry_pie` — Sweet Berry Pie
+- `rmf:taco` — Taco
+- `rmf:taiga_beans` — Taiga Beans
+- `rmf:tea` — Bottle of Tea
+- `rmf:toast` — Toast
+- `rmf:tomato` — Tomato
+- `rmf:tomato_sauce` — Tomato Sauce
+- `rmf:tomato_seeds` — Tomato Seeds
+- `rmf:tomato_soup` — Bowl of Tomato Soup
+- `rmf:unbaked_beans` — Bowl of Unbaked Beans
+- `rmf:unbaked_fruitcake` — Unbaked Fruitcake
+- `rmf:uncooked_egg_roll` — Uncooked Egg Roll
+- `rmf:uncooked_glow_berry_jam` — Bowl of Uncooked Glow Berry Jam
+- `rmf:uncooked_sweet_berry_jam` — Bowl of Uncooked Sweet Berry Jam
+- `rmf:unlimited_bacon` — Unlimited Bacon
+- `rmf:veg_burrito` — Veggie Burrito
+- `rmf:veg_corn_dog` — Veggie Corn Dog
+- `rmf:veg_kabob` — Veggie Kabob
+- `rmf:veg_pizza_slice` — Veggie Pizza Slice
+- `rmf:veg_quesadilla` — Veggie Quesadilla
+- `rmf:veg_taco` — Veggie Taco
+- `rmf:veggie_dog` — Veggie Dog
+- `rmf:vibrant_apple` — Vibrant Apple
+- `rmf:vinegar` — Apple Cider Vinegar
+- `rmf:waffle_batter` — Bowl of Waffle Batter
+- `rmf:wild_carrot` — Wild Carrot
+
