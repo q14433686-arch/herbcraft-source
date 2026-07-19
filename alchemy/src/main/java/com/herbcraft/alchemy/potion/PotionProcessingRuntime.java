@@ -50,7 +50,7 @@ public final class PotionProcessingRuntime {
       Holder<MobEffect> effectType = effect.getEffect();
       int amplifier = Math.max(0, Math.min(runtime.maxAmplifier(), effect.getAmplifier() + runtime.amplifierDelta()));
       int duration = effect.getDuration();
-      if (!((MobEffect)effectType.value()).isInstantenous() && !effect.isInfiniteDuration()) {
+      if (!((MobEffect)effectType.value()).isInstantaneous() && !effect.isInfiniteDuration()) {
          duration = Math.min(MAX_DURATION_TICKS, Math.max(1, Math.round(duration * runtime.durationMultiplier())));
       }
       boolean ambient = runtime.forceNonAmbient() ? false : effect.isAmbient();

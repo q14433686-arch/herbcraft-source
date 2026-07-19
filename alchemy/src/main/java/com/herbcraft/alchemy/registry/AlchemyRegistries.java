@@ -340,7 +340,7 @@ public final class AlchemyRegistries {
 
    private static AlchemyRegistries.EffectSpec stabilizeNormal(AlchemyRegistries.EffectSpec effect) {
       int amplifier = Math.min(effect.amplifier, 1);
-      if (((MobEffect)effect.effect.value()).isInstantenous()) {
+      if (((MobEffect)effect.effect.value()).isInstantaneous()) {
          return new AlchemyRegistries.EffectSpec(effect.effect, amplifier, effect.durationSeconds, effect.positive);
       } else {
          int minSeconds = effect.positive ? 15 : 10;
@@ -367,7 +367,7 @@ public final class AlchemyRegistries {
    }
 
    private static int advancedDuration(AlchemyRegistries.EffectSpec effect, float multiplier) {
-      return ((MobEffect)effect.effect.value()).isInstantenous()
+      return ((MobEffect)effect.effect.value()).isInstantaneous()
          ? effect.durationSeconds
          : clampSeconds(Math.max(30, Math.round(effect.durationSeconds * multiplier)));
    }
@@ -387,7 +387,7 @@ public final class AlchemyRegistries {
    }
 
    private static int scaleDurationSeconds(AlchemyRegistries.EffectSpec effect, float multiplier) {
-      return ((MobEffect)effect.effect.value()).isInstantenous() ? effect.durationSeconds : clampSeconds(Math.round(effect.durationSeconds * multiplier));
+      return ((MobEffect)effect.effect.value()).isInstantaneous() ? effect.durationSeconds : clampSeconds(Math.round(effect.durationSeconds * multiplier));
    }
 
    private static int clampSeconds(int seconds) {

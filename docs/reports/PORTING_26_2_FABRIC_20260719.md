@@ -47,6 +47,19 @@ Static source audit found no current use of:
 
 No gameplay balance, item IDs, recipe IDs, trade IDs, component IDs, or serialized data formats were intentionally changed.
 
+## Windows compile feedback and fix
+
+The author ran `set JAVA_HOME=D:\JDK25` followed by `gradlew clean build` on Windows with Gradle 9.5.1/Loom 1.17.16. Core and Cuisine compiled; Alchemy failed at eight call sites because 26.2 official mappings expose the correctly spelled `MobEffect.isInstantaneous()` while the 26.1 source used the old misspelled `isInstantenous()` name.
+
+Fixed in:
+
+- `alchemy/src/main/java/com/herbcraft/alchemy/client/AdvancedPotionTooltips.java`;
+- `alchemy/src/main/java/com/herbcraft/alchemy/potion/AdvancedPotionStackInitializer.java`;
+- `alchemy/src/main/java/com/herbcraft/alchemy/potion/PotionProcessingRuntime.java`;
+- `alchemy/src/main/java/com/herbcraft/alchemy/registry/AlchemyRegistries.java`.
+
+The author should rerun `gradlew clean build` to reveal the next 26.2 compatibility layer, if any.
+
 ## Validation
 
 Passed without requiring Minecraft/Gradle:

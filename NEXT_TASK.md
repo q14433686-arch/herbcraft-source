@@ -17,6 +17,8 @@ Completed in this pass:
 
 Static checks passed: language parity, trade tags, recipe isolation, and viewer source validation.
 
+Windows feedback fixed the first 26.2 compiler error: the eight Alchemy calls to the old `MobEffect.isInstantenous()` name now use `isInstantaneous()`.
+
 ### Required validation
 
 1. Provide a working Java 25 executable and run `:core:compileJava`, `:alchemy:compileJava`, and `:cuisine:compileJava`.

@@ -285,7 +285,7 @@ public final class AdvancedPotionStackInitializer {
    private static boolean canUseVanillaDurationScale(PotionContents contents, float multiplier) {
       for (MobEffectInstance effect : contents.getAllEffects()) {
          Holder<MobEffect> effectType = effect.getEffect();
-         if (!((MobEffect)effectType.value()).isInstantenous() && !effect.isInfiniteDuration() && Math.round(effect.getDuration() * multiplier) > 9600) {
+         if (!((MobEffect)effectType.value()).isInstantaneous() && !effect.isInfiniteDuration() && Math.round(effect.getDuration() * multiplier) > 9600) {
             return false;
          }
       }
@@ -295,7 +295,7 @@ public final class AdvancedPotionStackInitializer {
 
    private static MobEffectInstance scaleAndCap(MobEffectInstance effect, float multiplier) {
       Holder<MobEffect> effectType = effect.getEffect();
-      if (!((MobEffect)effectType.value()).isInstantenous() && !effect.isInfiniteDuration()) {
+      if (!((MobEffect)effectType.value()).isInstantaneous() && !effect.isInfiniteDuration()) {
          int duration = Math.min(9600, Math.max(1, Math.round(effect.getDuration() * multiplier)));
          return new MobEffectInstance(effectType, duration, effect.getAmplifier(), effect.isAmbient(), effect.isVisible(), effect.showIcon());
       } else {

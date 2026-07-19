@@ -10,6 +10,7 @@
 - Updated optional Jade, JEI, REI, and Architectury development dependencies to their 26.2 lines.
 - Migrated Core client screen access from `Minecraft.screen` / `Minecraft.setScreen` to `Minecraft.gui.screen()` / `Minecraft.gui.setScreen(...)`.
 - Updated active docs, example manifests, and vanilla-template validation/generation paths for 26.2.
+- Corrected the 26.2 official-mappings method rename from the old misspelled `MobEffect.isInstantenous()` to `MobEffect.isInstantaneous()` across Alchemy tooltip, potion initialization, processing, and registry code.
 
 ### Validation
 

@@ -103,11 +103,11 @@ public final class AdvancedPotionTooltips {
       }
 
       int durationTicks = bonus.durationTicks();
-      if (quality != null && !((MobEffect)effect.value()).isInstantenous()) {
+      if (quality != null && !((MobEffect)effect.value()).isInstantaneous()) {
          durationTicks = Math.min(9600, Math.max(1, Math.round(durationTicks * quality.durationMultiplier())));
       }
 
-      if (!((MobEffect)effect.value()).isInstantenous()) {
+      if (!((MobEffect)effect.value()).isInstantaneous()) {
          name = Component.translatable("potion.withDuration", new Object[]{name, formatTicks(durationTicks)});
       }
 

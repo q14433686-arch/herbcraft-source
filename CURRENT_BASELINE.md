@@ -12,7 +12,8 @@ Completed:
 - Fabric Loader remains `0.19.3` and Java remains `25`;
 - optional Jade/JEI/REI/Architectury development dependencies moved to their 26.2 lines;
 - 26.2 `Minecraft.gui` screen management calls applied to Core client code;
-- active docs, examples, and vanilla-template validator/generator paths updated to 26.2.
+- active docs, examples, and vanilla-template validator/generator paths updated to 26.2;
+- fixed the first Windows 26.2 compile error: `MobEffect.isInstantenous()` -> `isInstantaneous()` at eight Alchemy call sites.
 
 Static validations passed: language parity, trade tags, recipe isolation, and JEI/REI source validation. Full Java/Gradle compilation and client/server smoke tests remain pending because this sandbox currently lacks a working Java 25 executable.
 
