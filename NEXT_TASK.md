@@ -1,5 +1,30 @@
 # NEXT_TASK
 
+## Current handoff note: Minecraft 26.2 Fabric port validation
+
+On 2026-07-19 the initial 26.2 Fabric port was applied. The detailed report is `docs/reports/PORTING_26_2_FABRIC_20260719.md`; the investigation notes are `reference_cache/26_2_porting_notes.md`.
+
+Completed in this pass:
+
+- Minecraft `26.1.2` -> `26.2`;
+- Fabric API `0.151.0+26.1.2` -> `0.155.2+26.2`;
+- Loom `1.16-SNAPSHOT` -> `1.17-SNAPSHOT`;
+- Gradle Wrapper `9.4.1` -> `9.5.1`;
+- kept Fabric Loader `0.19.3` and Java `25`;
+- updated 26.2 Jade/JEI/REI/Architectury development dependencies;
+- migrated Core GUI screen management to `Minecraft.gui`;
+- updated active docs, examples, and texture validator/generator references.
+
+Static checks passed: language parity, trade tags, recipe isolation, and viewer source validation.
+
+### Required validation
+
+1. Provide a working Java 25 executable and run `:core:compileJava`, `:alchemy:compileJava`, and `:cuisine:compileJava`.
+2. Run the full Gradle build and inspect any JEI/REI API errors.
+3. Start a dedicated server and client; check all Mixin targets and resource/data loading.
+4. Open/close the Codex and Nutrition panel, then test Jade/JEI/REI with the exact 26.2 versions.
+5. Refresh release output only after the 26.2 build and smoke test pass.
+
 ## Current handoff note: Core/Alchemy 1.1.4 version bump
 
 On 2026-06-30 the Core and Alchemy modules were bumped to `1.1.4` while Cuisine intentionally remains `1.1.3`. The detailed report is `docs/reports/VERSION_BUMP_CORE_ALCHEMY_1_1_4_20260630.md`.

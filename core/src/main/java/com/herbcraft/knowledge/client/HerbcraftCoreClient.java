@@ -41,7 +41,7 @@ public final class HerbcraftCoreClient implements ClientModInitializer {
       NutritionItemTooltips.register();
       ClientPlayNetworking.registerGlobalReceiver(CodexSnapshotPayload.TYPE, (payload, context) -> {
          CodexClientState.setLatestSnapshot(payload);
-         if (context.client().screen instanceof CodexScreen codexScreen) {
+         if (context.client().gui.screen() instanceof CodexScreen codexScreen) {
             codexScreen.replaceSnapshot(payload);
          }
       });
@@ -51,7 +51,7 @@ public final class HerbcraftCoreClient implements ClientModInitializer {
          }
          CodexSnapshotPayload snapshot = CodexClientState.latestSnapshot();
          if (snapshot != null) {
-            context.client().setScreen(new CodexScreen(snapshot));
+            context.client().gui.setScreen(new CodexScreen(snapshot));
          }
       });
       ClientPlayNetworking.registerGlobalReceiver(KnowledgeSyncPayload.TYPE, (payload, context) -> KnowledgeClientCache.update(payload.states()));
@@ -79,10 +79,10 @@ public final class HerbcraftCoreClient implements ClientModInitializer {
       );
       ClientTickEvents.END_CLIENT_TICK.register(client -> {
          while (OPEN_NUTRITION.consumeClick()) {
-            if (client.screen == null) {
-               client.setScreen(new NutritionPanelScreen());
-            } else if (client.screen instanceof NutritionPanelScreen) {
-               client.setScreen(null);
+            if (client.gui.screen() == null) {
+               client.gui.setScreen(new NutritionPanelScreen());
+            } else if (client.gui.screen() instanceof NutritionPanelScreen) {
+               client.gui.setScreen(null);
             }
          }
       });

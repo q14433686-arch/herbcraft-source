@@ -31,7 +31,7 @@ public final class NutritionItemTooltips {
 
    private static void appendTooltip(ItemStack stack, TooltipContext context, TooltipFlag flag, List<Component> lines) {
       // Skip when no screen is open (consistent with HerbNatureItemTooltips)
-      if (net.minecraft.client.Minecraft.getInstance().screen == null) return;
+      if (net.minecraft.client.Minecraft.getInstance().gui.screen() == null) return;
       NutritionRegistry.get(stack).ifPresent(profile -> {
          if (profile.isEmpty()) return;
 

@@ -1,8 +1,8 @@
 # Herbcraft JSON Extension Spec 1.1.4
 
-Status: **P4.1 formal extension specification**  
-Baseline: Herbcraft Core/Alchemy `1.1.4`, Cuisine `1.1.3`, Minecraft `26.1.2`. Schema/content-extension surface is unchanged from the 1.1.3 spec; this file is the current named copy for the 1.1.4 Core/Alchemy line.  
-Minecraft: `26.1.2`  
+Status: **P4.1 formal extension specification**
+Baseline: Herbcraft Core/Alchemy `1.1.4`, Cuisine `1.1.3`, Minecraft `26.2` (port in validation). Schema/content-extension surface is unchanged from the 1.1.3 spec; this file is the current named copy for the 1.1.4 Core/Alchemy line.
+Minecraft: `26.2`
 Java: `25+`
 
 This document freezes the supported JSON-facing extension surface for Herbcraft's first public extension contract.

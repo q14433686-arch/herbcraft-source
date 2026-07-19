@@ -1,8 +1,8 @@
 # Herbcraft 1.1.4 Addon Author Quickstart
 
-Status: public-facing quickstart for datapack, modpack, and code-addon authors  
-Target: Herbcraft Core/Alchemy `1.1.4`, Cuisine `1.1.3`. The data/API surface is inherited from the 1.1.3 quickstart; this file is the current named copy for the 1.1.4 Core/Alchemy line.  
-Minecraft: `26.1.2`  
+Status: public-facing quickstart for datapack, modpack, and code-addon authors
+Target: Herbcraft Core/Alchemy `1.1.4`, Cuisine `1.1.3`. The data/API surface is inherited from the 1.1.3 quickstart; this file is the current named copy for the 1.1.4 Core/Alchemy line.
+Minecraft: `26.2` (port in validation)
 Java: `25+`
 
 This is the practical “what should I use?” guide. The formal schema reference is:

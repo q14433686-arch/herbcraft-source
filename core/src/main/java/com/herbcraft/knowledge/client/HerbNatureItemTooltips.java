@@ -26,7 +26,7 @@ public final class HerbNatureItemTooltips {
    }
 
    private static void appendTooltip(ItemStack stack, TooltipContext context, TooltipFlag flag, List<Component> lines) {
-      if (Minecraft.getInstance().screen == null) {
+      if (Minecraft.getInstance().gui.screen() == null) {
          return;
       }
       if (stack.isEmpty()) {

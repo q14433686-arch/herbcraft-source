@@ -2,17 +2,32 @@
 
 This is the short authoritative anchor for the current Herbcraft working state. Every future agent turn that changes source, resources, docs, scripts, validation rules, versions, or release outputs must update this file before reporting completion.
 
+## Latest source-change note — 2026-07-19 Minecraft 26.2 Fabric port initial pass
+
+The first Minecraft 26.2 port pass is applied on the session branch. The detailed report is `docs/reports/PORTING_26_2_FABRIC_20260719.md`; the investigation is `reference_cache/26_2_porting_notes.md`.
+
+Completed:
+
+- Minecraft/Fabric API/Loom/Gradle targets updated to `26.2`, `0.155.2+26.2`, `1.17-SNAPSHOT`, and Gradle `9.5.1`;
+- Fabric Loader remains `0.19.3` and Java remains `25`;
+- optional Jade/JEI/REI/Architectury development dependencies moved to their 26.2 lines;
+- 26.2 `Minecraft.gui` screen management calls applied to Core client code;
+- active docs, examples, and vanilla-template validator/generator paths updated to 26.2.
+
+Static validations passed: language parity, trade tags, recipe isolation, and JEI/REI source validation. Full Java/Gradle compilation and client/server smoke tests remain pending because this sandbox currently lacks a working Java 25 executable.
+
 ## Current baseline
 
 - Local baseline directory: `release_output/herbcraft_test_20260614_review/`
 - Source archive: `release_output/herbcraft_test_20260614_review/herbcraft-source-current-20260614.zip`
 - Current release/test version: Core/Alchemy `1.1.4`; Cuisine `1.1.3`
-- Minecraft: `26.1.2`
+- Minecraft: `26.2` (port in validation)
 - Fabric Loader: `0.19.3+`
-- Fabric API: `0.151.0+26.1.2+`
+- Fabric API: `0.155.2+26.2+`
 - Java: `25+`
-- Gradle Wrapper: `9.4.1`
-- Loom: `1.16-SNAPSHOT` resolving as `1.16.3`
+- Gradle Wrapper: `9.5.1`
+- Loom: `1.17-SNAPSHOT`
+- Mappings: Mojang official mappings
 
 ## Current output files
 
@@ -220,7 +235,7 @@ python3 scripts/validate_p1_codex_advancements.py
 python3 scripts/verify_built_jars.py
 ```
 
-`validate_animal_food_tags.py` now searches the explicit `/home/user/cache/minecraft/client-26.1.2.jar`, Loom's downloaded client/merged jars, or `HERBCRAFT_VANILLA_CLIENT_JAR`. Run a Gradle build first if no vanilla jar cache exists.
+`validate_animal_food_tags.py` now derives the vanilla version from `gradle.properties` and searches `/home/user/cache/minecraft/client-26.2.jar`, Loom's downloaded client/merged jars, or `HERBCRAFT_VANILLA_CLIENT_JAR`. Run a Gradle build first if no vanilla jar cache exists.
 
 ## Known remaining work / do not confuse with completed work
 

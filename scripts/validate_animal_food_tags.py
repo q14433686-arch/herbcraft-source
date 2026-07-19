@@ -14,7 +14,7 @@ def minecraft_version() -> str:
         for line in props.read_text(encoding='utf-8').splitlines():
             if line.startswith('minecraft_version='):
                 return line.split('=', 1)[1].strip()
-    return '26.1.2'
+    return '26.2'
 
 def find_vanilla_client() -> tuple[Path | None, list[Path]]:
     import os
@@ -90,7 +90,7 @@ else:
         item_defs = {p.removeprefix('assets/minecraft/items/').removesuffix('.json') for p in names if p.startswith('assets/minecraft/items/') and p.endswith('.json')}
         for tag in EXPECTED:
             if f'data/minecraft/tags/item/{tag}.json' not in names:
-                err(f'vanilla tag does not exist in 26.1.2: minecraft:{tag}')
+                err(f'vanilla tag does not exist in 26.2: minecraft:{tag}')
         for tag, expected_values in EXPECTED.items():
             p = TAG_DIR / f'{tag}.json'
             if not p.exists():

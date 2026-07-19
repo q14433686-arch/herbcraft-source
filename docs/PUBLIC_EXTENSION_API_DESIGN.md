@@ -1,14 +1,14 @@
 # Herbcraft Public Extension API Design Draft
 
-Status: P4 design draft; **P4.1-P4.5 completed for read/event extension boundary; write APIs not implemented yet**  
-Target: Core/Alchemy `1.1.4` extension/API line; Cuisine remains `1.1.3`  
-Minecraft: `26.1.2`  
+Status: P4 design draft; **P4.1-P4.5 completed for read/event extension boundary; write APIs not implemented yet**
+Target: Core/Alchemy `1.1.4` extension/API line; Cuisine remains `1.1.3`
+Minecraft: `26.2` (port in validation)
 Java: `25+`
 
-P4.1 output: `docs/JSON_EXTENSION_SPEC_1_1_3.md`.  
-P4.2 output: `com.herbcraft.api.HerbcraftDataAPI`.  
-P4.3 output: `com.herbcraft.api.HerbcraftEvents`.  
-P4.4 outputs: `docs/examples/external_extension_compat_pack/` and `docs/examples/herbcraft_readonly_event_addon/`.  
+P4.1 output: `docs/JSON_EXTENSION_SPEC_1_1_3.md`.
+P4.2 output: `com.herbcraft.api.HerbcraftDataAPI`.
+P4.3 output: `com.herbcraft.api.HerbcraftEvents`.
+P4.4 outputs: `docs/examples/external_extension_compat_pack/` and `docs/examples/herbcraft_readonly_event_addon/`.
 P4.5 output: `docs/reports/P4_EXTENSION_READINESS_1_1_3_20260617.md`.
 
 ## 1. Purpose

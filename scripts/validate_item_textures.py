@@ -11,9 +11,9 @@ import zipfile
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-VANILLA = Path(tempfile.gettempdir()) / "herbcraft_vanilla_item_templates_26_1_2"
-CLIENT_JAR = VANILLA / "client-26.1.2.jar"
-MC_VERSION_JSON = "https://piston-meta.mojang.com/v1/packages/6c33e70785b01eeccf81024401556c531310b8ad/26.1.2.json"
+VANILLA = Path(tempfile.gettempdir()) / "herbcraft_vanilla_item_templates_26_2"
+CLIENT_JAR = VANILLA / "client-26.2.jar"
+MC_VERSION_JSON = "https://piston-meta.mojang.com/v1/packages/9e272020887b72a23b1a525c5d8e74d2d7aa8222/26.2.json"
 REQUIRED_TEMPLATES = ["bowl.png", "potion.png", "potion_overlay.png", "paper.png", "written_book.png"]
 
 BOWL_CONTENT_MASK = {

@@ -32,8 +32,8 @@ subprojects {
 
     if (project.name == 'core') {
         dependencies {
-            compileOnly "maven.modrinth:jade:26.1.0+fabric"
-            runtimeOnly "maven.modrinth:jade:26.1.0+fabric"
+            compileOnly "maven.modrinth:jade:${rootProject.jade_version}"
+            runtimeOnly "maven.modrinth:jade:${rootProject.jade_version}"
         }
     }
 

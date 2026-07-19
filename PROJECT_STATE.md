@@ -1,6 +1,6 @@
 # PROJECT_STATE
 
-This file records the current repository/source state. It has been updated for the 2026-06-30 Core/Alchemy 1.1.4 version-only bump; detailed current truth remains in CURRENT_BASELINE.md. Treat older reports as historical unless verified against `CURRENT_BASELINE.md`, `docs/DOCUMENTATION_INDEX.md`, and current source.
+This file records the current repository/source state. It has been updated for the 2026-07-19 Minecraft 26.2 Fabric port initial pass; detailed current truth remains in CURRENT_BASELINE.md. Treat older reports as historical unless verified against `CURRENT_BASELINE.md`, `docs/DOCUMENTATION_INDEX.md`, and current source.
 
 ## Versions and baseline
 
@@ -27,12 +27,12 @@ with:
 
 ## Locked environment
 
-- Minecraft `26.1.2`
+- Minecraft `26.2` (port in validation)
 - Fabric Loader `0.19.3`
-- Fabric API `0.151.0+26.1.2`
+- Fabric API `0.155.2+26.2`
 - Java `25`
-- Gradle Wrapper `9.4.1`
-- Fabric Loom `1.16-SNAPSHOT` / resolves as `1.16.3`
+- Gradle Wrapper `9.5.1`
+- Fabric Loom `1.17-SNAPSHOT`
 - Mojang official mappings
 
 JDK helper/cache:
@@ -194,7 +194,7 @@ Important scripts now include:
 
 `validate_custom_nutrition_effects_phase1.py` through `phase7.py` are compatibility wrappers to the current phase 8 validator.
 
-`validate_animal_food_tags.py` now searches `/home/user/cache/minecraft/client-26.1.2.jar`, Loom's downloaded client/merged jars, or `HERBCRAFT_VANILLA_CLIENT_JAR`. Run a Gradle build first if no vanilla jar cache exists.
+`validate_animal_food_tags.py` derives the vanilla version from `gradle.properties` and searches `/home/user/cache/minecraft/client-26.2.jar`, Loom's downloaded client/merged jars, or `HERBCRAFT_VANILLA_CLIENT_JAR`. Run a Gradle build first if no vanilla jar cache exists.
 
 ## Validation status from latest pass
 

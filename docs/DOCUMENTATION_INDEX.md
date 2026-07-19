@@ -1,7 +1,7 @@
 # Herbcraft Documentation Index
 
-Status: current documentation map for the packaged Core/Alchemy `1.1.4` source line; Cuisine remains `1.1.3`.  
-Last updated: 2026-06-30
+Status: current documentation map for the Core/Alchemy `1.1.4` source line; Cuisine remains `1.1.3`; the Minecraft `26.2` port is currently in validation.
+Last updated: 2026-07-19
 
 Use this file to avoid treating historical design notes as the current source of truth.
 

@@ -1,6 +1,6 @@
 # Extending Herbcraft 1.1.4
 
-This document describes the current supported data-extension surface for Herbcraft Core/Alchemy `1.1.4` and Cuisine `1.1.3` on Minecraft `26.1.2`.
+This document describes the current supported data-extension surface for Herbcraft Core/Alchemy `1.1.4` and Cuisine `1.1.3` on Minecraft `26.2` (the port is currently in validation).
 
 > P4.1 note: the formal JSON extension contract for the `1.1.4` Core/Alchemy line is now `docs/JSON_EXTENSION_SPEC_1_1_4.md`. This file remains the practical how-to guide; the formal spec is authoritative for supported paths, schema shapes, reload boundaries, merge rules, and client sync expectations.
 >

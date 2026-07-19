@@ -4,7 +4,7 @@ from zipfile import ZipFile
 from PIL import Image, ImageEnhance, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
-CLIENT_JAR = Path.home() / ".gradle/caches/fabric-loom/26.1.2/minecraft-client.jar"
+CLIENT_JAR = Path.home() / ".gradle/caches/fabric-loom/26.2/minecraft-client.jar"
 OUT = ROOT / "core/src/main/resources/assets/herbcraft/textures/mob_effect"
 OUT.mkdir(parents=True, exist_ok=True)
 

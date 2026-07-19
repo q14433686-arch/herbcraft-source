@@ -1,5 +1,29 @@
 # CHANGELOG
 
+## 2026-07-19 Minecraft 26.2 Fabric port — initial pass
+
+### Changed
+
+- Updated the development target from Minecraft `26.1.2` to `26.2`.
+- Kept Fabric Loader at `0.19.3`; updated Fabric API to `0.155.2+26.2`.
+- Updated Fabric Loom to `1.17-SNAPSHOT` and the Gradle Wrapper to `9.5.1`.
+- Updated optional Jade, JEI, REI, and Architectury development dependencies to their 26.2 lines.
+- Migrated Core client screen access from `Minecraft.screen` / `Minecraft.setScreen` to `Minecraft.gui.screen()` / `Minecraft.gui.setScreen(...)`.
+- Updated active docs, example manifests, and vanilla-template validation/generation paths for 26.2.
+
+### Validation
+
+- `scripts/check_lang_diff.py` — PASS.
+- `scripts/validate_trade_tags.py` — PASS.
+- `scripts/validate_recipe_isolation.py` — PASS.
+- `scripts/validate_coating_viewer_plugins.py` — PASS.
+- Java 25 Gradle compilation and client/server smoke tests — pending; the sandbox currently has no working Java 25 executable.
+
+### Reports
+
+- Investigation: `reference_cache/26_2_porting_notes.md`.
+- Implementation: `docs/reports/PORTING_26_2_FABRIC_20260719.md`.
+
 ## 2026-06-30 Core and Alchemy 1.1.4 version bump
 
 ### Changed
