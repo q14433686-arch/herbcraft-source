@@ -1,4 +1,4 @@
-commit: dcba4125931f6fd46ff58d27672296735d827276
+commit: 7ecf71b714cef87e52302176bd7235a856e2e4e7
 Downloading https://services.gradle.org/distributions/gradle-9.6.0-bin.zip
 .............10%.............20%..............30%.............40%..............50%.............60%.............70%..............80%.............90%..............100%
 
@@ -30,11 +30,11 @@ Note: Recompile with -Xlint:unchecked for details.
 > Task :alchemy:compileJava
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1791920417800.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1791920926568.json
 
 [Incubating] Problems report is available at: file:///home/runner/work/herbcraft-source/herbcraft-source/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 1m 4s
+BUILD SUCCESSFUL in 1m 17s
 3 actionable tasks: 3 executed
 
 == job status: success ==
