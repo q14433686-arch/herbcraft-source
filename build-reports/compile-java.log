@@ -1,0 +1,4 @@
+commit: eb9f72a8319909577c72271ad1d3a35e59d8ecbb
+/home/runner/work/_temp/0341d1b3-d12d-43d2-8205-c43a84419054.sh: line 3: ./gradlew: Permission denied
+
+== job status: failure ==
