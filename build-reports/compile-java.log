@@ -1,4 +1,4 @@
-commit: b1e52fa136c54460e3b609ef5411a94008846a8d
+commit: 81b5e0718da776f4cd966f0bb3b0d2355cdbc3ed
 Downloading https://services.gradle.org/distributions/gradle-9.6.0-bin.zip
 .............10%.............20%..............30%.............40%..............50%.............60%.............70%..............80%.............90%..............100%
 
@@ -27,85 +27,14 @@ Note: Recompile with -Xlint:deprecation for details.
 Note: /home/runner/work/herbcraft-source/herbcraft-source/cuisine/src/main/java/com/herbcraft/cuisine/registry/CuisineRecipes.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 
-> Task :alchemy:probeMcApi
-herbcraft-probe BEGIN 26.3 mixin target API
-herbcraft-probe compileClasspath jars=119
-herbcraft-probe ## net.minecraft.world.inventory.BrewingStandMenu$PotionSlot (exit 0)
-herbcraft-probe   Compiled from "BrewingStandMenu.java"
-herbcraft-probe   class net.minecraft.world.inventory.BrewingStandMenu$PotionSlot extends net.minecraft.world.inventory.Slot {
-herbcraft-probe     private final net.minecraft.world.item.crafting.RecipeAccess recipeAccess;
-herbcraft-probe     public net.minecraft.world.inventory.BrewingStandMenu$PotionSlot(net.minecraft.world.item.crafting.RecipeAccess, net.minecraft.world.Container, int, int, int);
-herbcraft-probe     public boolean mayPlace(net.minecraft.world.item.ItemStack);
-herbcraft-probe     public int getMaxStackSize();
-herbcraft-probe     public void onTake(net.minecraft.world.entity.player.Player, net.minecraft.world.item.ItemStack);
-herbcraft-probe     public net.minecraft.resources.Identifier getNoItemIcon();
-herbcraft-probe   }
-herbcraft-probe ## net.minecraft.world.inventory.BrewingStandMenu$IngredientsSlot (exit 0)
-herbcraft-probe   Compiled from "BrewingStandMenu.java"
-herbcraft-probe   class net.minecraft.world.inventory.BrewingStandMenu$IngredientsSlot extends net.minecraft.world.inventory.Slot {
-herbcraft-probe     private final net.minecraft.world.item.crafting.RecipePropertySet propertySet;
-herbcraft-probe     public net.minecraft.world.inventory.BrewingStandMenu$IngredientsSlot(net.minecraft.world.item.crafting.RecipePropertySet, net.minecraft.world.Container, int, int, int);
-herbcraft-probe     public boolean mayPlace(net.minecraft.world.item.ItemStack);
-herbcraft-probe   }
-herbcraft-probe ## net.minecraft.world.level.block.entity.BrewingStandBlockEntity (exit 0)
-herbcraft-probe   public class net.minecraft.world.level.block.entity.BrewingStandBlockEntity extends net.minecraft.world.level.block.entity.BaseContainerBlockEntity implements net.minecraft.world.WorldlyContainer {
-herbcraft-probe     private static boolean isBrewable(net.minecraft.server.level.ServerLevel, net.minecraft.world.level.block.entity.BrewingStandBlockEntity);
-herbcraft-probe     private static void doBrew(net.minecraft.server.level.ServerLevel, net.minecraft.core.BlockPos, net.minecraft.world.level.block.entity.BrewingStandBlockEntity);
-herbcraft-probe     public boolean canPlaceItem(int, net.minecraft.world.item.ItemStack);
-herbcraft-probe ## net.minecraft.world.item.Item (exit 0)
-herbcraft-probe   public class net.minecraft.world.item.Item implements net.minecraft.world.level.ItemLike,net.minecraft.world.flag.FeatureElement,net.fabricmc.fabric.api.item.v1.FabricItem {
-herbcraft-probe     public net.minecraft.world.item.ItemStack finishUsingItem(net.minecraft.world.item.ItemStack, net.minecraft.world.level.Level, net.minecraft.world.entity.LivingEntity);
-herbcraft-probe     public boolean releaseUsing(net.minecraft.world.item.ItemStack, net.minecraft.world.level.Level, net.minecraft.world.entity.LivingEntity, int);
-herbcraft-probe     protected static net.minecraft.world.phys.BlockHitResult getPlayerPOVHitResult(net.minecraft.world.level.Level, net.minecraft.world.entity.player.Player, net.minecraft.world.level.ClipContext$Fluid);
-herbcraft-probe ## net.minecraft.world.item.BucketItem (exit 0)
-herbcraft-probe   public class net.minecraft.world.item.BucketItem extends net.minecraft.world.item.Item implements net.minecraft.world.item.DispensibleContainerItem {
-herbcraft-probe     public net.minecraft.world.InteractionResult use(net.minecraft.world.level.Level, net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand);
-herbcraft-probe ## net.minecraft.world.item.EggItem (exit 0)
-herbcraft-probe   public class net.minecraft.world.item.EggItem extends net.minecraft.world.item.Item implements net.minecraft.world.item.ProjectileItem {
-herbcraft-probe     public net.minecraft.world.InteractionResult use(net.minecraft.world.level.Level, net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand);
-herbcraft-probe ## net.minecraft.world.item.SnowballItem (exit 0)
-herbcraft-probe   public class net.minecraft.world.item.SnowballItem extends net.minecraft.world.item.Item implements net.minecraft.world.item.ProjectileItem {
-herbcraft-probe     public net.minecraft.world.InteractionResult use(net.minecraft.world.level.Level, net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand);
-herbcraft-probe ## net.minecraft.world.entity.LivingEntity (exit 0)
-herbcraft-probe   public abstract class net.minecraft.world.entity.LivingEntity extends net.minecraft.world.entity.Entity implements net.minecraft.world.entity.Attackable,net.minecraft.world.waypoints.WaypointTransmitter {
-herbcraft-probe     public final boolean addEffect(net.minecraft.world.effect.MobEffectInstance);
-herbcraft-probe     public boolean addEffect(net.minecraft.world.effect.MobEffectInstance, net.minecraft.world.entity.Entity);
-herbcraft-probe ## net.minecraft.world.entity.player.Player (exit 0)
-herbcraft-probe   public abstract class net.minecraft.world.entity.player.Player extends net.minecraft.world.entity.Avatar implements net.minecraft.world.entity.ContainerUser {
-herbcraft-probe     public void die(net.minecraft.world.damagesource.DamageSource);
-herbcraft-probe     protected void readAdditionalSaveData(net.minecraft.world.level.storage.ValueInput);
-herbcraft-probe     protected void addAdditionalSaveData(net.minecraft.world.level.storage.ValueOutput);
-herbcraft-probe ## net.minecraft.world.entity.projectile.arrow.Arrow (exit 0)
-herbcraft-probe   public class net.minecraft.world.entity.projectile.arrow.Arrow extends net.minecraft.world.entity.projectile.arrow.AbstractArrow {
-herbcraft-probe     protected void doPostHurtEffects(net.minecraft.world.entity.LivingEntity);
-herbcraft-probe ## net.minecraft.world.entity.AreaEffectCloud (exit 0)
-herbcraft-probe   public class net.minecraft.world.entity.AreaEffectCloud extends net.minecraft.world.entity.Entity implements net.minecraft.world.entity.TraceableEntity {
-herbcraft-probe     private void serverTick(net.minecraft.server.level.ServerLevel);
-herbcraft-probe ## net.minecraft.world.item.trading.ItemCost (exit 0)
-herbcraft-probe   public final class net.minecraft.world.item.trading.ItemCost extends java.lang.Record {
-herbcraft-probe     public boolean test(net.minecraft.world.item.ItemStack);
-herbcraft-probe ## net.minecraft.world.entity.projectile.throwableitemprojectile.ThrownSplashPotion (exit 0)
-herbcraft-probe   public class net.minecraft.world.entity.projectile.throwableitemprojectile.ThrownSplashPotion extends net.minecraft.world.entity.projectile.throwableitemprojectile.AbstractThrownPotion {
-herbcraft-probe     public void onHitAsPotion(net.minecraft.server.level.ServerLevel, net.minecraft.world.item.ItemStack, net.minecraft.world.phys.HitResult);
-herbcraft-probe ## net.minecraft.world.entity.monster.Witch (exit 0)
-herbcraft-probe   public class net.minecraft.world.entity.monster.Witch extends net.minecraft.world.entity.raid.Raider implements net.minecraft.world.entity.monster.RangedAttackMob {
-herbcraft-probe     public void performRangedAttack(net.minecraft.world.entity.LivingEntity, float);
-herbcraft-probe END
-
 > Task :alchemy:compileJava
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1791920007172.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1791920210592.json
 
 [Incubating] Problems report is available at: file:///home/runner/work/herbcraft-source/herbcraft-source/build/reports/problems/problems-report.html
 
-Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
-
-You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
-
-For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
-
-BUILD SUCCESSFUL in 1m 19s
-4 actionable tasks: 4 executed
+BUILD SUCCESSFUL in 1m 4s
+3 actionable tasks: 3 executed
 
 == job status: success ==
