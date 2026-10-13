@@ -2,7 +2,7 @@
 
 Status: P4 design draft; **P4.1-P4.5 completed for read/event extension boundary; write APIs not implemented yet**
 Target: Core/Alchemy `1.1.4` extension/API line; Cuisine remains `1.1.3`
-Minecraft: `26.2` (port in validation)
+Minecraft: `26.3` (port in validation)
 Java: `25+`
 
 P4.1 output: `docs/JSON_EXTENSION_SPEC_1_1_3.md`.

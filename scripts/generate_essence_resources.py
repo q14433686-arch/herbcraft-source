@@ -337,7 +337,8 @@ def scaffold_extension(args) -> int:
     if not args.no_trade:
         files[base / f"data/herbcraft/villager_trade/wanderer/emerald_essence_{essence_id}.json"] = {
             "wants": {"id": "minecraft:emerald", "count": args.trade_emerald_cost},
-            "gives": {"id": f"herbcraft:essence_{essence_id}"},
+            # 26.3: wants/gives/additional_wants 的 count 为必填（context_int_provider）。
+            "gives": {"id": f"herbcraft:essence_{essence_id}", "count": 1},
             "max_uses": 1.0,
             "reputation_discount": 0.05,
             "xp": 12.0,

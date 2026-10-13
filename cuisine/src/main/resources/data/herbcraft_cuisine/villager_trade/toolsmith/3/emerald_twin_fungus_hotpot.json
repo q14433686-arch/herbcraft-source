@@ -4,7 +4,8 @@
     "count": 8
   },
   "gives": {
-    "id": "herbcraft_cuisine:twin_fungus_hotpot"
+    "id": "herbcraft_cuisine:twin_fungus_hotpot",
+    "count": 1
   },
   "max_uses": 8.0,
   "reputation_discount": 0.05,

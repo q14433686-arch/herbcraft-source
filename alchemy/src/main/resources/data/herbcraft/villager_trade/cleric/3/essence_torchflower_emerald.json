@@ -1,6 +1,7 @@
 {
   "wants": {
-    "id": "herbcraft:essence_torchflower"
+    "id": "herbcraft:essence_torchflower",
+    "count": 1
   },
   "gives": {
     "id": "minecraft:emerald",

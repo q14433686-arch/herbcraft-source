@@ -4,7 +4,8 @@
     "count": 8
   },
   "gives": {
-    "id": "herbcraft:essence_crimson_fungus"
+    "id": "herbcraft:essence_crimson_fungus",
+    "count": 1
   },
   "max_uses": 1.0,
   "reputation_discount": 0.05,

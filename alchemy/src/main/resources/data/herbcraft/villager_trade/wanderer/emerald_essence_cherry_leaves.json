@@ -4,7 +4,8 @@
     "count": 4
   },
   "gives": {
-    "id": "herbcraft:essence_cherry_leaves"
+    "id": "herbcraft:essence_cherry_leaves",
+    "count": 1
   },
   "max_uses": 1.0,
   "reputation_discount": 0.05,

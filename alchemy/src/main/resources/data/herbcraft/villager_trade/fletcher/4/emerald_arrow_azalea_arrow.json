@@ -14,9 +14,9 @@
     "id": "minecraft:arrow",
     "count": 5
   },
-  "given_item_modifiers": [
+  "given_item_modifier": [
     {
-      "function": "minecraft:set_potion",
+      "type": "minecraft:set_potion",
       "id": "herbcraft:azalea_leaves"
     }
   ]

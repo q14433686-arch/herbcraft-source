@@ -5,7 +5,8 @@
       "minecraft:potion_contents": {
         "potion": "herbcraft:cardiac_toxin"
       }
-    }
+    },
+    "count": 1
   },
   "gives": {
     "id": "minecraft:emerald",

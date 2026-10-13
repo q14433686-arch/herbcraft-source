@@ -64,14 +64,14 @@ for rel, potion in {
     "alchemy/src/main/resources/data/herbcraft/villager_trade/fletcher/5/emerald_arrow_wither_venom_iii_arrow.json": "herbcraft:wither_venom_iii",
 }.items():
     data = load(rel)
-    require(any(m.get("function") == "minecraft:set_potion" and m.get("id") == potion for m in data.get("given_item_modifiers", [])), f"{rel} should reuse set_potion {potion}")
+    require(any(m.get("type") == "minecraft:set_potion" and m.get("id") == potion for m in data.get("given_item_modifier", [])), f"{rel} should reuse set_potion {potion}")
 
 for rel, comp in {
     "alchemy/src/main/resources/data/herbcraft/villager_trade/wanderer/emerald_distilled_essence_dandelion_sustained.json": "herbcraft_alchemy:distilled_essence",
     "alchemy/src/main/resources/data/herbcraft/villager_trade/armorer/4/emerald_iron_chestplate_steady_bearing.json": "herbcraft_alchemy:armor_support",
 }.items():
     data = load(rel)
-    require(any(m.get("function") == "minecraft:set_components" and comp in m.get("components", {}) for m in data.get("given_item_modifiers", [])), f"{rel} should set {comp} component")
+    require(any(m.get("type") == "minecraft:set_components" and comp in m.get("components", {}) for m in data.get("given_item_modifier", [])), f"{rel} should set {comp} component")
 
 recipe = load("alchemy/src/main/resources/data/herbcraft/recipe/advanced_tipped_arrow.json")
 require(recipe.get("type") == "minecraft:crafting_imbue", "advanced_tipped_arrow should reuse vanilla crafting_imbue")

@@ -4,7 +4,8 @@
     "count": 6
   },
   "gives": {
-    "id": "herbcraft:essence_torchflower"
+    "id": "herbcraft:essence_torchflower",
+    "count": 1
   },
   "max_uses": 1.0,
   "reputation_discount": 0.05,

@@ -1,7 +1,7 @@
 # Herbcraft External Extension Specification Draft
 
 Status: **DRAFT / partially implemented; P4.1 JSON spec formalized**
-Target baseline: Herbcraft Core/Alchemy `1.1.4`, Cuisine `1.1.3`, Minecraft `26.2` (port in validation), Fabric Loader `0.19.3+`, Java `25+
+Target baseline: Herbcraft Core/Alchemy `1.1.4`, Cuisine `1.1.3`, Minecraft `26.3` (port in validation), Fabric Loader `0.19.3+`, Java `25+
 Purpose: define a future-safe path for third-party mod/data-pack compatibility without turning Herbcraft into an unstable pile of hardcoded cross-mod patches.
 
 > P4.1 formal JSON contract: `docs/JSON_EXTENSION_SPEC_1_1_3.md`. This draft remains the roadmap/history document; the JSON spec is now the authoritative schema reference for public data extension paths.

@@ -11,7 +11,7 @@
 两边不一致时，**以 `.github/workflows/` 的正式件为准**；上线后本目录的
 副本就是正式件的镜像，下次改动继续在这里迭代。
 
-## 当前状态（2026-10-13）
+## 当前状态（2026-10-14）
 
 三件**全部待上线**——本目录是唯一副本，`.github/workflows/` 还是空的：
 
@@ -19,7 +19,7 @@
 |---|---|---|
 | `compile-check.yml` | ⏳ 待上线 | `compileJava` 全三模块；arena/** 分支把编译日志经 Contents API 回推本分支 `build-reports/compile-java.log`（沙箱到不了 `maven.fabricmc.net`，这是本地看编译错误的唯一通道）；主分支 push + PR 也编译，但只有 arena/** 回推日志 |
 | `consistency.yml` | ⏳ 待上线 | 版本声明守门：`gradle.properties` ↔ `build.gradle` ↔ 三个 `fabric.mod.json` ↔ `README.md`；`paths` 覆盖全部版本声明文件（含 `*.md`，所以「只改 README」也守得住） |
-| `build.yml` | ⏳ 待上线 | 全量 `./gradlew build` + 三模块 jar artifact（14 天）+ 四个静态校验（语言键齐平 / mixin 配置完整性 / 版本一致性 / built-jar 校验） |
+| `build.yml` | ⏳ 待上线 | 全量 `./gradlew build` + 三模块 jar artifact（14 天）+ 六个静态校验（语言键齐平 / mixin 配置完整性 / 版本一致性 / 酿造配方与生成器一致 / 村民交易 26.3 schema / built-jar 校验） |
 
 ## 上线步骤（维护者，约 2 分钟）
 
@@ -44,3 +44,7 @@
   全量构建；「只改文档但改了版本号」由 `consistency.yml` 独立守门。
 - 三个模块的 mixin 配置完整性检查同时覆盖 `herbcraft.mixins.json`（core）
   与 `herbcraft_alchemy.mixins.json`（alchemy）；cuisine 没有 mixin。
+- `build.yml` 新增的两个数据校验（`validate_brewing_recipes.py` /
+  `migrate_villager_trades_26_3.py`）是 26.3 迁移的一部分：酿造配方与村民交易
+  在 26.3 都改了 schema，且**旧写法不会报错、只会被静默忽略**，所以必须由 CI 守门，
+  不能只靠人记得。两者都是纯 Python、秒级完成。

@@ -5,7 +5,8 @@
       "minecraft:potion_contents": {
         "potion": "herbcraft:golden_dandelion"
       }
-    }
+    },
+    "count": 1
   },
   "gives": {
     "id": "minecraft:emerald",

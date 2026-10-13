@@ -40,20 +40,21 @@ This generated brief summarizes what changed recently, what to do next, which re
 
 ## Locked environment
 
-- Minecraft `26.2` (port in validation)
+- Minecraft `26.3` (port in validation)
 - Fabric Loader `0.19.3`
-- Fabric API `0.155.2+26.2`
+- Fabric API `0.162.0+26.3`
 - Java `25`
-- Gradle Wrapper `9.5.1`
+- Gradle Wrapper `9.6.0`
 - Fabric Loom `1.17-SNAPSHOT`
 - Mojang official mappings
 
-26.2 port notes are cached in:
+26.3 port notes are cached in:
+
+- `reference_cache/26_3_porting_notes.md`（含每次结论的证据链与借鉴的上游移植手册）
+
+Earlier notes remain available for historical API context:
 
 - `reference_cache/26_2_porting_notes.md`
-
-The previous 26.1 notes remain available for historical API context:
-
 - `reference_cache/26_1_porting_notes.md`
 
 If the sandbox lacks JDK 25, use:
@@ -226,7 +227,7 @@ python3 scripts/validate_p1_codex_advancements.py
 python3 scripts/verify_built_jars.py
 ```
 
-`validate_animal_food_tags.py` derives the vanilla version from `gradle.properties` and searches `/home/user/cache/minecraft/client-26.2.jar`, Loom's downloaded client/merged jar, or `HERBCRAFT_VANILLA_CLIENT_JAR`. Run a Gradle build first if no vanilla jar cache exists.
+`validate_animal_food_tags.py` derives the vanilla version from `gradle.properties` and searches `/home/user/cache/minecraft/client-26.3.jar`, Loom's downloaded client/merged jar, or `HERBCRAFT_VANILLA_CLIENT_JAR`. Run a Gradle build first if no vanilla jar cache exists.
 
 Do not claim success if required checks were not run or if they fail.
 

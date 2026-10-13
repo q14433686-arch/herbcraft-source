@@ -1,5 +1,63 @@
 # CHANGELOG
 
+## 2026-10-14 Minecraft 26.3 Fabric port
+
+### Added
+
+- CI trio staged in `docs/ci/` (`build.yml`, `compile-check.yml`, `consistency.yml`),
+  mirroring `TaCZ_Refabricated_Unofficial`; the sandbox GitHub token cannot push
+  `.github/workflows/`, so the maintainer copies them over (see `docs/ci/README.md`).
+- 520 `minecraft:brewing` recipe JSONs under
+  `alchemy/src/main/resources/data/herbcraft/recipe/brewing/`: 170 mixes
+  (base/clarified/murky/long/strong per essence plus the special mixes) and 350
+  splash/lingering container transformations covering all 175 registered potions.
+- `scripts/generate_brewing_recipes.py` (regenerates the directory from
+  `essences.json` / `special_potions.json`) and `scripts/validate_brewing_recipes.py`
+  (drift detection, removed-API regression guard, mixin-presence guard).
+- `scripts/migrate_villager_trades_26_3.py` (idempotent trade schema migration).
+- `reference_cache/26_3_porting_notes.md` and
+  `docs/reports/PORTING_26_3_FABRIC_20261013.md`.
+
+### Changed
+
+- Development target: Minecraft `26.2` -> `26.3`; Fabric API `0.155.2+26.2` ->
+  `0.162.0+26.3`; Gradle Wrapper `9.5.1` -> `9.6.0`; Fabric Loader stays `0.19.3` and Java
+  stays `25`.
+- Optional dependencies moved to their verified 26.3 lines: Jade `26.3.5+fabric`,
+  JEI `31.12.0.65`, REI `26.3.824`, Architectury `22.0.5`.
+- `core`, `alchemy`, `cuisine`, and the two example addons' `fabric.mod.json` now declare
+  `~26.3` / `>=0.162.0+26.3` / `>=0.19.3` (and `suggests.jade >=26.3.5` for Core).
+- `AlchemyRegistries` no longer registers brewing mixes: 26.3 removed the runtime
+  `PotionBrewing` registry and `FabricPotionBrewingBuilder`, and it no longer
+  auto-creates splash/lingering recipes for registered potions.
+- 80 villager trades migrated to the 26.3 schema: `given_item_modifiers` ->
+  `given_item_modifier`, inline modifier `function` -> `type`, and the now-required
+  `count` on `wants` / `gives` / `additional_wants`.
+- Core client input moved to SDL-era `InputConstants` (`Type.KEYBOARD`, `KEY_N`, `KEY_T`)
+  because LWJGL 26.3 ships SDL3 and `org.lwjgl.glfw` is no longer on the classpath.
+- Vanilla-tooling scripts bumped to 26.3 (client jar name, piston-meta hash, loom cache
+  path, animal food tag version).
+- `scripts/generate_essence_resources.py` and
+  `scripts/validate_alchemy_trade_loot_arrow_adaptation.py` follow the new trade schema.
+- `scripts/validate_codex_payload_separation.py` no longer matches the pre-26.2
+  `Minecraft.screen` / `setScreen` strings (it had been failing since the 26.2 port).
+
+### Validation
+
+- `scripts/check_version_consistency.py` — PASS (23/23).
+- `scripts/generate_brewing_recipes.py` (check mode) and
+  `scripts/validate_brewing_recipes.py` — PASS (520 recipes).
+- `scripts/migrate_villager_trades_26_3.py` (check mode) — PASS (134 trades).
+- `scripts/check_lang_diff.py`, mixin config integrity, and the full sandbox-runnable
+  validator suite — PASS.
+- Java 25 Gradle compilation, mixin apply, and client/server smoke tests — pending; the
+  sandbox cannot reach `maven.fabricmc.net`, so this depends on the staged CI.
+
+### Reports
+
+- Investigation: `reference_cache/26_3_porting_notes.md`.
+- Implementation: `docs/reports/PORTING_26_3_FABRIC_20261013.md`.
+
 ## 2026-07-19 Minecraft 26.2 Fabric port — initial pass
 
 ### Changed

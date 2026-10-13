@@ -1,6 +1,6 @@
 # Herbcraft Documentation Index
 
-Status: current documentation map for the Core/Alchemy `1.1.4` source line; Cuisine remains `1.1.3`; the Minecraft `26.2` port is currently in validation.
+Status: current documentation map for the Core/Alchemy `1.1.4` source line; Cuisine remains `1.1.3`; the Minecraft `26.3` port is currently in validation (CI staged in `docs/ci/`, see `docs/reports/PORTING_26_3_FABRIC_20261013.md`).
 Last updated: 2026-07-19
 
 Use this file to avoid treating historical design notes as the current source of truth.
@@ -34,7 +34,9 @@ docs/wiki/README.md
 docs/JSON_EXTENSION_SPEC_1_1_4.md
 docs/EXTERNAL_EXTENSION_SPEC_DRAFT.md
 docs/PUBLIC_EXTENSION_API_DESIGN.md
-reference_cache/26_1_porting_notes.md
+reference_cache/26_3_porting_notes.md
+docs/reports/PORTING_26_3_FABRIC_20261013.md
+docs/ci/README.md
 ```
 
 Important rule:
@@ -52,11 +54,31 @@ docs/RELEASE_PAGE_COPY_1.1.4.md        # Modrinth / CurseForge, English first
 docs/MCMOD_RELEASE_COPY_1.1.4.md       # MC百科 / MCMOD, Chinese community copy
 ```
 
+## 2.5 CI and porting status (26.3)
+
+```text
+docs/ci/README.md                             # workflow 暂存区状态与上线步骤
+docs/ci/build.yml                             # 全量构建 + jar artifact + 6 个静态校验
+docs/ci/compile-check.yml                     # compileJava，arena/** 分支回推编译日志
+docs/ci/consistency.yml                       # 版本声明守门
+reference_cache/26_3_porting_notes.md         # 26.3 迁移调查与实施记录（含证据链）
+docs/reports/PORTING_26_3_FABRIC_20261013.md  # 26.3 迁移报告
+reference_cache/26_2_porting_notes.md         # 历史：26.2
+reference_cache/26_1_porting_notes.md         # 历史：26.1
+```
+
+The three workflows are staged in `docs/ci/` because the sandbox GitHub token cannot push
+`.github/workflows/`; the maintainer copies them over (or grants the `Workflows` permission).
+The 26.3 port itself is applied in the working tree — compile verification is the remaining
+gate, which is exactly what the staged CI provides.
+
 ## 3. Current implementation reports / design references
 
 These reports describe implemented or recently tuned systems that are part of the current working tree:
 
 ```text
+docs/reports/PORTING_26_3_FABRIC_20261013.md
+docs/reports/PORTING_26_2_FABRIC_20260719.md
 docs/reports/ALCHEMY_TRADE_LOOT_ARROW_ADAPTATION_20260630.md
 docs/reports/ALCHEMY_ADVANCEMENT_AND_SYNC_AUDIT_20260630.md
 docs/reports/ALCHEMY_VIEWER_COMPONENT_MATCHING_FIXES_20260630.md

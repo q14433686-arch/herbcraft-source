@@ -24,9 +24,9 @@ require('ServerPlayNetworking.send(serverPlayer, CodexSnapshotPayload.build(serv
 require('ServerPlayNetworking.send(serverPlayer, OpenCodexPayload.open());' in book, 'codex book sends explicit open-ui payload')
 require('context.client().setScreen(new CodexScreen(payload))' not in client, 'snapshot receiver no longer opens UI directly')
 require('CodexClientState.setLatestSnapshot(payload);' in client, 'snapshot receiver updates client codex cache')
-require('context.client().screen instanceof CodexScreen codexScreen' in client, 'open codex screen can refresh live from snapshots')
+require('context.client().gui.screen() instanceof CodexScreen codexScreen' in client, 'open codex screen can refresh live from snapshots')
 require('ClientPlayNetworking.registerGlobalReceiver(OpenCodexPayload.TYPE' in client, 'client handles explicit open-codex payload')
-require('context.client().setScreen(new CodexScreen(snapshot));' in client, 'explicit open-codex payload opens UI using cached snapshot')
+require('context.client().gui.setScreen(new CodexScreen(snapshot));' in client, 'explicit open-codex payload opens UI using cached snapshot')
 require('class CodexClientState' in state and 'latestSnapshot' in state, 'client codex snapshot cache exists')
 require('public void replaceSnapshot(CodexSnapshotPayload snapshot)' in screen, 'codex screen supports live snapshot replacement')
 

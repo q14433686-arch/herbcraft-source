@@ -1,6 +1,31 @@
 # NEXT_TASK
 
-## Current handoff note: Minecraft 26.2 Fabric port validation
+## Current handoff note: Minecraft 26.3 Fabric port (CI first)
+
+On 2026-10-13/14 the 26.3 port was applied. The detailed report is
+`docs/reports/PORTING_26_3_FABRIC_20261013.md`; the investigation notes are
+`reference_cache/26_3_porting_notes.md`. Per the author's instruction the CI trio was
+built **first** and is staged in `docs/ci/` (mirroring `TaCZ_Refabricated_Unofficial`).
+
+Completed in this pass:
+
+- Minecraft `26.2` -> `26.3`; Fabric API `0.155.2+26.2` -> `0.162.0+26.3`; Gradle Wrapper `9.5.1` -> `9.6.0`; Loader `0.19.3` and Java `25` kept;
+- optional deps to their verified 26.3 lines: Jade `26.3.5+fabric`, JEI `31.12.0.65`, REI `26.3.824`, Architectury `22.0.5`;
+- **brewing moved to data-driven JSON**: 520 `minecraft:brewing` recipes (`alchemy/src/main/resources/data/herbcraft/recipe/brewing/`) covering every mix and every splash/lingering container transformation for all 175 registered potions — `scripts/generate_brewing_recipes.py` + `scripts/validate_brewing_recipes.py`;
+- **villager trades migrated to the 26.3 schema** (80 files): `given_item_modifier`, inline modifier `type`, required `count` — `scripts/migrate_villager_trades_26_3.py`;
+- **SDL input** in three Core client files (`InputConstants.Type.KEYBOARD`, `InputConstants.KEY_*`);
+- five `fabric.mod.json`, README, and the vanilla-tooling scripts bumped to 26.3;
+- `scripts/check_version_consistency.py` 23/23 green; full sandbox-runnable validator suite green.
+
+### Required validation (26.3)
+
+1. **Activate CI**: copy `docs/ci/{build,compile-check,consistency}.yml` to `.github/workflows/` (or grant the Arena GitHub app `Workflows` permission). Until then nothing compiles in automation — the sandbox cannot reach `maven.fabricmc.net`.
+2. Read `build-reports/compile-java.log` after the first `arena/**` push and iterate. Most likely remaining errors: the two custom smithing recipe classes (`CoatingSmithingRecipe`, `ArmorSupportSmithingRecipe`) and JEI registration calls.
+3. Start a dedicated server and client; check all Mixin targets, resource/data loading, the brewing stand UI, villager trades, and Jade/JEI/REI with the exact 26.3 versions.
+4. Refresh release output only after the 26.3 build and smoke test pass.
+
+## Previous handoff note: Minecraft 26.2 Fabric port validation
+
 
 On 2026-07-19 the initial 26.2 Fabric port was applied. The detailed report is `docs/reports/PORTING_26_2_FABRIC_20260719.md`; the investigation notes are `reference_cache/26_2_porting_notes.md`.
 
@@ -26,6 +51,8 @@ Windows feedback fixed the first 26.2 compiler error: the eight Alchemy calls to
 3. Start a dedicated server and client; check all Mixin targets and resource/data loading.
 4. Open/close the Codex and Nutrition panel, then test Jade/JEI/REI with the exact 26.2 versions.
 5. Refresh release output only after the 26.2 build and smoke test pass.
+
+(26.2 validation is superseded by the 26.3 note above.)
 
 ## Current handoff note: Core/Alchemy 1.1.4 version bump
 
