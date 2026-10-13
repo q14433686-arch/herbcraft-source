@@ -1,0 +1,106 @@
+name: build
+# 全量构建 + 产物上传（2026-10-13 新增，参照 TaCZ_Refabricated_Unofficial 的 CI 三件套）：
+# compile-check 只跑 compileJava，测不出 processResources / remapJar 阶段的失败，
+# 也不产 jar。本流程跑 ./gradlew build 并把三个模块的 jar 上传为 Actions artifact
+# （留 14 天）——每轮改动随手有可实测的构建。
+# 顺手跑六个便宜的静态校验（语言键齐平 / mixin 配置完整性 / 版本一致性 /
+# 酿造配方与生成器一致 / 村民交易 26.3 schema / built-jar 校验）。后两项守的是
+# 26.3 迁移里最危险的「旧写法解析不报错、被静默忽略」类回退。
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - 'arena/**'
+      - 'herbcraft-source-26.2'
+      - 'herbcraft-source-26.1.2'
+    paths-ignore:
+      - 'build-reports/**'
+      - 'docs/**'
+      - '*.md'
+  pull_request:
+    paths-ignore:
+      - 'build-reports/**'
+      - 'docs/**'
+      - '*.md'
+  workflow_dispatch:
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lang key parity (en_us 与 zh_cn 键集合必须一致)
+        run: python3 scripts/check_lang_diff.py
+
+      - name: Mixin config integrity (json 里列的类必须真实存在)
+        run: |
+          python3 - <<'EOF'
+          import json, os, sys
+          bad = []
+          for module in ('core', 'alchemy'):
+              base = f'{module}/src/main/resources'
+              for cfg in [f'{base}/herbcraft.mixins.json', f'{base}/herbcraft_alchemy.mixins.json']:
+                  if not os.path.exists(cfg):
+                      continue
+                  d = json.load(open(cfg))
+                  pkg = d.get('package', '').replace('.', '/')
+                  java_base = f'{module}/src/main/java'
+                  for section in ('mixins', 'client', 'server'):
+                      for m in d.get(section, []):
+                          p = java_base + '/' + pkg + '/' + m.replace('.', '/') + '.java'
+                          if not os.path.exists(p):
+                              bad.append(f'{cfg}: {m} -> {p} 不存在')
+          for b in bad:
+              print('::error::' + b)
+          sys.exit(1 if bad else 0)
+          EOF
+
+      - name: Version consistency (gradle.properties ↔ build.gradle ↔ fabric.mod.json ↔ README)
+        run: python3 scripts/check_version_consistency.py
+
+      - name: Brewing recipes match the generator (26.3 data-driven brewing)
+        run: python3 scripts/validate_brewing_recipes.py
+
+      - name: Villager trades use the 26.3 schema (given_item_modifier / type / count)
+        run: python3 scripts/migrate_villager_trades_26_3.py
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Full build
+        run: |
+          # 不依赖 git 里的可执行位（网页上传/部分检出会丢 mode），显式补一次
+          chmod +x gradlew
+          ./gradlew build --console=plain --stacktrace --no-daemon
+
+      - name: Verify built jars (版本号/关键类/关键资源必须在 jar 里)
+        run: python3 scripts/verify_built_jars.py
+
+      - name: Upload jars
+        uses: actions/upload-artifact@v4
+        with:
+          # artifact 名不能含 '/' 等字符，所以不能用 github.ref_name（arena/xxx 带斜杠）。
+          # 分支名在 run 页面本来就有，名字里只放 sha 前缀即可。
+          name: herbcraft-${{ github.sha }}
+          path: |
+            core/build/libs/herbcraft-*.jar
+            alchemy/build/libs/herbcraft-alchemy-*.jar
+            cuisine/build/libs/herbcraft-cuisine-*.jar
+            !core/build/libs/*-sources.jar
+            !alchemy/build/libs/*-sources.jar
+            !cuisine/build/libs/*-sources.jar
+          retention-days: 14
+          if-no-files-found: error
