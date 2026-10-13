@@ -41,6 +41,8 @@ jobs:
         run: |
           mkdir -p build-reports
           echo "commit: ${{ github.sha }}" > build-reports/compile-java.log
+          # 不依赖 git 里的可执行位（网页上传/部分检出会丢 mode），显式补一次
+          chmod +x gradlew
           ./gradlew compileJava --console=plain --stacktrace --no-daemon >> build-reports/compile-java.log 2>&1
       - name: Push compile log back via contents API
         # 只在 arena/** 的 push 上回推 —— 主分支与 PR 不产生 ci-log commit

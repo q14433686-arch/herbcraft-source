@@ -44,6 +44,11 @@
   全量构建；「只改文档但改了版本号」由 `consistency.yml` 独立守门。
 - 三个模块的 mixin 配置完整性检查同时覆盖 `herbcraft.mixins.json`（core）
   与 `herbcraft_alchemy.mixins.json`（alchemy）；cuisine 没有 mixin。
+- **`gradlew` 必须带可执行位**：本仓历史上以 mode `100644` 提交过 `gradlew`，
+  GitHub 网页上传/部分检出也会丢 mode，表现为
+  `./gradlew: Permission denied`（编译步骤直接失败，且**不是**代码问题）。
+  已在 git 里改为 `100755`，并且 workflow 里都显式 `chmod +x gradlew` 兜底。
+  如果哪天编译又报 Permission denied，先查 `git ls-files -s gradlew`。
 - `build.yml` 新增的两个数据校验（`validate_brewing_recipes.py` /
   `migrate_villager_trades_26_3.py`）是 26.3 迁移的一部分：酿造配方与村民交易
   在 26.3 都改了 schema，且**旧写法不会报错、只会被静默忽略**，所以必须由 CI 守门，

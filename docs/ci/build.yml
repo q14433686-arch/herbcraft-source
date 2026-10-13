@@ -81,7 +81,10 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
 
       - name: Full build
-        run: ./gradlew build --console=plain --stacktrace --no-daemon
+        run: |
+          # 不依赖 git 里的可执行位（网页上传/部分检出会丢 mode），显式补一次
+          chmod +x gradlew
+          ./gradlew build --console=plain --stacktrace --no-daemon
 
       - name: Verify built jars (版本号/关键类/关键资源必须在 jar 里)
         run: python3 scripts/verify_built_jars.py
