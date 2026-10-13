@@ -6,6 +6,8 @@ MC 26.3 起酿造是数据驱动的；本校验保证：
 1. `data/herbcraft/recipe/brewing/*.json` 与
    `scripts/generate_brewing_recipes.py`（= AlchemyRegistries.registerModifiers() 的
    逻辑镜像）逐字一致，没有缺失、没有漂移、没有多余文件；
+1b. 容器转换链与 vanilla `BrewingProvider#addContainerTransformations` 一致：
+   `potion + gunpowder -> splash_potion`、`splash_potion + dragon_breath -> lingering_potion`；
 2. Java 侧不再引用已被 26.3 移除的 API（FabricPotionBrewingBuilder / addMix / PotionBrewing），
    防止有人重新把 mix 注册写回代码而与 JSON 配方脱节；
 3. 每个 mix 配方引用的药水都来自 essences.json / special_potions.json 推导出的药水集合；
@@ -78,6 +80,18 @@ def main() -> int:
                 potion_ref = data[field].get("potion_contents", {}).get("potions")
             if potion_ref and potion_ref not in known_potions and potion_ref != gen.AWKWARD:
                 failures.append(f"{name}: {field} 引用未知药水 {potion_ref}")
+
+    # 2b) 容器转换链必须与 vanilla `BrewingProvider#addContainerTransformations` 一致：
+    #     potion + gunpowder -> splash_potion；splash_potion + dragon_breath -> lingering_potion
+    for name, data in sorted(expected.items()):
+        if name.startswith("splash_"):
+            if data["input"]["item"] != gen.POTION or data["reagent"]["item"] != "minecraft:gunpowder" \
+                    or data["output"]["id"] != gen.SPLASH_POTION:
+                failures.append(f"{name}: 喷溅转换必须是 potion + gunpowder -> splash_potion")
+        elif name.startswith("lingering_"):
+            if data["input"]["item"] != gen.SPLASH_POTION or data["reagent"]["item"] != "minecraft:dragon_breath" \
+                    or data["output"]["id"] != gen.LINGERING_POTION:
+                failures.append(f"{name}: 滞留转换必须是 splash_potion + dragon_breath -> lingering_potion")
 
     # 3) Java 回归守门（先剥掉注释，避免文档性说明误报）
     if ALCHEMY_JAVA.exists():

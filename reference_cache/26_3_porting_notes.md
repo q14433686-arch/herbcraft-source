@@ -63,8 +63,14 @@
 - spawnguard 26.3 发布说明：「Minecraft 26.3 removed the runtime PotionBrewing registry …
   both loaders now ship `data/spawnguard/recipe/brewing/*.json`」。
 - Taverns 1.3.0+26.3-neoforge：酿造配方从 config `brewing.json` 搬到数据包 recipe JSON。
-- `FabricMC/fabric@26.3` 自带 `FabricBrewingProvider.java` + 测试模组
-  `recipe/brewing/potion_water_weird_pickaxe.json`（说明 vanilla datagen 也是逐配方产出）。
+- `FabricMC/fabric@26.3` 自带 `FabricBrewingProvider.java`（模组生成酿造配方的官方入口），
+  其中 `addContainerTransformations()` 写死两条链：
+  `POTION + gunpowder -> SPLASH_POTION`、`SPLASH_POTION + dragon_breath -> LINGERING_POTION`；
+  其测试模组生成的 `recipe/brewing/{potion_haste_gunpowder,splash_potion_haste_dragon_breath,
+  lingering_potion_water_simple_block,potion_water_simple_block}.json` 与本仓生成的 JSON
+  **字段名与嵌套完全一致**（`type` / `input{item,potion_contents.potions}` /
+  `reagent{item}` / `output{id,components."minecraft:potion_contents".potion}`），
+  并且证实滞留转换的输入是**喷溅药水**而不是基础药水。
 
 **关键判断（26.3 不再自动生成容器转换）**：minecraft.wiki《Brewing》History 记载
 「26.3 snap3: Potions of Luck and splash potions of Luck cannot be brewed into splash and
@@ -98,8 +104,11 @@ lingering potions anymore」。Luck 是 vanilla 自己的药水——连它都�
   `scripts/validate_brewing_recipes.py`（逐字比对 + Java 侧已移除 API 守门 +
   `BrewingStandCatalystMixin` 仍在 mixin 配置中）。
 - 自定义酿造 `HiddenCuisineCatalystBrewing` / `DistilledEssenceBrewing` 走
-  `BrewingStandBlockEntity#doBrew` HEAD 注入，与数据驱动配方**互不影响**（已确认全仓无
-  `PotionBrewing` 引用；`isBrewable(NonNullList<ItemStack>)` 签名未变）。
+  `BrewingStandBlockEntity#doBrew` HEAD 注入，与数据驱动配方**互不影响**：
+  `FabricMC/fabric@26.3` 自己的 `BrewingStandBlockEntityMixin` 仍然 `@Redirect` 到
+  `method = "doBrew"`，说明该方法名/签名在 26.3 未变；同时全仓无 `PotionBrewing` 引用。
+  同一个 Fabric mixin 还证明 26.3 的 `Item#getCraftingRemainder()` 返回
+  `ItemStackTemplate`（与本仓 `SlotDisplay.ItemStackSlotDisplay(ItemStackTemplate...)` 用法一致）。
 
 ### 2. 村民交易 / 物品修饰器 schema（已实施，80 个文件）
 
