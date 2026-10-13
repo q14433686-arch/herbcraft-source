@@ -1,5 +1,12 @@
 # docs/ci/ —— workflow 暂存区
 
+> **分支 `arena/dcbd25af-herbcraft-source`（2026-10-13）特别说明**：本分支的 `.github/workflows/` 目录是**不存在**的。
+> GitHub 拒绝推送含有「创建/修改 workflow 文件」提交的分支（沙箱凭据没有 `workflows` 权限），
+> 所以本分支历史里去掉了这三次 workflow 提交（`eb0ade3`、`eb9f72a`、`cd31557`），内容全部保留在本目录。
+> **要让 CI 在本分支生效，把下面四个文件逐个复制到 `.github/workflows/` 同名文件即可**：
+> `build.yml`、`compile-check.yml`、`consistency.yml`、`runtime-smoke.yml`。
+> 或者在 Arena 的 GitHub 连接里授予 `Workflows` 权限后重连，由 Agent 直接推送。
+
 沙箱 Agent 的 GitHub 凭据没有 `workflows` 权限，推不动 `.github/workflows/`
 （实测报错：`refusing to allow a GitHub App to create or update workflow
 .github/workflows/build.yml without workflows permission`）。

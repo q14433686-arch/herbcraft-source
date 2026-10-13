@@ -1,0 +1,120 @@
+name: runtime-smoke
+# 运行时冒烟（26.3 移植里唯一还没被任何流程验证的一层）：
+# 编译通过 ≠ Mixin 能应用。BrewingStandCatalystMixin 的 @Inject 目标方法在 26.3 已改签名
+# （isBrewable(PotionBrewing, NonNullList) → isBrewable(ServerLevel, BrewingStandBlockEntity)），
+# 描述符不对只会在启动时以 "Mixin apply failed" / InvalidInjectionException 暴露。
+# 本流程用 Loom 的 runServer 分别拉起 core / alchemy / cuisine 三个模块的开发服务端：
+#   通过 = 日志出现 "Done ("，且没有 mixin 应用失败 / 崩溃；
+#   失败 = 出现 mixin 错误、崩溃报告，或服务端在 Done 之前退出。
+# 不改 build.gradle，与 build.yml 解耦：本流程红了不影响编译/产物流程。
+# 日志经 Contents API 回推 build-reports/runtime-smoke.log（与 compile-check 同一做法，
+# 沙箱读不了 Actions 日志 blob，只能靠这个通道看结果）。
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - 'arena/**'
+    paths-ignore:
+      - 'build-reports/**'
+      - 'docs/**'
+      - '*.md'
+  workflow_dispatch:
+
+concurrency:
+  group: runtime-smoke-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Start dedicated servers and wait for "Done"
+        env:
+          # 无显示器环境：让 MC 服务端跳过 GUI（MC 检测 headless 决定是否开窗口）
+          JAVA_TOOL_OPTIONS: -Djava.awt.headless=true
+        run: |
+          set +e
+          chmod +x gradlew
+          mkdir -p build-reports
+          SUMMARY=build-reports/runtime-smoke.log
+          : > "$SUMMARY"
+          echo "commit: ${{ github.sha }}" >> "$SUMMARY"
+          FAILED=0
+          for mod in core alchemy cuisine; do
+            echo "===== :$mod:runServer =====" | tee -a "$SUMMARY"
+            mkdir -p "$mod/run"
+            echo "eula=true" > "$mod/run/eula.txt"
+            RUN_LOG="/tmp/smoke-$mod.log"
+            : > "$RUN_LOG"
+            # setsid：让 gradle 及其 fork 出的服务端 JVM 处于同一进程组，便于整组结束
+            setsid ./gradlew ":$mod:runServer" --console=plain --no-daemon --stacktrace > "$RUN_LOG" 2>&1 &
+            GPID=$!
+            STATUS=timeout
+            for i in $(seq 1 120); do
+              if grep -q "Done (" "$RUN_LOG"; then STATUS=ok; break; fi
+              if grep -qE "Mixin apply .*failed|Invalid(Injection|Mixin)Exception|MixinTransformerError|Crash report|A fatal error has occurred|Exception in server tick" "$RUN_LOG"; then STATUS=crashed; break; fi
+              if ! kill -0 "$GPID" 2>/dev/null; then STATUS=exited; break; fi
+              sleep 5
+            done
+            # 结束服务端（SIGTERM 让服务端正常关服），超时再强杀
+            kill -TERM -- "-$GPID" 2>/dev/null
+            for i in $(seq 1 12); do kill -0 "$GPID" 2>/dev/null || break; sleep 5; done
+            kill -KILL -- "-$GPID" 2>/dev/null
+            wait "$GPID" 2>/dev/null
+            echo "result: $STATUS" | tee -a "$SUMMARY"
+            # 关键行摘要 + 日志尾部（回推用，控制体积）
+            {
+              echo "--- key lines (mixin / herbcraft / ERROR / Done) ---"
+              grep -iE "mixin|herbcraft|ERROR|Exception|Done \(" "$RUN_LOG" | head -n 300
+              echo "--- log tail ---"
+              tail -n 150 "$RUN_LOG"
+            } >> "$SUMMARY"
+            echo "" >> "$SUMMARY"
+            if [ "$STATUS" != "ok" ]; then
+              FAILED=1
+              echo "::error::$mod:runServer 未到达 Done（结果：$STATUS）。详见 build-reports/runtime-smoke.log"
+            fi
+            # herbcraft 相关的 ERROR 只告警不红：数据包小问题不该挡住 mixin 冒烟
+            if grep -iE "ERROR.*herbcraft" "$RUN_LOG" > /dev/null; then
+              echo "::warning::$mod 运行期出现 herbcraft 相关 ERROR 行，请查看日志"
+            fi
+          done
+          echo "overall: $([ $FAILED -eq 0 ] && echo PASS || echo FAIL)" >> "$SUMMARY"
+          exit $FAILED
+
+      - name: Push smoke log back via contents API
+        # 只在 arena/** 的 push 上回推；与 compile-check 一样是防止看不到 Actions 日志的手段
+        if: always() && github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          LOG=build-reports/runtime-smoke.log
+          [ -f "$LOG" ] || exit 0
+          LINES=$(wc -l < "$LOG")
+          if [ "$LINES" -gt 3000 ]; then
+            { head -n 500 "$LOG"; echo "...[truncated ${LINES} lines total]..."; tail -n 2000 "$LOG"; } > /tmp/smoke-trimmed
+            mv /tmp/smoke-trimmed "$LOG"
+          fi
+          echo "" >> "$LOG"
+          echo "== job status: ${{ job.status }} ==" >> "$LOG"
+          BRANCH="${{ github.ref_name }}"
+          SHA=$(gh api "repos/${{ github.repository }}/contents/$LOG?ref=$BRANCH" --jq .sha 2>/dev/null || true)
+          ARGS=(-X PUT "repos/${{ github.repository }}/contents/$LOG"
+                -f message="ci-log: runtime smoke (${{ job.status }}) for ${{ github.sha }}"
+                -f branch="$BRANCH"
+                -f content="$(base64 -w0 "$LOG")")
+          if [ -n "$SHA" ]; then ARGS+=(-f sha="$SHA"); fi
+          gh api "${ARGS[@]}" --jq .commit.sha

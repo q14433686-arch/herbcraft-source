@@ -192,6 +192,6 @@ here with `EOF` (`results-receiver.actions.githubusercontent.com` /
 ## Follow-up on branch `arena/dcbd25af-herbcraft-source` (2026-10-13)
 
 - The 26.3 work above was recovered onto the session branch by fast-forward (same commits, `95f259c`).
-- **Runtime smoke** is now automated: `.github/workflows/runtime-smoke.yml` starts `:core`, `:alchemy` and `:cuisine` dedicated servers and passes only on `Done (` with no mixin failure. It turns "Remaining work item 1" from manual into CI. Its first run is still pending, so the item is not yet verified.
+- **Runtime smoke** is now automated: `docs/ci/runtime-smoke.yml` (to be copied into `.github/workflows/`, see the caveat in `CURRENT_BASELINE.md`) starts `:core`, `:alchemy` and `:cuisine` dedicated servers and passes only on `Done (` with no mixin failure. It turns "Remaining work item 1" from manual into CI. Its first run is still pending, so the item is not yet verified.
 - Theme colour parsing: 6-digit RGB values from theme JSON get an opaque alpha (see `CURRENT_BASELINE.md`).
 - The static audit against `TaCZ_Refabricated_Unofficial/docs/PORTING_NOTES.md` (colour alpha, singular data directories, item models, `blit` sizes, `BlockItem` description ids) found no further issues.
