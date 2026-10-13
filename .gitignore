@@ -11,3 +11,4 @@ release/
 cache/
 node_modules/
 release_output/
+__pycache__/
