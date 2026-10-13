@@ -1,0 +1,48 @@
+name: Version consistency
+# 版本一致性守门：改了 gradle.properties 却忘了同步 build.gradle / fabric.mod.json / README 时，
+# PR 会红。compile-check 测的是「能不能编」，本流程测的是「版本声明有没有到处同步」。
+# build.yml 虽然也跑同一脚本，但它 paths-ignore 掉了 *.md 与 docs/**，「只改 README」的提交
+# 测不到 —— 本流程必须独立存在，且 paths 覆盖全部版本声明文件。
+
+on:
+  push:
+    branches:
+      - 'arena/**'
+      - 'herbcraft-source-26.2'
+      - 'herbcraft-source-26.1.2'
+    paths:
+      - 'gradle.properties'
+      - 'README.md'
+      - 'build.gradle'
+      - 'gradle/wrapper/gradle-wrapper.properties'
+      - 'core/src/main/resources/fabric.mod.json'
+      - 'alchemy/src/main/resources/fabric.mod.json'
+      - 'cuisine/src/main/resources/fabric.mod.json'
+      - 'scripts/check_version_consistency.py'
+  pull_request:
+    paths:
+      - 'gradle.properties'
+      - 'README.md'
+      - 'build.gradle'
+      - 'gradle/wrapper/gradle-wrapper.properties'
+      - 'core/src/main/resources/fabric.mod.json'
+      - 'alchemy/src/main/resources/fabric.mod.json'
+      - 'cuisine/src/main/resources/fabric.mod.json'
+      - 'scripts/check_version_consistency.py'
+  workflow_dispatch:
+jobs:
+  check:
+    name: gradle.properties / build.gradle / fabric.mod.json / README 版本一致性
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 检查当前分支
+        run: python3 scripts/check_version_consistency.py
+      - name: 失败提示
+        if: failure()
+        run: |
+          echo "::error::版本声明不一致。修改 gradle.properties 后必须同步以下位置："
+          echo "::error::1) build.gradle：cuisine 单独版本 + 其余模块版本；"
+          echo "::error::2) core/alchemy/cuisine 三个 fabric.mod.json：version、depends.minecraft、depends.fabric-api、depends.fabricloader、core 的 suggests.jade；"
+          echo "::error::3) README.md：「Locked environment」小节、模块版本表、Gradle Wrapper 行；"
+          echo "::error::4) 如涉及 MC 线迁移，另需同步 AI_ONBOARDING.md / CURRENT_BASELINE.md / NEXT_TASK.md 与 docs/ 下的迁移报告。"
