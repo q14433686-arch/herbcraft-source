@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:brewing",
+  "input": {
+    "item": "minecraft:potion",
+    "potion_contents": {
+      "potions": "herbcraft:flowering_azalea_murky"
+    }
+  },
+  "reagent": {
+    "item": "herbcraft:essence_wither_rose"
+  },
+  "output": {
+    "id": "minecraft:potion",
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "herbcraft:undead_venom"
+      }
+    }
+  }
+}

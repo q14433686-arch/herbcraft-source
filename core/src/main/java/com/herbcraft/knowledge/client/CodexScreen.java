@@ -2,6 +2,7 @@ package com.herbcraft.knowledge.client;
 
 import com.herbcraft.knowledge.ClaimMarkPayload;
 import com.herbcraft.knowledge.CodexSnapshotPayload;
+import com.mojang.blaze3d.platform.InputConstants;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -64,7 +65,7 @@ public class CodexScreen extends Screen {
    @Override
    public boolean keyPressed(net.minecraft.client.input.KeyEvent event) {
       // T key toggles light/dark theme while Codex is open
-      if (event.key() == org.lwjgl.glfw.GLFW.GLFW_KEY_T) {
+      if (event.key() == InputConstants.KEY_T) {
          CodexTheme.toggleDarkMode();
          this.rebuildRows();
          return true;

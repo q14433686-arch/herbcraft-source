@@ -24,8 +24,8 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 VANILLA = ROOT / "build" / "vanilla_item_templates"
-CLIENT_JAR = VANILLA / "client-26.2.jar"
-MC_VERSION_JSON = "https://piston-meta.mojang.com/v1/packages/9e272020887b72a23b1a525c5d8e74d2d7aa8222/26.2.json"
+CLIENT_JAR = VANILLA / "client-26.3.jar"
+MC_VERSION_JSON = "https://piston-meta.mojang.com/v1/packages/11f1aefe473eefba0af62e3286c33b692807b2eb/26.3.json"
 
 TEMPLATE_ITEMS = [
     "potion.png",

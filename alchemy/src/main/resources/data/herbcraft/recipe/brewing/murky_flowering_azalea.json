@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:brewing",
+  "input": {
+    "item": "minecraft:potion",
+    "potion_contents": {
+      "potions": "herbcraft:flowering_azalea"
+    }
+  },
+  "reagent": {
+    "item": "minecraft:fermented_spider_eye"
+  },
+  "output": {
+    "id": "minecraft:potion",
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "herbcraft:flowering_azalea_murky"
+      }
+    }
+  }
+}

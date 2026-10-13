@@ -1,5 +1,6 @@
 package com.herbcraft.nutrition.client;
 
+import com.mojang.blaze3d.platform.InputConstants;
 import com.herbcraft.knowledge.client.CodexTextLayout;
 import com.herbcraft.nutrition.NutritionProfile;
 import com.herbcraft.nutrition.NutritionRules;
@@ -26,7 +27,7 @@ public class NutritionPanelScreen extends Screen {
 
    @Override
    public boolean keyPressed(net.minecraft.client.input.KeyEvent event) {
-      if (event.key() == org.lwjgl.glfw.GLFW.GLFW_KEY_N) {
+      if (event.key() == InputConstants.KEY_N) {
          this.onClose();
          return true;
       }

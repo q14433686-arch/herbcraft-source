@@ -1,6 +1,6 @@
 # Herbcraft / 百草可食
 
-Herbcraft is a Fabric mod suite for Minecraft Java Edition `26.2`. (The 26.2 port is currently in validation.) It turns vanilla plants, odd natural materials, cuisine, alchemy, and knowledge discovery into a layered survival system.
+Herbcraft is a Fabric mod suite for Minecraft Java Edition `26.3`. (The 26.3 port is currently in validation — see `docs/reports/PORTING_26_3_FABRIC_20261013.md`.) It turns vanilla plants, odd natural materials, cuisine, alchemy, and knowledge discovery into a layered survival system.
 
 **Author:** q14433686-arch · **Co-developer:** Arena.ai Agent
 
@@ -16,11 +16,11 @@ This repository is a three-module Gradle project:
 
 ## Locked environment
 
-- Minecraft `26.2`
+- Minecraft `26.3`
 - Fabric Loader `0.19.3`
-- Fabric API `0.155.2+26.2`
+- Fabric API `0.162.0+26.3`
 - Java `25`
-- Gradle Wrapper `9.5.1`
+- Gradle Wrapper `9.6.0`
 - Fabric Loom `1.17-SNAPSHOT`
 - Mojang official mappings
 

@@ -22,7 +22,6 @@ import net.minecraft.client.KeyMapping;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.server.packs.resources.ResourceManager;
-import org.lwjgl.glfw.GLFW;
 
 public final class HerbcraftCoreClient implements ClientModInitializer {
    private static final KeyMapping.Category HERBCRAFT_CATEGORY = KeyMapping.Category.register(
@@ -30,8 +29,8 @@ public final class HerbcraftCoreClient implements ClientModInitializer {
    );
    private static final KeyMapping OPEN_NUTRITION = new KeyMapping(
       "key.herbcraft.open_nutrition_panel",
-      InputConstants.Type.KEYSYM,
-      GLFW.GLFW_KEY_N,
+      InputConstants.Type.KEYBOARD,
+      InputConstants.KEY_N,
       HERBCRAFT_CATEGORY
    );
 

@@ -4,8 +4,8 @@ import com.herbcraft.alchemy.distillation.DistilledEssenceBrewing;
 import com.herbcraft.alchemy.potion.HiddenCuisineCatalystBrewing;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.alchemy.PotionBrewing;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BrewingStandBlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
@@ -24,8 +24,18 @@ public abstract class BrewingStandCatalystMixin {
       }
    }
 
+   // MC 26.3: brewing became data-driven (minecraft:brewing recipes); the vanilla
+   // PotionBrewing registry is gone and BrewingStandBlockEntity.isBrewable now takes
+   // (ServerLevel, BrewingStandBlockEntity) instead of (PotionBrewing, NonNullList).
+   // The four brewing-stand slots still feed the same Herbcraft custom brewing checks,
+   // so rebuild the slot list from the block entity and defer to the Java rules.
    @Inject(method = "isBrewable", at = @At("HEAD"), cancellable = true)
-   private static void herbcraft_alchemy$allowHiddenCuisineCatalystBrew(PotionBrewing brewing, NonNullList<ItemStack> items, CallbackInfoReturnable<Boolean> cir) {
+   private static void herbcraft_alchemy$allowHiddenCuisineCatalystBrew(ServerLevel level, BrewingStandBlockEntity stand, CallbackInfoReturnable<Boolean> cir) {
+      NonNullList<ItemStack> items = NonNullList.withSize(4, ItemStack.EMPTY);
+      for (int slot = 0; slot < 4; slot++) {
+         items.set(slot, stand.getItem(slot));
+      }
+
       if (HiddenCuisineCatalystBrewing.isBrewable(items) || DistilledEssenceBrewing.isBrewable(items)) {
          cir.setReturnValue(true);
       }
