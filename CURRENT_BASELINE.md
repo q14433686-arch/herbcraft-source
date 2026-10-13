@@ -14,6 +14,7 @@ This session continues the 26.3 port. The earlier session's work lived on the no
 - **Repo-wide:** `event.button()` is used only in `CodexScreen`.
 - Reference: NeoForge 26.2→26.3 primer (`docs.neoforged.net/primer/docs/26.3/`) and downstream 26.3 ports that hit the same bug (CyclopsMC IntegratedTerminals #230, IntegratedCrafting #244, CyclopsCore #247).
 - Not verified: a real in-game click (no GUI in the sandbox). Compile and the static validator are the only checks.
+- **Pending decision (not implemented):** 26.3 new items and their adaptation options (Shelf Mushroom, Poplar leaves / sapling, Red Shrub, Cushion, Straw Bed, Wool stairs/slabs, Poplar wood set) are listed in `docs/reports/MC_26.3_NEW_ITEMS_ADAPTATION_OPTIONS_20261014.md`. Nothing has been changed for them yet.
 
 **Workflow status (2026-10-14):** the CI workflows are live in `.github/workflows/` (`build.yml`, `compile-check.yml`, `consistency.yml`, `runtime-smoke.yml`, uploaded by the maintainer in commits `32feb5d` and `aedee0a`). Earlier, GitHub refused pushes that touched `.github/workflows/*` without the `workflows` permission, so the session dropped its own workflow commits `eb0ade3`, `eb9f72a` and `cd31557` from this branch's history. Copies of the files are kept in `docs/ci/` (see `docs/ci/README.md`).
 
