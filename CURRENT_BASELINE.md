@@ -6,6 +6,15 @@ This is the short authoritative anchor for the current Herbcraft working state. 
 
 This session continues the 26.3 port. The earlier session's work lived on the now-deleted branch `arena/99a30c9a-herbcraft-source` (commits `429b2eb` … `95f259c`) and was brought onto `arena/dcbd25af-herbcraft-source`. On that branch the CI runs were green (`build`, `compile-check`, `Version consistency`) at `95f259c`.
 
+## Latest source-change note — 2026-10-14 Codex click fix (26.3 SDL mouse ids)
+
+- **Bug:** the Herb Codex (百草经) could not be clicked on 26.3. MC 26.3 moved input to SDL, and `MouseButtonEvent.button()` now reports left = 1, middle = 2, right = 3 (previously GLFW left = 0). `CodexScreen` compared `event.button() == 0`, so every left click on the left directory and the right detail panel was ignored.
+- **Fix:** all four checks in `CodexScreen` now use `InputConstants.MOUSE_BUTTON_LEFT`. `mouseClicked` and `mouseScrolled` also carry `@Override`, so a wrong signature fails compilation instead of silently never being called. `scripts/validate_codex_hitboxes.py` now fails on `event.button() == 0` and on a missing `@Override`. It was checked against the pre-fix source and rejects it.
+- **Checked and unchanged:** `KeyEvent.key()` is now the SDL scancode, the same family as `InputConstants.KEY_T`, so the T-key theme toggle is still correct.
+- **Repo-wide:** `event.button()` is used only in `CodexScreen`.
+- Reference: NeoForge 26.2→26.3 primer (`docs.neoforged.net/primer/docs/26.3/`) and downstream 26.3 ports that hit the same bug (CyclopsMC IntegratedTerminals #230, IntegratedCrafting #244, CyclopsCore #247).
+- Not verified: a real in-game click (no GUI in the sandbox). Compile and the static validator are the only checks.
+
 **Workflow status (2026-10-14):** the CI workflows are live in `.github/workflows/` (`build.yml`, `compile-check.yml`, `consistency.yml`, `runtime-smoke.yml`, uploaded by the maintainer in commits `32feb5d` and `aedee0a`). Earlier, GitHub refused pushes that touched `.github/workflows/*` without the `workflows` permission, so the session dropped its own workflow commits `eb0ade3`, `eb9f72a` and `cd31557` from this branch's history. Copies of the files are kept in `docs/ci/` (see `docs/ci/README.md`).
 
 Changes in this follow-up:

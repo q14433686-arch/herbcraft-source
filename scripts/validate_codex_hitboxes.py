@@ -38,7 +38,23 @@ def main():
         print("Error: mouseClicked does not check right panel bounds before processing claimHitboxes.")
         sys.exit(1)
 
-    print("PASS - CodexScreen claimHitboxes are correctly preserved across scroll max computations and click bounds are robust.")
+    # 4. MC 26.3 (SDL) mouse ids: left = 1. A literal `button() == 0` silently ignores every left click.
+    if "event.button() == 0" in content:
+        print("Error: CodexScreen compares event.button() with 0; MC 26.3 left button is InputConstants.MOUSE_BUTTON_LEFT (1).")
+        sys.exit(1)
+    if "event.button() == InputConstants.MOUSE_BUTTON_LEFT" not in content:
+        print("Error: CodexScreen does not check InputConstants.MOUSE_BUTTON_LEFT for clicks.")
+        sys.exit(1)
+
+    # 5. Overrides must be annotated so a wrong signature fails compilation instead of silently never being called.
+    for sig in ("public boolean mouseClicked(MouseButtonEvent event, boolean doubled)",
+                "public boolean mouseScrolled(double mouseX, double mouseY, double deltaX, double deltaY)"):
+        idx = content.find(sig)
+        if idx == -1 or "@Override" not in content[max(0, idx - 80):idx]:
+            print(f"Error: missing @Override on: {sig}")
+            sys.exit(1)
+
+    print("PASS - CodexScreen claimHitboxes are correctly preserved across scroll max computations, click bounds are robust, and left-click uses MOUSE_BUTTON_LEFT.")
 
 if __name__ == "__main__":
     main()

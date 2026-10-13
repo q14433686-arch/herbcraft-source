@@ -396,10 +396,13 @@ public class CodexScreen extends Screen {
       return y;
    }
 
+   // MC 26.3 moved mouse input to SDL: MouseButtonEvent.button() is 1 = left, 2 = middle, 3 = right.
+   // The old `== 0` check never matched, so every left click on the Codex was ignored.
+   @Override
    public boolean mouseClicked(MouseButtonEvent event, boolean doubled) {
       CodexTheme t = CodexTheme.get();
       CodexScreen.Layout layout = this.layout();
-      if (event.button() == 0 && t.scrollbarEnabled) {
+      if (event.button() == InputConstants.MOUSE_BUTTON_LEFT && t.scrollbarEnabled) {
          // Check left scrollbar click
          int leftMaxScroll = this.maxLeftScroll(layout);
          if (leftMaxScroll > 0) {
@@ -427,7 +430,7 @@ public class CodexScreen extends Screen {
             }
          }
       }
-      if (event.button() == 0 && event.x() >= layout.rightX && event.x() < layout.rightX + layout.rightWidth && event.y() >= layout.rightY && event.y() <= layout.bottom) {
+      if (event.button() == InputConstants.MOUSE_BUTTON_LEFT && event.x() >= layout.rightX && event.x() < layout.rightX + layout.rightWidth && event.y() >= layout.rightY && event.y() <= layout.bottom) {
          for (CodexScreen.ClaimHitbox hitbox : this.claimHitboxes) {
             if (event.x() >= hitbox.x1() && event.x() <= hitbox.x2() && event.y() >= hitbox.y1() && event.y() <= hitbox.y2()) {
                ClientPlayNetworking.send(new ClaimMarkPayload(hitbox.entryKey(), hitbox.claimId()));
@@ -435,7 +438,7 @@ public class CodexScreen extends Screen {
             }
          }
       }
-      if (event.button() == 0 && event.x() >= layout.leftX && event.x() < layout.leftX + layout.leftWidth && event.y() >= layout.leftY) {
+      if (event.button() == InputConstants.MOUSE_BUTTON_LEFT && event.x() >= layout.leftX && event.x() < layout.leftX + layout.leftWidth && event.y() >= layout.leftY) {
          int index = (int)((event.y() - layout.leftY - (double)t.leftPadding + this.leftScroll) / (double)t.leftRowHeight);
          if (index >= 0 && index < this.rows.size()) {
             CodexScreen.Row row = this.rows.get(index);
@@ -496,7 +499,7 @@ public class CodexScreen extends Screen {
 
    @Override
    public boolean mouseReleased(MouseButtonEvent event) {
-      if (this.draggingScrollbar != 0 && event.button() == 0) {
+      if (this.draggingScrollbar != 0 && event.button() == InputConstants.MOUSE_BUTTON_LEFT) {
          this.draggingScrollbar = 0;
          this.setDragging(false);
          return true;
@@ -504,6 +507,7 @@ public class CodexScreen extends Screen {
       return super.mouseReleased(event);
    }
 
+   @Override
    public boolean mouseScrolled(double mouseX, double mouseY, double deltaX, double deltaY) {
       CodexTheme t = CodexTheme.get();
       CodexScreen.Layout layout = this.layout();

@@ -204,3 +204,10 @@ here with `EOF` (`results-receiver.actions.githubusercontent.com` /
   - `5e497c7`: `doBrew` fixed; `:alchemy` ❌ next failed on `BrewingStandPotionSlotMixin#mayPlaceItem`, a static method that 26.3 removed.
   - `81b5e07`: ✅ all three modules reach `Done`, no mixin apply failure. The 26.3 member signatures used to fix the mixins are in `docs/reports/MC_26.3_MIXIN_TARGET_SIGNATURES.txt`, captured from the compile-check log by a temporary `probeMcApi` task (removed again).
   - Lesson: compile success does not check mixin descriptors or target names. Each runtime failure only surfaces one class at a time, so the full target listing was the fastest way out.
+
+## Follow-up 2026-10-14: Codex clicks dead on 26.3 (SDL mouse ids)
+
+- Symptom: 百草经 (Herb Codex) left-clicks did nothing.
+- Cause: 26.3 input is SDL. `MouseButtonEvent.button()` is left = 1 / middle = 2 / right = 3. `CodexScreen` used `== 0`.
+- Fix: `InputConstants.MOUSE_BUTTON_LEFT` at all four checks; `@Override` added on `mouseClicked` and `mouseScrolled`; validator updated (`scripts/validate_codex_hitboxes.py`).
+- Lesson: the earlier note "mouseClicked unchanged in 26.3" was based on reading source alone. The enum-like button ids changed, and nothing in compile-check can catch a numeric comparison.
