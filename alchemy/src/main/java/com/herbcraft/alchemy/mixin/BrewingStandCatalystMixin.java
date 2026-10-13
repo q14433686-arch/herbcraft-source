@@ -6,9 +6,9 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BrewingStandBlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -41,16 +41,34 @@ public abstract class BrewingStandCatalystMixin {
       }
    }
 
+   // MC 26.3: doBrew(Level, BlockPos, NonNullList) became doBrew(ServerLevel, BlockPos, BrewingStandBlockEntity).
+   // Found by the runtime smoke test (mixin "Invalid descriptor"), not by compileJava: mixin descriptors are strings.
+   // The Java brewing rules still operate on a NonNullList, so copy the slots out, run them, and write them back.
    @Inject(method = "doBrew", at = @At("HEAD"), cancellable = true)
-   private static void herbcraft_alchemy$brewHiddenCuisineCatalyst(Level level, BlockPos pos, NonNullList<ItemStack> items, CallbackInfo ci) {
+   private static void herbcraft_alchemy$brewHiddenCuisineCatalyst(ServerLevel level, BlockPos pos, BrewingStandBlockEntity stand, CallbackInfo ci) {
+      NonNullList<ItemStack> items = NonNullList.withSize(4, ItemStack.EMPTY);
+      for (int slot = 0; slot < 4; slot++) {
+         items.set(slot, stand.getItem(slot));
+      }
+
       if (HiddenCuisineCatalystBrewing.isBrewable(items)) {
          HiddenCuisineCatalystBrewing.brew(items);
+         herbcraft_alchemy$writeBack(stand, items);
          level.levelEvent(1035, pos, 0);
          ci.cancel();
       } else if (DistilledEssenceBrewing.isBrewable(items)) {
          DistilledEssenceBrewing.brew(items);
+         herbcraft_alchemy$writeBack(stand, items);
          level.levelEvent(1035, pos, 0);
          ci.cancel();
       }
+   }
+
+   @Unique
+   private static void herbcraft_alchemy$writeBack(BrewingStandBlockEntity stand, NonNullList<ItemStack> items) {
+      for (int slot = 0; slot < 4; slot++) {
+         stand.setItem(slot, items.get(slot));
+      }
+      stand.setChanged();
    }
 }

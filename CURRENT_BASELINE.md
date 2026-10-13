@@ -14,7 +14,9 @@ Changes in this follow-up:
 - **New workflow `runtime-smoke`** (staged at `docs/ci/runtime-smoke.yml`; see the activation note below): starts the dev dedicated server through Loom `:core:runServer`, `:alchemy:runServer`, `:cuisine:runServer` (headless, `eula.txt` pre-accepted) and passes only when the log reaches `Done (` with no mixin apply failure or crash. It is the first check that actually exercises the 17 mixin targets at runtime. Results are pushed back to `build-reports/runtime-smoke.log` on `arena/**` (same convention as `compile-check`).
 - Static audit against the TaCZ_Refabricated_Unofficial porting manual (`docs/PORTING_NOTES.md`): data directories are already singular (`advancement`, `recipe`, `tags/item`, `villager_trade`); every `models/item/*.json` has an `items/*.json`; `blit` texture sizes match the real PNGs; no `BlockItem` or raw render/GL call sites.
 
-Not verified, and not claimed as verified: runtime smoke results (pending first run of `runtime-smoke.yml`); in-game UI behaviour; `pack_format` of the example datapacks under `docs/examples/` and `docs/compat_drafts/` still says 81 (they are docs samples, not shipped).
+**Runtime smoke, first real run (`aedee0a`):** `:core` and `:cuisine` reached `Done`; `:alchemy` failed at mixin apply on `BrewingStandCatalystMixin#doBrew`, because 26.3 changed `doBrew` to `(ServerLevel, BlockPos, BrewingStandBlockEntity)` and the earlier note saying it was unaffected was wrong. The injector now takes the block entity and writes the slots back. The re-run result is in the next section of this note.
+
+Not verified, and not claimed as verified: in-game behaviour; in-game UI behaviour; `pack_format` of the example datapacks under `docs/examples/` and `docs/compat_drafts/` still says 81 (they are docs samples, not shipped).
 
 ## Previous source-change note — 2026-10-14 Minecraft 26.3 Fabric port
 

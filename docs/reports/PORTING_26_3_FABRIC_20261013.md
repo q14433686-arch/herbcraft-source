@@ -57,8 +57,11 @@ Java changes:
   registration removed (the builder it used no longer exists); the potion IDs the recipes
   reference are still owned here, and the file now documents where the JSON comes from;
 - `alchemy/src/main/java/com/herbcraft/alchemy/mixin/BrewingStandCatalystMixin.java`:
-  comment updated only — the `doBrew` HEAD injection that powers the custom
-  catalyst/distilled brewing is unaffected by data-driven recipes.
+  **correction (found by the runtime smoke test on 2026-10-13, see the follow-up section):** the
+  `doBrew` HEAD injection was *not* unaffected. 26.3 changed `doBrew` to
+  `(ServerLevel, BlockPos, BrewingStandBlockEntity)`, so the injector failed mixin apply at startup.
+  It now takes the block entity, copies the four slots into a `NonNullList`, runs the same Java rules,
+  and writes the slots back.
 
 Tooling:
 
@@ -195,3 +198,5 @@ here with `EOF` (`results-receiver.actions.githubusercontent.com` /
 - **Runtime smoke** is now automated: `docs/ci/runtime-smoke.yml` (to be copied into `.github/workflows/`, see the caveat in `CURRENT_BASELINE.md`) starts `:core`, `:alchemy` and `:cuisine` dedicated servers and passes only on `Done (` with no mixin failure. It turns "Remaining work item 1" from manual into CI. Its first run is still pending, so the item is not yet verified.
 - Theme colour parsing: 6-digit RGB values from theme JSON get an opaque alpha (see `CURRENT_BASELINE.md`).
 - The static audit against `TaCZ_Refabricated_Unofficial/docs/PORTING_NOTES.md` (colour alpha, singular data directories, item models, `blit` sizes, `BlockItem` description ids) found no further issues.
+
+- **Runtime smoke result (first real run, `aedee0a`):** `:core` ✅ and `:cuisine` ✅ reach `Done`; `:alchemy` ❌ failed mixin apply on `BrewingStandCatalystMixin#doBrew` ("Invalid descriptor … Expected (ServerLevel, BlockPos, BrewingStandBlockEntity, CallbackInfo)"). Fixed in the follow-up commit. This shows why compile success is not enough for mixin-heavy ports.
