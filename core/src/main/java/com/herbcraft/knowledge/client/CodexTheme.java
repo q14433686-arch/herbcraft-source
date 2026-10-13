@@ -415,9 +415,15 @@ public final class CodexTheme {
 
    private static int color(JsonObject obj, String key, int def) {
       if (obj != null && obj.has(key)) {
-         String s = obj.get(key).getAsString();
+         String s = obj.get(key).getAsString().trim();
          try {
-            return (int) Long.parseUnsignedLong(s.startsWith("0x") || s.startsWith("0X") ? s.substring(2) : s, 16);
+            if (s.startsWith("0x") || s.startsWith("0X")) s = s.substring(2);
+            else if (s.startsWith("#")) s = s.substring(1);
+            long value = Long.parseUnsignedLong(s, 16);
+            // MC 26.2+ GuiGraphicsExtractor#text/fill silently skip alpha == 0, so a bare
+            // RGB value (6 hex digits) from a theme file must not become fully transparent.
+            if (s.length() <= 6) value |= 0xFF000000L;
+            return (int) value;
          } catch (NumberFormatException e) {
             return def;
          }

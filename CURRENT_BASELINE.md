@@ -2,7 +2,19 @@
 
 This is the short authoritative anchor for the current Herbcraft working state. Every future agent turn that changes source, resources, docs, scripts, validation rules, versions, or release outputs must update this file before reporting completion.
 
-## Latest source-change note — 2026-10-14 Minecraft 26.3 Fabric port
+## Latest source-change note — 2026-10-13 session `arena/dcbd25af` (26.3 follow-up)
+
+This session continues the 26.3 port. The earlier session's work lived on the now-deleted branch `arena/99a30c9a-herbcraft-source` (commits `429b2eb` … `95f259c`); it was fast-forwarded onto `arena/dcbd25af-herbcraft-source`. Its CI runs were green at `95f259c` (`build`, `compile-check`, `Version consistency`).
+
+Changes in this follow-up:
+
+- **Theme colors (`CodexTheme.color`, `NutritionTheme.color`)**: a 6-digit RGB value from a theme file now gets `alpha = 0xFF`. MC 26.2+ `GuiGraphicsExtractor#text` returns early when alpha is 0, so a bare `RRGGBB` used to render nothing. Also `CodexTheme` now accepts `#RRGGBB` like `NutritionTheme` does. Shipped themes already use ARGB, so visuals are unchanged.
+- **New workflow `.github/workflows/runtime-smoke.yml`**: starts the dev dedicated server through Loom `:core:runServer`, `:alchemy:runServer`, `:cuisine:runServer` (headless, `eula.txt` pre-accepted) and passes only when the log reaches `Done (` with no mixin apply failure or crash. It is the first check that actually exercises the 17 mixin targets at runtime. Results are pushed back to `build-reports/runtime-smoke.log` on `arena/**` (same convention as `compile-check`).
+- Static audit against the TaCZ_Refabricated_Unofficial porting manual (`docs/PORTING_NOTES.md`): data directories are already singular (`advancement`, `recipe`, `tags/item`, `villager_trade`); every `models/item/*.json` has an `items/*.json`; `blit` texture sizes match the real PNGs; no `BlockItem` or raw render/GL call sites.
+
+Not verified, and not claimed as verified: runtime smoke results (pending first run of `runtime-smoke.yml`); in-game UI behaviour; `pack_format` of the example datapacks under `docs/examples/` and `docs/compat_drafts/` still says 81 (they are docs samples, not shipped).
+
+## Previous source-change note — 2026-10-14 Minecraft 26.3 Fabric port
 
 The Minecraft 26.3 port is applied on the session branch. The detailed report is
 `docs/reports/PORTING_26_3_FABRIC_20261013.md`; the investigation is
