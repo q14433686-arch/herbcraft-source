@@ -51,59 +51,6 @@ subprojects {
         }
     }
 
-    // TEMPORARY 26.3 API probe (remove once the mixin targets are verified in CI).
-    // Prints javap signatures of the members that herbcraft mixins inject into, so the
-    // compile-check log shows the real 26.3 API. Never fails the build.
-    if (project.name == 'alchemy') {
-        tasks.register('probeMcApi') {
-            doLast {
-                try {
-                    def jars = project.sourceSets.main.compileClasspath.files.findAll { it.name.endsWith('.jar') }
-                    def javap = new File(System.getProperty('java.home'), 'bin/javap').absolutePath
-                    def probes = [
-                        'net.minecraft.world.inventory.BrewingStandMenu$PotionSlot'          : ['mayPlace', 'mayPlaceItem'],
-                        'net.minecraft.world.inventory.BrewingStandMenu$IngredientsSlot'     : ['mayPlace'],
-                        'net.minecraft.world.level.block.entity.BrewingStandBlockEntity'     : ['canPlaceItem', 'doBrew', 'isBrewable'],
-                        'net.minecraft.world.item.Item'                                      : ['finishUsingItem', 'releaseUsing', 'getPlayerPOVHitResult'],
-                        'net.minecraft.world.item.BucketItem'                                : ['use'],
-                        'net.minecraft.world.item.EggItem'                                   : ['use'],
-                        'net.minecraft.world.item.SnowballItem'                              : ['use'],
-                        'net.minecraft.world.entity.LivingEntity'                            : ['addEffect'],
-                        'net.minecraft.world.entity.player.Player'                           : ['addAdditionalSaveData', 'die', 'readAdditionalSaveData'],
-                        'net.minecraft.world.entity.projectile.arrow.Arrow'                  : ['doPostHurtEffects'],
-                        'net.minecraft.world.entity.AreaEffectCloud'                         : ['serverTick'],
-                        'net.minecraft.world.item.trading.ItemCost'                          : ['test'],
-                        'net.minecraft.world.entity.projectile.throwableitemprojectile.ThrownSplashPotion': ['onHitAsPotion'],
-                        'net.minecraft.world.entity.monster.Witch'                           : ['performRangedAttack']
-                    ]
-                    println 'herbcraft-probe BEGIN 26.3 mixin target API'
-                    println "herbcraft-probe compileClasspath jars=${jars.size()}"
-                    probes.each { cls, methods ->
-                        def entry = cls.replace('.', '/') + '.class'
-                        def jar = jars.find { j -> new java.util.zip.ZipFile(j).withCloseable { it.getEntry(entry) != null } }
-                        if (jar == null) {
-                            println "herbcraft-probe MISSING ${cls}"
-                            return
-                        }
-                        def proc = [javap, '-p', '-cp', jar.absolutePath, cls].execute()
-                        def out = proc.inputStream.text
-                        proc.waitFor()
-                        println "herbcraft-probe ## ${cls} (exit ${proc.exitValue()})"
-                        out.eachLine { line ->
-                            if (cls.endsWith('Slot') || methods.any { m -> line.contains(m + '(') } || line.contains(' class ')) {
-                                println "herbcraft-probe   ${line}"
-                            }
-                        }
-                    }
-                    println 'herbcraft-probe END'
-                } catch (Throwable t) {
-                    println "herbcraft-probe FAILED: ${t}"
-                }
-            }
-        }
-        tasks.named('compileJava') { dependsOn 'probeMcApi' }
-    }
-
     tasks.withType(JavaCompile).configureEach {
         options.release = 25
         options.encoding = 'UTF-8'

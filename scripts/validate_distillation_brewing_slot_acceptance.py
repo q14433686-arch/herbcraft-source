@@ -16,7 +16,7 @@ checks = [
     ('potion slot mixin source exists', potion_path.exists()),
     ('potion slot mixin imports DistilledEssenceBrewing', 'import com.herbcraft.alchemy.distillation.DistilledEssenceBrewing;' in potion_text),
     ('potion slot mayPlace accepts distillation inputs', 'DistilledEssenceBrewing.isDistillationInput(stack)' in potion_text),
-    ('potion slot static mayPlaceItem accepts distillation inputs', '@Inject(method = "mayPlaceItem", at = @At("HEAD"), cancellable = true)' in potion_text),
+    ('potion slot has no static mayPlaceItem injector (removed in 26.3; hooking it fails mixin apply)', '"mayPlaceItem"' not in potion_text),
     ('potion slot mixin registered', '"BrewingStandPotionSlotMixin"' in mixins_text),
 ]
 
