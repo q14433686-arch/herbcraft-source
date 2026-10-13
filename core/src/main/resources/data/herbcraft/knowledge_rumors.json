@@ -2686,5 +2686,145 @@
         "suspicious": true
       }
     ]
+  },
+  "minecraft:shelf_mushroom": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.shelf_mushroom.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.shelf_mushroom.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.shelf_mushroom.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:red_poplar_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.poplar_red_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.poplar_red_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.poplar_red_leaves.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:orange_poplar_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.poplar_orange_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.poplar_orange_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.poplar_orange_leaves.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:yellow_poplar_leaves": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.poplar_yellow_leaves.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.poplar_yellow_leaves.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.poplar_yellow_leaves.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
+  },
+  "minecraft:poplar_sapling": {
+    "claims": [
+      {
+        "id": "nature",
+        "type": "nature",
+        "text_key": "knowledge.herbcraft.claim.poplar_sapling.nature",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "trait",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.poplar_sapling.trait",
+        "truth": true,
+        "source_tier": "common",
+        "suspicious": false
+      },
+      {
+        "id": "suspect",
+        "type": "trait",
+        "text_key": "knowledge.herbcraft.claim.poplar_sapling.suspect",
+        "truth": false,
+        "source_tier": "common",
+        "suspicious": true
+      }
+    ]
   }
 }

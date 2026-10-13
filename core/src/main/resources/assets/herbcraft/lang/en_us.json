@@ -601,5 +601,20 @@
   "book.herbcraft.guide.ingredients.progress": "You have tasted %s ingredients; their nourishment patterns can be read in the Ingredient Codex.",
   "book.herbcraft.guide.errata.line2": "After marking a rumor, tasting or practice lets the page correct truth and falsehood over time.",
   "book.herbcraft.guide.errata.progress": "You have checked %s claims. The Codex remembers your judgment.",
-  "book.herbcraft.guide.example.unknown": "Unknown herb"
+  "book.herbcraft.guide.example.unknown": "Unknown herb",
+  "knowledge.herbcraft.claim.shelf_mushroom.nature": "Neutral in nature, with pungent and sweet flavor",
+  "knowledge.herbcraft.claim.shelf_mushroom.trait": "It seems to carry a fungal nature",
+  "knowledge.herbcraft.claim.shelf_mushroom.suspect": "It is rumored to carry a salty taste",
+  "knowledge.herbcraft.claim.poplar_red_leaves.nature": "Warm in nature, with astringent and bitter flavor",
+  "knowledge.herbcraft.claim.poplar_red_leaves.trait": "It seems to carry a leafy nature",
+  "knowledge.herbcraft.claim.poplar_red_leaves.suspect": "It is rumored to carry a fiery nature",
+  "knowledge.herbcraft.claim.poplar_orange_leaves.nature": "Neutral in nature, with sweet and astringent flavor",
+  "knowledge.herbcraft.claim.poplar_orange_leaves.trait": "It seems to carry a leafy nature",
+  "knowledge.herbcraft.claim.poplar_orange_leaves.suspect": "It is rumored to carry a solar nature",
+  "knowledge.herbcraft.claim.poplar_yellow_leaves.nature": "Cool in nature, with sweet and bland flavor",
+  "knowledge.herbcraft.claim.poplar_yellow_leaves.trait": "It seems to carry a leafy nature",
+  "knowledge.herbcraft.claim.poplar_yellow_leaves.suspect": "It is rumored to carry a clearing nature",
+  "knowledge.herbcraft.claim.poplar_sapling.nature": "Neutral in nature, with astringent and bland flavor",
+  "knowledge.herbcraft.claim.poplar_sapling.trait": "It seems to carry a leafy nature",
+  "knowledge.herbcraft.claim.poplar_sapling.suspect": "It is rumored to have a woody nature"
 }

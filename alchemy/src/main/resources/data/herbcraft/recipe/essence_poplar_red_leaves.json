@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:red_poplar_leaves",
+    "minecraft:red_poplar_leaves",
+    "minecraft:red_poplar_leaves",
+    "minecraft:red_poplar_leaves",
+    "minecraft:red_poplar_leaves",
+    "minecraft:red_poplar_leaves",
+    "minecraft:red_poplar_leaves",
+    "minecraft:red_poplar_leaves",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_poplar_red_leaves",
+    "count": 1
+  }
+}

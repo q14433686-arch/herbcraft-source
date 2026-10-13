@@ -32,7 +32,7 @@ def close(a: float, b: float) -> bool:
 def load_herbs() -> dict[str, dict]:
     root = json.loads(HERBS.read_text(encoding="utf-8"))
     herbs = root.get("herbs", [])
-    require(len(herbs) == 96, f"herbs.json should still define 96 edible herb entries, got {len(herbs)}")
+    require(len(herbs) == 101, f"herbs.json should still define 101 edible herb entries, got {len(herbs)}")
     by_item: dict[str, dict] = {}
     for entry in herbs:
         item = entry.get("item")

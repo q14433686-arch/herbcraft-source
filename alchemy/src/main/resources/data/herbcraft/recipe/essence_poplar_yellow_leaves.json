@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:yellow_poplar_leaves",
+    "minecraft:yellow_poplar_leaves",
+    "minecraft:yellow_poplar_leaves",
+    "minecraft:yellow_poplar_leaves",
+    "minecraft:yellow_poplar_leaves",
+    "minecraft:yellow_poplar_leaves",
+    "minecraft:yellow_poplar_leaves",
+    "minecraft:yellow_poplar_leaves",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_poplar_yellow_leaves",
+    "count": 1
+  }
+}

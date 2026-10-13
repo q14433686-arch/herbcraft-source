@@ -736,6 +736,81 @@
           "positive": true
         }
       ]
+    },
+    {
+      "id": "shelf_mushroom",
+      "source_items": [
+        "minecraft:shelf_mushroom"
+      ],
+      "potion_name": "shelf_mushroom",
+      "effects": [
+        {
+          "effect": "minecraft:jump_boost",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "poplar_red_leaves",
+      "source_items": [
+        "minecraft:red_poplar_leaves"
+      ],
+      "potion_name": "poplar_red_leaves",
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "poplar_orange_leaves",
+      "source_items": [
+        "minecraft:orange_poplar_leaves"
+      ],
+      "potion_name": "poplar_orange_leaves",
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "poplar_yellow_leaves",
+      "source_items": [
+        "minecraft:yellow_poplar_leaves"
+      ],
+      "potion_name": "poplar_yellow_leaves",
+      "effects": [
+        {
+          "effect": "minecraft:absorption",
+          "amplifier": 0,
+          "duration_seconds": 10,
+          "positive": true
+        }
+      ]
+    },
+    {
+      "id": "poplar_sapling",
+      "source_items": [
+        "minecraft:poplar_sapling"
+      ],
+      "potion_name": "poplar_sapling",
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration_seconds": 5,
+          "positive": true
+        }
+      ]
     }
   ]
 }

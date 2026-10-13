@@ -622,5 +622,22 @@
   "minecraft:milk_bucket": {
     "flesh": 14,
     "oil": 10
+  },
+  "minecraft:shelf_mushroom": {
+    "vege": 6,
+    "flesh": 2
+  },
+  "minecraft:red_poplar_leaves": {
+    "vege": 14
+  },
+  "minecraft:orange_poplar_leaves": {
+    "vege": 14
+  },
+  "minecraft:yellow_poplar_leaves": {
+    "vege": 14
+  },
+  "minecraft:poplar_sapling": {
+    "vege": 8,
+    "fruit": 6
   }
 }

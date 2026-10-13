@@ -88,6 +88,11 @@ public final class AlchemyRegistries {
    public static final Item ESSENCE_CRIMSON_FUNGUS = essenceFromJson("crimson_fungus");
    public static final Item ESSENCE_WARPED_FUNGUS = essenceFromJson("warped_fungus");
    public static final Item ESSENCE_BROWN_MUSHROOM = essenceFromJson("brown_mushroom");
+   public static final Item ESSENCE_SHELF_MUSHROOM = essenceFromJson("shelf_mushroom");
+   public static final Item ESSENCE_POPLAR_RED_LEAVES = essenceFromJson("poplar_red_leaves");
+   public static final Item ESSENCE_POPLAR_ORANGE_LEAVES = essenceFromJson("poplar_orange_leaves");
+   public static final Item ESSENCE_POPLAR_YELLOW_LEAVES = essenceFromJson("poplar_yellow_leaves");
+   public static final Item ESSENCE_POPLAR_SAPLING = essenceFromJson("poplar_sapling");
    private static Reference<Potion> FLOWERING_AZALEA_MURKY;
    private static Reference<Potion> LILY_OF_THE_VALLEY_MURKY;
    private static Reference<Potion> WITHER_ROSE_BASE;

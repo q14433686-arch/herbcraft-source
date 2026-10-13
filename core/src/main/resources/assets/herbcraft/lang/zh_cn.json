@@ -601,5 +601,20 @@
   "book.herbcraft.guide.ingredients.progress": "你已亲尝 %s 种食材；五养之偏，可在《食材录》中慢慢辨出。",
   "book.herbcraft.guide.errata.line2": "标记传闻后，亲尝或实践会让书页逐步校正真假。",
   "book.herbcraft.guide.errata.progress": "你已校勘 %s 条传闻。书页会记住你的判断。",
-  "book.herbcraft.guide.example.unknown": "未知药材"
+  "book.herbcraft.guide.example.unknown": "未知药材",
+  "knowledge.herbcraft.claim.shelf_mushroom.nature": "性平，味辛、甘",
+  "knowledge.herbcraft.claim.shelf_mushroom.trait": "似有菌性之性",
+  "knowledge.herbcraft.claim.shelf_mushroom.suspect": "疑有咸卤之味",
+  "knowledge.herbcraft.claim.poplar_red_leaves.nature": "性温，味涩、苦",
+  "knowledge.herbcraft.claim.poplar_red_leaves.trait": "似有草叶之性",
+  "knowledge.herbcraft.claim.poplar_red_leaves.suspect": "疑有火烈之性",
+  "knowledge.herbcraft.claim.poplar_orange_leaves.nature": "性平，味甘、涩",
+  "knowledge.herbcraft.claim.poplar_orange_leaves.trait": "似有草叶之性",
+  "knowledge.herbcraft.claim.poplar_orange_leaves.suspect": "疑有日阳之性",
+  "knowledge.herbcraft.claim.poplar_yellow_leaves.nature": "性凉，味甘、淡",
+  "knowledge.herbcraft.claim.poplar_yellow_leaves.trait": "似有草叶之性",
+  "knowledge.herbcraft.claim.poplar_yellow_leaves.suspect": "疑有清明之性",
+  "knowledge.herbcraft.claim.poplar_sapling.nature": "性平，味涩、淡",
+  "knowledge.herbcraft.claim.poplar_sapling.trait": "似有草叶之性",
+  "knowledge.herbcraft.claim.poplar_sapling.suspect": "疑有木叶之性"
 }

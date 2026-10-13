@@ -6,6 +6,23 @@ This is the short authoritative anchor for the current Herbcraft working state. 
 
 This session continues the 26.3 port. The earlier session's work lived on the now-deleted branch `arena/99a30c9a-herbcraft-source` (commits `429b2eb` … `95f259c`) and was brought onto `arena/dcbd25af-herbcraft-source`. On that branch the CI runs were green (`build`, `compile-check`, `Version consistency`) at `95f259c`.
 
+## Latest source-change note — 2026-10-14 26.3 new items: herb adaptation (Shelf Mushroom, Poplar)
+
+Implements the user-chosen options from `docs/reports/MC_26.3_NEW_ITEMS_ADAPTATION_OPTIONS_20261014.md`. Five new herbs, each with an essence, brewing variants, nutrition profile, herb nature, Codex rumors and lang keys:
+
+- `minecraft:shelf_mushroom` → herb `shelf_mushroom` (jump_boost essence). Small and large share one item id, so there is one herb, not two.
+- `minecraft:red_poplar_leaves` / `orange_poplar_leaves` / `yellow_poplar_leaves` → herbs `poplar_{red,orange,yellow}_leaves` (regeneration / speed / absorption essences), cherry-leaves pattern.
+- `minecraft:poplar_sapling` → herb `poplar_sapling` (regeneration essence), cherry-sapling pattern.
+- Also added to `minecraft:goat_food` (cherry-leaves pattern), with the validator's expected list updated.
+- Red Shrub, Cushion, Straw Bed, Wool stairs/slabs, Poplar wood: no data change (decoration only).
+
+Counts now: 101 herbs, 45 essences, 580 brewing recipes. Poplar leaves join `honey_leaf_soup` automatically through vanilla `#minecraft:leaves`.
+
+Numbers are derived from the closest existing herbs and are **not balance-reviewed**. Essence textures are recolours of `essence_cherry_leaves.png` (hue replacement on the liquid pixels), not output of the official texture generator. That generator needs the vanilla client jar, which the sandbox cannot download.
+
+Verified in sandbox: `generate_essence_resources --check`, `generate_brewing_recipes` check, `validate_brewing_recipes`, `check_lang_diff`, `check_version_consistency`, `validate_essence_resources`, `validate_raw_herb_food_balance`, `validate_externalized_rules`, `validate_recipe_isolation`, `validate_trade_tags`, the nutrition / potion / distillation validators (with a venv that has Pillow), and the Codex hitbox validator.
+Not verified here: `validate_animal_food_tags` and `validate_item_textures` (vanilla jar), and the Gradle build and runtime smoke. CI is the verifier.
+
 ## Latest source-change note — 2026-10-14 Codex click fix (26.3 SDL mouse ids)
 
 - **Bug:** the Herb Codex (百草经) could not be clicked on 26.3. MC 26.3 moved input to SDL, and `MouseButtonEvent.button()` now reports left = 1, middle = 2, right = 3 (previously GLFW left = 0). `CodexScreen` compared `event.button() == 0`, so every left click on the left directory and the right detail panel was ignored.

@@ -57,6 +57,7 @@
     "minecraft:oak_leaves",
     "minecraft:oak_sapling",
     "minecraft:open_eyeblossom",
+    "minecraft:orange_poplar_leaves",
     "minecraft:orange_tulip",
     "minecraft:oxeye_daisy",
     "minecraft:packed_ice",
@@ -68,17 +69,20 @@
     "minecraft:pink_tulip",
     "minecraft:pitcher_plant",
     "minecraft:pitcher_pod",
+    "minecraft:poplar_sapling",
     "minecraft:poppy",
     "minecraft:powder_snow_bucket",
     "minecraft:pumpkin",
     "minecraft:pumpkin_seeds",
     "minecraft:rabbit_foot",
+    "minecraft:red_poplar_leaves",
     "minecraft:red_tulip",
     "minecraft:resin_brick",
     "minecraft:resin_clump",
     "minecraft:rose_bush",
     "minecraft:sea_pickle",
     "minecraft:seagrass",
+    "minecraft:shelf_mushroom",
     "minecraft:short_grass",
     "minecraft:slime_ball",
     "minecraft:snowball",
@@ -95,6 +99,7 @@
     "minecraft:wheat_seeds",
     "minecraft:white_tulip",
     "minecraft:wildflowers",
-    "minecraft:wither_rose"
+    "minecraft:wither_rose",
+    "minecraft:yellow_poplar_leaves"
   ]
 }

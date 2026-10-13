@@ -1310,5 +1310,79 @@
       "pungent",
       "bitter"
     ]
+  },
+  "minecraft:shelf_mushroom": {
+    "temperature": "neutral",
+    "flavors": [
+      "pungent",
+      "sweet"
+    ],
+    "traits": [
+      "fungal",
+      "nourishing"
+    ],
+    "taste_flavors": [
+      "pungent",
+      "sweet"
+    ]
+  },
+  "minecraft:red_poplar_leaves": {
+    "temperature": "warm",
+    "flavors": [
+      "astringent",
+      "bitter"
+    ],
+    "traits": [
+      "leafy",
+      "fiery"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bitter"
+    ]
+  },
+  "minecraft:orange_poplar_leaves": {
+    "temperature": "neutral",
+    "flavors": [
+      "sweet",
+      "astringent"
+    ],
+    "traits": [
+      "leafy",
+      "solar"
+    ],
+    "taste_flavors": [
+      "sweet",
+      "astringent"
+    ]
+  },
+  "minecraft:yellow_poplar_leaves": {
+    "temperature": "cool",
+    "flavors": [
+      "bland",
+      "sweet"
+    ],
+    "traits": [
+      "leafy",
+      "clearing"
+    ],
+    "taste_flavors": [
+      "bland",
+      "sweet"
+    ]
+  },
+  "minecraft:poplar_sapling": {
+    "temperature": "neutral",
+    "flavors": [
+      "astringent",
+      "bland"
+    ],
+    "traits": [
+      "leafy"
+    ],
+    "taste_flavors": [
+      "astringent",
+      "bland"
+    ]
   }
 }

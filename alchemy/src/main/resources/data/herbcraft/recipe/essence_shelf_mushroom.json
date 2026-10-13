@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:shelf_mushroom",
+    "minecraft:shelf_mushroom",
+    "minecraft:shelf_mushroom",
+    "minecraft:shelf_mushroom",
+    "minecraft:shelf_mushroom",
+    "minecraft:shelf_mushroom",
+    "minecraft:shelf_mushroom",
+    "minecraft:shelf_mushroom",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_shelf_mushroom",
+    "count": 1
+  }
+}

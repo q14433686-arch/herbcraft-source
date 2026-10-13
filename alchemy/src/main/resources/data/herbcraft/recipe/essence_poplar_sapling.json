@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:poplar_sapling",
+    "minecraft:poplar_sapling",
+    "minecraft:poplar_sapling",
+    "minecraft:poplar_sapling",
+    "minecraft:poplar_sapling",
+    "minecraft:poplar_sapling",
+    "minecraft:poplar_sapling",
+    "minecraft:poplar_sapling",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "herbcraft:essence_poplar_sapling",
+    "count": 1
+  }
+}

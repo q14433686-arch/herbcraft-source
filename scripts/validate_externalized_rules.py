@@ -147,7 +147,7 @@ for token in ["CHANCE_BONUS", "CLASH_CHANCE", "CLASH_NAUSEA_SECONDS", "MAX_STACK
 require("HodgepodgeRules.loadFromBundledJson();" in cuisine_java, "Cuisine initializer must load hodgepodge rules JSON")
 
 essences = load("alchemy/src/main/resources/data/herbcraft_alchemy/essences.json")
-require(len(essences.get("essences", [])) == 40, "essences.json should contain 40 current essence definitions")
+require(len(essences.get("essences", [])) == 45, "essences.json should contain 45 current essence definitions")
 ids = {entry.get("id") for entry in essences.get("essences", [])}
 for required in ["dandelion", "golden_dandelion", "poppy", "tulip", "fern", "wither_rose", "crimson_fungus", "warped_fungus", "brown_mushroom"]:
     require(required in ids, f"essences.json missing expected essence {required}")
@@ -162,7 +162,7 @@ require(set(next(e for e in essences["essences"] if e["id"] == "fern")["source_i
 alchemy_registry = (ROOT / "alchemy/src/main/java/com/herbcraft/alchemy/registry/AlchemyRegistries.java").read_text(encoding="utf-8")
 alchemy_usage = (ROOT / "alchemy/src/main/java/com/herbcraft/alchemy/knowledge/AlchemyUsageHints.java").read_text(encoding="utf-8")
 require("data/herbcraft_alchemy/essences.json" in alchemy_registry, "AlchemyRegistries should load essences.json")
-require(alchemy_registry.count("essenceFromJson(\"") == 40, "AlchemyRegistries should initialize current static essence fields through essenceFromJson")
+require(alchemy_registry.count("essenceFromJson(\"") == 45, "AlchemyRegistries should initialize current static essence fields through essenceFromJson")
 require("public static final Item ESSENCE_" in alchemy_registry and "= essence(" not in "\n".join(line for line in alchemy_registry.splitlines() if "public static final Item ESSENCE_" in line), "static essence fields should not hardcode effect specs directly")
 require("sourceItems()" in alchemy_usage and "VARIANT_SOURCES" not in alchemy_usage, "AlchemyUsageHints should use source_items from essences.json")
 
