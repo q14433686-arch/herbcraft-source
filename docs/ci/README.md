@@ -1,11 +1,9 @@
 # docs/ci/ —— workflow 暂存区
 
-> **分支 `arena/dcbd25af-herbcraft-source`（2026-10-13）特别说明**：本分支的 `.github/workflows/` 目录是**不存在**的。
-> GitHub 拒绝推送含有「创建/修改 workflow 文件」提交的分支（沙箱凭据没有 `workflows` 权限），
-> 所以本分支历史里去掉了这三次 workflow 提交（`eb0ade3`、`eb9f72a`、`cd31557`），内容全部保留在本目录。
-> **要让 CI 在本分支生效，把下面四个文件逐个复制到 `.github/workflows/` 同名文件即可**：
-> `build.yml`、`compile-check.yml`、`consistency.yml`、`runtime-smoke.yml`。
-> 或者在 Arena 的 GitHub 连接里授予 `Workflows` 权限后重连，由 Agent 直接推送。
+> **分支 `arena/dcbd25af-herbcraft-source` 说明（2026-10-14 更新）**：本分支的 `.github/workflows/` 已经存在，
+> 四个 workflow（`build`、`compile-check`、`consistency`、`runtime-smoke`）由维护者上线（提交 `32feb5d`、`aedee0a`）。
+> 早先 GitHub 拒绝推送含 workflow 改动的提交（沙箱凭据没有 `workflows` 权限），所以本分支历史里去掉了 `eb0ade3`、`eb9f72a`、`cd31557`。
+> 本目录保留这四个文件的副本；以 `.github/workflows/` 为准。
 
 沙箱 Agent 的 GitHub 凭据没有 `workflows` 权限，推不动 `.github/workflows/`
 （实测报错：`refusing to allow a GitHub App to create or update workflow
@@ -20,7 +18,7 @@
 
 ## 当前状态（2026-10-14）
 
-三件**已全部上线**：维护者已在 GitHub 网页端建好 `.github/workflows/` 下同名三个
+四件**已全部上线**：维护者已在 GitHub 网页端建好 `.github/workflows/` 下同名四个
 文件，内容与本目录副本一致（仅 `build.yml` / `compile-check.yml` 少了后来补的
 `chmod +x gradlew` 一行，见「已知注意点」）。
 
@@ -28,6 +26,7 @@
 |---|---|---|
 | `compile-check.yml` | ✅ 已上线并跑绿 | `compileJava` 全三模块；arena/** 分支把编译日志经 Contents API 回推本分支 `build-reports/compile-java.log`（沙箱到不了 `maven.fabricmc.net`，这是本地看编译错误的唯一通道）；主分支 push + PR 也编译，但只有 arena/** 回推日志 |
 | `consistency.yml` | ✅ 已上线，**尚未触发过** | 版本声明守门：`gradle.properties` ↔ `build.gradle` ↔ 三个 `fabric.mod.json` ↔ `README.md`；`paths` 只覆盖版本声明文件，所以「只改 README」也守得住。因为历次提交都没碰这些路径，它一次都没跑过——改 `gradle.properties` 即可触发 |
+| `runtime-smoke.yml` | ✅ 已上线并跑绿（`81b5e07`） | 用 Loom `:core` / `:alchemy` / `:cuisine` `runServer` 拉起无头专用服务端，只有日志到达 `Done (` 且无 mixin apply 失败、无崩溃才算通过；日志回推 `build-reports/runtime-smoke.log`。前两轮（`aedee0a`、`5e497c7`）红在 26.3 mixin 签名上，见 `docs/reports/PORTING_26_3_FABRIC_20261013.md` |
 | `build.yml` | ✅ 已上线并跑绿 | 全量 `./gradlew build` + 三模块 jar artifact（14 天）+ 六个静态校验（语言键齐平 / mixin 配置完整性 / 版本一致性 / 酿造配方与生成器一致 / 村民交易 26.3 schema / built-jar 校验） |
 
 ### 运行记录（`arena/99a30c9a-herbcraft-source`）

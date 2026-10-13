@@ -180,10 +180,10 @@ here with `EOF` (`results-receiver.actions.githubusercontent.com` /
 
 ## Remaining work
 
-1. **Runtime smoke test on a real 26.3 client/server** — the only item left, and it cannot be done
-   from this sandbox (no network to `maven.fabricmc.net`, so no local Gradle run and no game
-   launch). Check: all 17 mixin targets apply, the brewing stand UI with the 520 data-driven
-   recipes, villager trades, Jade/JEI/REI displays, en_us/zh_cn. The compile run already cleared
+1. **Real 26.3 client launch** — the dedicated-server runtime smoke now runs in CI and passes
+   (see the follow-up section). Still to check by hand, because it cannot run in this sandbox
+   (no network to `maven.fabricmc.net`, so no local Gradle run and no game launch): the brewing
+   stand UI with the 520 data-driven recipes, villager trades, Jade/JEI/REI displays, en_us/zh_cn. The compile run already cleared
    the previously-suspected items (`CoatingSmithingRecipe`, `ArmorSupportSmithingRecipe`, JEI
    registration calls) — they all compile.
 2. `consistency.yml` has never executed: its `paths` filter only matches version-declaration
@@ -195,8 +195,12 @@ here with `EOF` (`results-receiver.actions.githubusercontent.com` /
 ## Follow-up on branch `arena/dcbd25af-herbcraft-source` (2026-10-13)
 
 - The 26.3 work above was recovered onto the session branch by fast-forward (same commits, `95f259c`).
-- **Runtime smoke** is now automated: `docs/ci/runtime-smoke.yml` (to be copied into `.github/workflows/`, see the caveat in `CURRENT_BASELINE.md`) starts `:core`, `:alchemy` and `:cuisine` dedicated servers and passes only on `Done (` with no mixin failure. It turns "Remaining work item 1" from manual into CI. Its first run is still pending, so the item is not yet verified.
+- **Runtime smoke** is now automated: `.github/workflows/runtime-smoke.yml` (copy in `docs/ci/`) starts `:core`, `:alchemy` and `:cuisine` dedicated servers and passes only on `Done (` with no mixin failure. It turns "Remaining work item 1" from manual into CI. It passes on `81b5e07` (see below).
 - Theme colour parsing: 6-digit RGB values from theme JSON get an opaque alpha (see `CURRENT_BASELINE.md`).
 - The static audit against `TaCZ_Refabricated_Unofficial/docs/PORTING_NOTES.md` (colour alpha, singular data directories, item models, `blit` sizes, `BlockItem` description ids) found no further issues.
 
-- **Runtime smoke result (first real run, `aedee0a`):** `:core` ✅ and `:cuisine` ✅ reach `Done`; `:alchemy` ❌ failed mixin apply on `BrewingStandCatalystMixin#doBrew` ("Invalid descriptor … Expected (ServerLevel, BlockPos, BrewingStandBlockEntity, CallbackInfo)"). Fixed in the follow-up commit. This shows why compile success is not enough for mixin-heavy ports.
+- **Runtime smoke, three CI runs:**
+  - `aedee0a`: `:core` ✅ and `:cuisine` ✅ reach `Done`; `:alchemy` ❌ failed mixin apply on `BrewingStandCatalystMixin#doBrew` (expected `(ServerLevel, BlockPos, BrewingStandBlockEntity, CallbackInfo)`).
+  - `5e497c7`: `doBrew` fixed; `:alchemy` ❌ next failed on `BrewingStandPotionSlotMixin#mayPlaceItem`, a static method that 26.3 removed.
+  - `81b5e07`: ✅ all three modules reach `Done`, no mixin apply failure. The 26.3 member signatures used to fix the mixins are in `docs/reports/MC_26.3_MIXIN_TARGET_SIGNATURES.txt`, captured from the compile-check log by a temporary `probeMcApi` task (removed again).
+  - Lesson: compile success does not check mixin descriptors or target names. Each runtime failure only surfaces one class at a time, so the full target listing was the fastest way out.
