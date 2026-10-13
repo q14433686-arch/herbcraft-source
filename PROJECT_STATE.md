@@ -1,6 +1,6 @@
 # PROJECT_STATE
 
-This file records the current repository/source state. It has been updated for the 2026-07-19 Minecraft 26.2 Fabric port initial pass; detailed current truth remains in CURRENT_BASELINE.md. Treat older reports as historical unless verified against `CURRENT_BASELINE.md`, `docs/DOCUMENTATION_INDEX.md`, and current source.
+This file records the current repository/source state. It has been updated for the 2026-10-14 Minecraft 26.3 Fabric port; detailed current truth remains in CURRENT_BASELINE.md. Treat older reports as historical unless verified against `CURRENT_BASELINE.md`, `docs/DOCUMENTATION_INDEX.md`, and current source.
 
 ## Versions and baseline
 
@@ -27,11 +27,11 @@ with:
 
 ## Locked environment
 
-- Minecraft `26.2` (port in validation)
+- Minecraft `26.3` (compiles in CI; runtime smoke test pending)
 - Fabric Loader `0.19.3`
-- Fabric API `0.155.2+26.2`
+- Fabric API `0.162.0+26.3`
 - Java `25`
-- Gradle Wrapper `9.5.1`
+- Gradle Wrapper `9.6.0`
 - Fabric Loom `1.17-SNAPSHOT`
 - Mojang official mappings
 

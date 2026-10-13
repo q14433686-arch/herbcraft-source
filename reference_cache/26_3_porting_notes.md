@@ -177,7 +177,7 @@ ImprovedMaps #17 / BetterHitreg #30 / ParkourCalculatorMod #505 / SoundTweaks #1
 | `PushReaction` 变更 | 无调用 |
 | `RegistryLayer#WORLDGEN` → `WORLD` | 无调用 |
 | `BundleContents#itemCopyStream` → `itemCopies`、`SlotDisplay.TagSlotDisplay(HolderSet<Item>)` | 无调用 |
-| loot 表 schema（`functions`→`modifier`、`condition` 单数、`name`→`items`） | 全仓无 loot 表 |
+| loot 表 schema（`functions`→`modifier`、`condition` 单数、`name`→`items`） | 全仓无 loot 表 JSON；但**代码里有 loot 注入**，见下方第 7 节 |
 | advancement schema（entity predicate `type` 必填、`nbt` → `minecraft:nbt`、`enter_block.recipe`→`recipes`） | 35 个 advancement 全部只用 `minecraft:impossible` |
 | 物品标签 `#dowses_campfires` → `#douses_campfires` | 未引用（只引用 `#minecraft:leaves/swords/spears/shovels/pickaxes/hoes/axes`，均未改名） |
 | Explorer Map 物品改名 / item sprite 改名 | 未引用 |
@@ -189,6 +189,29 @@ ImprovedMaps #17 / BetterHitreg #30 / ParkourCalculatorMod #505 / SoundTweaks #1
 `herbcraft.mixins.json`（7 个）与 `herbcraft_alchemy.mixins.json`（10 个）的目标在
 26.3 官方摘要里没有被点名改动；`BrewingStandCatalystMixin` 的 `doBrew` HEAD 注入仍需要
 （自定义催化剂/蒸馏酿造不走数据驱动配方）。**启动期 apply 仍待实机验证。**
+
+### 7. loot 注入代码（CI 实测发现，已修）
+
+第 5 节说「全仓无 loot 表」只对**数据**成立；`core/CodexLoot` 与
+`alchemy/AlchemyCodexHooks` 在**代码**里用 `LootTableEvents.MODIFY` 往原版表注入
+pool，走的是 Java builder API，26.3 在这里改了三处（`:alchemy:compileJava` 三个错误，
+`:core`/`:cuisine` 一次通过）：
+
+| 26.2 写法 | 26.3 现状 | 处理 |
+|---|---|---|
+| `import ...loot.providers.number.ConstantValue` | number provider 拆成 `providers/number/ints`（`ContextIntProvider`）与 `providers/number/floats`（`ContextFloatProvider`）；`ConstantValue` 只剩 floats 版 | 计数改用 `providers.number.ints.ContextIntProviders.exactly(int)`，返回 `Holder<ContextIntProvider>` |
+| `entries.LootPoolSingletonContainer.Builder<?>`（`LootItem.lootTableItem(item)` 的声明类型） | 该 builder 类型已不在 `entries` 包 | 局部变量改用 `var` 推断；`LootItem.lootTableItem(Item)` 本身仍在，builder 的 `apply(LootItemFunction)` 也仍在（`:core` 的 `CodexLoot.addTatteredPagePool` 链式 `.apply(...)` 一次编译通过即为证据） |
+| `SetItemCountFunction.setCount(ConstantValue.exactly(n))` | `set_count` 是 int 语义字段 | 改传 `ContextIntProviders.exactly(n)`（`Holder<ContextIntProvider>`） |
+
+判型依据（为什么 count 用 int provider 而不是 floats 的 `ConstantValue`）：
+26.3 的 loot 数值字段里 `rolls`/`bonusRolls` 已改为 `Holder<ContextIntProvider>`
+（`TheMarstonConnell/randomloot` #145/#147/#148/#151/#153/#154/#155/#162 均实测），
+其余 loot function 的数值字段（`levels`/`limit`/`amount`/`damage`/`numberOfDyes`/`duration`）
+也全是 int 语义；NeoForged 26.3 primer「Splitting Numbers into Floats and Ints」确认
+`BuiltInRegistries.LOOT_NUMBER_PROVIDER_TYPE` 拆成 `CONTEXT_FLOAT_PROVIDER_TYPE` /
+`CONTEXT_INT_PROVIDER_TYPE`，provider 变成可注册（因此 API 侧是 `Holder`）。
+`:core` 用的面（`LootPool.lootPool()`、`when(...)`、`add(LootPoolEntryContainer)`、
+`tableBuilder.pool(...)`、`LootItemRandomChanceCondition.randomChance`）全部未变。
 
 ## 三、借鉴的其它仓库移植手册
 

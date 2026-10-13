@@ -7,7 +7,8 @@ This is the short authoritative anchor for the current Herbcraft working state. 
 The Minecraft 26.3 port is applied on the session branch. The detailed report is
 `docs/reports/PORTING_26_3_FABRIC_20261013.md`; the investigation is
 `reference_cache/26_3_porting_notes.md`. The CI trio (build / compile-check / consistency)
-is staged in `docs/ci/` and still needs activation — it was built first on purpose.
+was built first on purpose, is **live in `.github/workflows/`** (the maintainer uploaded it),
+and is green.
 
 Completed:
 
@@ -17,9 +18,22 @@ Completed:
 - **villager trades migrated to the 26.3 schema** (80 files): `given_item_modifiers` -> `given_item_modifier`, inline modifier `function` -> `type`, required `count` added — `scripts/migrate_villager_trades_26_3.py`;
 - **SDL input** (LWJGL now ships SDL3, `org.lwjgl.glfw` is gone): keybinds and `keyPressed` handlers moved to `InputConstants.Type.KEYBOARD` / `InputConstants.KEY_*` in three Core client files;
 - vanilla-tooling scripts bumped to 26.3 (client jar name, piston-meta hash, loom cache path, animal food tag version);
+- **loot-injection code migrated to the 26.3 number-provider API** (`AlchemyCodexHooks`): `ConstantValue` -> `providers.number.ints.ContextIntProviders.exactly(int)` (`Holder<ContextIntProvider>`), `entries.LootPoolSingletonContainer.Builder<?>` -> `var`; found by CI, see the report;
 - fixed `scripts/validate_codex_payload_separation.py`, which had been failing since 26.2 on stale `Minecraft.screen` strings.
 
-Static validations passed: version consistency (23/23), brewing generator/validator, villager-trade migration check, lang parity, mixin config integrity, and the full sandbox-runnable validator suite (60+ scripts; PIL installed). Full Java/Gradle compilation, mixin apply, and client/server smoke tests remain pending — this sandbox cannot reach `maven.fabricmc.net`, so compile verification depends on the staged CI.
+Static validations passed: version consistency (23/23), brewing generator/validator, villager-trade migration check, lang parity, mixin config integrity, and the full sandbox-runnable validator suite (60+ scripts; PIL installed).
+
+**Compilation is now verified by CI, not pending**: on `e64f1bf` both `compile-check` and `build`
+succeeded — `:core:compileJava`, `:cuisine:compileJava`, `:alchemy:compileJava`, the full
+`./gradlew build` (jar assembly + `verify_built_jars.py`) and all six static gates are green
+(Loom 1.17.21 / Gradle 9.6.0 / Java 25). Run history: `eb0ade3`/`eb9f72a` failed on
+`./gradlew: Permission denied` (gradlew had been committed as mode `100644`; fixed to `100755`),
+`e2ba41c` failed on the three loot-API errors above, `e64f1bf` green.
+
+**Still pending (cannot be done from this sandbox — no network to `maven.fabricmc.net`, so no
+local Gradle/game run):** the runtime smoke test — mixin apply at startup, brewing stand UI,
+villager trades, Jade/JEI/REI displays, en_us/zh_cn in game. `consistency.yml` has not run yet
+either: its `paths` filter only matches version-declaration files, which no commit has touched.
 
 ## Previous note — 2026-07-19 Minecraft 26.2 Fabric port initial pass
 

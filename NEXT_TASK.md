@@ -5,7 +5,8 @@
 On 2026-10-13/14 the 26.3 port was applied. The detailed report is
 `docs/reports/PORTING_26_3_FABRIC_20261013.md`; the investigation notes are
 `reference_cache/26_3_porting_notes.md`. Per the author's instruction the CI trio was
-built **first** and is staged in `docs/ci/` (mirroring `TaCZ_Refabricated_Unofficial`).
+built **first**, is live in `.github/workflows/` (the maintainer uploaded the three files),
+and is green (mirroring `TaCZ_Refabricated_Unofficial`'s `docs/ci/` convention).
 
 Completed in this pass:
 
@@ -15,14 +16,28 @@ Completed in this pass:
 - **villager trades migrated to the 26.3 schema** (80 files): `given_item_modifier`, inline modifier `type`, required `count` — `scripts/migrate_villager_trades_26_3.py`;
 - **SDL input** in three Core client files (`InputConstants.Type.KEYBOARD`, `InputConstants.KEY_*`);
 - five `fabric.mod.json`, README, and the vanilla-tooling scripts bumped to 26.3;
+- **loot-injection code migrated to the 26.3 number-provider API** (`AlchemyCodexHooks`): `ConstantValue` -> `providers.number.ints.ContextIntProviders.exactly(int)` (`Holder<ContextIntProvider>`), `entries.LootPoolSingletonContainer.Builder<?>` -> `var`;
 - `scripts/check_version_consistency.py` 23/23 green; full sandbox-runnable validator suite green.
 
-### Required validation (26.3)
+### CI result (the priority item) — done and green
 
-1. **Activate CI**: copy `docs/ci/{build,compile-check,consistency}.yml` to `.github/workflows/` (or grant the Arena GitHub app `Workflows` permission). Until then nothing compiles in automation — the sandbox cannot reach `maven.fabricmc.net`.
-2. Read `build-reports/compile-java.log` after the first `arena/**` push and iterate. Most likely remaining errors: the two custom smithing recipe classes (`CoatingSmithingRecipe`, `ArmorSupportSmithingRecipe`) and JEI registration calls.
-3. Start a dedicated server and client; check all Mixin targets, resource/data loading, the brewing stand UI, villager trades, and Jade/JEI/REI with the exact 26.3 versions.
-4. Refresh release output only after the 26.3 build and smoke test pass.
+`e64f1bf`: `compile-check` and `build` both **success** — three `compileJava` tasks, the full
+`./gradlew build`, jar verification, and all six static gates. Earlier failures were
+`./gradlew: Permission denied` (gradlew committed as mode `100644`, fixed to `100755`) and the
+three loot-API errors. Compiler output is checked in at `build-reports/compile-java.log`.
+
+### Required validation (26.3) — what is left
+
+1. **CI is live and green** — nothing to activate. Compiler output: `build-reports/compile-java.log`.
+   `consistency.yml` still has never run (its `paths` only match version-declaration files);
+   touching `gradle.properties` triggers it.
+2. **Runtime smoke test (the only remaining item, and it cannot be done from this sandbox — no
+   network to `maven.fabricmc.net`, so no local Gradle/game run).** On a real 26.3 client/server
+   check: all Mixin targets apply (`herbcraft.mixins.json` 7 + `herbcraft_alchemy.mixins.json` 10),
+   the brewing stand UI and the 520 data-driven brewing recipes, villager trades, Jade/JEI/REI
+   displays, and en_us/zh_cn. The compile run already cleared the previously-suspected items
+   (`CoatingSmithingRecipe`, `ArmorSupportSmithingRecipe`, JEI registration) — they compile.
+3. Refresh release output only after the smoke test passes.
 
 ## Previous handoff note: Minecraft 26.2 Fabric port validation
 

@@ -13,15 +13,29 @@
 
 ## 当前状态（2026-10-14）
 
-三件**全部待上线**——本目录是唯一副本，`.github/workflows/` 还是空的：
+三件**已全部上线**：维护者已在 GitHub 网页端建好 `.github/workflows/` 下同名三个
+文件，内容与本目录副本一致（仅 `build.yml` / `compile-check.yml` 少了后来补的
+`chmod +x gradlew` 一行，见「已知注意点」）。
 
 | 文件 | 状态 | 内容 |
 |---|---|---|
-| `compile-check.yml` | ⏳ 待上线 | `compileJava` 全三模块；arena/** 分支把编译日志经 Contents API 回推本分支 `build-reports/compile-java.log`（沙箱到不了 `maven.fabricmc.net`，这是本地看编译错误的唯一通道）；主分支 push + PR 也编译，但只有 arena/** 回推日志 |
-| `consistency.yml` | ⏳ 待上线 | 版本声明守门：`gradle.properties` ↔ `build.gradle` ↔ 三个 `fabric.mod.json` ↔ `README.md`；`paths` 覆盖全部版本声明文件（含 `*.md`，所以「只改 README」也守得住） |
-| `build.yml` | ⏳ 待上线 | 全量 `./gradlew build` + 三模块 jar artifact（14 天）+ 六个静态校验（语言键齐平 / mixin 配置完整性 / 版本一致性 / 酿造配方与生成器一致 / 村民交易 26.3 schema / built-jar 校验） |
+| `compile-check.yml` | ✅ 已上线并跑绿 | `compileJava` 全三模块；arena/** 分支把编译日志经 Contents API 回推本分支 `build-reports/compile-java.log`（沙箱到不了 `maven.fabricmc.net`，这是本地看编译错误的唯一通道）；主分支 push + PR 也编译，但只有 arena/** 回推日志 |
+| `consistency.yml` | ✅ 已上线，**尚未触发过** | 版本声明守门：`gradle.properties` ↔ `build.gradle` ↔ 三个 `fabric.mod.json` ↔ `README.md`；`paths` 只覆盖版本声明文件，所以「只改 README」也守得住。因为历次提交都没碰这些路径，它一次都没跑过——改 `gradle.properties` 即可触发 |
+| `build.yml` | ✅ 已上线并跑绿 | 全量 `./gradlew build` + 三模块 jar artifact（14 天）+ 六个静态校验（语言键齐平 / mixin 配置完整性 / 版本一致性 / 酿造配方与生成器一致 / 村民交易 26.3 schema / built-jar 校验） |
+
+### 运行记录（`arena/99a30c9a-herbcraft-source`）
+
+| commit | 结果 | 原因 |
+|---|---|---|
+| `eb0ade3` / `eb9f72a` | ❌ | `gradlew` 以 mode `100644` 提交 → `./gradlew: Permission denied`，**不是代码问题** |
+| `e2ba41c` | ❌ | 可执行位修好（`git update-index --chmod=+x gradlew`）后暴露真问题：`:core`/`:cuisine` 编译通过，`:alchemy` 3 个 loot API 错误 |
+| `e64f1bf` | ✅ **全绿** | `AlchemyCodexHooks` 迁到 26.3 number provider API：`ConstantValue` → `providers.number.ints.ContextIntProviders.exactly(int)`（返回 `Holder<ContextIntProvider>`），`LootPoolSingletonContainer.Builder<?>` → `var`。三个 `compileJava` + 全量 `build` + 六个静态校验全过 |
 
 ## 上线步骤（维护者，约 2 分钟）
+
+> 三个文件都已上线，本节留作**下次改动**的流程：把本目录改好的文件全文粘贴到
+> `.github/workflows/` 同名文件，提交即可。注意本目录副本可能比线上多
+> `chmod +x gradlew`（线上是早期上传的版本），粘的时候别把已有内容覆盖丢了。
 
 1. 打开 <https://github.com/q14433686-arch/herbcraft-source/new/main?filename=.github/workflows/build.yml>
    （`compile-check.yml`、`consistency.yml` 同理，改 `filename` 即可）。
