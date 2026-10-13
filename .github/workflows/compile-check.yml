@@ -1,0 +1,69 @@
+name: compile-check
+# 编译验证闭环（2026-10-13 新增，照搬 TaCZ_Refabricated_Unofficial 的做法）：
+# 本沙箱外网只能到 GitHub / npm / pypi，maven.fabricmc.net 不可达 ⇒ 本地跑不了 Gradle。
+# 依赖下载与编译在 GitHub Actions（外网畅通）执行；arena/** 分支上，编译日志通过
+# GitHub Contents API 写回本分支（build-reports/compile-java.log），
+# 网络受限的沙箱用 `gh api contents` 直接读取。
+# 主分支 push 与 PR 也编译（补合并 commit 的盲区），但只有 arena/** 才回推日志
+# （主分支不能被 CI 提交污染，状态看 Actions 即可）。
+
+permissions:
+  contents: write
+on:
+  push:
+    branches:
+      - 'arena/**'
+      - 'herbcraft-source-26.2'
+      - 'herbcraft-source-26.1.2'
+    # 防止「日志回推 commit」再次触发本流程造成死循环
+    paths-ignore:
+      - 'build-reports/**'
+  pull_request:
+    paths-ignore:
+      - 'build-reports/**'
+  workflow_dispatch:
+concurrency:
+  # 同一分支的过期 run 直接取消，省配额（push 连发时只编最新的）
+  group: compile-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: compileJava
+        run: |
+          mkdir -p build-reports
+          echo "commit: ${{ github.sha }}" > build-reports/compile-java.log
+          # 不依赖 git 里的可执行位（网页上传/部分检出会丢 mode），显式补一次
+          chmod +x gradlew
+          ./gradlew compileJava --console=plain --stacktrace --no-daemon >> build-reports/compile-java.log 2>&1
+      - name: Push compile log back via contents API
+        # 只在 arena/** 的 push 上回推 —— 主分支与 PR 不产生 ci-log commit
+        if: always() && github.event_name == 'push' && startsWith(github.ref_name, 'arena/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # 日志可能很大，只保留头 200 行 + 尾 800 行
+          LOG=build-reports/compile-java.log
+          LINES=$(wc -l < "$LOG")
+          if [ "$LINES" -gt 1000 ]; then
+            { head -n 200 "$LOG"; echo "...[truncated ${LINES} lines total]..."; tail -n 800 "$LOG"; } > /tmp/log-trimmed
+            mv /tmp/log-trimmed "$LOG"
+          fi
+          echo "" >> "$LOG"
+          echo "== job status: ${{ job.status }} ==" >> "$LOG"
+          BRANCH="${{ github.ref_name }}"
+          SHA=$(gh api "repos/${{ github.repository }}/contents/$LOG?ref=$BRANCH" --jq .sha 2>/dev/null || true)
+          ARGS=(-X PUT "repos/${{ github.repository }}/contents/$LOG"
+                -f message="ci-log: compile result (${{ job.status }}) for ${{ github.sha }}"
+                -f branch="$BRANCH"
+                -f content="$(base64 -w0 "$LOG")")
+          if [ -n "$SHA" ]; then ARGS+=(-f sha="$SHA"); fi
+          gh api "${ARGS[@]}" --jq .commit.sha
