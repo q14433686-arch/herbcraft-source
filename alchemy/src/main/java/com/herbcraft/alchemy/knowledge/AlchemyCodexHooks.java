@@ -31,7 +31,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.SetComponentsFunction;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.functions.SetPotionFunction;
-import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 
 public final class AlchemyCodexHooks {
@@ -88,9 +88,9 @@ public final class AlchemyCodexHooks {
 
    private static void addItemLoot(LootTable.Builder tableBuilder, ItemLootInjection rule) {
       LootPool.Builder pool = LootPool.lootPool().when(LootItemRandomChanceCondition.randomChance(rule.chance()));
-      net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer.Builder<?> entry = LootItem.lootTableItem(rule.item());
+      var entry = LootItem.lootTableItem(rule.item());
       if (rule.count() > 1) {
-         entry.apply(SetItemCountFunction.setCount(ConstantValue.exactly(rule.count())));
+         entry.apply(SetItemCountFunction.setCount(ContextIntProviders.exactly(rule.count())));
       }
       if (rule.potion() != null) {
          entry.apply(SetPotionFunction.setPotion(rule.potion()));
