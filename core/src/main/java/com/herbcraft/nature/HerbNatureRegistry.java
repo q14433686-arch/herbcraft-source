@@ -69,6 +69,10 @@ public final class HerbNatureRegistry {
          return;
       }
       Identifier itemId = Identifier.parse(json.get("item").getAsString());
+      if (!BuiltInRegistries.ITEM.containsKey(itemId)) {
+         Herbcraft.LOGGER.warn("Skipping external herb nature {} for unregistered item {}", resourceId, itemId);
+         return;
+      }
       if (PROFILES.containsKey(itemId)) {
          Herbcraft.LOGGER.warn("External herb nature {} overrides existing nature profile for {}", resourceId, itemId);
       }
